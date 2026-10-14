@@ -58,7 +58,7 @@ In the repository, go to **Settings → Secrets and variables → Actions → Ne
 - Edit `channels/ai-news/config.yaml`:
   - `name`, `handle`, `timezone`, brand colors, hashtags, news sources.
 - To change posting times, edit `publish_time` in config.yaml *and* the two `cron:` lines in `.github/workflows/post.yml`.
-  - Cron lines are in **UTC** (IST − 5:30) and should start about 25 minutes before the publish time.
+  - Cron lines are in **UTC** (IST − 5:30) and should start about 40 minutes before the publish time.
   - If you change the weekly cron, also change the matching line further down in that file.
 
 ## Test, then go live

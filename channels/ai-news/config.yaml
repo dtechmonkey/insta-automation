@@ -18,10 +18,12 @@ hashtags: >-
   #ChatGPT #LLM #DeepLearning #FutureOfWork #Innovation #Technology #TechMonkey
 
 ai:
-  model:                        # tried in order; free-tier Gemini models (update if Google renames them)
+  models:                       # strong free-tier Gemini models, tried in order (update if Google renames them)
     - "gemini-3.8-flash"
     - "gemini-3.7-flash"
     - "gemini-flash-latest"
+  strong_retry_minutes: 10      # keep retrying the strong models this long before using a fallback
+  fallback_models:              # lighter models: last resort only
     - "gemini-3.5-flash-lite"
   tone: "clear, energetic and factual; written for a curious non-expert audience"
 
