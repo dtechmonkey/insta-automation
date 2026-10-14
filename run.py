@@ -110,6 +110,21 @@ def wait_for_publish_time(hhmm, tz, max_wait_minutes=60):
         time.sleep(wait)
 
 
+def publish(paths, caption, result, args, cfg, channel_dir, hist, local_date, stamp):
+    print("Uploading images…")
+    urls = host.upload(paths, f"{args.channel}/{stamp}")
+    print("Publishing to Instagram…")
+    media_id = instagram.publish_carousel(urls, caption, cfg["instagram"]["api_version"])
+    print(f"Published! media id {media_id}")
+
+    history.record(hist, args.mode, local_date, result["stories"], media_id)
+    history.save(channel_dir, hist)
+    try:
+        host.cleanup(args.channel)
+    except Exception as e:  # cleanup is best-effort
+        print(f"  (media cleanup skipped: {e})")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--channel", required=True)
@@ -117,6 +132,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="make images + caption, don't post")
     ap.add_argument("--force", action="store_true", help="post even if already posted today")
     ap.add_argument("--rerender", metavar="OUTPUT_DIR", help="redraw a saved batch with the current templates (no fetching, no AI, no posting)")
+    ap.add_argument("--publish-dir", metavar="OUTPUT_DIR", help="publish an already-rendered, reviewed batch as-is (its NN.jpg slides + caption.txt)")
     args = ap.parse_args()
 
     load_dotenv(ROOT / ".env")
@@ -134,6 +150,15 @@ def main():
         slides = build_slides(result, args.mode, out_dir, cfg)
         render.render_slides(slides, channel_dir / "templates", out_dir, base_context)
         print(f"Re-rendered {len(slides)} slides in {out_dir}")
+        return
+
+    if args.publish_dir:
+        out_dir = Path(args.publish_dir)
+        result = json.loads((out_dir / "post.json").read_text(encoding="utf-8"))
+        caption = (out_dir / "caption.txt").read_text(encoding="utf-8")
+        paths = sorted(out_dir.glob("[0-9][0-9].jpg"))
+        print(f"Publishing saved batch {out_dir.name}: {len(paths)} slides")
+        publish(paths, caption, result, args, cfg, channel_dir, hist, local_date, out_dir.name)
         return
 
     if not args.dry_run and not args.force and history.already_posted(hist, args.mode, local_date):
@@ -184,18 +209,7 @@ def main():
         return
 
     wait_for_publish_time(cfg[args.mode].get("publish_time"), now.tzinfo)
-    print("Uploading images…")
-    urls = host.upload(paths, f"{args.channel}/{stamp}")
-    print("Publishing to Instagram…")
-    media_id = instagram.publish_carousel(urls, caption, cfg["instagram"]["api_version"])
-    print(f"Published! media id {media_id}")
-
-    history.record(hist, args.mode, local_date, result["stories"], media_id)
-    history.save(channel_dir, hist)
-    try:
-        host.cleanup(args.channel)
-    except Exception as e:  # cleanup is best-effort
-        print(f"  (media cleanup skipped: {e})")
+    publish(paths, caption, result, args, cfg, channel_dir, hist, local_date, stamp)
 
 
 if __name__ == "__main__":

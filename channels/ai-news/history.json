@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "mode": "daily",
+      "date": "2026-10-14",
+      "posted_at": "2026-10-14T16:39:27.833385+00:00",
+      "media_id": "18285888529291182",
+      "stories": [
+        {
+          "headline": "GOOGLE DROPS *GEMINI 4*!",
+          "facts": "Google launched Gemini 4 Argon worldwide through its API, app, and Google Antigravity. Developers get a fifty percent API discount through November.",
+          "image_prompt": "A vibrant, photorealistic collage slide featuring a glowing Google Gemini model interface floating over a high-tech server room in the foreground. In the midground, a futuristic data center pulses with electric-blue and warm-orange neon lights, while holographic rising performance charts and network lines arc across the scene. The lighting is cinematic studio rim light, emphasizing a sleek, high-end tech aesthetic with zero readable text.",
+          "category": "Model Release",
+          "source": "The Decoder",
+          "url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/",
+          "published": "2026-10-13T18:00:49+00:00"
+        },
+        {
+          "headline": "*NVIDIA* POURS *$2B* INTO EUROPE",
+          "facts": "Nvidia CEO Jensen Huang pledged two billion dollars for European investments and two hundred fifty million dollars in compute for UK AI safety research.",
+          "image_prompt": "A confident portrait of Jensen Huang with arms crossed, gazing off-camera in the foreground against a sleek corporate backdrop. In the midground, a sprawling European city skyline merges with a massive glowing AI supercomputer facility. Holographic currency symbols, financial data streams, and map pins float in the air. The color palette combines electric blue and warm orange under dramatic sunset lighting, with no readable text.",
+          "category": "Funding",
+          "source": "The Decoder",
+          "url": "https://the-decoder.com/nvidias-jensen-huang-pledges-2-billion-for-europe-250-million-in-compute-for-uk-safety-labs/",
+          "published": "2026-10-14T14:24:34+00:00"
+        },
+        {
+          "headline": "*CHARACTER.AI* GOES BANKRUPT",
+          "facts": "Character.ai has filed for bankruptcy and is seeking a buyer by the end of 2026, or the platform will completely shut down.",
+          "image_prompt": "A photorealistic collage highlighting a vintage smartphone displaying a fading, glowing chat bubble interface in the foreground. In the midground, a corporate office building under dark, dramatic sunset skies stands next to stacked legal documents. Holographic downward-trending charts and warning icons hover in the air, utilizing an electric-blue and warm-orange color palette with no readable text.",
+          "category": "Industry",
+          "source": "The Decoder",
+          "url": "https://the-decoder.com/character-ai-will-shut-down-if-no-buyer-emerges-capping-a-fall-from-2-7-billion-google-deal-to-bankruptcy/",
+          "published": "2026-10-13T15:27:39+00:00"
+        },
+        {
+          "headline": "406 SCIENTISTS: *UNPLUG* AI",
+          "facts": "Four hundred six scientists, including Geoffrey Hinton and Yoshua Bengio, signed an open letter demanding companies immediately disconnect AI models from the internet.",
+          "image_prompt": "A close-up photorealistic shot of a glowing physical server rack with an unplugged heavy cable dangling in the foreground. In the midground, silhouettes of scientists stand before massive data screens in a dark research facility. Holographic warning triangles, global network maps, and binary data streams glow in electric-blue and warm-orange hues, with no readable text.",
+          "category": "Policy",
+          "source": "The Decoder",
+          "url": "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately/",
+          "published": "2026-10-13T18:50:44+00:00"
+        },
+        {
+          "headline": "OPENAI ENGINEER *ARRESTED*",
+          "facts": "An OpenAI engineer named Abdulrahman Alfozan was arrested for allegedly hiding a sophisticated audio recording device inside an executive conference room.",
+          "image_prompt": "A photorealistic shot of a modern glass executive conference room table with a small hidden gadget wrapped in paper in the foreground. In the midground, a sleek corporate headquarters building under studio rim lighting. Holographic audio waveforms, security camera grids, and rising data streams overlay the scene in electric-blue and warm-orange tones, with no readable text.",
+          "category": "Industry",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+          "published": "2026-10-13T20:45:25+00:00"
+        },
+        {
+          "headline": "FIRST *VISION CHIP* IMPLANT",
+          "facts": "Science Corporation successfully implanted its vision-restoring PRIMA chip into its first patient suffering from Stargardt disease.",
+          "image_prompt": "A photorealistic macro shot of an advanced microscopic neural microchip resting on a fingertip in the foreground. In the midground, a modern medical research laboratory with glowing diagnostic machinery. Holographic eye schematics, neural pathways, and medical data readouts float in the air, bathed in electric-blue and warm-orange studio lighting, with no readable text.",
+          "category": "Hardware",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+          "published": "2026-10-13T23:13:31+00:00"
+        }
+      ]
+    }
+  ]
+}
