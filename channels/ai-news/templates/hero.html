@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Michroma&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; background: #000; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; color: #fff;
+  background: radial-gradient(circle at 70% 25%, #1d3b8f 0%, #0a1230 40%, #000 75%); }
+.badge { display: inline-block; margin-bottom: 18px; padding: 8px 22px; border-radius: 6px; background: #FFC53D;
+  color: #000; font-family: "Oswald", sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; }
+.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.fade { position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 14%, rgba(0,0,0,0) 46%, rgba(0,0,0,.85) 62%, #000 72%); }
+.wordmark { position: absolute; top: 34px; right: 40px; font-family: "Michroma", sans-serif; font-size: 26px;
+  letter-spacing: .04em; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+.pager { position: absolute; top: 84px; right: 40px; padding: 10px 24px; border-radius: 999px;
+  background: rgba(20,22,28,.72); font-family: "Oswald", sans-serif; font-weight: 500; font-size: 32px; }
+.text { position: absolute; left: 44px; right: 44px; bottom: 56px; text-align: center; }
+.kicker { display: flex; align-items: center; gap: 22px; justify-content: center; margin-bottom: 14px;
+  font-family: "Michroma", sans-serif; font-size: 24px; letter-spacing: .04em; }
+.kicker::before, .kicker::after { content: ""; flex: 1; height: 2px; background: rgba(255,255,255,.7); }
+.headline { font-family: "Anton", sans-serif; font-size: 150px; line-height: .98; text-transform: uppercase;
+  letter-spacing: .005em; }
+.hl { background: linear-gradient(180deg, #5FC8FF 0%, #1E7BFF 100%); -webkit-background-clip: text;
+  background-clip: text; color: transparent; }
+.facts { margin-top: 26px; font-family: "Oswald", sans-serif; font-weight: 600; font-size: 46px; line-height: 1.12;
+  text-transform: uppercase; }
+.cta { margin-top: 26px; font-family: "Oswald", sans-serif; font-weight: 600; font-size: 34px; letter-spacing: .03em; }
+.cta b { display: inline-block; background: #1E7BFF; padding: 0 10px; margin-left: 8px; border-radius: 4px; }
+.source { position: absolute; left: 44px; bottom: 18px; font-family: "Oswald", sans-serif; font-size: 22px;
+  color: rgba(255,255,255,.55); letter-spacing: .04em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="slide">
+  {% if image %}<img class="bg" src="{{ image }}">{% endif %}
+  <div class="fade"></div>
+  {% if not cover %}<div class="wordmark">{{ name | upper }}</div>{% endif %}
+  {% if pager %}<div class="pager">{{ pager }}</div>{% endif %}
+  <div class="text">
+    {% if cover %}<div class="kicker">{{ name | upper }}{% if kicker %} · {{ kicker | upper }}{% endif %}</div>{% endif %}
+    {% if badge %}<div class="badge">★ {{ badge }}</div>{% endif %}
+    <h1 class="headline fit-h">{{ headline_html | safe }}</h1>
+    {% if facts %}<p class="facts fit">{{ facts }}</p>{% endif %}
+    {% if cta %}<div class="cta">{{ cta }} <b>›</b></div>{% endif %}
+  </div>
+  {% if source %}<div class="source">Source: {{ source }}</div>{% endif %}
+</div>
+<script>
+// Shrink headline/facts until the text block fits in the bottom ~45% of the slide.
+window.fitText = function () {
+  const box = document.querySelector('.text');
+  const limit = 1350 * 0.47;
+  const h = document.querySelector('.fit-h'), f = document.querySelector('.fit');
+  for (let i = 0; i < 40 && box.offsetHeight > limit; i++) {
+    [h, f].forEach(el => { if (el) el.style.fontSize = parseFloat(getComputedStyle(el).fontSize) * 0.95 + 'px'; });
+  }
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+# Channel: Daily AI News
+name: "Tech Monkey"             # shown on slides
+handle: "@d_tech_monkey"        # your Instagram handle, shown on slides
+timezone: "Asia/Kolkata"        # IST; used for dates and the once-per-day check
+
+daily:
+  publish_time: "18:30"         # local time; the GitHub job starts earlier and waits for this
+  stories: 7                    # story slides per daily post (plus cover + outro)
+  min_stories: 3                # skip the day if fewer good stories are found
+  lookback_hours: 24
+
+weekly:
+  publish_time: "12:00"         # Sundays, local time
+  stories: 8                    # story slides in the weekly recap
+
+hashtags: >-
+  #AI #ArtificialIntelligence #AINews #MachineLearning #TechNews #GenerativeAI
+  #ChatGPT #LLM #DeepLearning #FutureOfWork #Innovation #Technology #TechMonkey
+
+ai:
+  model:                        # tried in order; free-tier Gemini models (update if Google renames them)
+    - "gemini-3.8-flash"
+    - "gemini-3.7-flash"
+    - "gemini-flash-latest"
+    - "gemini-3.5-flash-lite"
+  tone: "clear, energetic and factual; written for a curious non-expert audience"
+
+images:                         # tried in order; "hf:" = Hugging Face Space (free GPU quota), "@cf/" = Cloudflare (10,000 neurons/day)
+  cover_models:
+    - "hf:mcp-tools/Qwen-Image"
+    - "@cf/leonardo/lucid-origin"   # ~1,000+ neurons
+    - "@cf/black-forest-labs/flux-1-schnell"
+  story_models:
+    - "hf:mcp-tools/Qwen-Image"
+    - "@cf/black-forest-labs/flux-1-schnell"   # ~100 neurons
+
+instagram:
+  api_version: "v23.0"
+
+brand:
+  background: "#0B0F19"
+  surface: "#151B2C"
+  text: "#F5F7FB"
+  muted: "#9AA3B8"
+  accent: "#7C5CFF"
+  accent2: "#22D3EE"
+
+sources:
+  rss:
+    - { name: "TechCrunch",      url: "https://techcrunch.com/category/artificial-intelligence/feed/" }
+    - { name: "The Verge",       url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" }
+    - { name: "Wired",           url: "https://www.wired.com/feed/tag/ai/latest/rss" }
+    - { name: "The Decoder",     url: "https://the-decoder.com/feed/" }
+    - { name: "MIT Tech Review", url: "https://www.technologyreview.com/topic/artificial-intelligence/feed" }
+    - { name: "Ars Technica",    url: "https://arstechnica.com/ai/feed/" }
+    - { name: "OpenAI",          url: "https://openai.com/news/rss.xml" }
+    - { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" }
+    - { name: "Google AI",       url: "https://blog.google/technology/ai/rss/" }
+    - { name: "Microsoft",       url: "https://news.microsoft.com/source/topics/ai/feed/" }
+    - { name: "NVIDIA",          url: "https://blogs.nvidia.com/feed/" }
+    - { name: "Hugging Face",    url: "https://huggingface.co/blog/feed.xml" }
+  hackernews:
+    query: "AI"
+    min_points: 150

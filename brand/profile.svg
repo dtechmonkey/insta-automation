@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0" stop-color="#1B2140"/>
+      <stop offset="1" stop-color="#0B0F19"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8F72FF"/>
+      <stop offset="1" stop-color="#5A3BE0"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141A2E"/>
+      <stop offset="1" stop-color="#05070D"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background + ring (Instagram crops to a circle) -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <circle cx="540" cy="540" r="470" fill="none" stroke="url(#ring)" stroke-width="16" opacity="0.9"/>
+
+  <g transform="translate(540,540) scale(1.12) translate(-540,-475)">
+    <!-- antenna / circuit tuft -->
+    <path d="M540 300 V235" stroke="#22D3EE" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="540" cy="218" r="22" fill="#22D3EE" filter="url(#glow)"/>
+    <path d="M500 305 L470 262 L440 262" stroke="#22D3EE" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <circle cx="432" cy="262" r="12" fill="#22D3EE" opacity="0.8"/>
+    <path d="M580 305 L610 262 L640 262" stroke="#22D3EE" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <circle cx="648" cy="262" r="12" fill="#22D3EE" opacity="0.8"/>
+
+    <!-- ears -->
+    <circle cx="295" cy="500" r="100" fill="url(#fur)"/>
+    <circle cx="785" cy="500" r="100" fill="url(#fur)"/>
+    <circle cx="300" cy="500" r="58" fill="#F3DEC6"/>
+    <circle cx="780" cy="500" r="58" fill="#F3DEC6"/>
+
+    <!-- head -->
+    <circle cx="540" cy="520" r="235" fill="url(#fur)"/>
+
+    <!-- face -->
+    <circle cx="468" cy="505" r="105" fill="#F7E8D6"/>
+    <circle cx="612" cy="505" r="105" fill="#F7E8D6"/>
+    <ellipse cx="540" cy="628" rx="160" ry="118" fill="#F7E8D6"/>
+
+    <!-- VR visor -->
+    <rect x="352" y="440" width="376" height="122" rx="61" fill="url(#visor)" stroke="url(#ring)" stroke-width="12"/>
+    <rect x="420" y="478" width="70" height="46" rx="18" fill="#22D3EE" filter="url(#glow)"/>
+    <rect x="590" y="478" width="70" height="46" rx="18" fill="#22D3EE" filter="url(#glow)"/>
+    <rect x="432" y="486" width="18" height="12" rx="6" fill="#E6FDFF"/>
+    <rect x="602" y="486" width="18" height="12" rx="6" fill="#E6FDFF"/>
+
+    <!-- nose + smile -->
+    <ellipse cx="518" cy="615" rx="11" ry="8" fill="#3A2A55"/>
+    <ellipse cx="562" cy="615" rx="11" ry="8" fill="#3A2A55"/>
+    <path d="M478 660 Q540 715 602 660" stroke="#3A2A55" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
