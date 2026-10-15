@@ -45,6 +45,7 @@ HEADLINE_RULES = """- Use only facts stated in the items. Never invent numbers, 
 - Headlines must be complete, grammatical phrases that make sense on their own; never end on a dangling word like "IN", "FOR" or "OF".
 - Don't use time words ("TODAY", "NOW", "JUST", "TONIGHT") in headlines.
 - Legal matters involving a person: never call them a criminal, spy, fraud etc. Use exactly what the source says ("CHARGED", "ACCUSED", "ARRESTED") and keep "allegedly" in the facts.
+- Don't mention a person's nationality, ethnicity or religion unless it is central to the story.
 - Write everything in your own words; do not copy sentences from the items."""
 
 RULES = "Rules:\n" + HEADLINE_RULES + """
@@ -223,6 +224,7 @@ def _merge(result, items, n):
             "image_prompt": s.get("image_prompt", "").strip() or item["title"],
             "category": s.get("category") if s.get("category") in CATEGORIES else "Industry",
             "source": item["source"],
+            "source_title": item["title"],
             "url": item["url"],
             "published": item.get("published"),
         })
@@ -244,12 +246,21 @@ def _rules(cfg):
     return RULES.replace("{tone}", cfg["ai"]["tone"]).replace("{handle}", cfg["handle"])
 
 
-def curate_daily(items, cfg):
+def _recent_block(recent):
+    if not recent:
+        return ""
+    return ("\nALREADY POSTED in the last few days (do NOT pick these stories again, even from a different "
+            "outlet, unless there is a major new development; if so, the headline must say what is new):\n- "
+            + "\n- ".join(recent) + "\n")
+
+
+def curate_daily(items, cfg, recent=None):
     n = cfg["daily"]["stories"]
     prompt = (
         f'You are the editor of "{cfg["name"]}", an Instagram channel posting daily AI news.\n'
         f"Below are AI news items from the last 24 hours. Items reported by more outlets are usually bigger news.\n"
-        f"Pick the {n} most important, distinct stories.\n\n"
+        f"Pick the {n} most important, distinct stories.\n"
+        + _recent_block(recent) + "\n"
         + _rules(cfg)
         + "\n\nItems:\n" + _items_for_prompt(items)
     )

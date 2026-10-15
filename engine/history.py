@@ -24,7 +24,14 @@ def _recent(history, days, mode=None):
 
 def seen(history, days=14):
     stories = [s for p in _recent(history, days, "daily") for s in p["stories"]]
-    return {s["url"] for s in stories}, [s["headline"] for s in stories]
+    titles = [s["headline"] for s in stories] + [s["source_title"] for s in stories if s.get("source_title")]
+    return {s["url"] for s in stories}, titles
+
+
+def recently_posted(history, days=5):
+    """Short descriptions of recently posted stories, so the AI can avoid repeating them."""
+    stories = [s for p in _recent(history, days) for s in p["stories"]]
+    return [f"{s['headline'].replace('*', '')}: {s.get('facts', '')[:140]}" for s in stories]
 
 
 def already_posted(history, mode, local_date):

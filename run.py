@@ -49,13 +49,25 @@ def image_prompts(result):
     return [result["cover_image_prompt"]] + [s["image_prompt"] for s in result["stories"]]
 
 
+BG_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")
+
+
+def find_bg(out_dir, i):
+    """The background image for slide i (any common extension), or the default .jpg path if none exists."""
+    for ext in BG_EXTENSIONS:
+        path = out_dir / "bg" / f"{i:02d}{ext}"
+        if path.exists():
+            return path
+    return out_dir / "bg" / f"{i:02d}.jpg"
+
+
 def make_images(result, out_dir, cfg):
     bg_dir = out_dir / "bg"
     bg_dir.mkdir(parents=True, exist_ok=True)
     img_cfg = cfg.get("images", {})
     prompts = image_prompts(result)
     for i, prompt in enumerate(prompts):
-        path = bg_dir / f"{i:02d}.jpg"
+        path = find_bg(out_dir, i)
         if path.exists():
             continue
         print(f"  image {i + 1}/{len(prompts)}")
@@ -79,7 +91,7 @@ def _data_uri(path):
 def build_slides(result, mode, out_dir, cfg):
     stories = result["stories"]
     total = len(stories) + 2
-    bg = [_data_uri(out_dir / "bg" / f"{i:02d}.jpg") for i in range(len(stories) + 1)]
+    bg = [_data_uri(find_bg(out_dir, i)) for i in range(len(stories) + 1)]
     weekly = mode == "weekly"
     slides = [{"template": "hero.html", "cover": True, "image": bg[0],
                "kicker": "Weekly recap" if weekly else None,
@@ -132,6 +144,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="make images + caption, don't post")
     ap.add_argument("--force", action="store_true", help="post even if already posted today")
     ap.add_argument("--rerender", metavar="OUTPUT_DIR", help="redraw a saved batch with the current templates (no fetching, no AI, no posting)")
+    ap.add_argument("--no-images", action="store_true", help="skip image generation (e.g. to add images by hand into OUTPUT_DIR/bg/)")
     ap.add_argument("--publish-dir", metavar="OUTPUT_DIR", help="publish an already-rendered, reviewed batch as-is (its NN.jpg slides + caption.txt)")
     args = ap.parse_args()
 
@@ -146,7 +159,8 @@ def main():
     if args.rerender:  # reuses saved text + images; only generates images that are missing
         out_dir = Path(args.rerender)
         result = json.loads((out_dir / "post.json").read_text(encoding="utf-8"))
-        make_images(result, out_dir, cfg)
+        if not args.no_images:
+            make_images(result, out_dir, cfg)
         slides = build_slides(result, args.mode, out_dir, cfg)
         render.render_slides(slides, channel_dir / "templates", out_dir, base_context)
         print(f"Re-rendered {len(slides)} slides in {out_dir}")
@@ -174,7 +188,8 @@ def main():
         if len(items) < cfg["daily"]["min_stories"]:
             sys.exit(f"Only {len(items)} new stories found; skipping today.")
         print("Curating with AI…")
-        curate_fn = curate.curate_daily
+        recent = history.recently_posted(hist)
+        curate_fn = lambda items, cfg: curate.curate_daily(items, cfg, recent)
     else:
         items = history.week_pool(hist)
         if len(items) < 3:
@@ -194,8 +209,11 @@ def main():
     (out_dir / "caption.txt").write_text(caption, encoding="utf-8")
     (out_dir / "post.json").write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print("Generating background images…")
-    make_images(result, out_dir, cfg)
+    if args.no_images:
+        print("Skipping image generation (--no-images)")
+    else:
+        print("Generating background images…")
+        make_images(result, out_dir, cfg)
     slides = build_slides(result, args.mode, out_dir, cfg)
     print(f"Rendering {len(slides)} slides…")
     paths = render.render_slides(slides, channel_dir / "templates", out_dir, base_context)
