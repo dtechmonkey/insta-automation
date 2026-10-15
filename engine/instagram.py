@@ -19,7 +19,7 @@ class InstagramError(RuntimeError):
 
 def _call(method, path, version, **params):
     # Token goes in the body/params but never into error messages.
-    params["access_token"] = os.environ["IG_ACCESS_TOKEN"]
+    params["access_token"] = os.environ["IG_ACCESS_TOKEN"].strip()
     url = f"{BASE}/{version}/{path}"
     if method == "GET":
         resp = requests.get(url, params=params, timeout=60)
@@ -45,7 +45,7 @@ def _wait_ready(container_id, version, timeout=300):
 
 
 def publish_carousel(image_urls, caption, version):
-    ig_user = os.environ["IG_USER_ID"]
+    ig_user = os.environ["IG_USER_ID"].strip()
     children = []
     for url in image_urls:
         if url.lower().endswith(".mp4"):
@@ -64,7 +64,7 @@ def publish_carousel(image_urls, caption, version):
 
 def refresh_token():
     resp = requests.get(f"{BASE}/refresh_access_token", timeout=60, params={
-        "grant_type": "ig_refresh_token", "access_token": os.environ["IG_ACCESS_TOKEN"]})
+        "grant_type": "ig_refresh_token", "access_token": os.environ["IG_ACCESS_TOKEN"].strip()})
     data = resp.json()
     if "access_token" not in data:
         raise InstagramError(f"Token refresh failed: {data.get('error', {}).get('message', resp.status_code)}")

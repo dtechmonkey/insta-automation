@@ -9,7 +9,7 @@ $envFile = Join-Path $PSScriptRoot ".env"
 foreach ($line in Get-Content $envFile) {
     if ($line -match '^\s*([A-Z_]+)\s*=\s*(.+?)\s*$' -and $names -contains $Matches[1]) {
         $name = $Matches[1]
-        $Matches[2] | & $gh secret set $name --repo $repo
+        & $gh secret set $name --body $Matches[2] --repo $repo   # --body: piping adds a hidden newline
         if ($LASTEXITCODE -eq 0) { Write-Host "  set $name" } else { Write-Host "  FAILED $name" }
     }
 }

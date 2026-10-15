@@ -97,7 +97,7 @@ def _ask_model(prompt, model, key, attempts=2):
 
 def _ask_gemini(prompt, ai_cfg, retry_minutes=None):
     """Try the strong models in rounds until the retry window closes, then the fallback models."""
-    key = os.environ.get("GEMINI_API_KEY")
+    key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
         raise RuntimeError("GEMINI_API_KEY not set")
     strong = ai_cfg["models"]
