@@ -78,6 +78,6 @@ def make_clips(slides, slide_numbers, bg_paths, templates_dir, base_context, out
             continue
         fade, text = render_layers(slides[n - 1], templates_dir, base_context, work, f"{n:02d}")
         out = make_clip(bg, fade, text, Path(out_dir) / f"{n:02d}.mp4", seconds)
-        print(f"  slide {n}: {out.name} ({'AI motion' if Path(bg).suffix == '.mp4' else 'animated still'})")
+        print(f"  slide {n}: {out.name} ({'video background' if Path(bg).suffix == '.mp4' else 'animated still'})")
         made.append(out)
     return made

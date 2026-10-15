@@ -91,3 +91,11 @@ A different Instagram account needs its own token and user ID secrets. Ask Claud
 - Schedule: daily at 18:30 IST and the weekly recap on Sundays at 12:00 IST. Jobs start early and wait for the exact time (`publish_time` in config.yaml).
 - Each run checks `history.json`, so it never posts twice in a day and never repeats a story.
 - GitHub may run scheduled jobs 5–15 minutes late.
+
+## Video slides, stock footage and press clips
+- **Video slides** (`video:` in config.yaml): the cover and every story slide become 6-second clips (background slowly zooms, text slides in); the closing slide stays a photo.
+- **Stock footage**: for each story Gemini writes a search phrase; the system tries **NASA** (space stories, no key), then **Pexels** and **Pixabay** (free keys `PEXELS_API_KEY`, `PIXABAY_API_KEY`). A found clip becomes that slide's moving background; otherwise the AI image is animated. Credits are added to the caption.
+- **Two daily stages**:
+  - **14:05 IST draft**: today's stories are picked and saved to `channels/ai-news/drafts/<date>/`. A GitHub Issue (emailed to you) lists them, with links to official company newsrooms.
+  - **Optional press clip**: upload `press-N.mp4` (N = story number; under 25 MB; first ~6 s used) into that drafts folder before ~17:45 IST. Use only clips offered for media/editorial use.
+  - **17:50 IST post**: built from the draft, published at 18:30, and the Issue is closed.

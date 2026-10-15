@@ -1,20 +1,25 @@
 # Daily + weekly posting. Cron times are in UTC (IST = UTC + 5:30).
+#   14:05 IST  draft: pick today's stories, open a heads-up issue (emails you) for optional press clips
+#   17:50 IST  post:  build from today's draft (+ your press-N.mp4 clips), publish at 18:30 IST
 # Jobs start ~40 min early (GitHub can start late); run.py then waits for the exact
 # publish_time set in the channel config.
 name: Post to Instagram
 
 on:
   schedule:
-    - cron: "20 12 * * *"  # daily:  starts 17:50 IST, publishes 18:30 IST
+    - cron: "35 8 * * *"   # daily draft: 14:05 IST
+    - cron: "20 12 * * *"  # daily post:  starts 17:50 IST, publishes 18:30 IST
     - cron: "50 5 * * 0"   # weekly: Sundays, starts 11:20 IST, publishes 12:00 IST
   workflow_dispatch:
     inputs:
       channel: { description: "Channel folder", default: "ai-news" }
       mode: { description: "daily or weekly", default: "daily", type: choice, options: [daily, weekly] }
-      dry_run: { description: "Only make images (don't post)", default: true, type: boolean }
+      stage: { description: "draft (pick stories + heads-up) or post", default: "post", type: choice, options: [post, draft] }
+      dry_run: { description: "Don't post (and no heads-up issue)", default: true, type: boolean }
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: instagram-poster
@@ -43,11 +48,14 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "channel=${{ inputs.channel }}" >> "$GITHUB_OUTPUT"
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+            echo "stage=${{ inputs.stage }}" >> "$GITHUB_OUTPUT"
             [ "${{ inputs.dry_run }}" = "true" ] && echo "flags=--dry-run" >> "$GITHUB_OUTPUT" || true
           elif [ "${{ github.event.schedule }}" = "50 5 * * 0" ]; then
-            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=weekly" >> "$GITHUB_OUTPUT"
+            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=weekly" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "35 8 * * *" ]; then
+            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=daily" >> "$GITHUB_OUTPUT"; echo "stage=draft" >> "$GITHUB_OUTPUT"
           else
-            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=daily" >> "$GITHUB_OUTPUT"
+            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=daily" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Build and publish
@@ -56,23 +64,30 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python run.py --channel "${{ steps.what.outputs.channel }}" --mode "${{ steps.what.outputs.mode }}" ${{ steps.what.outputs.flags }}
+        run: >-
+          python run.py --channel "${{ steps.what.outputs.channel }}" --mode "${{ steps.what.outputs.mode }}"
+          --stage "${{ steps.what.outputs.stage }}" ${{ steps.what.outputs.flags }}
 
       - name: Save slides for review
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: slides-${{ steps.what.outputs.mode }}-${{ github.run_id }}
+          name: slides-${{ steps.what.outputs.mode }}-${{ steps.what.outputs.stage }}-${{ github.run_id }}
           path: output/
           if-no-files-found: ignore
 
-      - name: Commit history
+      - name: Commit history and drafts
         if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add channels/*/history.json
-          git diff --cached --quiet || (git commit -m "history: ${{ steps.what.outputs.channel }} ${{ steps.what.outputs.mode }}" && git push)
+          git add -A channels/*/history.json channels/*/drafts 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "${{ steps.what.outputs.stage }}: ${{ steps.what.outputs.channel }} ${{ steps.what.outputs.mode }}"
+            git pull --rebase --autostash && git push   # press clips may have been uploaded meanwhile
+          fi

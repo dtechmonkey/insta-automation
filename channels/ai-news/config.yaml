@@ -64,3 +64,29 @@ sources:
   hackernews:
     query: "AI"
     min_points: 150
+
+video:                          # video slides in the carousel
+  enabled: true                 # cover + story slides become 6 s clips; the outro stays a photo
+  seconds: 6
+  broll: true                   # real stock / NASA footage as story backgrounds when a good clip is found
+  broll_providers: [nasa, pexels, pixabay]   # nasa only for space stories; pexels/pixabay need free API keys
+
+github_user: dtechmonkey        # @mentioned in the daily heads-up issue (email notification)
+
+# Official newsrooms linked in the heads-up issue when a story is about that company.
+# Check each site's terms: use only clips offered for media/editorial use.
+newsrooms:
+  Apple: https://www.apple.com/newsroom/
+  NVIDIA: https://nvidianews.nvidia.com/
+  Google: https://blog.google/image-library/
+  Microsoft: https://news.microsoft.com/source/
+  Meta: https://about.fb.com/news/
+  OpenAI: https://openai.com/news/
+  Anthropic: https://www.anthropic.com/news
+  Samsung: https://news.samsung.com/global/
+  Tesla: https://www.tesla.com/presskit
+  Amazon: https://press.aboutamazon.com/
+  AMD: https://newsroom.amd.com/
+  Qualcomm: https://www.qualcomm.com/news
+  Intel: https://www.intel.com/content/www/us/en/newsroom/home.html
+  NASA: https://images.nasa.gov/
