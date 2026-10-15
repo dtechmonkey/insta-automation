@@ -28,13 +28,12 @@ CAPTION_LIMIT = 2200
 
 def build_caption(result, cfg):
     sources = sorted({s["source"] for s in result["stories"]})
-    credits = sorted({c for c in result.get("video_credits", [])})
-    disclosure = "Summaries written with AI assistance from the sources above. AI-generated illustrations are not real photos"
-    disclosure += ("; video clips are stock or official footage used for illustration." if credits else ".")
+    credits = sorted({c for c in result.get("video_credits", [])})  # only NASA / official press footage
+    disclosure = "AI-assisted summaries · AI images & stock footage for illustration only"
     parts = [
         result["caption"],
         "Sources: " + ", ".join(sources),
-        ("Video: " + "; ".join(credits)) if credits else "",
+        ("Footage: " + "; ".join(credits)) if credits else "",
         disclosure,
         " ".join(cfg["hashtags"].split()[:30]),
     ]
@@ -105,7 +104,7 @@ def make_images(result, out_dir, cfg):
 
 def gather_video(result, out_dir, cfg, draft_dir=None):
     """Moving backgrounds for story slides: your press clips first (draft_dir/press-N.mp4), then free
-    stock footage (NASA for space stories, Pexels, Pixabay). Credits go into result["video_credits"]."""
+    stock footage (NASA for space stories, Pexels, Pixabay). NASA and press credits go into result["video_credits"]."""
     vcfg = cfg.get("video", {})
     bg_dir = out_dir / "bg"
     bg_dir.mkdir(parents=True, exist_ok=True)
@@ -116,7 +115,7 @@ def gather_video(result, out_dir, cfg, draft_dir=None):
         if press and press.exists():
             shutil.copy(press, motion)
             broll._still_frame(motion, still)
-            credits.append(f"{story.get('company') or story['source']} (official footage)")
+            credits.append(f"{story.get('company') or story['source']} (official)")
             print(f"  story {i}: your press clip")
             continue
         if motion.exists() or not vcfg.get("broll") or not story.get("broll_query"):
@@ -124,7 +123,8 @@ def gather_video(result, out_dir, cfg, draft_dir=None):
         found = broll.fetch(story["broll_query"], story.get("space"), vcfg.get("broll_providers", []),
                             motion, still, vcfg.get("seconds", 6), used)
         if found:
-            credits.append(found["credit"])
+            if found["provider"] == "NASA":  # stock libraries (Pixabay, Pexels) need no credit
+                credits.append("NASA")
             print(f"  story {i}: {found['provider']} clip for '{story['broll_query']}'")
         else:
             print(f"  story {i}: no stock clip for '{story['broll_query']}', animated AI image instead")
