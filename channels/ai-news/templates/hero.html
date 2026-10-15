@@ -31,12 +31,15 @@ html, body { width: 1080px; height: 1350px; background: #000; }
 .cta b { display: inline-block; background: #1E7BFF; padding: 0 10px; margin-left: 8px; border-radius: 4px; }
 .source { position: absolute; left: 44px; bottom: 18px; font-family: "Oswald", sans-serif; font-size: 22px;
   color: rgba(255,255,255,.55); letter-spacing: .04em; text-transform: uppercase; }
+{% if layer %}/* video layers: transparent PNGs composited over a moving background */
+html, body, .slide { background: transparent !important; }{% endif %}
 </style>
 </head>
 <body>
 <div class="slide">
-  {% if image %}<img class="bg" src="{{ image }}">{% endif %}
-  <div class="fade"></div>
+  {% if image and not layer %}<img class="bg" src="{{ image }}">{% endif %}
+  {% if layer != "text" %}<div class="fade"></div>{% endif %}
+  {% if layer != "fade" %}
   {% if not cover %}<div class="wordmark">{{ name | upper }}</div>{% endif %}
   {% if pager %}<div class="pager">{{ pager }}</div>{% endif %}
   <div class="text">
@@ -47,11 +50,13 @@ html, body { width: 1080px; height: 1350px; background: #000; }
     {% if cta %}<div class="cta">{{ cta }} <b>›</b></div>{% endif %}
   </div>
   {% if source %}<div class="source">Source: {{ source }}</div>{% endif %}
+  {% endif %}
 </div>
 <script>
 // Shrink headline/facts until the text block fits in the bottom ~45% of the slide.
 window.fitText = function () {
   const box = document.querySelector('.text');
+  if (!box) return;  // fade-only video layer
   const limit = 1350 * 0.47;
   const h = document.querySelector('.fit-h'), f = document.querySelector('.fit');
   for (let i = 0; i < 40 && box.offsetHeight > limit; i++) {

@@ -32,7 +32,7 @@ def _call(method, path, version, **params):
     return data
 
 
-def _wait_ready(container_id, version, timeout=120):
+def _wait_ready(container_id, version, timeout=300):
     deadline = time.time() + timeout
     while time.time() < deadline:
         status = _call("GET", container_id, version, fields="status_code").get("status_code")
@@ -48,7 +48,11 @@ def publish_carousel(image_urls, caption, version):
     ig_user = os.environ["IG_USER_ID"]
     children = []
     for url in image_urls:
-        child = _call("POST", f"{ig_user}/media", version, image_url=url, is_carousel_item="true")["id"]
+        if url.lower().endswith(".mp4"):
+            child = _call("POST", f"{ig_user}/media", version, media_type="VIDEO", video_url=url,
+                          is_carousel_item="true")["id"]
+        else:
+            child = _call("POST", f"{ig_user}/media", version, image_url=url, is_carousel_item="true")["id"]
         children.append(child)
     for child in children:
         _wait_ready(child, version)

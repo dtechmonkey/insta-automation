@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 import yaml
 from dotenv import load_dotenv
 
-from engine import collect, curate, history, host, images, instagram, render
+from engine import collect, curate, history, host, images, instagram, render, video
 
 ROOT = Path(__file__).parent
 CAPTION_LIMIT = 2200
@@ -59,6 +59,21 @@ def find_bg(out_dir, i):
         if path.exists():
             return path
     return out_dir / "bg" / f"{i:02d}.jpg"
+
+
+def slide_backgrounds(out_dir, n_slides):
+    """Background per slide for video clips: an AI motion clip (bg/NN_motion.mp4) if present, else the still.
+    Slide 1 = cover (bg 00), slides 2..n-1 = stories (bg 01..), last slide = outro (reuses the cover)."""
+    def bg(i):
+        motion = out_dir / "bg" / f"{i:02d}_motion.mp4"
+        return motion if motion.exists() else find_bg(out_dir, i)
+    return [bg(0)] + [bg(i) for i in range(1, n_slides - 1)] + [bg(0)]
+
+
+def slide_media(out_dir):
+    """The files to publish, in order: NN.mp4 where a clip was made, otherwise NN.jpg."""
+    stills = sorted(out_dir.glob("[0-9][0-9].jpg"))
+    return [s.with_suffix(".mp4") if s.with_suffix(".mp4").exists() else s for s in stills]
 
 
 def make_images(result, out_dir, cfg):
@@ -144,6 +159,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="make images + caption, don't post")
     ap.add_argument("--force", action="store_true", help="post even if already posted today")
     ap.add_argument("--rerender", metavar="OUTPUT_DIR", help="redraw a saved batch with the current templates (no fetching, no AI, no posting)")
+    ap.add_argument("--video-slides", metavar="N,N", help="with --rerender: also make MP4 clips for these slide numbers (e.g. 1,2,3,4)")
     ap.add_argument("--no-images", action="store_true", help="skip image generation (e.g. to add images by hand into OUTPUT_DIR/bg/)")
     ap.add_argument("--publish-dir", metavar="OUTPUT_DIR", help="publish an already-rendered, reviewed batch as-is (its NN.jpg slides + caption.txt)")
     args = ap.parse_args()
@@ -164,14 +180,19 @@ def main():
         slides = build_slides(result, args.mode, out_dir, cfg)
         render.render_slides(slides, channel_dir / "templates", out_dir, base_context)
         print(f"Re-rendered {len(slides)} slides in {out_dir}")
+        if args.video_slides:
+            numbers = [int(n) for n in args.video_slides.split(",") if n.strip()]
+            video.make_clips(slides, numbers, slide_backgrounds(out_dir, len(slides)),
+                             channel_dir / "templates", base_context, out_dir)
         return
 
     if args.publish_dir:
         out_dir = Path(args.publish_dir)
         result = json.loads((out_dir / "post.json").read_text(encoding="utf-8"))
         caption = (out_dir / "caption.txt").read_text(encoding="utf-8")
-        paths = sorted(out_dir.glob("[0-9][0-9].jpg"))
-        print(f"Publishing saved batch {out_dir.name}: {len(paths)} slides")
+        paths = slide_media(out_dir)
+        print(f"Publishing saved batch {out_dir.name}: {len(paths)} slides "
+              f"({sum(p.suffix == '.mp4' for p in paths)} video)")
         publish(paths, caption, result, args, cfg, channel_dir, hist, local_date, out_dir.name)
         return
 
