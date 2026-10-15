@@ -6,6 +6,8 @@ A slide with no image falls back to the template's plain background, so a failed
 """
 import base64
 import os
+import re
+import subprocess
 import time
 from pathlib import Path
 
@@ -64,6 +66,29 @@ def _hf_space(space, prompt, out_path):
     return Path(out_path)
 
 
+def trim_borders(path, min_keep=0.60, min_trim=0.06):
+    """Crop solid dark bars that some models draw around the picture (a 'framed poster').
+    Uses ffmpeg cropdetect; only trims when the bars are solid and most of the picture remains."""
+    import imageio_ffmpeg
+    ff = imageio_ffmpeg.get_ffmpeg_exe()
+    out = subprocess.run([ff, "-i", str(path), "-vf", "cropdetect=limit=0.08:round=2:reset=0:skip=0", "-f", "null", "-"],
+                         capture_output=True, text=True, timeout=60).stderr
+    crops = re.findall(r"crop=(\d+):(\d+):(\d+):(\d+)", out)
+    size = re.search(r"Stream.*?, (\d{2,5})x(\d{2,5})", out)
+    if not crops or not size:
+        return False
+    w, h, x, y = map(int, crops[-1])
+    W, H = int(size[1]), int(size[2])
+    if w < W * min_keep or h < H * min_keep or w * h > W * H * (1 - min_trim):
+        return False  # nothing worth trimming, or it would cut too much (likely a genuinely dark scene)
+    tmp = Path(path).with_suffix(".trim.jpg")
+    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(path), "-vf", f"crop={w}:{h}:{x}:{y}",
+                    "-q:v", "2", str(tmp)], check=True, timeout=60)
+    tmp.replace(path)  # saved as JPEG under the original name; the renderer detects the real type
+    print(f"  trimmed border: {W}x{H} -> {w}x{h}")
+    return True
+
+
 def generate(prompt, out_path, models, width=1080, height=1350):
     """Save one image to out_path; returns the path or None. Raises QuotaExhausted when Cloudflare's daily allowance is gone.
 
@@ -72,6 +97,7 @@ def generate(prompt, out_path, models, width=1080, height=1350):
     full_prompt = f"{prompt}. {STYLE}"
     for model in [m for m in models if m.startswith("hf:")]:
         if path := _hf_space(model[3:], full_prompt, out_path):
+            trim_borders(path)
             return path
     models = [m for m in models if not m.startswith("hf:")]
     account = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
