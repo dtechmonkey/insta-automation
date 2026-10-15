@@ -29,7 +29,7 @@ STORY_SCHEMA = """{
   "stories": [
     {"id": <id of the input item>,
      "headline": "<2-6 punchy words, like a bold magazine cover line, e.g. 'GLASSES *KILL* PHONES'. Wrap the 1-2 most striking words in *asterisks*. A complete phrase that is dramatic but true.>",
-     "facts": "<2-3 short, punchy sentences, 20-30 words total, packed with the concrete numbers, names and dates from the item. Your own words.>",
+     "facts": "<1-2 short, punchy sentences, 15-25 words total (about 4 lines on the slide), with the most important number, name or date from the item. Your own words.>",
      "caption_line": "<one sentence for the caption list, starting with a fitting emoji; no number>",
      "broll_query": "<2-4 plain English words to search a STOCK FOOTAGE library for a real video clip that fits the story visually, e.g. 'data center servers', 'robot arm factory', 'courtroom gavel', 'rocket launch'. No brand or person names.>",
      "space": <true if the story is about space, rockets, satellites or astronomy, else false>,
@@ -148,8 +148,8 @@ def check_headline(headline, max_words=7):
 def check_story(story):
     problems = check_headline(story.get("headline", ""))
     n = len(story.get("facts", "").split())
-    if not 12 <= n <= 45:
-        problems.append(f"facts have {n} words (need 12-45)")
+    if not 10 <= n <= 28:
+        problems.append(f"facts have {n} words (need 10-28)")
     if not story.get("caption_line", "").strip():
         problems.append("missing caption_line")
     return problems

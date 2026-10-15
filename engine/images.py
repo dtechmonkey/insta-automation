@@ -1,9 +1,8 @@
-"""Generate slide background images with Cloudflare Workers AI (free daily allowance: 10,000 neurons).
+"""Generate slide background images (models tried in order from config images.cover_models / story_models).
 
-Budget: flux-1-schnell costs ~100 neurons per image; lucid-origin is far pricier (~1,000+),
-so it is used for the cover only (config `images.cover_models` vs `images.story_models`).
-A slide with no image falls back to the template's plain background, so a failed image
-never blocks a post.
+  "hf:<space>"  Hugging Face Spaces (Qwen-Image, FLUX.1-dev) on the free ZeroGPU quota (~7 images/day).
+  "@cf/<model>" Cloudflare Workers AI (free 10,000 neurons/day; flux-1-schnell ~100 neurons per image).
+A slide with no image falls back to the template's plain background, so a failed image never blocks a post.
 """
 import base64
 import os
@@ -17,7 +16,14 @@ STYLE = ("vivid cinematic photorealistic digital collage, viral tech-news poster
          "with a large foreground hero subject, detailed midground elements and glowing holographic charts and data "
          "overlays, bright dramatic lighting with electric blue and warm orange highlights, saturated colors, "
          "sharp focus, ultra detailed, epic and high-energy, main subject in the upper two-thirds of the frame, "
-         "the bottom quarter darker and simple, no readable text, no captions, no watermark")
+         "the bottom quarter darker and simple, full-bleed composition filling the entire frame edge to edge, "
+         "no frame, no border, no margins, no readable text, no captions, no watermark")
+
+# How to call each supported Hugging Face Space (each has its own API).
+HF_SPACES = {
+    "mcp-tools/Qwen-Image": {"api": "/generate_image", "args": {"aspect_ratio": "3:4"}},
+    "black-forest-labs/FLUX.1-dev": {"api": "/infer", "args": {"width": 864, "height": 1080}},
+}
 
 
 class QuotaExhausted(RuntimeError):
@@ -38,17 +44,19 @@ def _body(model, prompt, width, height):
 
 
 def _hf_space(space, prompt, out_path):
-    """Hugging Face Space (e.g. Qwen-Image) via gradio_client; free ZeroGPU quota. Returns path or None."""
+    """Hugging Face Space via gradio_client on the free ZeroGPU quota. Returns path or None."""
     token = os.environ.get("HF_TOKEN", "").strip()
-    if not token:
+    spec = HF_SPACES.get(space)
+    if not token or not spec:
         return None
     from gradio_client import Client  # imported lazily: only needed for hf: models
     try:
         client = Client(space, token=token, verbose=False)
-        result, _seed = client.predict(prompt=prompt, aspect_ratio="3:4", api_name="/generate_image")
+        out = client.predict(prompt=prompt, api_name=spec["api"], **spec["args"])
     except Exception as e:  # busy Space, quota used up, Space down: fall through to the next model
         print(f"  ! hf:{space}: {str(e)[:150]}")
         return None
+    result = out[0] if isinstance(out, (list, tuple)) else out
     path = result if isinstance(result, str) else (result or {}).get("path")
     if not path:
         return None

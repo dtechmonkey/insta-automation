@@ -27,14 +27,14 @@ ai:
     - "gemini-3.5-flash-lite"
   tone: "clear, energetic and factual; written for a curious non-expert audience"
 
-images:                         # tried in order; "hf:" = Hugging Face Space (free GPU quota), "@cf/" = Cloudflare (10,000 neurons/day)
-  cover_models:
-    - "hf:mcp-tools/Qwen-Image"
-    - "@cf/leonardo/lucid-origin"   # ~1,000+ neurons
-    - "@cf/black-forest-labs/flux-1-schnell"
-  story_models:
+images:                         # tried in order; "hf:" = Hugging Face Space (free GPU quota, ~7 images/day), "@cf/" = Cloudflare (10,000 neurons/day)
+  cover_models:                 # Qwen: best at combining several stories into one collage
     - "hf:mcp-tools/Qwen-Image"
     - "@cf/black-forest-labs/flux-1-schnell"   # ~100 neurons
+  story_models:                 # used only where no stock/NASA/press video was found
+    - "hf:black-forest-labs/FLUX.1-dev"        # most photorealistic
+    - "hf:mcp-tools/Qwen-Image"
+    - "@cf/black-forest-labs/flux-1-schnell"
 
 instagram:
   api_version: "v23.0"
