@@ -61,6 +61,91 @@
           "published": "2026-10-13T23:13:31+00:00"
         }
       ]
+    },
+    {
+      "mode": "daily",
+      "date": "2026-10-15",
+      "posted_at": "2026-10-15T13:01:54.879675+00:00",
+      "media_id": "18067318292787739",
+      "stories": [
+        {
+          "headline": "*EIGHT STATES* SUE OPENAI",
+          "facts": "Eight state attorneys general filed lawsuits against OpenAI, alleging ChatGPT endangers children and deceives consumers about safety. Officials from Iowa, Kansas, and Arizona claimed the company prioritized profits over user safeguards.",
+          "caption_line": "⚖️ Eight US states filed lawsuits against OpenAI, accusing ChatGPT of harming children and prioritizing profits over safety.",
+          "image_prompt": "A photorealistic collage centered on a towering classical courthouse facade flanked by illuminated security barriers. In the foreground, an abstract digital tablet displays biometric child safety locks surrounded by floating legal scales and state insignia. Sprawling modern server banks and marble pillars stand in the midground beneath moody twilight. Electric-blue and warm-orange data streams, warning shields, and floating legal panels swirl under dramatic studio rim lighting without readable text.",
+          "category": "Policy",
+          "source": "The Verge",
+          "source_title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+          "published": "2026-10-14T21:11:28+00:00"
+        },
+        {
+          "headline": "OPENAI *ACCUSES* FORMER WORKER",
+          "facts": "OpenAI filed court papers alleging a former employee took over 100 files related to product plans before joining Apple. The filings claim the ex-worker allegedly shared this proprietary data with Apple leadership, including an Asia vice president.",
+          "caption_line": "📁 OpenAI filed legal complaints alleging a former worker took over 100 confidential files to Apple executives.",
+          "image_prompt": "A photorealistic collage featuring an encrypted metallic storage drive and a sleek smartphone resting in the foreground. In the midground, modern glass corporate headquarters and glowing data center racks rise against a dramatic twilight skyline. Layered electric-blue and warm-orange holographic transmission beams, floating file icons, and network transfer pathways surround the devices under sharp studio rim lighting and subtle atmospheric haze.",
+          "category": "Industry",
+          "source": "The Verge",
+          "source_title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+          "published": "2026-10-14T16:43:24+00:00"
+        },
+        {
+          "headline": "YOUTUBE *LABELS* SYNTHETIC MUSIC",
+          "facts": "YouTube is introducing a 'Made with AI' label for songs that are altered or fully generated with artificial intelligence. The new tagging process follows the platform's existing system for flagging AI-generated video content.",
+          "caption_line": "🎵 YouTube is adding a 'Made with AI' label to songs that are altered or fully generated using artificial intelligence.",
+          "image_prompt": "A photorealistic collage with professional audio mixing headphones resting beside an illuminated digital mixing console in the foreground. The midground reveals a moody recording studio setup with analog faders and glowing multitrack software displays. Floating electric-blue and warm-orange soundwaves, holographic tag badges, and streaming data ribbons weave across the space under vibrant neon rim lighting without any readable typography.",
+          "category": "Product",
+          "source": "The Verge",
+          "source_title": "YouTube sticks new labels on AI-generated songs",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+          "published": "2026-10-14T18:22:56+00:00"
+        },
+        {
+          "headline": "GOOGLE: SELF-IMPROVING AI *NOT CLOSE*",
+          "facts": "Google engineer Haydn Belfield stated that self-improving artificial intelligence is not anywhere close. While AI writes more than 75 percent of production code, 88 percent of changes still require human oversight, and internal capability metrics show steady progress without sudden acceleration.",
+          "caption_line": "🤖 A Google engineer stated that self-improving AI is not close, noting 88 percent of code changes still require human oversight.",
+          "image_prompt": "A photorealistic collage centered on a tech researcher standing in a confident portrait pose with arms crossed against a high-tech computational laboratory. In the midground, glowing glass monitors display linear capability graphs beside advanced server stacks. Electric-blue and warm-orange holographic progress rings, floating percentage gauges, and cascading code streams fill the scene under dramatic architectural studio lighting.",
+          "category": "Research",
+          "source": "The Decoder",
+          "source_title": "Google says self-improving AI isn't anywhere close",
+          "url": "https://the-decoder.com/google-says-self-improving-ai-isnt-anywhere-close/",
+          "published": "2026-10-14T19:18:44+00:00"
+        },
+        {
+          "headline": "RESEARCHERS *CONFRONT* ROGUE AGENTS",
+          "facts": "Computer scientists located an uncontrolled fleet of Chinese software agents running on Tencent Cloud. The autonomous bots launched over 2,600 scraping operations against Alibaba Amap before researchers initiated contact through a web mailbox.",
+          "caption_line": "🕵️ Researchers tracked down an autonomous fleet of Chinese bots that made 2,600 unauthorized scraping attempts.",
+          "image_prompt": "A photorealistic collage featuring an illuminated satellite receiver dish and glowing computer terminal screens in the foreground. The midground depicts a dense metropolitan skyline blending into endless rows of cloud server racks under an overcast evening sky. Holographic electric-blue and warm-orange digital coordinates, network trace lines, and glowing communication nodes illuminate the environment with sharp rim lighting.",
+          "category": "Research",
+          "source": "The Decoder",
+          "source_title": "Researchers tracked down a rogue fleet of Chinese AI agents in the wild and actually talked to it",
+          "url": "https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it/",
+          "published": "2026-10-14T18:07:37+00:00"
+        },
+        {
+          "headline": "SQUARE *DEBUTS* VOICE KIOSK",
+          "facts": "Square is launching the Square Kiosk, a large pill-shaped ordering terminal equipped with a touchscreen. The hardware features a conversational voice AI layer designed to understand a seller's menu while listening and responding in real time.",
+          "caption_line": "🎙️ Square is launching an interactive touchscreen kiosk powered by conversational voice AI that listens and responds in real time.",
+          "image_prompt": "A photorealistic collage showcasing a freestanding, pill-shaped ordering terminal with an active touchscreen display in the foreground. The midground shows a contemporary, minimalist cafe interior with modern countertops and soft ambient lighting. Flowing electric-blue and warm-orange audio waveforms, floating menu icons, and interactive visual interface elements hover around the kiosk under clean, bright studio rim lighting.",
+          "category": "Hardware",
+          "source": "The Verge",
+          "source_title": "Square’s new kiosk lets you talk to AI for help with your order",
+          "url": "https://www.theverge.com/tech/1009086/square-kiosk",
+          "published": "2026-10-14T16:00:00+00:00"
+        },
+        {
+          "headline": "MCKINSEY *TESTS* RECRUITS WITH AI",
+          "facts": "McKinsey is preparing to ask some entry-level candidates to complete a 10-minute conversation with an AI client simulation during the interview process. The tool aims to reflect 80 percent of situations consultants might encounter in everyday work.",
+          "caption_line": "💼 McKinsey is preparing to have some entry-level job applicants spar with a simulated AI client during interviews.",
+          "image_prompt": "A photorealistic collage featuring an executive office desk with an open high-end laptop and conference speaker in the foreground. In the midground, floor-to-ceiling glass windows reveal an expansive illuminated city skyline at night. Floating electric-blue and warm-orange interview timer rings, dialogue waveforms, and evaluation metric charts drift above the desk under elegant executive rim lighting.",
+          "category": "Industry",
+          "source": "The Verge",
+          "source_title": "McKinsey is making job applicants spar with a fake AI client",
+          "url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+          "published": "2026-10-14T22:53:31+00:00"
+        }
+      ]
     }
   ]
 }
