@@ -1,0 +1,110 @@
+id: p009
+plan: "D5 1 PM · Practical"
+topic: "Practical life · age 2–3"
+keyword: KITCHEN
+slides:
+  - kind: cover
+    title: "6 safe kitchen jobs for a *2-year-old*"
+    body: "Yes, really"
+    prompt: >-
+      A bright Indian kitchen with a 2-year-old South Asian girl standing on a sturdy wooden learning tower at
+      the counter beside her mother, both preparing vegetables together, smiling. Keep the figures in the lower
+      60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Tear *coriander*"
+    body: "Pull leaves off the stems into a bowl. Great for little fingers."
+    prompt: >-
+      Close view of a toddler's small hands pulling coriander leaves off their stems into a small steel bowl on
+      a low table. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Peel a *banana*"
+    body: "Start the top for them, then let them finish."
+    prompt: >-
+      A 2-year-old South Asian boy sitting at a small table proudly peeling a banana, the top already started,
+      a plate in front of him. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Stir* the batter"
+    body: "A big bowl, a wooden spoon, cold ingredients only."
+    prompt: >-
+      A 2-year-old South Asian girl stirring cold dosa or cake batter in a large steel bowl with a wooden spoon,
+      her father holding the bowl steady. Keep the figures in the lower 60% of the frame. Leave the top 35% as
+      an empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Wash and *carry*"
+    body: "Wash potatoes in a bowl, then carry them to the counter."
+    prompt: >-
+      A 2-year-old South Asian boy carrying a small basket of washed potatoes across an Indian kitchen, looking
+      proud and careful. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Wipe* the table"
+    body: "A small damp cloth after meals. They'll love the 'big' job."
+    prompt: >-
+      A 2-year-old South Asian girl wiping a low dining table with a small cloth after a meal, sweeping crumbs
+      into her hand. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft cream
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Messy now. *Capable* forever."
+    body: "Which job will your little one try first?"
+    prompt: >-
+      A South Asian mother and her 2-year-old son sitting at a low table eating a simple snack they made
+      together, the child smiling with pride. Keep the figures in the lower 55% of the frame. Leave the top 40%
+      as an empty, soft sage-green watercolor wash, reserved for text.
+caption: |
+  The kitchen is the best Montessori classroom in your home. 🍳
+
+  Toddlers don't want pretend kitchens. They want to help with YOUR cooking. Real jobs build focus, coordination, and the feeling “I'm part of this family.”
+
+  6 safe jobs for a 2-year-old:
+  🌿 Tearing coriander leaves
+  🍌 Peeling a banana
+  🥣 Stirring cold batter
+  🥔 Washing and carrying vegetables
+  🍅 Washing tomatoes
+  🧽 Wiping the table
+
+  Always supervise, and keep them away from the stove, knives and hot pans. A sturdy step stool or learning tower helps a lot.
+
+  Which job will your little one try first? 👇
+hashtags: >-
+  #montessori #montessoriathome #practicallife #toddlerinthekitchen #cookingwithkids #montessoriindia
+  #2yearold #toddleractivities #indianmoms #learningtower #letmetry #lifeskills
+printable:
+  title: "Kitchen Jobs by Age"
+  subtitle: "A fridge chart for ages 2–4"
+  intro: >-
+    Choose one job per day. Show it slowly once, then let them try. Always supervise, and keep the stove,
+    knives and hot pans out of reach.
+  sections:
+    - heading: "Age 2"
+      items:
+        - "Tear coriander, methi or spinach leaves"
+        - "Peel a banana or a boiled egg"
+        - "Wash vegetables in a bowl of water"
+        - "Stir cold batter"
+        - "Carry unbreakable things to the table"
+        - "Wipe the table with a damp cloth"
+    - heading: "Age 3"
+      items:
+        - "Spread butter or chutney with a butter knife"
+        - "Cut soft foods (banana, boiled potato) with a crinkle cutter"
+        - "Measure and pour dry ingredients"
+        - "Roll small balls of dough"
+        - "Set the table using a placemat outline"
+    - heading: "Age 4"
+      items:
+        - "Grate cheese or carrot (with a grater guard)"
+        - "Squeeze lemons"
+        - "Roll a small roti"
+        - "Wash and dry steel plates"
+        - "Make a simple snack: bhel, fruit chaat, sandwiches"
+    - heading: "Make it work"
+      items:
+        - "A sturdy step stool or learning tower at the counter"
+        - "Child-sized tools: small bowl, wooden spoon, crinkle cutter"
+        - "An apron and a cloth within reach"
+        - "Plan extra time. Cooking with toddlers is slow, and that's the point."
+  sources:
+    - label: "Montessori, M. The Discovery of the Child (practical life)."

@@ -1,0 +1,87 @@
+id: p022
+plan: "D11 7:30 PM · Warm"
+topic: "Connection · all ages"
+keyword: HEART
+slides:
+  - kind: cover
+    title: "What your toddler wants you to *know*"
+    body: "(if they had the words)"
+    prompt: >-
+      A 2-year-old South Asian girl looking up lovingly at her mother, holding the edge of her dupatta, the
+      mother bending down to her. Soft golden light. Keep the figures in the lower 60% of the frame. Leave the
+      top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "“I'm not giving you a hard time.”"
+    body: "“I'm having a hard time.”"
+    prompt: >-
+      A 2-year-old South Asian boy crying on the floor next to a dropped biscuit, his father kneeling down
+      gently towards him. Soft, empathetic tone. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "“I want to *help*.”"
+    body: "“Even if I'm slow. Even if I spill.”"
+    prompt: >-
+      A 2-year-old South Asian girl carrying a small stack of folded towels very carefully across a room, her
+      tongue out in concentration. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "“When you put the phone down…”"
+    body: "“…I feel like the most important person in the world.”"
+    prompt: >-
+      A father lying on the floor face to face with his 2-year-old South Asian son, both laughing, a phone lying
+      ignored far away on a sofa. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "“I still love you when you're *angry*.”"
+    body: "“Please love me when I am.”"
+    prompt: >-
+      A 3-year-old South Asian girl with an angry face being hugged gently by her mother, who has a calm, soft
+      expression. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "They're little for such a *short* time."
+    body: "Send this to someone who needs it today 💛"
+    prompt: >-
+      A South Asian mother holding her toddler's small hand as they walk away together down a sunlit lane,
+      seen from behind. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  If toddlers could explain themselves, maybe they'd say this. 💛
+
+  “I'm not giving you a hard time. I'm having a hard time.”
+  “I want to help, even if I'm slow.”
+  “When you put the phone down, I feel like the most important person in the world.”
+  “I still love you when you're angry. Please love me when I am.”
+
+  They're little for such a short time.
+
+  Send this to someone who needs it today 👇
+hashtags: >-
+  #toddlerlife #gentleparenting #parentingquotes #montessori #indianparents #indianmoms #momlife
+  #dadlife #consciousparenting #childhood #letmetry #connectionnotperfection
+printable:
+  title: "10 Connection Rituals for Busy Parents"
+  subtitle: "Small moments, big impact · All ages"
+  intro: >-
+    Connection doesn't need hours. It's built in small, daily moments of full attention. Pick two rituals and
+    make them part of every day.
+  sections:
+    - heading: "Daily rituals"
+      items:
+        - "A 10-minute 'special time': phone away, child leads the play"
+        - "A long hug at the door before work and after coming home"
+        - "One meal a day together, without screens"
+        - "A bedtime question: “What was the best part of your day?”"
+        - "A silly family song for bath time"
+    - heading: "When they're struggling"
+      items:
+        - "Get to their eye level"
+        - "Name what you see: “That was really hard.”"
+        - "Stay close, even if they push you away"
+        - "Reconnect after a conflict: “We're okay. I love you.”"
+    - heading: "Remember"
+      items:
+        - "Toddler 'misbehaviour' is often a need: tired, hungry, overwhelmed or wanting you."
+        - "You don't have to get it right every time. Repair matters more than perfection."
+  sources:
+    - label: "Siegel, D. J., & Bryson, T. P. (2011). The Whole-Brain Child. Delacorte Press."

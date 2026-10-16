@@ -1,0 +1,114 @@
+id: p002
+plan: "D1 7:30 PM · Debate"
+topic: "Child psychology · ages 2–4"
+keyword: PRAISE
+slides:
+  - kind: cover
+    title: "Stop saying *“Good job!”*"
+    body: "Say this instead."
+    prompt: >-
+      A 3-year-old South Asian girl proudly shows a colourful crayon drawing to her father, who sits beside her
+      on a floor cushion, looking at the drawing with genuine curiosity rather than clapping. Warm living room,
+      a low table with crayons. Keep both figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Why *“Good job”* falls flat"
+    body: "Said 50 times a day, it becomes noise. Kids start working for the praise, not the joy."
+    prompt: >-
+      A 2-year-old South Asian boy stacking wooden blocks into a tall tower, glancing over his shoulder towards
+      an adult for approval instead of looking at his tower. Soft play-corner setting, rug, gentle light. Keep
+      the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Describe what you *see*"
+    body: "“You used so many colours!” It tells them you really looked."
+    prompt: >-
+      Close view of a mother kneeling next to her 3-year-old South Asian daughter, pointing gently at a
+      painting full of bright colours on a small easel, both smiling. Paint pots and a brush on a low stool.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Notice the *effort*"
+    body: "“You kept trying until it fit.” Effort is what they can control."
+    prompt: >-
+      A 2-year-old South Asian boy concentrating hard as he fits a wooden shape into a shape-sorter box, his
+      grandfather in a kurta watching patiently beside him on the floor. Keep the figures in the lower 60% of
+      the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Ask about *their* feeling"
+    body: "“You look proud. How did you do it?” Let the joy be theirs."
+    prompt: >-
+      A beaming 3-year-old South Asian girl holding up a small clay pot she made, looking at it with pride,
+      while her mother sits nearby with an encouraging smile. Simple home table with clay and a cloth. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Less praise. More *presence*."
+    body: "Agree or disagree? Tell us below."
+    prompt: >-
+      A warm moment of a father and his 2-year-old South Asian son sitting together on the floor looking at a
+      picture book, the child pointing at the page and the father listening closely. Cosy reading corner with a
+      cushion and a small plant. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty,
+      soft sage-green watercolor wash, reserved for text.
+caption: |
+  “Good job!” is the most common thing we say to toddlers, and one of the least useful. 😮
+
+  It isn't wrong. It's just empty. Said all day, kids stop hearing it, or start doing things only to hear it.
+
+  Research on praise shows that children praised for effort and process keep trying longer than children praised for being “good” or “smart”.
+
+  Try these swaps:
+  👀 Describe: “You used so many colours!”
+  💪 Notice effort: “You kept trying until it fit.”
+  💛 Ask: “You look proud. How did you do it?”
+
+  You don't have to be perfect. Swap one “good job” a day and watch what happens.
+
+  Agree or disagree? 👇
+hashtags: >-
+  #gentleparenting #positiveparenting #montessori #montessoriathome #parentingtips #toddlerlife
+  #indianparents #indianmoms #childpsychology #growthmindset #letmetry #mindfulparenting
+printable:
+  title: "Instead of “Good Job”: 30 Phrases That Build Confidence"
+  subtitle: "What the research says about praise · Ages 2–4"
+  intro: >-
+    Praise isn't bad. But praise that labels the child (“good girl”, “so smart”) can make children more
+    cautious and more dependent on approval. Praise that describes what they did helps them keep trying.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children praised for intelligence chose easier tasks and gave up faster after failure than children praised for effort (Mueller & Dweck, 1998)."
+        - "Toddlers whose parents used more process praise at ages 1–3 had a stronger 'I can learn' mindset five years later (Gunderson et al., 2013)."
+    - heading: "Describe what you see"
+      items:
+        - "“You used red, yellow and blue!”"
+        - "“You put every block back in the basket.”"
+        - "“You poured it slowly so it didn't spill.”"
+        - "“You buttoned that one all by yourself.”"
+        - "“You drew a really long line here.”"
+    - heading: "Notice the effort"
+      items:
+        - "“You kept trying until it fit.”"
+        - "“That was tricky, and you didn't give up.”"
+        - "“You tried a new way.”"
+        - "“You worked on that for a long time.”"
+        - "“You practised, and now it's easier.”"
+    - heading: "Ask, so the joy stays theirs"
+      items:
+        - "“How did you do it?”"
+        - "“Which part was hardest?”"
+        - "“What will you try next?”"
+        - "“You look proud. Are you?”"
+        - "“Tell me about your picture.”"
+    - heading: "Thank them for helping"
+      items:
+        - "“Thank you for setting the table. Now we can eat together.”"
+        - "“You helped Dadi carry the bag. That was kind.”"
+        - "“You shared your crayons with Riya. She looks happy.”"
+    - heading: "Remember"
+      text: >-
+        You don't need to remove every “good job”. Aim for fewer, and add one describing sentence after it:
+        “Good job! You put all the spoons away.”
+  sources:
+    - label: "Mueller, C. M., & Dweck, C. S. (1998). Praise for intelligence can undermine children's motivation and performance. Journal of Personality and Social Psychology, 75(1), 33–52."
+    - label: "Gunderson, E. A., et al. (2013). Parent praise to 1- to 3-year-olds predicts children's motivational frameworks 5 years later. Child Development, 84(5), 1526–1541."

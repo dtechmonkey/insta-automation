@@ -1,0 +1,96 @@
+id: p020
+plan: "D10 7:30 PM · Debate"
+topic: "Play · ages 2–4"
+keyword: BORED
+slides:
+  - kind: cover
+    title: "Unpopular opinion: Boredom is *good* for your child"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy lying on his back on a rug, staring at the ceiling, looking bored, a few
+      simple household objects (a cardboard box, a spoon, a cloth) nearby. Keep the child in the lower 60% of
+      the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Boredom comes *before* creativity"
+    body: "When nothing is planned, kids invent. That's where imagination grows."
+    prompt: >-
+      The same 3-year-old South Asian boy now sitting inside a cardboard box pretending it's a car, steering
+      with a steel plate, grinning. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Don't *rescue* with a screen"
+    body: "The first 10 minutes are the hardest. Wait them out."
+    prompt: >-
+      A phone lying face-down on a high shelf while, below, a 3-year-old South Asian girl starts arranging
+      cushions into a fort. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Offer *open-ended* things"
+    body: "Boxes, cloths, spoons, blocks: objects with no 'right' way to play."
+    prompt: >-
+      A low basket filled with open-ended items: a cardboard tube, colourful cloths, wooden spoons, steel bowls,
+      pegs, in a sunny corner. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "*“I'm bored”* is not your emergency"
+    body: "“Hmm, I wonder what you'll think of.” Then step back."
+    prompt: >-
+      A mother calmly drinking chai at a table while her 3-year-old South Asian son walks off thinking, finger
+      on chin, towards a basket of toys. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Let them be *bored*. Watch what happens."
+    body: "Agree or disagree? 👇"
+    prompt: >-
+      Two South Asian toddlers giggling under a blanket fort made of chairs and dupattas in a living room. Keep
+      the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  “Mumma, I'm bored!” …and before we know it, the phone comes out. 📱
+
+  But boredom isn't a problem to fix. It's often the step right before creativity. Researchers who study boredom find it can push people to look for new ideas and things to do.
+
+  Try this:
+  ⏳ Wait out the first 10 minutes (they're the hardest)
+  📦 Keep open-ended things around: boxes, cloths, spoons, blocks
+  🙅 Don't rescue with a screen
+  🤔 Say: “Hmm, I wonder what you'll think of.”
+
+  Cardboard-box cars and dupatta forts are born from boredom. 🌿
+
+  Agree or disagree? 👇
+hashtags: >-
+  #boredom #openendedplay #unstructuredplay #montessori #montessoriathome #screentime #indianparents
+  #indianmoms #creativekids #childpsychology #letmetry #playbasedlearning
+printable:
+  title: "The Boredom Basket"
+  subtitle: "Open-ended play ideas · Ages 2–4"
+  intro: >-
+    Children don't need constant entertainment. A basket of open-ended objects, plus a little patience from
+    you, can turn 'I'm bored' into an hour of play.
+  sections:
+    - heading: "What the research suggests"
+      items:
+        - "In experiments, people who did a boring task first came up with more creative ideas afterwards (Mann & Cadman, 2014)."
+        - "Researchers describe boredom as a signal that pushes us to seek new activities and ideas."
+    - heading: "Fill the basket with"
+      items:
+        - "Cardboard boxes and tubes"
+        - "Old dupattas or cloths"
+        - "Wooden spoons, steel bowls and katoris"
+        - "Clothes pegs and a basket"
+        - "Blocks, pebbles, shells (for children who no longer mouth objects)"
+        - "Paper, crayons, tape"
+    - heading: "When they say 'I'm bored'"
+      items:
+        - "“I wonder what you'll come up with.”"
+        - "“You can choose something from the basket.”"
+        - "“I'm doing my work. You can do yours nearby.”"
+        - "Then step back for 10 minutes."
+    - heading: "What NOT to do"
+      items:
+        - "Rush in with a screen or a new toy"
+        - "Plan every minute of the day"
+        - "Fix their game for them"
+  sources:
+    - label: "Mann, S., & Cadman, R. (2014). Does being bored make us more creative? Creativity Research Journal, 26(2), 165–173."

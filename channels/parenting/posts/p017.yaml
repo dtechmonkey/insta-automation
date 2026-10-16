@@ -1,0 +1,109 @@
+id: p017
+plan: "D9 1 PM · Practical"
+topic: "Language · age 2–3"
+keyword: WORDS
+slides:
+  - kind: cover
+    title: "First words to first *sentences*"
+    body: "5 everyday language games"
+    prompt: >-
+      A mother and her 2-year-old South Asian son sitting on the kitchen floor naming vegetables from a basket,
+      the child holding up a tomato and talking excitedly. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Narrate* your day"
+    body: "“I'm cutting the onion. Now the onion goes in the pan.” Like a commentary."
+    prompt: >-
+      A father talking cheerfully while folding laundry as his 2-year-old South Asian daughter sits beside him
+      holding a sock, listening. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "The *three-period* lesson"
+    body: "“This is a spoon.” → “Show me the spoon.” → “What is this?”"
+    prompt: >-
+      A low table with three real objects (a steel spoon, a small cup and a ball) in a row, a mother and a
+      2-year-old South Asian boy sitting in front of them, the child pointing at the spoon. Keep the figures in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Add *one* word"
+    body: "Child: “Ball!” You: “Red ball!” Stretch their sentence by one."
+    prompt: >-
+      A 2-year-old South Asian girl holding up a red ball and saying something, her grandfather crouching and
+      responding with a big smile in a garden. Keep the figures in the lower 60% of the frame. Leave the top 35%
+      as an empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Pause* and wait"
+    body: "Ask, then count to 5 in your head. Give them time to answer."
+    prompt: >-
+      A mother looking expectantly and patiently at her 2-year-old South Asian son, who is thinking with his
+      finger on his chin, a picture book open between them. Keep the figures in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Talk in *your* language"
+    body: "Hindi, Tamil, Bengali, English: rich talk in any language builds language."
+    prompt: >-
+      A grandmother telling a story with expressive hand gestures to her enchanted 3-year-old South Asian
+      granddaughter, both sitting on a charpai-style bed. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: outro
+    title: "Talk *with* them, not at them."
+    body: "What's your toddler's funniest word right now? 😄"
+    prompt: >-
+      A father and his 2-year-old South Asian son laughing together, face to face, lying on a rug. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  Toddlers don't learn to talk from flashcards or apps. They learn from back-and-forth conversation with you. 🗣️
+
+  Research shows it's not just how many words a child hears, but how many conversational turns they take (you talk, they respond, you respond) that shapes their language brain.
+
+  5 everyday games:
+  🎙️ Narrate what you're doing
+  🥄 The Montessori three-period lesson
+  ➕ Add one word to theirs: “Ball!” → “Red ball!”
+  ⏸️ Ask, then wait 5 seconds
+  🏡 Talk in the language you're most fluent in
+
+  What's your toddler's funniest word right now? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #languagedevelopment #toddlertalk #speechdevelopment #montessori #montessoriathome #bilingualkids
+  #indianparents #indianmoms #2yearold #earlylearning #letmetry #parentingtips
+printable:
+  title: "Everyday Language Games"
+  subtitle: "From first words to first sentences · Ages 1½–3"
+  medical: true
+  intro: >-
+    Children learn language through warm, back-and-forth conversation. These games fit into meals, bath time,
+    walks and chores. No materials needed.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "The number of conversational turns children took with adults was linked to stronger language skills and brain activity in language areas (Romeo et al., 2018)."
+    - heading: "The three-period lesson (Montessori)"
+      items:
+        - "1. Name it: hold up a spoon. “This is a spoon.” Repeat with 2 more objects."
+        - "2. Recognise it: “Show me the spoon.” “Give me the cup.” Play this the longest."
+        - "3. Recall it: “What is this?” Only when they're confident."
+        - "Use real objects: fruits, vegetables, kitchen tools, clothes."
+    - heading: "Everyday talk"
+      items:
+        - "Narrate: “I'm pouring the milk. It's cold!”"
+        - "Expand: child says “Dog!”, you say “Big brown dog!”"
+        - "Wait: ask, then count to 5 silently."
+        - "Ask open questions: “What happened?” “What should we do?”"
+        - "Sing rhymes and songs with actions."
+    - heading: "Bilingual homes"
+      text: >-
+        Speaking your home language richly does not confuse children. Use the language you're most fluent and
+        expressive in, and let children pick up others too.
+    - heading: "When to check with a doctor"
+      items:
+        - "No words by about 16 months"
+        - "No two-word phrases by about 2 years"
+        - "Losing words or skills they had before"
+  sources:
+    - label: "Romeo, R. R., et al. (2018). Beyond the 30-million-word gap: Children's conversational exposure is associated with language-related brain function. Psychological Science, 29(5), 700–710."
+    - label: "Montessori, M. The Absorbent Mind (language)."

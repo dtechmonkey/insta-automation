@@ -1,0 +1,99 @@
+id: p010
+plan: "D5 7:30 PM · Debate"
+topic: "Motor development · ages 0–2"
+keyword: WALKER
+slides:
+  - kind: cover
+    title: "Myth: baby walkers help babies *walk*"
+    body: ""
+    prompt: >-
+      A 9-month-old South Asian baby sitting in a wheeled baby walker in a home hallway, looking towards a
+      staircase in the background, a gentle cautionary mood. Keep the subject in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Fact: they don't speed up *walking*"
+    body: "Studies found no benefit, and some found walkers delayed walking."
+    prompt: >-
+      An empty wheeled baby walker standing in the corner of a room, softly lit, with a baby's shoes beside it.
+      Calm, simple composition. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "They cause many *injuries*"
+    body: "Falls down stairs, tipping over, reaching hot things. Paediatricians call for a ban."
+    prompt: >-
+      A home staircase with a safety gate at the top and a soft rug at the bottom, gentle afternoon light,
+      no people, calm and safe. Keep the scene in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Instead: *floor* time"
+    body: "Tummy time, rolling, crawling. Babies build strength on the floor."
+    prompt: >-
+      A happy 7-month-old South Asian baby doing tummy time on a soft mat, reaching for a colourful wooden
+      rattle, a mother lying on the mat facing the baby. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Then: *pull up* and push"
+    body: "A sturdy low table to cruise along, a heavy push toy for first steps."
+    prompt: >-
+      A 11-month-old South Asian baby pulling up to stand at a low wooden coffee table, holding on with both
+      hands, beaming. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Their own feet, their own *time*."
+    body: "Did you use a walker? Many of us did. Share this with a new parent 💛"
+    prompt: >-
+      A South Asian baby taking first wobbly steps towards a father kneeling with open arms on a soft rug,
+      warm light. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  The baby walker is a gift at almost every Indian baby shower. But the science isn't on its side. 🚼
+
+  ❌ Myth: walkers help babies walk earlier
+  ✅ Fact: studies found no benefit, and some found babies in walkers walked later
+
+  Walkers also cause thousands of injuries every year, mostly falls down stairs, which is why the American Academy of Pediatrics has called for a ban.
+
+  What helps instead:
+  🤸 Lots of floor time: tummy time, rolling, crawling
+  🪑 A sturdy low table to pull up and cruise along
+  🛒 A heavy, stable push toy for first steps
+
+  If you used a walker, don't feel guilty. Most of us did. Now we know better. 💛
+
+  Share this with someone expecting a baby 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #babywalker #babydevelopment #babymilestones #montessoribaby #montessori #newparents #indianparents
+  #indianmoms #babysafety #tummytime #letmetry #firststeps
+printable:
+  title: "Baby Walkers: What the Research Says"
+  subtitle: "And how to support walking instead · Ages 0–2"
+  medical: true
+  intro: >-
+    Walking is a skill babies build from the floor up: rolling, sitting, crawling, pulling up, cruising,
+    then walking. Walkers skip those steps and add risk.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Over 230,000 children under 15 months in the US were treated for walker-related injuries between 1990 and 2014, most from falls down stairs (Sims et al., 2018)."
+        - "The American Academy of Pediatrics has called for a ban on the manufacture and sale of baby walkers."
+        - "Babies who used walkers sat, crawled and walked later than babies who didn't, in a UK study (Garrett et al., 2002)."
+    - heading: "Support walking instead"
+      items:
+        - "0–6 months: daily tummy time on a firm mat, toys just out of reach."
+        - "6–9 months: lots of floor time to roll, sit and crawl."
+        - "9–12 months: a sturdy low table or sofa to pull up and cruise."
+        - "12+ months: a heavy, stable push toy; barefoot on safe floors."
+    - heading: "Safety at home"
+      items:
+        - "Safety gates at the top and bottom of stairs"
+        - "Secure heavy furniture to the wall"
+        - "Keep hot drinks and pan handles out of reach"
+    - heading: "Normal range"
+      text: >-
+        Most babies walk between 9 and 18 months. If your child isn't walking by about 18 months, talk to your
+        paediatrician.
+  sources:
+    - label: "Sims, A., et al. (2018). Baby walker-related injuries in the United States. Pediatrics, 142(4)."
+    - label: "Garrett, M., McElroy, A. M., & Staines, A. (2002). Locomotor milestones and babywalkers: cross sectional study. BMJ, 324, 1494."

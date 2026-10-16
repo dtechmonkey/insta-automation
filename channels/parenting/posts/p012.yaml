@@ -1,0 +1,109 @@
+id: p012
+plan: "D6 7:30 PM · Debate"
+topic: "Discipline · ages 2–4"
+keyword: GENTLE
+slides:
+  - kind: cover
+    title: "*“One slap fixes everything,”*"
+    body: "said every dadi. Here's what we know now."
+    prompt: >-
+      A warm, affectionate South Asian grandmother in a soft cotton saree sitting on a sofa, gesturing as if
+      giving advice to her daughter, who holds a toddler on her lap and listens politely. Respectful, loving
+      tone. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft cream watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "It stops the behaviour *today*"
+    body: "But it teaches fear, not why. The behaviour usually comes back."
+    prompt: >-
+      A 3-year-old South Asian boy sitting alone on a step with his knees pulled up, looking down sadly. Soft,
+      gentle, non-graphic. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Research links it to more *aggression*"
+    body: "Children who are hit tend to hit more. Paediatricians advise against it."
+    prompt: >-
+      Two South Asian toddlers on a play rug, one about to push the other, a parent's hand gently reaching in
+      to stop it. Soft, calm tone. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Instead: *connect*, then correct"
+    body: "Get down to their level. Name the feeling. Hold the limit."
+    prompt: >-
+      A mother kneeling at eye level with her upset 3-year-old South Asian daughter, holding both her hands and
+      speaking calmly. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Use natural *consequences*"
+    body: "“You threw the blocks, so blocks go away for now.” Calm, not cruel."
+    prompt: >-
+      A father calmly putting a basket of wooden blocks on a high shelf while his 2-year-old South Asian son
+      watches, a little disappointed but calm. Keep the figures in the lower 60% of the frame. Leave the top 35%
+      as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Love them, *and* respect elders"
+    body: "Our elders raised us with love. We can honour them and still do it differently."
+    prompt: >-
+      A grandmother and a young South Asian mother laughing together while a toddler sits between them on a
+      sofa, playing with the grandmother's bangles. Warm, loving tone. Keep the figures in the lower 60% of the
+      frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: outro
+    title: "Firm *and* kind. Both."
+    body: "How do you handle this in your family? 👇"
+    prompt: >-
+      A South Asian family moment: grandparent, parent and toddler sitting together on the floor reading a
+      picture book, everyone relaxed and smiling. Keep the figures in the lower 55% of the frame. Leave the top
+      40% as an empty, soft sage-green watercolor wash, reserved for text.
+caption: |
+  “We got slapped and we turned out fine.” Most of us have heard this, from people who love us deeply. 💛
+
+  But decades of research now point the same way: physical punishment stops behaviour in the moment, yet is linked to more aggression and more behaviour problems over time. The American Academy of Pediatrics advises against it.
+
+  What works better:
+  🧎 Get to their level and connect first
+  🏷️ Name the feeling: “You're angry. I won't let you hit.”
+  🧱 Hold the limit calmly
+  🔁 Use natural consequences, not pain
+
+  This isn't about blaming our parents. They did their best with what they knew. We know more now. 🌿
+
+  How do you handle this in your family? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #gentleparenting #positivediscipline #nospanking #montessori #parentingtips #indianparents #indianmoms
+  #grandparents #childpsychology #consciousparenting #letmetry #respectfulparenting
+printable:
+  title: "What to Do Instead of Hitting"
+  subtitle: "Calm discipline that works · Ages 2–4"
+  medical: true
+  intro: >-
+    Discipline means teaching. Children learn best from adults who are calm, clear and consistent. Here are
+    tools that work in the real moments: hitting, throwing, refusing.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "A large review of studies found spanking linked to more aggression, more behaviour problems and poorer parent-child relationships, and not to better behaviour (Gershoff & Grogan-Kaylor, 2016)."
+        - "The American Academy of Pediatrics recommends against spanking and harsh verbal discipline (Sege & Siegel, 2018)."
+    - heading: "In the moment"
+      items:
+        - "Stop the action: “I won't let you hit.” Gently hold their hands."
+        - "Name the feeling: “You're really angry that it's time to go.”"
+        - "Keep your voice low and slow. Your calm is contagious."
+        - "Move them to a quieter spot if needed."
+    - heading: "After the storm"
+      items:
+        - "Reconnect with a hug or sitting together."
+        - "Teach what to do instead: “When you're angry, you can stamp your feet or squeeze a pillow.”"
+        - "Repair together if something got broken or someone got hurt."
+    - heading: "Prevent the next one"
+      items:
+        - "Predictable routines for meals, sleep and outings"
+        - "Warnings before transitions: “Five more minutes, then shoes.”"
+        - "Two choices instead of commands: “Red cup or blue cup?”"
+    - heading: "Talking with grandparents"
+      text: >-
+        Lead with respect: “You raised us with so much love. We're trying something new that the doctors
+        recommend. Can you help us?” Ask them to call you in for discipline moments.
+  sources:
+    - label: "Gershoff, E. T., & Grogan-Kaylor, A. (2016). Spanking and child outcomes: Old controversies and new meta-analyses. Journal of Family Psychology, 30(4), 453–469."
+    - label: "Sege, R. D., Siegel, B. S., & AAP Council on Child Abuse and Neglect (2018). Effective discipline to raise healthy children. Pediatrics, 142(6)."

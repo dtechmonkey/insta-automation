@@ -1,0 +1,98 @@
+id: p024
+plan: "D12 7:30 PM · Debate"
+topic: "Emotions · ages 2–4"
+keyword: CRY
+slides:
+  - kind: cover
+    title: "Stop saying *“Don't cry.”*"
+    body: "What to say instead"
+    prompt: >-
+      A 3-year-old South Asian boy crying with tears on his cheeks after falling in a park, his father kneeling
+      down beside him with a gentle hand on his shoulder. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Crying is how they *cope*"
+    body: "Tears release stress. Stopping them doesn't stop the feeling."
+    prompt: >-
+      A 2-year-old South Asian girl crying softly into her mother's shoulder while being held, the mother calm
+      and swaying gently. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Name* the feeling"
+    body: "“You're sad the balloon flew away.” Feeling understood calms them faster."
+    prompt: >-
+      A 3-year-old South Asian girl looking up at a red balloon floating away into the sky, her mother crouching
+      beside her and pointing up gently, both looking at it. Keep the figures in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Allow* it, then limit it"
+    body: "“It's okay to cry. It's not okay to throw.” Feelings yes, hurting no."
+    prompt: >-
+      A father gently holding his upset 3-year-old South Asian son's wrist to stop him throwing a toy car, while
+      speaking calmly at eye level. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Every child *needs* to cry"
+    body: "Boys and girls alike. Kids who can feel can heal."
+    prompt: >-
+      Two South Asian toddlers, a boy and a girl, each being comforted in a caregiver's lap on a sofa, both
+      calming down. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Feelings *felt* are feelings that pass."
+    body: "Were you told 'don't cry' as a kid? 👇"
+    prompt: >-
+      A 3-year-old South Asian boy now smiling with dried tears, hugging his father in a sunny park. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  “Don't cry, it's nothing!” We say it to help. But to a child, it can sound like: “Your feelings are wrong.” 😢
+
+  Research on 'emotion coaching' shows that children whose parents notice, name and accept their emotions learn to calm down better over time.
+
+  Try this instead:
+  🏷️ Name it: “You're sad the balloon flew away.”
+  🤍 Allow it: “It's okay to cry. I'm here.”
+  🧱 Limit actions, not feelings: “You can cry. You can't throw.”
+  ⏳ Wait. Feelings that are felt, pass.
+
+  Were you told “don't cry” as a kid? 👇
+hashtags: >-
+  #emotioncoaching #bigfeelings #gentleparenting #emotionalintelligence #montessori #indianparents
+  #indianmoms #childpsychology #toddlertantrums #parentingtips #letmetry #feelingsarevalid
+printable:
+  title: "Instead of 'Don't Cry': 20 Phrases"
+  subtitle: "Emotion coaching scripts · Ages 2–4"
+  intro: >-
+    When a child cries, our instinct is to make it stop. But the fastest way through a big feeling is to feel
+    understood. These phrases help.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Parents who use emotion coaching (noticing, naming and accepting emotions) have children with better emotional regulation (Gottman, 1997)."
+        - "A parenting programme teaching emotion coaching reduced children's behaviour problems (Havighurst et al., 2010)."
+    - heading: "Name the feeling"
+      items:
+        - "“You're sad the park time is over.”"
+        - "“You're so frustrated the tower fell.”"
+        - "“You're disappointed it's not the blue cup.”"
+        - "“That scared you.”"
+    - heading: "Accept it"
+      items:
+        - "“It's okay to cry.”"
+        - "“I'm here. Take your time.”"
+        - "“That was really hard.”"
+        - "“I'd feel sad too.”"
+    - heading: "Set a limit on actions (not feelings)"
+      items:
+        - "“You can be angry. I won't let you hit.”"
+        - "“You can cry. Throwing isn't okay.”"
+        - "“You can stamp your feet instead.”"
+    - heading: "After the storm"
+      items:
+        - "“You felt really sad, and now you feel better.”"
+        - "“What could we do next time?”"
+        - "A hug, a drink of water, back to play."
+  sources:
+    - label: "Gottman, J. (1997). Raising an Emotionally Intelligent Child. Simon & Schuster."
+    - label: "Havighurst, S. S., et al. (2010). Tuning in to Kids: Improving emotion socialization practices in parents of preschool children. Journal of Child Psychology and Psychiatry, 51(12), 1342–1350."

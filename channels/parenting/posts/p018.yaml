@@ -1,0 +1,105 @@
+id: p018
+plan: "D9 7:30 PM · Debate"
+topic: "Feeding · ages 2–4"
+keyword: PLATE
+slides:
+  - kind: cover
+    title: "Agree or disagree? Your child doesn't have to *finish their plate*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl at a dining table pushing a half-finished plate of rice and dal away and
+      patting her tummy, her mother looking on calmly. Keep the figures in the lower 60% of the frame. Leave the
+      top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Kids are born knowing when they're *full*"
+    body: "Pushing 'one more bite' teaches them to ignore that signal."
+    prompt: >-
+      A grandmother holding a spoon out towards a 2-year-old South Asian boy who has his lips pressed shut and
+      head turned away, gentle and humorous tone. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "You decide *what* and *when*"
+    body: "Serve healthy food at regular times. That's your job."
+    prompt: >-
+      A father placing a steel thali with roti, dal, sabzi and cut fruit on a low table at lunchtime, a clock on
+      the wall. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "They decide *how much*"
+    body: "Even if it's two bites. Appetites change day to day."
+    prompt: >-
+      A 3-year-old South Asian boy happily eating a small portion by himself at a low table, a parent eating
+      beside him. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Small portions, *seconds* allowed"
+    body: "Start small. They can always ask for more."
+    prompt: >-
+      A 3-year-old South Asian girl holding up her empty small plate and asking for more, her mother smiling and
+      reaching for the serving bowl. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Trust their *tummy*."
+    body: "Were you made to finish your plate as a kid? 👇"
+    prompt: >-
+      A relaxed South Asian family meal on the floor around a low table, a toddler eating with her hands, every
+      one chatting happily. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  “Finish your plate, food shouldn't be wasted.” Most of us grew up hearing this. But for little kids, it can backfire. 🍽️
+
+  Children are born with a good sense of when they're full. Pressure to “eat one more bite” teaches them to override that signal. In a classic study, children trained to clean their plates paid less attention to their own fullness.
+
+  Feeding experts recommend a simple split:
+  👩 Parents decide WHAT, WHEN and WHERE
+  🧒 Children decide WHETHER and HOW MUCH
+
+  Serve small portions (less waste!), allow seconds, and keep calm when they stop early. Over a week, it balances out.
+
+  Were you made to finish your plate as a kid? 👇
+
+  (General information, not medical advice. Talk to your paediatrician about any concerns over weight or growth.)
+hashtags: >-
+  #responsivefeeding #toddlermeals #pickyeater #gentleparenting #montessori #indianparents #indianmoms
+  #toddlerfood #intuitiveeating #parentingtips #letmetry #healthykids
+printable:
+  title: "The Division of Responsibility in Feeding"
+  subtitle: "Calmer mealtimes, less pressure · Ages 2–4"
+  medical: true
+  intro: >-
+    Feeding battles leave everyone stressed. The 'division of responsibility' gives parents and children each
+    a clear job, and takes the pressure off.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children rewarded for cleaning their plates became less responsive to their own fullness cues (Birch et al., 1987)."
+        - "Dietitian Ellyn Satter's 'division of responsibility' is widely used by feeding specialists to reduce mealtime conflict."
+    - heading: "Your job (parent)"
+      items:
+        - "Decide what food is served"
+        - "Decide when meals and snacks happen (about every 2–3 hours)"
+        - "Decide where: at the table, together, without screens"
+        - "Include at least one food your child usually eats"
+    - heading: "Their job (child)"
+      items:
+        - "Decide whether to eat"
+        - "Decide how much to eat"
+    - heading: "Things to avoid"
+      items:
+        - "“One more bite” and bribing with dessert"
+        - "Praising a clean plate"
+        - "Cooking a separate meal every time they refuse"
+    - heading: "Things that help"
+      items:
+        - "Small portions, seconds allowed (less waste, too)"
+        - "Eating together and enjoying your own food"
+        - "Offering new foods many times, without pressure"
+        - "Ending the meal calmly when they're done"
+    - heading: "When to check"
+      text: >-
+        If your child is losing weight, has very few accepted foods, or meals involve choking or vomiting,
+        speak to your paediatrician.
+  sources:
+    - label: "Birch, L. L., McPhee, L., Shoba, B. C., Steinberg, L., & Krehbiel, R. (1987). 'Clean up your plate': Effects of child feeding practices on the conditioning of meal size. Learning and Motivation, 18(3), 301–317."
+    - label: "Ellyn Satter Institute: The Division of Responsibility in Feeding."
+      url: "https://www.ellynsatterinstitute.org/"

@@ -1,0 +1,103 @@
+id: p023
+plan: "D12 1 PM · Practical"
+topic: "Routines · age 2–3"
+keyword: BEDTIME
+slides:
+  - kind: cover
+    title: "The 10-minute routine that ends *bedtime battles*"
+    body: ""
+    prompt: >-
+      A calm, dimly lit child's bedroom at night, a 2-year-old South Asian boy in pyjamas choosing a picture
+      book from a low shelf while his mother waits on the bed. Warm lamp light. Keep the figures in the lower 60%
+      of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Same *order*, every night"
+    body: "Bath, pyjamas, brush, book, cuddle, lights off. Predictable = calm."
+    prompt: >-
+      A row of simple illustrated picture cards on a wall at child height showing bath, pyjamas, toothbrush,
+      book and bed, a toddler's hand pointing at one. Keep the subject in the lower 60% of the frame. Leave the
+      top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Dim* the lights early"
+    body: "Lights low and screens off an hour before bed helps the body get sleepy."
+    prompt: >-
+      A cosy living room in the evening with only a soft lamp on, a toddler playing quietly with blocks on a rug
+      and a parent nearby. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Give two *choices*"
+    body: "“This book or that one?” “Blue pyjamas or yellow?” Control without battles."
+    prompt: >-
+      A 2-year-old South Asian girl in a towel choosing between two pairs of pyjamas held up by her father,
+      pointing at the yellow one. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "The *same* last words"
+    body: "A song, a phrase, a kiss. The signal that the day is done."
+    prompt: >-
+      A mother kissing the forehead of her sleepy 2-year-old South Asian son tucked into bed with a soft toy,
+      night light glowing. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Routine is *love* they can predict."
+    body: "What time does your toddler sleep? 👇"
+    prompt: >-
+      A peaceful sleeping 2-year-old South Asian girl in a small bed hugging a soft elephant toy, moonlight
+      through the window. Keep the subject in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  If bedtime is a nightly battle, the fix is usually not stricter rules. It's a predictable routine. 🌙
+
+  Research finds that young children with a consistent bedtime routine fall asleep faster, wake less at night and sleep longer, and the effect grows the more nights the routine happens.
+
+  The simple version:
+  📋 Same order every night: bath, pyjamas, brush, book, cuddle
+  💡 Dim lights and screens off an hour before
+  🎯 Two small choices: which book, which pyjamas
+  🎵 The same last song or words every night
+
+  Picture cards on the wall help toddlers follow along on their own. 🌿
+
+  What time does your toddler sleep? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #bedtimeroutine #toddlersleep #sleeptips #gentleparenting #montessori #routinesforkids #indianparents
+  #indianmoms #2yearold #parentingtips #letmetry #calmparenting
+printable:
+  title: "Bedtime Routine Picture Cards"
+  subtitle: "Print, cut and stick at child height · Ages 2–4"
+  medical: true
+  intro: >-
+    Toddlers cooperate more when they know what comes next. Stick these steps on the wall in order, and let
+    your child point to each one as you go.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children with a nightly bedtime routine fell asleep faster, woke less and slept longer, and more nights of routine meant better sleep (Mindell et al., 2015)."
+    - heading: "The routine (about 30 minutes)"
+      items:
+        - "1. Bath or wash up"
+        - "2. Pyjamas (two to choose from)"
+        - "3. Brush teeth"
+        - "4. Toilet"
+        - "5. One or two books (child chooses)"
+        - "6. Cuddle and the same goodnight song"
+        - "7. Lights off, night light on"
+    - heading: "An hour before bed"
+      items:
+        - "Lights low"
+        - "Screens off"
+        - "Calm play: puzzles, books, drawing"
+    - heading: "If they keep getting up"
+      items:
+        - "Walk them back calmly with few words"
+        - "Same response every time"
+        - "Offer a 'one more hug' token they can use once"
+    - heading: "How much sleep?"
+      text: >-
+        Children aged 1–2 years generally need 11–14 hours in 24 hours (including naps), and ages 3–5 need
+        10–13 hours. Talk to your paediatrician about persistent sleep problems.
+  sources:
+    - label: "Mindell, J. A., Li, A. M., Sadeh, A., Kwon, R., & Goh, D. Y. T. (2015). Bedtime routines for young children: A dose-dependent association with sleep outcomes. Sleep, 38(5), 717–722."
+    - label: "World Health Organization (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age."

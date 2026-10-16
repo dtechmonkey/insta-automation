@@ -1,0 +1,96 @@
+id: p026
+plan: "D13 7:30 PM · Debate"
+topic: "Early learning · ages 2–4"
+keyword: PLAY
+slides:
+  - kind: cover
+    title: "Myth: Flashcards at 2 make kids *smarter*"
+    body: ""
+    prompt: >-
+      A 2-year-old South Asian boy sitting at a table looking away and bored while a stack of picture flash cards
+      lies in front of him, and through the window you can see a garden. Gentle humour. Keep the subject in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Memorising isn't *understanding*"
+    body: "Naming 100 cards is a party trick. Real learning comes from real things."
+    prompt: >-
+      A 2-year-old South Asian girl holding a real apple and smelling it, an illustrated card with an apple
+      lying forgotten on the floor beside her. Keep the child in the lower 60% of the frame. Leave the top 35% as
+      an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Play* builds the brain"
+    body: "Stacking, pouring, pretending: that's where thinking, language and focus grow."
+    prompt: >-
+      A 3-year-old South Asian boy deeply absorbed in building a tall tower of wooden blocks on a rug, sunny
+      room. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Talk* beats tapping"
+    body: "Conversations with you build more language than any app or video."
+    prompt: >-
+      A grandmother and a 2-year-old South Asian girl talking and laughing together while shelling peas into a
+      bowl on a verandah. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Real* experiences"
+    body: "A trip to the sabzi mandi teaches more colours, words and numbers than a deck of cards."
+    prompt: >-
+      A father holding his 3-year-old South Asian son's hand at a colourful vegetable market, the child pointing
+      at a pile of bright orange carrots. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Less drilling. More *living*."
+    body: "Agree or disagree? 👇"
+    prompt: >-
+      A 2-year-old South Asian girl joyfully splashing in a small puddle in rain boots, her mother laughing
+      beside her with an umbrella. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty,
+      soft sage-green watercolor wash, reserved for text.
+caption: |
+  Flashcards, baby apps, “learn 100 words” videos… so many products promise a smarter toddler. The research says otherwise. 🃏
+
+  Children learn best through hands-on play, real experiences and conversation. In one study, babies who watched a popular 'learn words' video for a month learned no more words than babies who never watched it. The most learning happened when parents taught words in everyday interaction.
+
+  What actually builds young brains:
+  🧱 Play with real objects
+  🗣️ Back-and-forth conversation
+  🥕 Real experiences: the market, the park, the kitchen
+  📚 Reading together (talking about pictures, not drilling)
+
+  Agree or disagree? 👇
+hashtags: >-
+  #playbasedlearning #earlychildhood #montessori #montessoriathome #flashcards #toddlerlearning
+  #indianparents #indianmoms #childdevelopment #learningthroughplay #letmetry #parentingtips
+printable:
+  title: "Play Beats Flashcards: What the Research Says"
+  subtitle: "And 20 everyday learning moments · Ages 2–4"
+  intro: >-
+    Young children learn by doing, touching, talking and exploring. Drilling facts can look impressive, but
+    real understanding grows through play and everyday life.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Infants who watched a popular vocabulary DVD for a month learned no more words than those who didn't; the most learning happened when parents taught words in everyday interaction (DeLoache et al., 2010)."
+        - "Developmental scientists argue play and conversation build the foundations of learning better than early drilling (Hirsh-Pasek, Golinkoff & Eyer, 2003)."
+    - heading: "Everyday learning moments"
+      items:
+        - "Count spoons while setting the table"
+        - "Name colours at the sabzi market"
+        - "Compare big and small potatoes"
+        - "Sort laundry by colour"
+        - "Talk about the weather on the balcony"
+        - "Spot shapes on a walk: round wheels, square windows"
+        - "Measure and pour while cooking"
+        - "Sing rhymes in your home language"
+        - "Read and talk about the pictures"
+        - "Pretend play: shop, doctor, kitchen"
+    - heading: "Good 'learning toys'"
+      items:
+        - "Blocks"
+        - "Simple puzzles"
+        - "Play dough"
+        - "Kitchen tools"
+        - "Books"
+        - "Open-ended objects: boxes, cloths, pegs"
+  sources:
+    - label: "DeLoache, J. S., et al. (2010). Do babies learn from baby media? Psychological Science, 21(11), 1570–1574."
+    - label: "Hirsh-Pasek, K., Golinkoff, R. M., & Eyer, D. (2003). Einstein Never Used Flash Cards. Rodale."

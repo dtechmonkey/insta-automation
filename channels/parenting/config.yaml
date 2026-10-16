@@ -5,6 +5,13 @@ timezone: "Asia/Kolkata"
 
 publish_times: ["13:00", "19:30"]   # IST; add "21:30" for a third daily post
 
+# Prefixed to every slide's Gemini prompt (a post may override with its own `style:`)
+image_style: >-
+  Soft watercolor illustration in a gentle children's picture-book style. Pastel palette of sage green,
+  soft peach, warm cream and dusty blue. Visible paper texture, loose soft brush edges, light washes,
+  warm natural light. Calm, airy, uncluttered composition. Portrait orientation, 4:5 aspect ratio.
+  Absolutely no text, letters, numbers, captions, logos or watermarks anywhere in the image.
+
 hashtags_max: 12
 
 # Last slide + caption call to action for the free printable:

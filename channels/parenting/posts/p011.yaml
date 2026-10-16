@@ -1,0 +1,95 @@
+id: p011
+plan: "D6 1 PM · Practical"
+topic: "Self-care · age 3–4"
+keyword: DRESS
+slides:
+  - kind: cover
+    title: "Dressing *alone*: the jacket flip"
+    body: "and 3 more tricks for 3-year-olds"
+    prompt: >-
+      A 3-year-old South Asian boy standing in a hallway, swinging a small jacket over his head in the famous
+      Montessori 'jacket flip', arms going into the sleeves, laughing. Keep the child in the lower 60% of the
+      frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "The jacket *flip*"
+    body: "Jacket on the floor, hood at their feet. Arms in, flip it over the head. Done!"
+    prompt: >-
+      A 3-year-old South Asian girl crouching with a small jacket laid open on the floor, hood near her toes,
+      putting her arms into the sleeves. Keep the child in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Sit* for pants"
+    body: "Sitting on the floor or a low stool makes legs much easier."
+    prompt: >-
+      A 3-year-old South Asian boy sitting on a low wooden stool pulling on a pair of soft pyjama pants, one leg
+      in. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Tag at the *back*"
+    body: "Teach them to find the tag. Lay the t-shirt face down, tag at the top."
+    prompt: >-
+      Close view of small hands smoothing a child's t-shirt laid face down on a bed, the small tag visible at
+      the neck. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Two *choices*"
+    body: "Lay out two outfits the night before. They choose, you avoid battles."
+    prompt: >-
+      A 3-year-old South Asian girl looking happily between two small outfits laid out on a low bed, pointing at
+      one, her mother sitting nearby. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "*“I did it myself!”*"
+    body: "The best 10 extra minutes of your morning."
+    prompt: >-
+      A proud 3-year-old South Asian boy fully dressed with his jacket on, arms out in a 'ta-da' pose in front of
+      a small mirror, his father clapping behind him. Keep the figures in the lower 55% of the frame. Leave the
+      top 40% as an empty, soft sage-green watercolor wash, reserved for text.
+caption: |
+  Mornings feel faster when we dress them ourselves. But by 3, most children can do much of it alone, with a few tricks. 👕
+
+  🧥 The jacket flip: jacket on the floor, hood at their toes, arms in, flip over the head
+  🪑 Sit down for pants and socks
+  🏷️ Find the tag: lay the t-shirt face down, tag at the top
+  👗 Offer two outfits the night before
+
+  Start on weekends, when there's time. Inside-out and back-to-front? Let it go. They did it themselves. 🌿
+
+  Which trick will you try first? 👇
+hashtags: >-
+  #montessori #montessoriathome #selfcare #toddlerindependence #practicallife #montessoriindia
+  #3yearold #morningroutine #indianmoms #parentinghacks #letmetry #lifeskills
+printable:
+  title: "Dressing Alone: Step-by-Step Cards"
+  subtitle: "Self-care · Ages 2½–4"
+  intro: >-
+    Dressing is a long sequence of small skills. Teach one at a time, on calm days, and expect inside-out
+    shirts for a while. That's progress.
+  sections:
+    - heading: "The jacket flip"
+      items:
+        - "Lay the jacket on the floor, open, inside facing up."
+        - "Child stands at the hood end, toes near the hood."
+        - "Crouch, put both arms into the sleeves."
+        - "Lift and flip it over the head. Arms slide in."
+    - heading: "Pants and socks"
+      items:
+        - "Sit on the floor or a low stool."
+        - "One leg in, then the other. Stand up, pull up."
+        - "Socks: roll them first, then pull over the toes."
+    - heading: "T-shirt"
+      items:
+        - "Lay it face down, tag at the top, near the child."
+        - "Arms in first, then the head."
+        - "Or head first, then arms. Let them choose what works."
+    - heading: "Set up for success"
+      items:
+        - "Easy clothes: elastic waists, big buttons, velcro shoes"
+        - "A low hook or drawer they can reach"
+        - "A small mirror at their height"
+        - "Two outfit choices laid out the night before"
+    - heading: "Timing"
+      text: >-
+        Start on weekends or holidays. Add 10 minutes to school mornings once they're confident.
+  sources:
+    - label: "Montessori, M. The Discovery of the Child (care of the self)."

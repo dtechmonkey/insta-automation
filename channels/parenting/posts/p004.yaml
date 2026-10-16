@@ -1,0 +1,108 @@
+id: p004
+plan: "D2 7:30 PM · Debate"
+topic: "Feeding · ages 1–4"
+keyword: KHANA
+slides:
+  - kind: cover
+    title: "Phone during *khana* time?"
+    body: "What it's really costing your child"
+    prompt: >-
+      A 2-year-old South Asian boy sitting in a high chair with his eyes fixed on a phone propped against a
+      bowl, while a mother absent-mindedly spoons food into his open mouth. Simple kitchen-dining setting.
+      Gentle, non-judgemental mood. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "They stop *feeling* full"
+    body: "Eyes on a screen means bites go in on autopilot. Hunger and fullness cues get missed."
+    prompt: >-
+      Close view of a toddler's small hands resting still on a high-chair tray beside an untouched bowl,
+      while a glowing phone screen lights the child's face. Soft, muted palette. Keep the subject in the lower
+      60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "They miss the *food*"
+    body: "Colours, smells, textures: meals are how toddlers learn to like new foods."
+    prompt: >-
+      A curious 2-year-old South Asian girl at a small table touching and smelling a piece of cut mango, a
+      plate with roti, dal and colourful vegetables in front of her. Keep the child in the lower 60% of the
+      frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "They miss *you*"
+    body: "Mealtime talk is one of the richest language moments of the day."
+    prompt: >-
+      A South Asian family of three sitting on the floor around a low table sharing a meal, the father talking
+      and the 3-year-old laughing, plates of simple Indian food. Warm evening light. Keep the figures in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Try this *instead*"
+    body: "Eat together. Small portions. Let them self-feed, even if it's messy."
+    prompt: >-
+      A 2-year-old South Asian boy happily feeding himself rice and dal with his hand, a little mess around his
+      plate, his mother eating beside him and smiling. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Screens off. *Plates* on."
+    body: "Honest question: does your family eat with screens? No judgement 💛"
+    prompt: >-
+      A cheerful South Asian mother and her 2-year-old daughter sharing a meal at a low table, the child
+      offering her mother a piece of roti, a phone lying face-down out of focus on a shelf. Keep the figures in
+      the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+caption: |
+  “He only eats if the phone is on.” If that's your home, you are not alone, and it's not a parenting failure. 📱
+
+  But here's what the research says: when a child's eyes are on a screen, they eat on autopilot. They stop noticing when they're full, and they miss the colours, smells and textures that teach them to enjoy food.
+
+  The WHO recommends no screen time under age 2, and no more than 1 hour a day for ages 2–4.
+
+  Start small:
+  🍽️ One screen-free meal a day
+  👨‍👩‍👧 Eat together, at the same time
+  🥄 Smaller portions, more self-feeding
+  🗣️ Talk about the food: “This mango is so juicy!”
+
+  The first 3–4 days are hard. Then it gets easier. 🌿
+
+  Honest question: does your family eat with screens? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #screentime #toddlermeals #pickyeating #mindfuleating #gentleparenting #montessori #indianparents
+  #indianmoms #parentingtips #toddlerfood #letmetry #responsivefeeding
+printable:
+  title: "Screen-Free Mealtimes: A 7-Day Plan"
+  subtitle: "For toddlers who 'only eat with the phone' · Ages 1–4"
+  medical: true
+  intro: >-
+    Screens at meals usually start as a lifesaver. Moving away from them works best gradually, with a clear
+    routine and lots of company at the table.
+  sections:
+    - heading: "What the guidance says"
+      items:
+        - "The WHO recommends no sedentary screen time for children under 2, and no more than 1 hour a day for ages 2–4."
+        - "The American Academy of Pediatrics advises keeping mealtimes screen-free for the whole family."
+    - heading: "The 7-day plan"
+      items:
+        - "Days 1–2: Pick one meal, usually breakfast, and make it screen-free. Sit and eat with them."
+        - "Days 3–4: Add a small 'job' before the meal: carrying spoons, pouring water."
+        - "Days 5–6: Make a second meal screen-free. Talk about the food's colour, smell and crunch."
+        - "Day 7: Phones go in a basket during meals, for everyone."
+    - heading: "Things that help"
+      items:
+        - "Smaller portions. They can always ask for more."
+        - "Let them self-feed, with hands or a small spoon."
+        - "Meals at the same times every day, without snacks just before."
+        - "Keep meals short: 20–30 minutes, then calmly clear the plate."
+        - "Expect them to eat less for a few days. Appetites balance out over the week."
+    - heading: "Talk instead of scroll"
+      items:
+        - "“What colour is your sabzi?”"
+        - "“Is the roti soft or crunchy?”"
+        - "“Who should we save a piece for?”"
+    - heading: "When to ask a doctor"
+      text: >-
+        If your child is losing weight, often gags or vomits at meals, or eats very few foods, speak to your
+        paediatrician.
+  sources:
+    - label: "World Health Organization (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age."
+      url: "https://www.who.int/publications/i/item/9789241550536"
+    - label: "AAP Council on Communications and Media (2016). Media and Young Minds. Pediatrics, 138(5)."
