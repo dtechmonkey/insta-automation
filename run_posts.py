@@ -16,6 +16,7 @@ import html
 import json
 import random
 import re
+import sys
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -338,6 +339,7 @@ def main():
     ap.add_argument("--status", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+    sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252
 
     load_dotenv(ROOT / ".env")
     channel_dir = ROOT / "channels" / args.channel

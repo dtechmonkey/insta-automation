@@ -37,6 +37,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-color-emoji   # emoji on slides
 
       - name: Build and publish
         env:
