@@ -146,6 +146,112 @@
           "published": "2026-10-14T22:53:31+00:00"
         }
       ]
+    },
+    {
+      "mode": "daily",
+      "date": "2026-10-16",
+      "posted_at": "2026-10-16T13:03:29.410028+00:00",
+      "media_id": "18134841301731534",
+      "stories": [
+        {
+          "headline": "META UNVEILS *DESKTOP* MAC MODEL",
+          "facts": "Meta collaborated with Apple to launch Muse Spark Open, an open-weight model that runs on two Apple M5 Ultra Mac Studios using the MLX framework.",
+          "caption_line": "💻 Meta partnered with Apple on Muse Spark Open, an open-weight model capable of running on two M5 Ultra Mac Studios.",
+          "image_prompt": "Photorealistic collage featuring a sleek, minimalist desktop workstation with two glowing silver computer blocks prominently in the foreground. In the midground, illuminated server racks and glass high-rise windows show an evening tech campus. Floating neon holographic wiring diagrams and neural network webs hover overhead in electric-blue and warm-orange tones. Cinematic studio rim lighting accentuates metal textures and glowing circuits, with no readable text anywhere.",
+          "broll_query": "desktop computer desk",
+          "space": false,
+          "company": "Meta",
+          "category": "Model Release",
+          "source": "The Verge",
+          "source_title": "Meta and Apple team up to make Muse AI models run better on Macs",
+          "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+          "published": "2026-10-15T18:15:36+00:00"
+        },
+        {
+          "headline": "ANTHROPIC *GROWTH* SLOWS BEFORE IPO",
+          "facts": "Anthropic generated $16.8 billion in third-quarter revenue, but growth slowed to 45 percent from Q2's 140 percent surge ahead of a planned November IPO.",
+          "caption_line": "📈 Anthropic generated $16.8 billion in Q3 revenue as growth slowed ahead of its planned November IPO.",
+          "image_prompt": "Photorealistic layered composition showcasing a glowing digital financial monument in the foreground surrounded by stacked translucent glass data cubes. In the midground, silhouettes of Wall Street pillars and bustling stock exchange monitors create depth. Neon holographic stock index bars and ascending trend arrows rise into the air. Lit by dramatic warm-orange sunset rays contrasted with electric-blue ambient glow, casting realistic shadows, with no readable text.",
+          "broll_query": "stock exchange floor",
+          "space": false,
+          "company": "Anthropic",
+          "category": "Industry",
+          "source": "The Decoder",
+          "source_title": "Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO",
+          "url": "https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo/",
+          "published": "2026-10-15T09:50:43+00:00"
+        },
+        {
+          "headline": "AI SOLVES *COMPLEX* PHYSICS PROBLEMS",
+          "facts": "GPT-6-Astra solved 49 of 50 unpublished theoretical physics calculations on the TheoPhysEval benchmark at a cost of $2.40 apiece.",
+          "caption_line": "⚛️ GPT-6-Astra successfully solved 49 out of 50 unpublished theoretical physics calculations at just $2.40 apiece.",
+          "image_prompt": "Photorealistic collage with a glowing spherical quantum particle emitter floating boldly in the foreground. In the midground, a dark research laboratory filled with laser prisms, optical benches, and chalkboards creates deep atmosphere. Translucent holographic orbital trajectories, mathematical geometry shapes, and energy lines glow in electric-blue and fiery warm-orange light. Crisp studio lighting highlights polished glass lenses and metallic laboratory frames, with no readable text.",
+          "broll_query": "physics laboratory equipment",
+          "space": false,
+          "company": "OpenAI",
+          "category": "Research",
+          "source": "The Decoder",
+          "source_title": "GPT-6-Astra solves 49 of 50 physics research problems at $2.40 apiece",
+          "url": "https://the-decoder.com/gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-40-apiece/",
+          "published": "2026-10-15T15:24:15+00:00"
+        },
+        {
+          "headline": "FTC *PROBES* TOP AI LABS",
+          "facts": "The FTC is probing Anthropic and OpenAI, with potential fines on par with penalties for companies that delay reporting data breaches.",
+          "caption_line": "⚖️ The FTC is probing Anthropic and OpenAI, weighing penalties comparable to delayed data breach reporting fines.",
+          "image_prompt": "Photorealistic dramatic scene centered on a heavy brass scale of justice resting atop polished mahogany in the foreground. The midground reveals the imposing columns of a federal government building under a twilight sky alongside digital server arrays. Floating holographic shield icons, legal document outlines, and pulsing compliance checkmarks glow in electric-blue and warm-orange hues. Moody theatrical lighting casts deep shadows across the neoclassical architecture, with no readable text.",
+          "broll_query": "courtroom gavel legal",
+          "space": false,
+          "company": "FTC",
+          "category": "Policy",
+          "source": "Ars Technica",
+          "source_title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+          "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+          "published": "2026-10-15T15:43:24+00:00"
+        },
+        {
+          "headline": "NVIDIA DROPS *ALWAYS-ON* AGENT MODELS",
+          "facts": "Nvidia released Nemotron 3.5 Super VL, an open 120-billion-parameter model designed for specialized always-on agents, alongside two new edge models.",
+          "caption_line": "⚡ Nvidia rolled out Nemotron 3.5 Super VL, an open 120-billion-parameter model tailored for specialized always-on agents.",
+          "image_prompt": "Photorealistic high-tech collage centered on a massive, intricately etched semiconductor processor pulsing with light on an inspection pedestal. Behind it in the midground, rows of illuminated high-density enterprise server racks stretch toward the ceiling in an industrial facility. Glowing holographic node meshes, agent flowcharts, and glowing data highways hover in electric-blue and bright warm-orange. Sharp edge lighting creates striking reflections across metallic casing, with no readable text.",
+          "broll_query": "data center servers",
+          "space": false,
+          "company": "NVIDIA",
+          "category": "Open Source",
+          "source": "NVIDIA",
+          "source_title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+          "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+          "published": "2026-10-15T15:00:24+00:00"
+        },
+        {
+          "headline": "4K GENERATION *FITS* CONSUMER GPUS",
+          "facts": "Black Forest Labs launched FLUX 3 Image Klein, a 5.6-billion-parameter model delivering native 4K image generation on 8-gigabyte graphics cards.",
+          "caption_line": "🎨 Black Forest Labs unveiled FLUX 3 Image Klein, bringing native 4K image generation to standard 8 GB graphics cards.",
+          "image_prompt": "Photorealistic collage with a consumer desktop graphics card displayed prominently in the foreground, illuminated by pulsing internal circuitry. In the midground, an ultra-wide digital canvas radiates vibrant high-definition landscapes and abstract digital art beside a creative studio desk. Floating holographic resolution grids, color calibration wheels, and pixel streams swirl in neon electric-blue and warm-orange tones. Dramatic neon studio lighting highlights sleek brushed aluminum edges, with no readable text.",
+          "broll_query": "computer graphics card",
+          "space": false,
+          "company": "Black Forest Labs",
+          "category": "Model Release",
+          "source": "The Decoder",
+          "source_title": "Black Forest Labs' open-weights image model FLUX 3 Image Klein runs on consumer GPUs with just 8 GB of VRAM",
+          "url": "https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/",
+          "published": "2026-10-15T16:57:14+00:00"
+        },
+        {
+          "headline": "AMAZON REVEALS *POCKET* AI HARDWARE",
+          "facts": "Amazon subsidiary Bee unveiled two personal AI devices starting at $74.99, featuring a wearable assistant and a card-sized phone recorder.",
+          "caption_line": "🎙️ Amazon's Bee introduced two compact AI devices starting at $74.99, including a wearable and a slim card recorder.",
+          "image_prompt": "Photorealistic product collage focusing on an ultra-thin, credit-card-sized titanium recording gadget resting beside an elegant wearable sensor in the foreground. In the midground, a modern urban café and an illuminated smartphone setup establish a stylish lifestyle backdrop. Holographic audio waveforms, floating agenda widgets, and synchronizing interface panels gleam in electric-blue and warm-orange light. Soft twilight backlighting balances with crisp rim reflections on matte metal surfaces, with no readable text.",
+          "broll_query": "smart wearable device",
+          "space": false,
+          "company": "Amazon",
+          "category": "Hardware",
+          "source": "TechCrunch",
+          "source_title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
+          "url": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
+          "published": "2026-10-15T12:00:00+00:00"
+        }
+      ]
     }
   ]
 }
