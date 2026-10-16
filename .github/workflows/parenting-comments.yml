@@ -1,0 +1,50 @@
+# Let Me Try (parenting): every ~10 minutes, reply to comments that contain a post's keyword
+# (e.g. "ALONE") with a pointer to the free printable in the bio link.
+name: Let Me Try - comment replies
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "Show replies, don't send", default: true, type: boolean }
+
+permissions:
+  contents: write
+
+concurrency:
+  group: parenting-comments
+  cancel-in-progress: false
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install requests PyYAML Jinja2 python-dotenv playwright tzdata
+
+      - name: Reply to keyword comments
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID_PARENTING }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN_PARENTING }}
+        run: >-
+          python run_posts.py --channel parenting --comments
+          ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+
+      - name: Commit replied list
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add channels/parenting/replied.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "comments: parenting"
+            for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done
+          fi

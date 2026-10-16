@@ -7,6 +7,13 @@ publish_times: ["13:00", "19:30"]   # IST; add "21:30" for a third daily post
 
 hashtags_max: 12
 
+# Last slide + caption call to action for the free printable:
+#   comment: "Comment KEYWORD ↓" (the comment bot replies, pointing to the bio link)
+#   bio:     "Free printable · link in bio" (no comment bot needed)
+cta_mode: comment
+printables_url: "https://dtechmonkey.github.io/insta-automation/printables/"   # put this in the Instagram bio
+low_queue_days: 3          # open a GitHub issue when fewer days of ready posts remain
+
 brand:
   cream: "#FBF6EE"
   ink: "#3D3A35"          # body text

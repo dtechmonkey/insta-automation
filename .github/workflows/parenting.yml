@@ -1,0 +1,67 @@
+# Let Me Try (parenting): posts the next ready post from channels/parenting/posts twice a day.
+# Cron times are UTC (IST = UTC + 5:30). Jobs start ~30 min early (GitHub can start late);
+# run_posts.py waits for the exact publish time in channels/parenting/config.yaml.
+#   12:30 IST start -> 13:00 IST post
+#   19:00 IST start -> 19:30 IST post
+name: Let Me Try - post
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "Render only, don't post", default: true, type: boolean }
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: parenting-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Build and publish
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID_PARENTING }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN_PARENTING }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python run_posts.py --channel parenting --publish
+          ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+
+      - name: Save slides for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: letmetry-${{ github.run_id }}
+          path: output/
+          if-no-files-found: ignore
+
+      - name: Commit history and printables
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add channels/parenting/history.json docs/printables 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "post: parenting"
+            for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done
+          fi

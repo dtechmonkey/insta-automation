@@ -1,7 +1,10 @@
-# One post = one carousel. Slide images: images/<id>/<id>_s<N>.png (N = slide number).
+# One post = one carousel. Slide images: images/<id>/<id>_s<N>.jpg (N = slide number).
 # Text: *word* = highlighted in terracotta.
+# keyword: what people comment to get the printable (one word, unique per post).
+# printable: the free PDF, rendered to docs/printables/<keyword>.pdf.
 id: p001
 topic: "Practical life · age 2–3"
+keyword: ALONE
 style: >-
   Soft watercolor illustration in a gentle children's picture-book style. Pastel palette of sage green,
   soft peach, warm cream and dusty blue. Visible paper texture, loose soft brush edges, light washes,
@@ -97,6 +100,40 @@ caption: |
 
   Which one will you try first? Tell us in the comments 👇
   Save this for later, and share it with someone raising a little one.
+
+printable:
+  title: "5 Things Your 2-Year-Old Can Do Alone"
+  subtitle: "A one-week independence plan · Ages 2–3"
+  intro: >-
+    Two-year-olds want to do real work, by themselves. Your job is to make it possible: the right-sized
+    tools, a little time, and a lot of patience with mess. Pick one activity a day and repeat it all week.
+  sections:
+    - heading: "Set up once"
+      items:
+        - "A small stool or low table they can reach without help"
+        - "Child-sized tools: a small steel jug, tumbler, katori and cloth"
+        - "A low shelf with only 6–8 toys, each in its own basket"
+        - "A hook at their height for a small cloth"
+    - heading: "The five activities"
+      items:
+        - "Chappals: velcro or slip-on. Let them sit on the floor. Line the pair up toes-to-the-door."
+        - "Pouring: start with dry rajma or chana, then a little water. Fill the jug only a third."
+        - "Washing vegetables: a wide bowl of water and 3–4 tomatoes. Show once, slowly, without talking."
+        - "Putting toys back: one basket per toy. Sing a short tidy-up song, then do it together."
+        - "Wiping spills: when water spills, calmly hand them the cloth. No rescue, no scolding."
+    - heading: "How to show (the Montessori way)"
+      items:
+        - "Move slowly and use few words, so they can watch your hands"
+        - "Show it once, then step back"
+        - "Correct the activity, not the child: 'Let's try with less water'"
+        - "Stop while they are still interested"
+    - heading: "Expect this"
+      text: >-
+        It will be slower and messier at first. That is the learning. Most children need many repetitions
+        before a skill clicks, and the pride on their face when it does is worth every spill.
+  sources:
+    - label: "Maria Montessori, The Absorbent Mind (on practical life and independence)"
+    - label: "Lillard, A. S. (2017). Montessori: The Science Behind the Genius. Oxford University Press."
 
 hashtags: >-
   #montessori #montessoriathome #montessoriindia #toddleractivities #practicallife #toddlerindependence

@@ -105,3 +105,18 @@ A different Instagram account needs its own token and user ID secrets. Ask Claud
 - **Story**: a "NEW POST" image of today's cover, posted right after the carousel; Instagram removes it after 24 h. (The API can't add the tappable "shared post" sticker.)
 - **Captions** open with a searchable line ("AI News Today (17 Oct): OpenAI, NVIDIA & more") and use 5 focused hashtags (`hashtags_max`).
 - If the Reel or Story fails, the carousel is still posted and recorded; the GitHub run is marked failed so you get an email.
+
+## Second channel: Let Me Try (parenting, pre-written posts)
+
+`channels/parenting/` posts hand-written carousels from a queue instead of collecting news.
+
+- **Posts:** `channels/parenting/posts/pNNN.yaml`: slide text, Gemini image prompts, caption, comment keyword and printable.
+- **Images:** `channels/parenting/images/pNNN/pNNN_sK.jpg` (1080×1350). A post is "ready" once all its slide images exist.
+- **Plan:** `channels/parenting/content-plan.md`.
+- **Commands:**
+  - `python run_posts.py --channel parenting --status`: what's ready
+  - `python run_posts.py --channel parenting --render p001`: preview slides, caption and printable in `output/`
+- **Posting:** `.github/workflows/parenting.yml` runs at 13:00 and 19:30 IST and posts the next ready post. When fewer than 3 days of posts are ready, it opens a GitHub issue.
+- **Free printables:** publishing a post writes its PDF to `docs/printables/` (GitHub Pages; the link goes in the Instagram bio).
+- **Comment bot:** `.github/workflows/parenting-comments.yml` runs every ~10 min and publicly replies to comments containing the post's keyword, pointing to the bio link. `cta_mode: bio` in the config turns the "Comment KEYWORD" slide off.
+- **Secrets:** `IG_ACCESS_TOKEN_PARENTING` and `IG_USER_ID_PARENTING`. The token needs `instagram_business_basic`, `instagram_business_content_publish` and `instagram_business_manage_comments`.

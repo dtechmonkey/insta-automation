@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Let Me Try · Free printables</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #FBF6EE; color: #3D3A35; font-family: Nunito, sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 32px 16px 48px; }
+h1 { font-family: Fraunces, serif; font-size: 34px; margin: 0 0 6px; }
+p.lead { color: #6B655C; margin: 0 0 24px; }
+input { width: 100%; box-sizing: border-box; padding: 14px 16px; border-radius: 14px; border: 1.5px solid #8FA98B;
+  font: inherit; background: #fff; margin-bottom: 20px; }
+.card { display: block; padding: 16px 18px; margin-bottom: 12px; border-radius: 16px; background: #fff;
+  text-decoration: none; color: inherit; box-shadow: 0 4px 14px rgba(60,55,45,.08); }
+.kw { display: inline-block; padding: 2px 12px; border-radius: 999px; background: #C07A5A; color: #fff;
+  font-weight: 800; font-size: 13px; letter-spacing: .05em; }
+.t { display: block; margin-top: 8px; font-family: Fraunces, serif; font-size: 20px; }
+.s { display: block; color: #6B655C; font-size: 14px; }
+footer { margin-top: 32px; color: #6B655C; font-size: 13px; }
+</style></head>
+<body><main>
+<h1>Free printables 🌿</h1>
+<p class="lead">Every activity and research guide from @letmetry.montessori. Find the keyword from the post, tap to open, print or save.</p>
+<input id="q" placeholder="Search a keyword, e.g. ALONE" oninput="f()">
+<div id="list"><p>The first printable arrives with our first post.</p></div>
+<footer>Let Me Try · Montessori ideas for ages 2–4 · Free to print and share</footer>
+</main>
+<script>
+function f() { const q = document.getElementById('q').value.toLowerCase();
+  document.querySelectorAll('.card').forEach(c => c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none'); }
+</script></body></html>

@@ -81,6 +81,16 @@ def publish_story(media_url, version):
     return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
 
 
+def comments(media_id, version):
+    """Top-level comments on one of our posts (needs instagram_business_manage_comments)."""
+    data = _call("GET", f"{media_id}/comments", version, fields="id,text,username,timestamp", limit=50)
+    return data.get("data", [])
+
+
+def reply_to_comment(comment_id, message, version):
+    return _call("POST", f"{comment_id}/replies", version, message=message)["id"]
+
+
 def refresh_token():
     resp = requests.get(f"{BASE}/refresh_access_token", timeout=60, params={
         "grant_type": "ig_refresh_token", "access_token": os.environ["IG_ACCESS_TOKEN"].strip()})

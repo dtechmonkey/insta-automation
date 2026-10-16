@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 14mm 0; }
+@page :first { margin-top: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; color: {{ brand.ink }}; font-family: "Nunito", sans-serif; font-size: 11.5pt; line-height: 1.5; }
+.banner { height: 62mm; background-size: cover; background-position: center 70%; position: relative; }
+.banner::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 100%); }
+.page { padding: 0 18mm 16mm; }
+.brand { margin-top: -4mm; position: relative; font-weight: 800; font-size: 9pt; letter-spacing: .22em;
+  text-transform: uppercase; color: {{ brand.sage }}; }
+h1 { margin-top: 2mm; font-family: "Fraunces", serif; font-weight: 600; font-size: 25pt; line-height: 1.12; }
+.subtitle { margin-top: 1.5mm; font-family: "Fraunces", serif; font-style: italic; font-size: 13pt; color: {{ brand.terracotta }}; }
+.intro { margin-top: 5mm; padding: 4mm 5mm; border-radius: 4mm; background: rgba(143,169,139,.14); }
+section { margin-top: 6mm; break-inside: avoid; }
+h2 { font-family: "Fraunces", serif; font-weight: 600; font-size: 14pt; color: {{ brand.ink }};
+  padding-bottom: 1.5mm; margin-bottom: 2.5mm; border-bottom: 1.5px solid {{ brand.peach }}; }
+ul { list-style: none; }
+li { position: relative; padding-left: 7mm; margin-bottom: 1.8mm; }
+li::before { content: ""; position: absolute; left: 1mm; top: 2.2mm; width: 2.6mm; height: 2.6mm; border-radius: 50%;
+  border: 1.5px solid {{ brand.sage }}; }
+.sources { margin-top: 8mm; font-size: 8.5pt; color: {{ brand.ink_soft }}; }
+.sources h3 { font-size: 9pt; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1.5mm; }
+.sources a { color: {{ brand.ink_soft }}; }
+footer { margin-top: 8mm; padding-top: 3mm; border-top: 1px solid rgba(61,58,53,.15); font-size: 8.5pt;
+  color: {{ brand.ink_soft }}; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+{% if image %}<div class="banner" style="background-image: url('{{ image }}')"></div>{% else %}<div style="height: 18mm"></div>{% endif %}
+<div class="page">
+  <div class="brand">{{ name }} · Free printable</div>
+  <h1>{{ p.title }}</h1>
+  {% if p.subtitle %}<div class="subtitle">{{ p.subtitle }}</div>{% endif %}
+  {% if p.intro %}<p class="intro">{{ p.intro }}</p>{% endif %}
+  {% for s in p.sections %}
+  <section>
+    <h2>{{ s.heading }}</h2>
+    {% if s.text %}<p>{{ s.text }}</p>{% endif %}
+    {% if s.get('items') %}<ul>{% for it in s.get('items') %}<li>{{ it }}</li>{% endfor %}</ul>{% endif %}
+  </section>
+  {% endfor %}
+  {% if p.sources %}
+  <div class="sources"><h3>Sources and further reading</h3>
+    {% for src in p.sources %}<div>{{ src.label }}{% if src.url %} · <a href="{{ src.url }}">{{ src.url }}</a>{% endif %}</div>{% endfor %}
+  </div>
+  {% endif %}
+  <footer><span>{{ handle }} · Montessori ideas for ages 2–4</span>
+    <span>{% if medical %}General information, not medical advice.{% else %}Free to print and share.{% endif %}</span></footer>
+</div>
+</body>
+</html>

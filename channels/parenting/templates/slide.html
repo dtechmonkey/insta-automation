@@ -33,9 +33,13 @@ html, body { width: 1080px; height: 1350px; background: {{ brand.cream }}; }
   letter-spacing: .04em; color: {{ brand.ink }}; box-shadow: 0 6px 20px rgba(60,55,45,.14); }
 .swipe { position: absolute; right: 48px; bottom: 52px; }
 .swipe b { color: {{ brand.terracotta }}; font-size: 34px; line-height: 1; }
-.actions { display: flex; justify-content: center; gap: 18px; margin-top: 34px; }
-.actions .pill { background: {{ brand.sage }}; color: #fff; }
-.actions .pill.alt { background: {{ brand.terracotta }}; }
+.cta-card { display: inline-block; margin-top: 34px; padding: 26px 48px 18px; border-radius: 36px;
+  background: rgba(251,246,238,.94); box-shadow: 0 10px 30px rgba(60,55,45,.16); }
+.cta-q { font-family: "Nunito", sans-serif; font-weight: 700; font-size: 34px; color: {{ brand.ink_soft }}; }
+.cta-row { margin-top: 12px; font-family: "Fraunces", serif; font-weight: 600; font-size: 56px; }
+.kw { display: inline-block; margin-left: 12px; padding: 4px 28px 8px; border-radius: 999px;
+  background: {{ brand.terracotta }}; color: #fff; letter-spacing: .04em; }
+.arrow { display: block; margin: 10px auto 0; color: {{ brand.terracotta }}; }
 .handle { position: absolute; left: 0; right: 0; bottom: 40px; text-align: center; }
 .handle span { padding: 10px 24px; border-radius: 999px; background: rgba(251,246,238,.85);
   font-family: "Nunito", sans-serif; font-weight: 700; font-size: 24px; letter-spacing: .03em; color: {{ brand.ink_soft }}; }
@@ -52,19 +56,28 @@ html, body { width: 1080px; height: 1350px; background: {{ brand.cream }}; }
     {% if number %}<div class="num">{{ number }}</div>{% endif %}
     <h1 class="title fit">{{ title_html | safe }}</h1>
     {% if body %}<p class="body fit">{{ body }}</p>{% endif %}
-    {% if kind == "outro" %}
-    <div class="actions"><span class="pill">Save this</span><span class="pill alt">Share with a parent</span></div>
+    {% if kind == "outro" and cta_mode == "comment" and keyword %}
+    <div class="cta-card">
+      <div class="cta-q">Want the free printable?</div>
+      <div class="cta-row">Comment <span class="kw">{{ keyword }}</span></div>
+      <svg class="arrow" viewBox="0 0 40 56" width="40" height="56"><path d="M20 4v44M6 34l14 14 14-14" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    {% elif kind == "outro" %}
+    <div class="cta-card">
+      <div class="cta-q">Free printable for this post</div>
+      <div class="cta-row">Link in bio</div>
+    </div>
     {% endif %}
   </div>
   {% if kind == "cover" %}<div class="pill swipe">Swipe <b>→</b></div>
-  {% elif kind == "outro" %}<div class="handle"><span>Follow {{ handle }} for daily Montessori ideas</span></div>
+  {% elif kind == "outro" %}<div class="handle"><span>Save · Share · Follow {{ handle }}</span></div>
   {% else %}<div class="handle"><span>{{ handle }}</span></div>{% endif %}
 </div>
 <script>
 // Shrink the text until it fits in the image's empty top area.
 window.fitText = function () {
   const box = document.querySelector('.text');
-  const limit = 1350 * (document.querySelector('.cover, .outro') ? 0.42 : 0.36);
+  const limit = 1350 * (document.querySelector('.outro') ? 0.62 : document.querySelector('.cover') ? 0.42 : 0.36);
   const els = [...document.querySelectorAll('.fit')];
   for (let i = 0; i < 30 && box.offsetHeight > limit; i++) {
     els.forEach(el => { el.style.fontSize = parseFloat(getComputedStyle(el).fontSize) * 0.95 + 'px'; });
