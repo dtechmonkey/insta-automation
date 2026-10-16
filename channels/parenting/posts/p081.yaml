@@ -1,0 +1,91 @@
+id: p081
+plan: "D41 1 PM · Practical"
+topic: "Practical life · ages 2–4"
+keyword: CHORES
+slides:
+  - kind: cover
+    title: "A weekend chore chart for *2–4 year olds*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy sticking a picture card onto a simple illustrated chore chart on a fridge, his
+      mother smiling beside him. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Pictures*, not words"
+    body: "A drawing for each job: plant, plate, toys, socks."
+    prompt: >-
+      A simple chart on a fridge with small hand-drawn pictures of a watering can, a plate, a toy basket and
+      socks, no words. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*3 jobs* a day, max"
+    body: "Small and doable. Success builds the habit."
+    prompt: >-
+      A 2-year-old South Asian girl carrying her small plate to the kitchen sink after breakfast. Keep the child
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Do it *together*"
+    body: "At this age, chores are a team activity, not a solo task."
+    prompt: >-
+      A father and his 3-year-old son putting toys into baskets together on a rug, both smiling. Keep the figures
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "*Thank*, don't pay"
+    body: "“Thank you, you helped our family.” Belonging is the reward."
+    prompt: >-
+      A grandmother hugging her 3-year-old granddaughter after she swept a small area with a little broom. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Little jobs, *big* belonging."
+    body: "What chores does your toddler do?"
+    prompt: >-
+      A South Asian family doing weekend chores together, the toddler wiping a table, music playing. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  Toddlers WANT to help. A simple picture chart turns that wish into a weekend habit. 📋
+
+  Chores build independence, responsibility and the feeling “I'm an important part of this family.”
+
+  How to:
+  🖼️ Pictures, not words
+  3️⃣ Max 3 small jobs a day
+  🤝 Do them together
+  💛 Thank them; don't pay them
+
+  Grab the printable chart with today's keyword! 🌿
+
+  What chores does your toddler do? 👇
+hashtags: >-
+  #chorechart #chores #toddlerhelpers #practicallife #montessori #montessoriathome #montessoriindia
+  #lifeskills #indianmoms #familyroutine #letmetry #responsibility
+printable:
+  title: "Picture Chore Chart"
+  subtitle: "Age-appropriate jobs · Ages 2–4"
+  intro: "Choose 2–3 jobs per day. Draw a simple picture for each, and let your child tick it or add a sticker."
+  sections:
+    - heading: "Age 2"
+      items:
+        - "Put toys in baskets"
+        - "Carry plate to the kitchen"
+        - "Put clothes in the laundry basket"
+        - "Water a plant (with help)"
+    - heading: "Age 3"
+      items:
+        - "Set the table (spoons, cups)"
+        - "Match socks"
+        - "Wipe the table"
+        - "Feed a pet (with help)"
+    - heading: "Age 4"
+      items:
+        - "Sweep with a small broom"
+        - "Fold napkins and towels"
+        - "Make their bed (pull up the blanket)"
+        - "Unpack groceries"
+    - heading: "Tips"
+      text: "Do jobs together, keep them short, and thank them for helping the family rather than paying or rewarding."
+  sources:
+    - label: "Montessori, M. The Discovery of the Child (practical life)."

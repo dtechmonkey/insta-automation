@@ -1,0 +1,92 @@
+id: p074
+plan: "D37 7:30 PM · Debate"
+topic: "Screens · ages 2–4"
+keyword: SCREEN
+slides:
+  - kind: cover
+    title: "Screen time isn't the enemy. *Passive* screen time is."
+    body: ""
+    prompt: >-
+      A father and his 3-year-old South Asian daughter sitting together on a sofa watching a nature video on a
+      tablet, the child pointing at the screen and the father talking with her. Keep the figures in the lower 60%
+      of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "The *limit* still matters"
+    body: "WHO: no more than 1 hour a day for ages 2–4. Less is better."
+    prompt: >-
+      A small sand timer on a shelf next to a tablet resting face down, a toddler's toys nearby. Simple still
+      life. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Watch *together*"
+    body: "Talk about what you see. It turns screen time into conversation."
+    prompt: >-
+      A mother and her 2-year-old son watching a gentle animal programme on TV together, the child asking a
+      question and the mother answering. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Slow*, not flashy"
+    body: "Choose calm, slow shows over fast, noisy, endless clips."
+    prompt: >-
+      A calm living room with a TV showing a soft, simple animated scene of a garden, a toddler sitting calmly on
+      a cushion. Keep the scene in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Never *alone*, never at meals"
+    body: "No screens in bedrooms, at meals or as a pacifier for every upset."
+    prompt: >-
+      A South Asian family eating together at a table, a phone placed in a small basket on a shelf. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: outro
+    title: "Less screen, more *together*."
+    body: "How do you manage screens at home? No judgement 👇"
+    prompt: >-
+      A 3-year-old South Asian boy and his grandfather looking at a picture book about animals together on a
+      verandah. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  Let's be honest: most families use screens. The question isn't 'never', it's 'how'. 📱
+
+  The WHO recommends no more than 1 hour a day for ages 2–4 (and less is better). And how children watch matters too. The AAP encourages co-viewing: watching with your child and talking about it.
+
+  Better screen habits:
+  👨‍👧 Watch together and talk about it
+  🐢 Slow, calm shows over fast, endless clips
+  ⏳ A clear limit with a timer
+  🚫 No screens at meals, in bedrooms, or as the only comfort
+
+  How do you manage screens at home? No judgement 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #screentime #digitalwellbeing #toddlerscreentime #gentleparenting #montessori #indianparents
+  #indianmoms #mindfulparenting #childdevelopment #parentingtips #letmetry #screenfree
+printable:
+  title: "A Family Screen-Time Plan"
+  subtitle: "Healthy habits for ages 2–5"
+  medical: true
+  intro: "Screens are part of modern life. A simple family plan helps keep them in their place."
+  sections:
+    - heading: "What the guidance says"
+      items:
+        - "WHO: for ages 2–4, sedentary screen time no more than 1 hour a day; less is better. No screen time under 2."
+        - "AAP: choose high-quality content and watch with your child to help them understand it."
+    - heading: "Our family rules"
+      items:
+        - "Screens are for: ________"
+        - "Our daily limit: ____ minutes"
+        - "No screens at meals"
+        - "No screens in the hour before bed"
+        - "No screens in bedrooms"
+    - heading: "Choose content that is"
+      items:
+        - "Slow-paced and calm"
+        - "Without ads or autoplay"
+        - "Something you can talk about together"
+    - heading: "Instead of a screen, try"
+      items:
+        - "A book, play dough, a water tray, a walk, a helper job"
+  sources:
+    - label: "World Health Organization (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age."
+    - label: "AAP Council on Communications and Media (2016). Media and Young Minds. Pediatrics, 138(5)."

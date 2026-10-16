@@ -1,0 +1,90 @@
+id: p062
+plan: "D31 7:30 PM · Debate"
+topic: "Sleep · ages 2–4"
+keyword: SLEEP
+slides:
+  - kind: cover
+    title: "Agree or disagree? Toddlers need the same bedtime, *even on weekends*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy wide awake and playing with a toy car on a sofa late at night during a family
+      gathering, adults chatting, a clock on the wall showing late. Gentle humour. Keep the figures in the lower
+      60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Body clocks love *routine*"
+    body: "Regular sleep times help toddlers fall asleep faster and wake happier."
+    prompt: >-
+      A 2-year-old South Asian girl sleeping peacefully in her bed with soft morning light starting to come
+      through the curtains. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Irregular bedtimes, more *meltdowns*"
+    body: "Research links irregular bedtimes with more behaviour difficulties."
+    prompt: >-
+      A tired 3-year-old South Asian boy crying over a small thing at breakfast, rubbing his eyes, his mother
+      sympathetic. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Flexible*, not rigid"
+    body: "Within 30–60 minutes of the usual time works for most families."
+    prompt: >-
+      A father carrying his sleepy 2-year-old daughter to bed from a lively living room, festive lights in the
+      background. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Late night? *Protect* tomorrow"
+    body: "A quiet morning, an earlier nap, an early bedtime to catch up."
+    prompt: >-
+      A calm morning scene of a toddler and mother cuddling under a blanket on a sofa with picture books. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: outro
+    title: "Sleep is their *superpower*."
+    body: "What time does your toddler sleep on weekends? 👇"
+    prompt: >-
+      A peaceful sleeping 3-year-old South Asian boy hugging a soft toy, moonlight through the window. Keep the
+      subject in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  In many Indian homes, toddlers sleep at 11 pm on weekends, after the family dinner and the late visitors. But is it worth it? 🌙
+
+  Research finds regular bedtimes help young children sleep better, and irregular bedtimes have been linked with more behaviour difficulties. In one large study, children's behaviour improved when their bedtimes became regular.
+
+  A realistic approach:
+  ⏰ Keep bedtime within 30–60 minutes of the usual time
+  🛁 Keep the routine, even if it's later
+  ☀️ After a late night: quiet morning, early nap, early bedtime
+
+  Agree or disagree? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #toddlersleep #bedtime #sleeproutine #gentleparenting #montessori #indianparents #indianmoms
+  #weekendroutine #childsleep #parentingtips #letmetry #healthykids
+printable:
+  title: "Consistent Sleep, Realistically"
+  subtitle: "Bedtimes for busy families · Ages 1–5"
+  medical: true
+  intro: "Perfect consistency isn't possible in real family life. Aim for 'mostly regular', and protect the day after a late night."
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children with irregular bedtimes had more behaviour difficulties, which improved when bedtimes became regular (Kelly, Kelly & Sacker, 2013)."
+        - "Consistent bedtime routines are linked to better sleep in young children (Mindell et al., 2015)."
+    - heading: "How much sleep (in 24 hours, including naps)"
+      items:
+        - "1–2 years: 11–14 hours"
+        - "3–5 years: 10–13 hours"
+    - heading: "Realistic rules"
+      items:
+        - "Bedtime within 30–60 minutes of usual, most nights"
+        - "Same routine even when it's late"
+        - "Wake-up time roughly steady"
+    - heading: "After a late night"
+      items:
+        - "A slow, quiet morning"
+        - "An earlier or longer nap"
+        - "An early bedtime"
+  sources:
+    - label: "Kelly, Y., Kelly, J., & Sacker, A. (2013). Changes in bedtime schedules and behavioral difficulties in 7 year old children. Pediatrics, 132(5), e1184–e1193."
+    - label: "World Health Organization (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age."

@@ -1,0 +1,88 @@
+id: p073
+plan: "D37 1 PM · Practical"
+topic: "Practical life · age 3–4"
+keyword: GRATE
+slides:
+  - kind: cover
+    title: "Grate, squeeze, spread: *3 kitchen skills* at 3"
+    body: ""
+    prompt: >-
+      A bright Indian kitchen with a 3-year-old South Asian girl at a learning tower squeezing a lemon into a
+      bowl, her mother grating carrots beside her. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Grate* soft things"
+    body: "Paneer or cheese on a box grater with an adult hand on top."
+    prompt: >-
+      A 3-year-old South Asian boy grating a block of paneer on a small box grater placed in a bowl, a father's
+      hand steadying the grater. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Squeeze* lemons"
+    body: "A simple hand squeezer. Strong hands, tasty nimbu pani."
+    prompt: >-
+      Close view of small hands pressing a lemon half onto a glass citrus squeezer, juice in the bowl. Keep the
+      subject in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "*Spread* chutney"
+    body: "A butter knife and a slice of bread. Wrist control in action."
+    prompt: >-
+      A 3-year-old South Asian girl spreading green chutney on a slice of bread with a butter knife, focused.
+      Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Make a *snack* together"
+    body: "Chutney sandwiches and nimbu pani: made by them, for everyone."
+    prompt: >-
+      A South Asian family at a table enjoying small sandwiches and glasses of lemonade made by their proud
+      3-year-old. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Little chef, *big* skills."
+    body: "Which skill will you try first?"
+    prompt: >-
+      A 3-year-old South Asian boy in a small apron proudly holding up a plate of sandwiches he made. Keep the
+      child in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  By 3, many children are ready for real kitchen tools, with close supervision. 🍋
+
+  3 skills to try:
+  🧀 Grating paneer or cheese (adult hand steadying the grater)
+  🍋 Squeezing lemons with a hand squeezer
+  🥪 Spreading chutney with a butter knife
+
+  Then put it together: chutney sandwiches and nimbu pani, made by them for the whole family! 🌿
+
+  Which skill will you try first? 👇
+hashtags: >-
+  #cookingwithkids #practicallife #montessori #montessoriathome #toddlerinthekitchen #montessoriindia
+  #3yearold #finemotorskills #indianmoms #lifeskills #letmetry #kidsnacks
+printable:
+  title: "3-Year-Old Kitchen Skills"
+  subtitle: "With a snack recipe they can make · Ages 3–4"
+  intro: "These skills build hand strength and confidence. Always supervise, and keep sharp tools and the stove with adults."
+  sections:
+    - heading: "Skills"
+      items:
+        - "Grating: paneer or cheese, adult hand on the grater"
+        - "Squeezing: lemons or oranges with a hand squeezer"
+        - "Spreading: chutney, butter or jam with a butter knife"
+        - "Stirring: mixing in a big bowl"
+        - "Pouring: water into glasses"
+    - heading: "Recipe: chutney sandwiches"
+      items:
+        - "Spread butter on two slices of bread"
+        - "Spread green chutney on one slice"
+        - "Add grated paneer"
+        - "Press together, adult cuts into squares"
+    - heading: "Recipe: nimbu pani"
+      items:
+        - "Squeeze 1 lemon into a jug"
+        - "Add 2 glasses of water, 2 teaspoons of sugar, a pinch of salt"
+        - "Stir and pour"
+    - heading: "Safety"
+      text: "Graters can scrape fingers: grate large pieces only, with an adult holding the grater."
+  sources:
+    - label: "Montessori, M. The Discovery of the Child (practical life: food preparation)."

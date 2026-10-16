@@ -1,0 +1,85 @@
+id: p079
+plan: "D40 1 PM · Practical"
+topic: "Early maths · age 3–4"
+keyword: COUNT
+slides:
+  - kind: cover
+    title: "Counting with *real objects*, beyond reciting"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl counting small steel spoons into a basket one by one, touching each, her
+      father watching. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft cream
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Reciting isn't *counting*"
+    body: "Saying 1 to 20 is a song. Counting means one number for each object."
+    prompt: >-
+      A 3-year-old South Asian boy saying numbers out loud while pointing randomly at a pile of blocks, his mother
+      smiling. Gentle humour. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Touch* and count"
+    body: "Move each object as you count it. One touch, one number."
+    prompt: >-
+      Close view of a small finger moving chana one at a time from a pile into a row, counting. Keep the subject
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Count *real life*"
+    body: "Plates for dinner, stairs, shoes by the door, rotis on the plate."
+    prompt: >-
+      A 3-year-old South Asian girl counting steps as she climbs a staircase holding the railing, her
+      grandfather behind her. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "*“How many?”*"
+    body: "After counting, ask: “So how many are there?” The last number is the answer."
+    prompt: >-
+      A 3-year-old South Asian boy holding up four fingers proudly next to four oranges on a table. Keep the child
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Maths is *everywhere*."
+    body: "What does your child love to count?"
+    prompt: >-
+      A happy South Asian mother and her 3-year-old counting stars on a balcony at dusk, pointing at the sky. Keep
+      the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  “She can count to 50!” But can she count 5 spoons? Those are two different skills. 🔢
+
+  Reciting numbers is like a song. Real counting means matching one number to each object, and knowing the last number tells you 'how many'.
+
+  Try:
+  ✋ Touch and move each object as you count
+  🍽️ Count real life: plates, stairs, shoes, rotis
+  ❓ Ask: “So how many are there?”
+  🔟 Start small: up to 5, then 10
+
+  What does your child love to count? 👇
+hashtags: >-
+  #earlymaths #counting #montessori #montessoriathome #preschoolmaths #montessoriindia #3yearold
+  #learningthroughplay #indianmoms #preschoolactivities #letmetry #numbersense
+printable:
+  title: "Everyday Counting Games"
+  subtitle: "Building real number sense · Ages 3–5"
+  intro: "Real counting has three parts: saying numbers in order, one number per object, and knowing the last number is 'how many'."
+  sections:
+    - heading: "Games"
+      items:
+        - "Count plates and spoons while setting the table"
+        - "Count stairs as you climb"
+        - "Count rotis, idlis or grapes on the plate"
+        - "Count jumps, claps or hops"
+        - "Count toys back into the basket"
+    - heading: "Montessori-style activity"
+      items:
+        - "Make number cards 1–5"
+        - "Put the right number of chana under each card"
+        - "Later: cards 1–10"
+    - heading: "Ask"
+      items:
+        - "“How many are there?”"
+        - "“Which pile has more?”"
+        - "“If I take one away, how many now?”"
+  sources:
+    - label: "Montessori, M. The Montessori Method (mathematics: cards and counters)."

@@ -1,0 +1,86 @@
+id: p070
+plan: "D35 7:30 PM · Practical"
+topic: "Practical life · ages 2–4"
+keyword: RESET
+slides:
+  - kind: cover
+    title: "Sunday reset: *helper jobs* for little hands"
+    body: ""
+    prompt: >-
+      A calm Sunday morning in an Indian home, a 3-year-old South Asian girl watering plants and her father
+      sweeping beside her, sunlight streaming in. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Rotate* the toys"
+    body: "They help choose which toys rest and which come out this week."
+    prompt: >-
+      A 3-year-old South Asian boy choosing a toy from a storage box to put on a low shelf, his mother holding
+      the box. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Wipe* the shelf"
+    body: "A damp cloth for their own play shelf."
+    prompt: >-
+      A 2-year-old South Asian girl wiping an empty low shelf with a small cloth, concentrating. Keep the child in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "*Water* the plants"
+    body: "Their weekly plant check: dry or wet?"
+    prompt: >-
+      A 3-year-old South Asian boy watering a row of small potted plants on a balcony with a tiny can. Keep the
+      child in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Plan the *week*"
+    body: "Choose one activity for each day. Toddlers love knowing what's next."
+    prompt: >-
+      A mother and her 3-year-old daughter looking at a simple picture calendar on the wall, the child sticking
+      a picture on one day. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "A fresh week, *together*."
+    body: "What's on your family's Sunday list?"
+    prompt: >-
+      A tidy, sunlit living room with a fresh toy shelf and a toddler and parent sitting together on the rug with
+      tea and milk. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  A Sunday reset is better with a little helper! 🧺
+
+  Getting the home ready for a new week teaches order, responsibility and belonging, and toddlers love being part of it.
+
+  Little jobs:
+  🔄 Help rotate the toys
+  🧽 Wipe their own play shelf
+  🌱 Water the plants
+  📅 Choose activities for the week on a picture calendar
+
+  Do it together, slowly, with music on. 🌿
+
+  What's on your family's Sunday list? 👇
+hashtags: >-
+  #sundayreset #practicallife #montessori #montessoriathome #toyrotation #montessoriindia
+  #toddlerhelpers #familyroutine #indianmoms #lifeskills #letmetry #slowliving
+printable:
+  title: "The Family Sunday Reset"
+  subtitle: "A weekly checklist with little-helper jobs · Ages 2–4"
+  intro: "A short weekly reset keeps the play space calm and gives children real responsibility."
+  sections:
+    - heading: "Child's jobs"
+      items:
+        - "Help choose toys to rotate"
+        - "Wipe their play shelf"
+        - "Water the plants"
+        - "Match socks from the laundry"
+        - "Pick a book for the week"
+    - heading: "Parent's jobs"
+      items:
+        - "Swap 2–3 toys on the shelf"
+        - "Check clothes still fit"
+        - "Prepare the week's picture calendar"
+        - "Restock the art basket"
+    - heading: "Plan the week together"
+      text: "One special activity per day: park, baking, nature walk, visiting Nani, painting."
+  sources:
+    - label: "Montessori, M. The Discovery of the Child (care of the environment)."

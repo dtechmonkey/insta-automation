@@ -1,0 +1,85 @@
+id: p077
+plan: "D39 1 PM · Practical"
+topic: "Science · age 2–3"
+keyword: FLOAT
+slides:
+  - kind: cover
+    title: "Sink or float: a first *science* tray"
+    body: ""
+    prompt: >-
+      A 2-year-old South Asian boy kneeling by a wide steel tub of water on a towel, dropping a small wooden block
+      into the water and watching it float, other objects beside him. Keep the child in the lower 60% of the
+      frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Gather *objects*"
+    body: "A spoon, a leaf, a pebble, a cork, a small ball, a steel cup."
+    prompt: >-
+      A tray holding a steel spoon, a leaf, a pebble, a cork, a small plastic ball and a small steel cup beside a
+      tub of water. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Guess* first"
+    body: "“Will it sink or float?” Guessing is the start of science."
+    prompt: >-
+      A 3-year-old South Asian girl holding a pebble above the water, thinking, her father asking her a question.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "*Test* and sort"
+    body: "Two baskets: 'sinks' and 'floats'. Compare their guesses."
+    prompt: >-
+      Two small baskets on a towel, one with a pebble and spoon, one with a cork and leaf, a toddler sorting a
+      wet object. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Ask *why*"
+    body: "No need for the right answer. “Why do you think it floated?”"
+    prompt: >-
+      A 3-year-old South Asian boy looking at a floating steel cup with wide, curious eyes. Keep the child in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Little scientist at *work*."
+    body: "What surprised your child most?"
+    prompt: >-
+      A happy, slightly wet 2-year-old South Asian girl splashing gently in a tub of water with floating objects,
+      her mother laughing beside her. Keep the figures in the lower 55% of the frame. Leave the top 40% as an
+      empty, soft sage-green watercolor wash, reserved for text.
+caption: |
+  Science for toddlers needs just a tub of water and a few objects from around the house. 💧
+
+  Sink or float teaches guessing, testing, sorting and wondering: the real heart of science.
+
+  How to:
+  🧺 Gather objects: spoon, leaf, pebble, cork, ball, steel cup
+  🤔 Guess first: “Sink or float?”
+  🔬 Test and sort into two baskets
+  ❓ Ask “Why do you think?” (no right answer needed)
+
+  A towel underneath, and never leave a child alone with water. 🌿
+
+  What surprised your child most? 👇
+hashtags: >-
+  #sinkorfloat #toddlerscience #stemforkids #montessori #montessoriathome #waterplay #montessoriindia
+  #toddleractivities #indianmoms #learningthroughplay #letmetry #sensoryplay
+printable:
+  title: "Sink or Float Recording Sheet"
+  subtitle: "A first science experiment · Ages 2–4"
+  intro: "Guess, test and record. Draw or tick the result for each object."
+  sections:
+    - heading: "Objects to test"
+      items:
+        - "Steel spoon: guess ___ result ___"
+        - "Leaf: guess ___ result ___"
+        - "Pebble: guess ___ result ___"
+        - "Cork: guess ___ result ___"
+        - "Small ball: guess ___ result ___"
+        - "Steel cup (empty, then full): guess ___ result ___"
+    - heading: "Questions to ask"
+      items:
+        - "Which ones floated?"
+        - "Were any guesses wrong? That's great science!"
+        - "What happens if we put water in the cup?"
+    - heading: "Safety"
+      text: "Always stay with children near water, even shallow water."
+  sources:
+    - label: "General early-childhood science guidance."

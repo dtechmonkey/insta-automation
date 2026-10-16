@@ -1,0 +1,84 @@
+id: p080
+plan: "D40 7:30 PM · Debate"
+topic: "Handedness · ages 2–5"
+keyword: LEFTY
+slides:
+  - kind: cover
+    title: "Myth: Left-handed kids should be *switched*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl happily drawing with a crayon in her left hand at a low table, while an
+      elderly relative gestures towards her right hand. Respectful, warm tone. Keep the figures in the lower 60%
+      of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Handedness is *natural*"
+    body: "It's influenced by genes and brain development, not by habit or behaviour."
+    prompt: >-
+      A 2-year-old South Asian boy reaching for a toy with his left hand, simple and natural. Keep the child in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Forcing it brings *no benefit*"
+    body: "Switching hands doesn't make children smarter, and can cause frustration."
+    prompt: >-
+      A 4-year-old South Asian boy looking frustrated holding a pencil awkwardly in his right hand, a gentle,
+      empathetic tone. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "It *settles* by about 4–6"
+    body: "Toddlers often switch hands. Let them use whichever feels natural."
+    prompt: >-
+      A 3-year-old South Asian girl painting with her left hand, then holding the brush in her right, playful and
+      relaxed. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Support *lefties*"
+    body: "Left-handed scissors, sitting on the left at meals, paper tilted the other way."
+    prompt: >-
+      A 4-year-old South Asian boy cutting paper with left-handed scissors, sitting at the left end of a family
+      table. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor
+      wash, reserved for text.
+  - kind: outro
+    title: "Left is *right* for them."
+    body: "Is anyone in your family left-handed? 👇"
+    prompt: >-
+      A left-handed father and his left-handed 3-year-old daughter drawing side by side, both smiling. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  “Use your right hand! The left hand is not good.” Many Indian lefties grew up hearing this. ✍️
+
+  Handedness is natural, influenced by genes and how the brain develops. Forcing a child to switch brings no benefit and can lead to frustration with writing and drawing.
+
+  What to know:
+  🧠 It's natural, not a bad habit
+  🔄 Toddlers often switch hands; it usually settles by 4–6
+  ✂️ Support lefties: left-handed scissors, sitting on the left at meals
+  💛 Explain kindly to elders why you're not switching
+
+  Is anyone in your family left-handed? 👇
+hashtags: >-
+  #lefthanded #lefty #childdevelopment #mythbusting #montessori #indianparents #indianmoms
+  #desiparents #parentingmyths #finemotorskills #letmetry #parentingtips
+printable:
+  title: "Supporting a Left-Handed Child"
+  subtitle: "Facts and practical tips · Ages 2–6"
+  intro: "About 1 in 10 people are left-handed. Left-handed children do best when they're supported, not switched."
+  sections:
+    - heading: "What the research says"
+      items:
+        - "Hand preference emerges in early childhood and becomes more consistent with age (Scharoun & Bryden, 2014)."
+        - "Handedness is influenced by genetics and brain development; experts advise against forcing a switch."
+    - heading: "Don't"
+      items:
+        - "Move crayons or spoons to the right hand"
+        - "Scold or label the left hand 'bad'"
+    - heading: "Do"
+      items:
+        - "Offer objects in the middle and let them choose"
+        - "Buy left-handed scissors"
+        - "Seat them on the left at the table to avoid bumping elbows"
+        - "Tilt paper the opposite way for writing"
+    - heading: "For grandparents"
+      text: "“The doctor says it's how her brain works. Switching can make writing harder for her.”"
+  sources:
+    - label: "Scharoun, S. M., & Bryden, P. J. (2014). Hand preference, performance abilities, and hand selection in children. Frontiers in Psychology, 5, 82."

@@ -1,0 +1,88 @@
+id: p066
+plan: "D33 7:30 PM · Debate"
+topic: "Early literacy · age 3–4"
+keyword: ABC
+slides:
+  - kind: cover
+    title: "Myth: Knowing the *ABC song* means they're ready to read"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl proudly singing in front of clapping relatives, while behind her a picture
+      book lies open, unread. Gentle humour. Keep the figures in the lower 60% of the frame. Leave the top 35% as
+      an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Fact: the song is a *memory* trick"
+    body: "Many kids sing it perfectly without linking letters to sounds."
+    prompt: >-
+      A 3-year-old South Asian boy singing happily with his eyes closed, music notes floating as soft shapes, no
+      letters. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Reading needs *sounds*"
+    body: "“B” is called 'bee', but in words it says 'b'. That's what readers need."
+    prompt: >-
+      A mother showing her 3-year-old son a ball and making a 'b' sound with her lips, the child copying.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Montessori: *sounds* first"
+    body: "Children learn the sound of each letter, often by tracing sandpaper letters."
+    prompt: >-
+      A 3-year-old South Asian girl tracing a large textured letter shape on a wooden board with two fingers,
+      concentrating. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "And lots of *stories*"
+    body: "Reading aloud every day builds the vocabulary reading depends on."
+    prompt: >-
+      A father reading a picture book to his 3-year-old son at bedtime, the child pointing at the pictures. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Sounds before *songs*."
+    body: "Did you know this? Tell us 👇"
+    prompt: >-
+      A 3-year-old South Asian girl sitting in a cosy reading corner 'reading' a picture book to her soft toys.
+      Keep the child in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+caption: |
+  “She can sing the whole ABC song at 2!” Impressive, but not the same as being ready to read. 🎵
+
+  The ABC song teaches letter names in order, as a memory trick. But reading uses letter SOUNDS: “b” in “ball” says 'b', not 'bee'.
+
+  That's why Montessori teaches sounds first, often with sandpaper letters children trace while saying the sound.
+
+  What builds reading readiness:
+  👂 Sound games like I spy
+  ✍️ Letter sounds, not just names
+  📚 Reading aloud every day
+  🗣️ Lots of conversation
+
+  Did you know this? Tell us 👇
+hashtags: >-
+  #earlyliteracy #phonics #prereading #montessori #montessoriathome #mythbusting #indianparents
+  #indianmoms #learningtoread #preschool #letmetry #parentingtips
+printable:
+  title: "Sounds Before Names: A Parent's Guide"
+  subtitle: "How children really learn to read · Ages 3–5"
+  intro: "Letter names are useful, but reading depends on hearing sounds in words and linking them to letters."
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Phonological awareness and knowledge of letter sounds are among the strongest early predictors of reading (National Early Literacy Panel, 2008)."
+    - heading: "Letter sounds (the short ones)"
+      items:
+        - "a as in apple, b as in ball, c as in cat"
+        - "Say sounds short and crisp: 'b', not 'buh'"
+        - "Start with s, a, t, m, p, i: they make many simple words"
+    - heading: "At home"
+      items:
+        - "Play sound games (see our SOUNDS printable)"
+        - "Make sandpaper letters (see our LETTERS printable, coming soon)"
+        - "Read aloud daily and talk about the pictures"
+        - "Point to words as you read titles"
+    - heading: "Don't worry if"
+      text: "Your child doesn't read before 5 or 6. Strong talkers and listeners usually become strong readers."
+  sources:
+    - label: "National Early Literacy Panel (2008). Developing Early Literacy. National Institute for Literacy."
+    - label: "Montessori, M. The Montessori Method (sandpaper letters)."

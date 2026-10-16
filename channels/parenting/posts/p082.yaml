@@ -1,0 +1,83 @@
+id: p082
+plan: "D41 7:30 PM · Debate"
+topic: "Self-image · ages 2–4"
+keyword: LABEL
+slides:
+  - kind: cover
+    title: "Stop labelling: *“She's shy”*, *“He's the naughty one”*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl half-hiding behind her mother's dupatta at a gathering, while a relative
+      points and talks about her. Gentle, empathetic tone. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Labels become *identity*"
+    body: "Hear 'shy' often enough, and a child starts to believe that's who they are."
+    prompt: >-
+      A 3-year-old South Asian boy sitting alone at the edge of a playground watching others play, thoughtful.
+      Gentle tone. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Expectations *shape* behaviour"
+    body: "Research shows adults' expectations can influence how children perform."
+    prompt: >-
+      A teacher kneeling and smiling encouragingly at a 3-year-old South Asian girl holding up a drawing. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Describe the *moment*"
+    body: "“She takes time to warm up” instead of “She's shy.”"
+    prompt: >-
+      A mother crouching beside her daughter at a party, the child slowly stepping forward towards other children
+      with her mother's encouragement. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Even 'good' labels *limit*"
+    body: "“The smart one” can make a child afraid to try hard things."
+    prompt: >-
+      Two South Asian siblings, a 4-year-old and a 2-year-old, each happily doing a different activity: one
+      painting, one building. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Children are *becoming*, not fixed."
+    body: "What label did you grow up with? 👇"
+    prompt: >-
+      A 3-year-old South Asian girl confidently waving to a group of children at a park, her mother smiling
+      behind her. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  “She's the shy one.” “He's so naughty.” “She's the clever sister.” We label kids casually, often in front of them. 🏷️
+
+  But children listen. And labels can turn into identities they grow into. Research on expectations (the 'Pygmalion effect') shows adults' beliefs can shape how children perform.
+
+  Try:
+  🔄 Describe the moment, not the child: “She takes time to warm up.”
+  🌱 Leave room to grow: “He's learning to wait.”
+  ⚖️ Avoid even 'good' labels that create pressure
+  🛡️ Gently correct relatives' labels in front of your child
+
+  What label did you grow up with? 👇
+hashtags: >-
+  #gentleparenting #labels #selfesteem #childpsychology #montessori #indianparents #indianmoms
+  #desiparents #growthmindset #raisingconfidentkids #letmetry #parentingtips
+printable:
+  title: "Swap the Label"
+  subtitle: "Words that leave room to grow · Ages 2–6"
+  intro: "Children often become what they hear about themselves. These swaps describe behaviour in the moment and leave room for change."
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Teachers' expectations influenced children's later performance in a classic study (Rosenthal & Jacobson, 1968)."
+        - "Praise that labels traits can make children avoid challenges (Mueller & Dweck, 1998)."
+    - heading: "Swaps"
+      items:
+        - "“She's shy” → “She likes to watch first.”"
+        - "“He's naughty” → “He's learning to follow rules.”"
+        - "“She's so stubborn” → “She knows what she wants.”"
+        - "“He's a bad eater” → “He's still learning to like new foods.”"
+        - "“She's the smart one” → “She worked hard on that.”"
+    - heading: "When relatives use labels"
+      text: "Respond lightly in front of your child: “She's warming up. She'll join when she's ready.”"
+  sources:
+    - label: "Rosenthal, R., & Jacobson, L. (1968). Pygmalion in the Classroom. Holt, Rinehart & Winston."
+    - label: "Mueller, C. M., & Dweck, C. S. (1998). Praise for intelligence can undermine children's motivation and performance. Journal of Personality and Social Psychology, 75(1), 33–52."

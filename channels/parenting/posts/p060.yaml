@@ -1,0 +1,89 @@
+id: p060
+plan: "D30 7:30 PM · Debate"
+topic: "Siblings · ages 2–4"
+keyword: SIBLING
+slides:
+  - kind: cover
+    title: "Stop saying *“You're the big brother now”*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy standing next to his mother, who is holding a newborn, looking up at her a
+      little sad and unsure. Gentle, warm tone. Keep the figures in the lower 60% of the frame. Leave the top 35%
+      as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "He's still *little* too"
+    body: "A new baby doesn't make a 3-year-old older. He still needs you just as much."
+    prompt: >-
+      A 3-year-old South Asian boy curled up in his father's lap with his thumb in his mouth, while a baby sleeps
+      in a cot in the background. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Regression is *normal*"
+    body: "Baby talk, accidents, clinginess. It passes with patience."
+    prompt: >-
+      A 3-year-old South Asian girl pretending to drink from a baby bottle and giggling, her mother smiling
+      kindly. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Special time*, just for them"
+    body: "10 minutes a day, baby elsewhere, their choice of play."
+    prompt: >-
+      A mother and her 3-year-old son playing a board game alone together on the floor, a baby monitor nearby.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Invite, don't *assign*"
+    body: "“Want to help me bathe the baby?” Helping should feel like a choice."
+    prompt: >-
+      A 3-year-old South Asian girl gently pouring a little water over a baby's foot during a bath, her father
+      supervising closely, everyone smiling. Keep the figures in the lower 60% of the frame. Leave the top 35%
+      as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Two hearts, *both* need you."
+    body: "How did your older one react to the new baby? 👇"
+    prompt: >-
+      A South Asian family on a sofa, the mother holding a baby with one arm and hugging the 3-year-old with the
+      other. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  “You're a big brother now! Big boys don't cry.” We say it to help. But a 3-year-old doesn't feel big. He feels replaced. 👶
+
+  The arrival of a sibling is one of the biggest changes in a young child's life. Regression (baby talk, accidents, clinginess) is very common and usually temporary.
+
+  What helps:
+  🧸 Let them be little too
+  ⏰ 10 minutes of special time a day, just them
+  🙋 Invite helping; don't assign it
+  💬 Name the feelings: “It's hard sharing Mumma.”
+  📸 Show their baby photos: “We did all this for you too.”
+
+  How did your older one react to the new baby? 👇
+hashtags: >-
+  #siblings #newbaby #siblingrivalry #bigbrother #bigsister #gentleparenting #montessori
+  #indianparents #indianmoms #secondbaby #letmetry #parentingtips
+printable:
+  title: "Preparing Your Child for a New Sibling"
+  subtitle: "Before and after the baby arrives · Ages 2–5"
+  intro: "A new sibling is a huge change. These steps help the older child feel secure and included."
+  sections:
+    - heading: "What the research says"
+      items:
+        - "A review of studies found that changes in behaviour, including regression and clinginess, are common in firstborns after a sibling's birth and usually improve over time (Volling, 2012)."
+    - heading: "Before the baby"
+      items:
+        - "Read books about new babies"
+        - "Make big changes (new bed, potty) well before, or wait until after"
+        - "Show their own baby photos"
+    - heading: "After the baby"
+      items:
+        - "10 minutes of special time every day"
+        - "A gift 'from the baby' to the older child"
+        - "Ask visitors to greet the older child first"
+        - "Invite (don't force) helping"
+    - heading: "Words that help"
+      items:
+        - "“It's hard when the baby needs me. I'll be with you soon.”"
+        - "“You can feel cross with the baby. You can't hit the baby.”"
+        - "“There's enough love for both of you.”"
+  sources:
+    - label: "Volling, B. L. (2012). Family transitions following the birth of a sibling: An empirical review of changes in the firstborn's adjustment. Psychological Bulletin, 138(3), 497–528."

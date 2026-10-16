@@ -1,0 +1,97 @@
+id: p058
+plan: "D29 7:30 PM · Debate"
+topic: "Early learning · age 3–4"
+keyword: TUITION
+slides:
+  - kind: cover
+    title: "Unpopular opinion: Your 3-year-old doesn't need *tuition*"
+    body: ""
+    prompt: >-
+      A small 3-year-old South Asian boy sitting at a big desk with a workbook, looking out of the window
+      longingly at children playing outside. Gentle tone. Keep the figures in the lower 60% of the frame. Leave
+      the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Play *is* their study"
+    body: "Paediatricians say play builds the brain, focus and social skills."
+    prompt: >-
+      A 3-year-old South Asian girl building a block bridge for toy cars on a rug, deeply focused. Keep the child
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Early worksheets, little *gain*"
+    body: "Early academic drilling doesn't give a lasting head start."
+    prompt: >-
+      A stack of untouched preschool workbooks on a shelf with a toddler's toy car resting on top, simple still
+      life. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "What *really* prepares them"
+    body: "Talking, reading together, independence, and getting along with others."
+    prompt: >-
+      A mother reading a picture book with her 3-year-old son on a floor cushion, both laughing at a page. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Give them their *afternoon* back"
+    body: "Free play, outdoor time, boredom, naps. All of it counts."
+    prompt: >-
+      Two South Asian 3-year-olds playing in a sandpit with buckets and spades in a sunny park. Keep the figures
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for
+      text.
+  - kind: outro
+    title: "Let them be *little*."
+    body: "Agree or disagree? This one divides people 👇"
+    prompt: >-
+      A 3-year-old South Asian girl running joyfully through a field of tall grass, arms out. Keep the child in
+      the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+caption: |
+  Tuition at 3. Handwriting classes at 3½. “Phonics crash course” before nursery. The pressure starts early in India. 📚
+
+  But the American Academy of Pediatrics calls play essential for brain development, focus, problem-solving and social skills. Early academic drilling doesn't give a lasting advantage.
+
+  What really prepares a 3-year-old:
+  🗣️ Lots of conversation
+  📖 Reading together every day
+  🧦 Independence: dressing, eating, tidying
+  🤝 Playing with other children
+  🌳 Free time outdoors
+
+  Agree or disagree? This one divides people 👇
+hashtags: >-
+  #playbasedlearning #earlychildhood #letthemplay #montessori #indianparents #indianmoms #desiparents
+  #academicpressure #childdevelopment #preschool #letmetry #parentingtips
+printable:
+  title: "Real School Readiness Checklist"
+  subtitle: "What actually matters before school · Ages 3–5"
+  intro: >-
+    School readiness isn't about reading or writing early. It's about independence, communication, curiosity
+    and getting along with others.
+  sections:
+    - heading: "What the research says"
+      items:
+        - "The American Academy of Pediatrics describes play as essential for developing executive function, language and social skills (Yogman et al., 2018)."
+        - "Developmental scientists warn that early drilling can crowd out the play that builds real learning (Hirsh-Pasek, Golinkoff & Eyer, 2003)."
+    - heading: "Independence"
+      items:
+        - "Uses the toilet with little help"
+        - "Eats and drinks without help"
+        - "Puts on shoes and a jacket"
+    - heading: "Communication"
+      items:
+        - "Says what they need"
+        - "Follows two-step instructions"
+        - "Listens to a short story"
+    - heading: "Social and emotional"
+      items:
+        - "Takes turns"
+        - "Separates from parents with some comfort"
+        - "Calms down with help"
+    - heading: "Curiosity"
+      items:
+        - "Asks questions"
+        - "Plays pretend"
+        - "Sticks with a task for a few minutes"
+  sources:
+    - label: "Yogman, M., Garner, A., Hutchinson, J., et al. (2018). The power of play: A pediatric role in enhancing development in young children. Pediatrics, 142(3)."
+    - label: "Hirsh-Pasek, K., Golinkoff, R. M., & Eyer, D. (2003). Einstein Never Used Flash Cards. Rodale."

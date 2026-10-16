@@ -1,0 +1,92 @@
+id: p072
+plan: "D36 7:30 PM · Debate"
+topic: "School admissions · age 3–4"
+keyword: ADMISSION
+slides:
+  - kind: cover
+    title: "Your 3-year-old shouldn't have to *perform* for admissions"
+    body: ""
+    prompt: >-
+      A nervous 3-year-old South Asian boy in a neat shirt sitting at a table in a school office, being asked
+      questions, his mother anxiously watching from a chair. Gentle, empathetic tone. Keep the figures in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Coaching creates *stress*"
+    body: "Drilling rhymes and answers turns a 3-year-old into a performer, not a learner."
+    prompt: >-
+      A 3-year-old South Asian girl looking tired at a table full of flashcards, while outside the window a swing
+      sways in a garden. Gentle tone. Keep the subject in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "What matters at *3*"
+    body: "Curiosity, independence, talking, playing with others. Not reciting."
+    prompt: >-
+      Two South Asian 3-year-olds happily building a block tower together on a classroom rug. Keep the figures in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Choose a school that *sees* children"
+    body: "Look for play, outdoor time, warm teachers. Not just results."
+    prompt: >-
+      A bright, calm preschool classroom with low shelves, children playing and a kind teacher kneeling to talk
+      with a child. Keep the scene in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Your *calm* is their calm"
+    body: "Treat visits like an outing, not an exam. They feel your stress."
+    prompt: >-
+      A father and his 3-year-old daughter walking hand in hand towards a school gate, both relaxed and smiling.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "They're 3. Let them *be* 3."
+    body: "What's your admissions experience been like? 👇"
+    prompt: >-
+      A 3-year-old South Asian boy happily jumping off a low step in a schoolyard, arms wide. Keep the child in
+      the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+caption: |
+  It's nursery admission season, and with it, the pressure: interview prep, rhyme coaching, “confidence classes” for 3-year-olds. 😮‍💨
+
+  But a 3-year-old's job is to play, explore and grow, not to perform. Coaching for 'interviews' adds stress and teaches little about real learning.
+
+  What matters at this age:
+  🔍 Curiosity
+  👟 Independence
+  🗣️ Talking and listening
+  🤝 Playing with other children
+
+  When choosing a school, look for play, outdoor time and warm teachers, not just results. And treat visits like an outing, not an exam.
+
+  What's your admissions experience been like? 👇
+hashtags: >-
+  #nurseryadmission #schooladmission #preschool #playschool #indianparents #indianmoms #desiparents
+  #montessori #childhood #letthemplay #letmetry #parentingtips
+printable:
+  title: "Choosing a Preschool: A Parent's Checklist"
+  subtitle: "What to look for on a school visit · Ages 2–4"
+  intro: "Take this list on school visits. Look past the brochure and watch how children and teachers actually spend their day."
+  sections:
+    - heading: "Watch the children"
+      items:
+        - "Do they look happy and busy?"
+        - "Are they choosing activities, or all doing the same worksheet?"
+        - "Is there time to play outdoors every day?"
+    - heading: "Watch the teachers"
+      items:
+        - "Do they kneel to talk at children's eye level?"
+        - "Are they calm and warm?"
+        - "How do they handle a crying child?"
+    - heading: "The space"
+      items:
+        - "Low shelves children can reach"
+        - "Real materials, books, art supplies"
+        - "Clean toilets children can use independently"
+    - heading: "Ask"
+      items:
+        - "What does a typical day look like?"
+        - "How much time is free play?"
+        - "How do you handle conflicts between children?"
+        - "Is there homework? (At this age, ideally no.)"
+  sources:
+    - label: "Yogman, M., et al. (2018). The power of play. Pediatrics, 142(3)."
