@@ -14,8 +14,8 @@ weekly:
   stories: 8                    # story slides in the weekly recap
 
 hashtags: >-
-  #AI #ArtificialIntelligence #AINews #MachineLearning #TechNews #GenerativeAI
-  #ChatGPT #LLM #DeepLearning #FutureOfWork #Innovation #Technology #TechMonkey
+  #ainews #artificialintelligence #technews #technewsindia #techmonkey
+hashtags_max: 5                 # 3-5 focused hashtags work better than many generic ones
 
 ai:
   models:                       # strong free-tier Gemini models, tried in order (update if Google renames them)
@@ -90,3 +90,13 @@ newsrooms:
   Qualcomm: https://www.qualcomm.com/news
   Intel: https://www.intel.com/content/www/us/en/newsroom/home.html
   NASA: https://images.nasa.gov/
+
+reel:                           # daily Reel built from the carousel's clips, posted right after it
+  enabled: true
+  share_to_feed: false          # false: Reels tab only (keeps the grid clean); true: also shows in the grid
+  cover_seconds: 3
+  story_seconds: 4              # ~4 s per story, about 30-35 s in total
+  # music: put royalty-free tracks (mp3/m4a) in channels/ai-news/music/; one is picked per day
+
+story:                          # 'NEW POST' Story (disappears after 24 h), posted right after the carousel
+  enabled: true

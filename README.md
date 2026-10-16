@@ -99,3 +99,9 @@ A different Instagram account needs its own token and user ID secrets. Ask Claud
   - **14:05 IST draft**: today's stories are picked and saved to `channels/ai-news/drafts/<date>/`. A GitHub Issue (emailed to you) lists them, with links to official company newsrooms.
   - **Optional press clip**: upload `press-N.mp4` (N = story number; under 25 MB; first ~6 s used) into that drafts folder before ~17:45 IST. Use only clips offered for media/editorial use.
   - **17:50 IST post**: built from the draft, published at 18:30, and the Issue is closed.
+
+## Reel, Story and captions
+- **Daily Reel**: built from the carousel's clips (cover 3 s + ~4 s per story + closing slide, ~30-35 s, 9:16 with a blurred fill), posted right after the carousel to the Reels tab (`reel.share_to_feed`). Music: put royalty-free tracks in `channels/ai-news/music/` (one per day, rotating); without tracks the Reel is silent.
+- **Story**: a "NEW POST" image of today's cover, posted right after the carousel; Instagram removes it after 24 h. (The API can't add the tappable "shared post" sticker.)
+- **Captions** open with a searchable line ("AI News Today (17 Oct): OpenAI, NVIDIA & more") and use 5 focused hashtags (`hashtags_max`).
+- If the Reel or Story fails, the carousel is still posted and recorded; the GitHub run is marked failed so you get an email.

@@ -20,29 +20,60 @@ from zoneinfo import ZoneInfo
 import yaml
 from dotenv import load_dotenv
 
-from engine import broll, collect, curate, history, host, images, instagram, notify, render, video
+from engine import broll, collect, curate, history, host, images, instagram, notify, reel, render, video
 
 ROOT = Path(__file__).parent
 CAPTION_LIMIT = 2200
 
 
-def build_caption(result, cfg):
+def keyword_line(result, mode, local_date):
+    """Searchable first caption line, e.g. 'AI News Today (17 Oct): OpenAI, NVIDIA, Google & more'."""
+    names = []
+    for s in result["stories"]:
+        c = (s.get("company") or "").strip()
+        if c and c.lower() not in (n.lower() for n in names):
+            names.append(c)
+    day = datetime.strptime(local_date, "%Y-%m-%d").strftime("%d %b").lstrip("0")
+    title = "This Week in Tech" if mode == "weekly" else "AI News Today"
+    who = ", ".join(names[:3]) + (" & more" if len(names) > 3 or len(result["stories"]) > len(names[:3]) else "")
+    return f"{title} ({day}): {who}" if names else f"{title} ({day})"
+
+
+def hashtags(cfg):
+    return " ".join(cfg["hashtags"].split()[: cfg.get("hashtags_max", 5)])
+
+
+def build_caption(result, cfg, mode="daily", local_date=None):
+    local_date = local_date or datetime.now().strftime("%Y-%m-%d")
     sources = sorted({s["source"] for s in result["stories"]})
-    credits = sorted({c for c in result.get("video_credits", [])})  # only NASA / official press footage
-    disclosure = "AI-assisted summaries · AI images & stock footage for illustration only"
+    credits = sorted({c for c in result.get("video_credits", [])})
+    disclosure = "Summaries written with AI assistance from the sources above. AI-generated illustrations are not real photos"
+    disclosure += ("; video clips are stock or official footage used for illustration." if credits else ".")
     parts = [
+        keyword_line(result, mode, local_date),
         result["caption"],
         "Sources: " + ", ".join(sources),
-        ("Footage: " + "; ".join(credits)) if credits else "",
+        ("Video: " + "; ".join(credits)) if credits else "",
         disclosure,
-        " ".join(cfg["hashtags"].split()[:30]),
+        hashtags(cfg),
     ]
     parts = [p for p in parts if p]
     caption = "\n\n".join(parts)
-    if len(caption) > CAPTION_LIMIT:  # trim the body, keep credits + hashtags
-        tail = "\n\n".join(parts[1:])
-        caption = result["caption"][: CAPTION_LIMIT - len(tail) - 3].rstrip() + "…\n\n" + tail
+    if len(caption) > CAPTION_LIMIT:  # trim the body, keep the first line, credits + hashtags
+        tail = "\n\n".join(parts[2:])
+        body = result["caption"][: CAPTION_LIMIT - len(tail) - len(parts[0]) - 6].rstrip() + "…"
+        caption = "\n\n".join([parts[0], body, tail])
     return caption
+
+
+def build_reel_caption(result, cfg, mode, local_date):
+    hook = (result.get("caption") or "").split("\n")[0].strip()
+    return "\n\n".join(p for p in [
+        keyword_line(result, mode, local_date),
+        hook,
+        f"All {len(result['stories'])} stories with the details are in our latest carousel 👉 {cfg['handle']}",
+        hashtags(cfg),
+    ] if p)
 
 
 def highlight(text):
@@ -176,6 +207,21 @@ def render_all(result, mode, out_dir, cfg, channel_dir, base_context, video_numb
     return slide_media(out_dir)
 
 
+def make_reel_and_story(out_dir, result, cfg, channel_dir):
+    """Daily Reel (9:16 video from the slides) and a 'NEW POST' Story image. Failures here never block the post."""
+    try:
+        if cfg.get("reel", {}).get("enabled"):
+            rc = cfg["reel"]
+            music = reel.pick_music(channel_dir / "music")
+            print(f"Building Reel ({'music: ' + music.name if music else 'no music: add tracks to channels/<channel>/music/'})…")
+            reel.build_reel(out_dir, music, rc.get("cover_seconds", 3), rc.get("story_seconds", 4))
+        if cfg.get("story", {}).get("enabled"):
+            print("Building Story image…")
+            reel.build_story(out_dir, cfg["handle"], len(result["stories"]))
+    except Exception as e:
+        print(f"  ! Reel/Story build failed: {e}")
+
+
 def wait_for_publish_time(hhmm, tz, max_wait_minutes=60):
     """If the publish time is up to an hour away, sleep until it; otherwise (manual runs) post now."""
     if not hhmm:
@@ -190,18 +236,42 @@ def wait_for_publish_time(hhmm, tz, max_wait_minutes=60):
 
 
 def publish(paths, caption, result, args, cfg, channel_dir, hist, local_date, stamp):
-    print(f"Uploading {len(paths)} slides ({sum(p.suffix == '.mp4' for p in paths)} video)…")
-    urls = host.upload(paths, f"{args.channel}/{stamp}")
-    print("Publishing to Instagram…")
-    media_id = instagram.publish_carousel(urls, caption, cfg["instagram"]["api_version"])
+    out_dir = Path(paths[0]).parent
+    extras = [f for f in (out_dir / "reel.mp4", out_dir / "story.jpg") if f.exists()]
+    print(f"Uploading {len(paths)} slides ({sum(p.suffix == '.mp4' for p in paths)} video)"
+          f"{' + ' + ', '.join(f.name for f in extras) if extras else ''}…")
+    urls = host.upload(list(paths) + extras, f"{args.channel}/{stamp}")
+    by_name = dict(zip([p.name for p in list(paths) + extras], urls))
+    version = cfg["instagram"]["api_version"]
+    print("Publishing carousel to Instagram…")
+    media_id = instagram.publish_carousel(urls[: len(paths)], caption, version)
     print(f"Published! media id {media_id}")
 
     history.record(hist, args.mode, local_date, result["stories"], media_id)
     history.save(channel_dir, hist)
+
+    problems = []
+    if "reel.mp4" in by_name and cfg.get("reel", {}).get("enabled"):
+        try:
+            rc_path = out_dir / "reel_caption.txt"
+            reel_caption = rc_path.read_text(encoding="utf-8") if rc_path.exists() else caption
+            reel_id = instagram.publish_reel(by_name["reel.mp4"], reel_caption, version,
+                                             cfg["reel"].get("share_to_feed", False))
+            print(f"Reel published: {reel_id}")
+        except Exception as e:
+            problems.append(f"Reel: {e}")
+    if "story.jpg" in by_name and cfg.get("story", {}).get("enabled"):
+        try:
+            print(f"Story published: {instagram.publish_story(by_name['story.jpg'], version)}")
+        except Exception as e:
+            problems.append(f"Story: {e}")
     try:
         host.cleanup(args.channel)
     except Exception as e:  # cleanup is best-effort
         print(f"  (media cleanup skipped: {e})")
+    if problems:  # carousel is live and recorded; fail the run so GitHub emails you
+        print("  ! " + "\n  ! ".join(problems))
+        raise SystemExit(f"Carousel posted, but: {'; '.join(problems)}")
     return media_id
 
 
@@ -337,10 +407,12 @@ def main():
     else:
         print("Generating background images…")
         make_images(result, out_dir, cfg)
-    caption = build_caption(result, cfg)
+    caption = build_caption(result, cfg, args.mode, local_date)
     (out_dir / "caption.txt").write_text(caption, encoding="utf-8")
+    (out_dir / "reel_caption.txt").write_text(build_reel_caption(result, cfg, args.mode, local_date), encoding="utf-8")
     (out_dir / "post.json").write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     paths = render_all(result, args.mode, out_dir, cfg, channel_dir, base_context)
+    make_reel_and_story(out_dir, result, cfg, channel_dir)
 
     for i, s in enumerate(result["stories"], 1):
         print(f"  {i}. [{s['category']}] {s['headline']}  ({s['source']})")

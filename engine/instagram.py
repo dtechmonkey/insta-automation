@@ -1,4 +1,4 @@
-"""Publish carousels with the official Instagram API (Instagram Login flavour).
+"""Publish carousels, Reels and Stories with the official Instagram API (Instagram Login flavour).
 
 CLI helpers:
   python -m engine.instagram whoami     # check the token; prints username + IG user id
@@ -60,6 +60,25 @@ def publish_carousel(image_urls, caption, version):
                      media_type="CAROUSEL", children=",".join(children), caption=caption)["id"]
     _wait_ready(carousel, version)
     return _call("POST", f"{ig_user}/media_publish", version, creation_id=carousel)["id"]
+
+
+def publish_reel(video_url, caption, version, share_to_feed=False):
+    """A Reel (9:16 video). share_to_feed=False keeps it in the Reels tab only (no duplicate grid tile)."""
+    ig_user = os.environ["IG_USER_ID"].strip()
+    container = _call("POST", f"{ig_user}/media", version, media_type="REELS", video_url=video_url,
+                      caption=caption, share_to_feed="true" if share_to_feed else "false",
+                      thumb_offset="0")["id"]  # first frame = cover with full text
+    _wait_ready(container, version, timeout=600)
+    return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
+
+
+def publish_story(media_url, version):
+    """A Story (disappears after 24 h). The API can't add the tappable 'shared post' sticker."""
+    ig_user = os.environ["IG_USER_ID"].strip()
+    kind = {"video_url": media_url} if media_url.lower().endswith(".mp4") else {"image_url": media_url}
+    container = _call("POST", f"{ig_user}/media", version, media_type="STORIES", **kind)["id"]
+    _wait_ready(container, version)
+    return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
 
 
 def refresh_token():
