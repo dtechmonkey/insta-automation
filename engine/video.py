@@ -33,8 +33,10 @@ def render_layers(slide, templates_dir, base_context, out_dir, name):
     return paths["fade"], paths["text"]
 
 
-def make_clip(background, fade_png, text_png, out_mp4, seconds=6.0):
-    """Compose background (image or video) + fade + animated text into an Instagram-ready MP4."""
+def make_clip(background, fade_png, text_png, out_mp4, seconds=6.0, animate_text=True):
+    """Compose background (image or video) + fade + text into an Instagram-ready MP4.
+    animate_text=False keeps the text fully visible from the first frame: used for the cover, because
+    Instagram uses the first frame of a carousel's first video as the grid thumbnail."""
     background = Path(background)
     frames = int(seconds * FPS)
     if background.suffix.lower() in (".mp4", ".mov", ".webm"):
@@ -47,12 +49,12 @@ def make_clip(background, fade_png, text_png, out_mp4, seconds=6.0):
         base = (f"[0:v]scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},"
                 f"zoompan=z='1+0.10*on/{frames}':x='iw/2-(iw/zoom/2)':y='(ih-ih/zoom)*0.35':"
                 f"d={frames}:s={W}x{H}:fps={FPS}[base]")
-    graph = ";".join([
-        base,
-        "[base][1:v]overlay=0:0[faded]",
-        "[2:v]format=rgba,fade=t=in:st=0.4:d=0.8:alpha=1[txt]",
-        "[faded][txt]overlay=x=0:y='if(lt(t,0.4),36,max(0,36-40*(t-0.4)))':eval=frame,format=yuv420p[v]",
-    ])
+    if animate_text:  # text fades in and slides up into place
+        text = ["[2:v]format=rgba,fade=t=in:st=0.4:d=0.8:alpha=1[txt]",
+                "[faded][txt]overlay=x=0:y='if(lt(t,0.4),36,max(0,36-40*(t-0.4)))':eval=frame,format=yuv420p[v]"]
+    else:  # static text over the moving background
+        text = ["[faded][2:v]overlay=0:0,format=yuv420p[v]"]
+    graph = ";".join([base, "[base][1:v]overlay=0:0[faded]", *text])
     cmd = [imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-loglevel", "error",
            *bg_input,
            "-loop", "1", "-framerate", str(FPS), "-i", str(fade_png),
@@ -77,7 +79,8 @@ def make_clips(slides, slide_numbers, bg_paths, templates_dir, base_context, out
             print(f"  slide {n}: no background image, skipping video")
             continue
         fade, text = render_layers(slides[n - 1], templates_dir, base_context, work, f"{n:02d}")
-        out = make_clip(bg, fade, text, Path(out_dir) / f"{n:02d}.mp4", seconds)
+        # Slide 1 (cover) keeps its text static so the grid thumbnail shows the full cover.
+        out = make_clip(bg, fade, text, Path(out_dir) / f"{n:02d}.mp4", seconds, animate_text=n != 1)
         print(f"  slide {n}: {out.name} ({'video background' if Path(bg).suffix == '.mp4' else 'animated still'})")
         made.append(out)
     return made
