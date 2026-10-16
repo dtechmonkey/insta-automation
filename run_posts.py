@@ -14,6 +14,7 @@ import argparse
 import base64
 import html
 import json
+import os
 import random
 import re
 import sys
@@ -230,6 +231,9 @@ def publish_next(channel_dir, cfg, args):
     tz = ZoneInfo(cfg.get("timezone", "UTC"))
     now = datetime.now(tz)
     local_date = now.strftime("%Y-%m-%d")
+    if local_date < str(cfg.get("start_date", "")) and not args.dry_run:
+        print(f"Posting starts on {cfg['start_date']}; nothing to do today.")
+        return
     hist = load_state(channel_dir, "history.json", {"posts": []})
     slot, target = current_slot(cfg, now)
     slot = slot or "manual"
@@ -342,11 +346,15 @@ def main():
     ap.add_argument("--publish", action="store_true", help="post the next ready post")
     ap.add_argument("--comments", action="store_true", help="reply to keyword comments")
     ap.add_argument("--status", action="store_true")
+    ap.add_argument("--whoami", action="store_true", help="check this channel's Instagram token")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252
 
     load_dotenv(ROOT / ".env")
+    for name in ("IG_ACCESS_TOKEN", "IG_USER_ID"):  # local .env: IG_ACCESS_TOKEN_PARENTING etc. win for this channel
+        if os.environ.get(f"{name}_{args.channel.upper()}"):
+            os.environ[name] = os.environ[f"{name}_{args.channel.upper()}"]
     channel_dir = ROOT / "channels" / args.channel
     cfg = yaml.safe_load((channel_dir / "config.yaml").read_text(encoding="utf-8"))
 
@@ -361,6 +369,9 @@ def main():
         publish_next(channel_dir, cfg, args)
     elif args.comments:
         reply_to_comments(channel_dir, cfg, args)
+    elif args.whoami:
+        me = instagram._call("GET", "me", cfg["instagram"]["api_version"], fields="user_id,username,account_type")
+        print(f"username: {me.get('username')}\nIG_USER_ID: {me.get('user_id')}\naccount type: {me.get('account_type')}")
     else:
         print_status(channel_dir)
 

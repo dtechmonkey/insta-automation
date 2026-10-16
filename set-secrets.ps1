@@ -3,7 +3,7 @@
 # Values are piped straight to GitHub (encrypted there) and never printed.
 $repo = "dtechmonkey/insta-automation"
 $gh = "C:\Program Files\GitHub CLI\gh.exe"
-$names = "GEMINI_API_KEY", "CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_API_TOKEN", "HF_TOKEN", "PEXELS_API_KEY", "PIXABAY_API_KEY", "IG_USER_ID", "IG_ACCESS_TOKEN"
+$names = "GEMINI_API_KEY", "CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_API_TOKEN", "HF_TOKEN", "PEXELS_API_KEY", "PIXABAY_API_KEY", "IG_USER_ID", "IG_ACCESS_TOKEN", "IG_USER_ID_PARENTING", "IG_ACCESS_TOKEN_PARENTING"
 
 $envFile = Join-Path $PSScriptRoot ".env"
 foreach ($line in Get-Content $envFile) {
