@@ -1,0 +1,86 @@
+id: p094
+plan: "D47 7:30 PM · Debate"
+topic: "Early learning · age 3–4"
+keyword: HOMEWORK
+slides:
+  - kind: cover
+    title: "Then vs now: *Homework* for a 4-year-old?"
+    body: ""
+    prompt: >-
+      A tired 4-year-old South Asian boy at a dining table in the evening with a writing worksheet, yawning, while
+      his toy blocks sit untouched on the floor. Gentle tone. Keep the figures in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Little evidence of *benefit*"
+    body: "Research finds homework shows little benefit for young children."
+    prompt: >-
+      A pile of worksheets on a table next to a sleeping cat, simple, gently humorous still life. Keep the subject
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Play builds the *same* skills"
+    body: "Focus, fine motor control, early maths and language all grow through play."
+    prompt: >-
+      A 4-year-old South Asian girl threading beads in a pattern on the floor, completely absorbed. Keep the
+      child in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Evenings are for *connection*"
+    body: "Dinner, stories, bath, cuddles. That's the real homework."
+    prompt: >-
+      A father reading a bedtime story to his 4-year-old son and 2-year-old daughter on a bed. Keep the figures in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "If school *sends* it"
+    body: "Keep it short, make it playful, and stop if there are tears."
+    prompt: >-
+      A mother and her 4-year-old daughter tracing letters in a tray of sand together, laughing. Keep the figures
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Let evenings be *evenings*."
+    body: "Does your preschooler get homework? 👇"
+    prompt: >-
+      A 4-year-old South Asian boy playing happily in a balcony garden at dusk with his grandfather. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  Writing worksheets every evening. Rhymes to memorise. Projects for parents to do. For 4-year-olds. 📝
+
+  A large review of homework research found little evidence of benefit for young children. Meanwhile, play builds the very skills homework aims for: focus, hand control, maths and language.
+
+  If your child's school sends homework:
+  ⏱️ Keep it short
+  🎲 Make it playful (letters in sand, counting with spoons)
+  😢 Stop if there are tears
+  🗣️ Talk kindly with teachers
+
+  Does your preschooler get homework? 👇
+hashtags: >-
+  #homework #preschool #playbasedlearning #earlychildhood #montessori #indianparents #indianmoms
+  #desiparents #academicpressure #letthemplay #letmetry #parentingtips
+printable:
+  title: "Turning Preschool Homework into Play"
+  subtitle: "If school sends it home · Ages 3–5"
+  intro: "When homework comes home, these playful swaps cover the same skills without tears."
+  sections:
+    - heading: "What the research says"
+      items:
+        - "A synthesis of homework research found little relationship between homework and achievement for younger students (Cooper, Robinson & Patall, 2006)."
+        - "The AAP highlights play as essential for young children's development (Yogman et al., 2018)."
+    - heading: "Swaps"
+      items:
+        - "Writing letters → trace letters in sand, flour or on a steamy mirror"
+        - "Counting worksheets → count spoons, stairs, rotis"
+        - "Colouring pages → free drawing, painting, play dough"
+        - "Memorising rhymes → sing them with actions in the bath"
+    - heading: "Rules"
+      items:
+        - "10 minutes maximum"
+        - "Stop at the first tears"
+        - "Never in place of outdoor play or sleep"
+    - heading: "Talking to teachers"
+      text: "“She's tired in the evenings. Could we do this through play instead?” Most teachers appreciate a respectful conversation."
+  sources:
+    - label: "Cooper, H., Robinson, J. C., & Patall, E. A. (2006). Does homework improve academic achievement? A synthesis of research, 1987–2003. Review of Educational Research, 76(1), 1–62."
+    - label: "Yogman, M., et al. (2018). The power of play. Pediatrics, 142(3)."

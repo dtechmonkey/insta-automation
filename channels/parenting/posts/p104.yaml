@@ -1,0 +1,89 @@
+id: p104
+plan: "D52 7:30 PM · Debate"
+topic: "Feeding · ages 2–4"
+keyword: ONEMEAL
+slides:
+  - kind: cover
+    title: "Agree or disagree? Kids should eat *what the family eats*"
+    body: ""
+    prompt: >-
+      A South Asian family at a dining table, everyone eating the same dal, rice and sabzi, a 3-year-old girl
+      eating from a smaller plate of the same food. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Short-order cooking *backfires*"
+    body: "A separate 'kids' meal' every time teaches them to wait for favourites."
+    prompt: >-
+      A tired mother cooking three different dishes at once in a kitchen while a toddler waits at the table.
+      Gentle humour. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Kids learn by *watching*"
+    body: "Seeing family enjoy a food makes children more willing to try it."
+    prompt: >-
+      A 2-year-old South Asian boy watching his grandfather eat bhindi with great enjoyment, curious. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Include one *safe* food"
+    body: "Roti, rice or curd on the table: something they usually eat."
+    prompt: >-
+      A small steel plate with a little rice, a roti, a spoon of dal and some sabzi, a toddler reaching for the
+      roti. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Adjust, don't *replace*"
+    body: "Less spice for them, a mashed portion, or curd on the side."
+    prompt: >-
+      A mother taking out a small portion of dal before adding chilli tadka to the rest, her toddler watching
+      from a stool. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "One meal. *One* table."
+    body: "Agree or disagree? 👇"
+    prompt: >-
+      A joint family eating together on the floor around a low table, a toddler happily eating with his hands
+      among the adults. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  Dal-chawal for the family, pasta for the child, maggi when they refuse… Sound familiar? 🍲
+
+  Feeding experts generally recommend one family meal, with small adjustments, rather than cooking separately for children. Kids learn to like foods by seeing family enjoy them, again and again.
+
+  Try:
+  🍽️ Serve the family meal in small portions
+  🍚 Include one 'safe' food they usually eat
+  🌶️ Adjust: take out their portion before the spice goes in
+  👀 Eat together so they can watch and copy
+
+  Agree or disagree? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #familymeals #pickyeater #toddlerfood #responsivefeeding #montessori #indianparents #indianmoms
+  #indianfood #gentleparenting #healthykids #letmetry #parentingtips
+printable:
+  title: "One Family Meal, Adjusted for Little Ones"
+  subtitle: "Practical tips for Indian kitchens · Ages 1–4"
+  medical: true
+  intro: "Children who eat the family's food from early on usually accept a wider variety. A few small adjustments make most Indian meals toddler-friendly."
+  sections:
+    - heading: "What the research says"
+      items:
+        - "Children's food preferences are shaped by repeated exposure and by watching others eat (Birch & Fisher, 1998)."
+    - heading: "Adjust the family meal"
+      items:
+        - "Take out their portion before adding chilli"
+        - "Serve a mild version with curd on the side"
+        - "Mash or cut into small pieces"
+        - "Serve components separately (rice, dal, sabzi)"
+    - heading: "Always include one safe food"
+      items:
+        - "Roti, rice, curd, idli or a fruit they like"
+    - heading: "At the table"
+      items:
+        - "Eat together, without screens"
+        - "Small portions; seconds allowed"
+        - "No pressure to taste; just keep offering"
+  sources:
+    - label: "Birch, L. L., & Fisher, J. O. (1998). Development of eating behaviors among children and adolescents. Pediatrics, 101(3 Pt 2), 539–549."

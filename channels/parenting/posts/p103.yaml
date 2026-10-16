@@ -1,0 +1,83 @@
+id: p103
+plan: "D52 1 PM · Practical"
+topic: "Practical life · ages 2–4"
+keyword: GROCERY
+slides:
+  - kind: cover
+    title: "Unpacking groceries: *sort, carry, put away*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy unpacking a cloth grocery bag in an Indian kitchen, holding up a bunch of
+      bananas proudly, vegetables spread on a low stool. Keep the child in the lower 60% of the frame. Leave the
+      top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Sort* by type"
+    body: "Fruits here, vegetables there, packets on the side."
+    prompt: >-
+      A 2-year-old South Asian girl sorting tomatoes, onions and apples into three small baskets on the floor.
+      Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "*Name* and count"
+    body: "“How many potatoes? Which is heavier, the onion or the apple?”"
+    prompt: >-
+      A mother and her 3-year-old son counting potatoes together on a kitchen counter, the child holding one in
+      each hand comparing weight. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Carry* unbreakables"
+    body: "Packets, fruits and vegetables to the right shelf. Real responsibility."
+    prompt: >-
+      A 3-year-old South Asian girl carrying a packet of dal to a low kitchen shelf, careful steps. Keep the child
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "*Wash* the produce"
+    body: "A bowl of water for fruits and vegetables. Their favourite part!"
+    prompt: >-
+      A 2-year-old South Asian boy washing apples in a big steel bowl of water at a low table, splashing a little.
+      Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "A real job in a *real* home."
+    body: "Does your child help after shopping?"
+    prompt: >-
+      A South Asian father and toddler putting away the last groceries in a kitchen, both smiling. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  Grocery day is a learning goldmine: sorting, counting, comparing, carrying and washing. 🛒
+
+  Little jobs:
+  🧺 Sort fruits, vegetables and packets
+  🔢 Count and compare: “Which is heavier?”
+  📦 Carry unbreakables to the right shelf
+  💧 Wash the fruits and vegetables
+
+  Real work, real belonging, and lots of new words. 🌿
+
+  Does your child help after shopping? 👇
+hashtags: >-
+  #practicallife #montessori #montessoriathome #toddlerhelpers #groceryshopping #montessoriindia
+  #earlymaths #chores #indianmoms #lifeskills #letmetry #toddleractivities
+printable:
+  title: "Grocery Day Learning"
+  subtitle: "Maths, language and practical life · Ages 2–4"
+  intro: "Turn unpacking the shopping into a hands-on lesson. Pick 2–3 jobs each time."
+  sections:
+    - heading: "At the market"
+      items:
+        - "Find something red, round, long"
+        - "Count bananas into the bag"
+        - "Carry a small bag of their own"
+    - heading: "At home"
+      items:
+        - "Sort into fruits, vegetables and packets"
+        - "Compare: heavy and light, big and small"
+        - "Wash fruits and vegetables in a bowl"
+        - "Carry packets to the right shelf"
+        - "Put empty bags away"
+    - heading: "Words to use"
+      text: "Names of fruits and vegetables in your home language and English, plus heavy, light, more, fewer, same, different."
+  sources:
+    - label: "Montessori, M. The Discovery of the Child (practical life)."

@@ -1,0 +1,91 @@
+id: p108
+plan: "D54 7:30 PM · Debate"
+topic: "Development · ages 0–3"
+keyword: MILESTONE
+slides:
+  - kind: cover
+    title: "Myth: Early walkers and talkers are *smarter*"
+    body: ""
+    prompt: >-
+      Two South Asian babies around 12 months old on a rug, one taking first steps and the other happily sitting
+      and stacking cups, their mothers watching. Keep the figures in the lower 60% of the frame. Leave the top 35%
+      as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Fact: *no clear link*"
+    body: "Research finds early milestones don't predict later intelligence in healthy children."
+    prompt: >-
+      A simple scene of a baby crawling on a mat beside a stack of picture books, calm and gentle. Keep the subject
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Normal ranges are *wide*"
+    body: "Healthy babies walk anywhere from about 9 to 18 months."
+    prompt: >-
+      Three South Asian toddlers of the same age: one walking, one cruising along a sofa, one crawling, all happy.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Every child has a *rhythm*"
+    body: "Some walk early and talk later. Others the opposite."
+    prompt: >-
+      A 14-month-old South Asian boy babbling and pointing at a bird while sitting on his father's lap, not yet
+      walking. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "When to *check*"
+    body: "Trust your instincts: if something worries you, ask your paediatrician."
+    prompt: >-
+      A mother with her toddler on her lap chatting with a friendly paediatrician in a bright clinic. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: outro
+    title: "Their own *pace*."
+    body: "When did your child walk? 👇"
+    prompt: >-
+      A 15-month-old South Asian girl taking wobbly first steps towards her grandmother's open arms. Keep the
+      figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  “He walked at 9 months! Very smart child.” “She's 15 months and not walking yet?” The comparisons start early. 👣
+
+  ❌ Myth: early walkers and talkers are smarter
+  ✅ Fact: in healthy children, the age of early motor milestones doesn't predict later intelligence
+
+  Normal ranges are wide: many healthy babies walk anywhere from about 9 to 18 months. Every child has their own rhythm.
+
+  Trust your instincts. If something worries you, ask your paediatrician, and ignore the comparisons.
+
+  When did your child walk? 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #babymilestones #childdevelopment #mythbusting #parentingmyths #montessori #indianparents #indianmoms
+  #desiparents #firststeps #comparisonisthethiefofjoy #letmetry #parentingtips
+printable:
+  title: "Milestone Ranges: What's Typical"
+  subtitle: "Wide normal ranges, and when to check · Ages 0–3"
+  medical: true
+  intro: "Milestones are guides, not deadlines. Healthy children reach them at different times."
+  sections:
+    - heading: "What the research found"
+      items:
+        - "In a study of healthy children, the age of reaching infant motor milestones had little value in predicting later intelligence or motor skills (Jenni et al., 2013)."
+    - heading: "Typical ranges (approximate)"
+      items:
+        - "Sitting without support: about 5–9 months"
+        - "Crawling: about 6–11 months (some babies skip it)"
+        - "Walking: about 9–18 months"
+        - "First words: about 10–15 months"
+        - "Two-word phrases: about 18–24 months"
+    - heading: "Talk to a doctor if"
+      items:
+        - "Not walking by about 18 months"
+        - "No words by about 16 months"
+        - "No two-word phrases by about 2 years"
+        - "Losing skills they had"
+        - "Anything that worries you"
+    - heading: "Learn more"
+      text: "The CDC's 'Learn the Signs. Act Early.' checklists are a helpful guide."
+  sources:
+    - label: "Jenni, O. G., Chaouch, A., Caflisch, J., & Rousson, V. (2013). Infant motor milestones: Poor predictive value for outcome of healthy children. Acta Paediatrica, 102(4), e181–e184."
+    - label: "CDC: Learn the Signs. Act Early."
+      url: "https://www.cdc.gov/ncbddd/actearly/milestones/"

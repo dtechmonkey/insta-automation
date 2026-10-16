@@ -1,0 +1,84 @@
+id: p096
+plan: "D48 7:30 PM · Debate"
+topic: "Limits · ages 2–4"
+keyword: LIMITS
+slides:
+  - kind: cover
+    title: "Is it OK to say *“No”* to your toddler?"
+    body: "Yes. Here's how."
+    prompt: >-
+      A mother kneeling in a shop aisle, calmly holding a box of sweets away from her 2-year-old son, who is
+      upset, the mother's face kind and steady. Keep the figures in the lower 60% of the frame. Leave the top 35%
+      as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Gentle doesn't mean *permissive*"
+    body: "Gentle parenting still has limits. Kindness and firmness go together."
+    prompt: >-
+      A father hugging his crying 3-year-old daughter while keeping a hand on a closed cupboard, calm and loving.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Limits make kids feel *safe*"
+    body: "Children with no limits often feel anxious, not free."
+    prompt: >-
+      A 2-year-old South Asian girl playing happily inside a fenced garden area, her mother nearby. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Say no, then *empathise*"
+    body: "“No more biscuits. You really wanted another one. I know.”"
+    prompt: >-
+      A mother sitting on the floor next to her upset 3-year-old son, a hand on his back, a biscuit tin closed on
+      the counter behind. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Let them be *upset*"
+    body: "You don't need to fix the feeling. Just stay steady."
+    prompt: >-
+      A father sitting calmly on a bench while his 2-year-old daughter cries next to him, his hand open for when
+      she's ready. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Kind *and* clear."
+    body: "Is saying no hard for you? You're not alone 👇"
+    prompt: >-
+      A 2-year-old South Asian boy now calm and holding his mother's hand as they walk out of a shop, both
+      smiling. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  Some parents worry that 'gentle parenting' means never saying no. It doesn't. 🙅
+
+  Research on parenting styles finds children do best with parents who are both warm AND set clear limits. Limits make children feel safe.
+
+  How to say no gently:
+  🧱 Say the limit clearly: “No more biscuits.”
+  💛 Empathise: “You really wanted another one.”
+  😢 Let them be upset; you don't need to fix it
+  🤗 Stay close and steady
+
+  Is saying no hard for you? You're not alone 👇
+hashtags: >-
+  #gentleparenting #boundaries #sayingno #positivediscipline #montessori #indianparents #indianmoms
+  #toddlerlife #authoritativeparenting #parentingtips #letmetry #firmandkind
+printable:
+  title: "Saying No with Kindness"
+  subtitle: "Scripts for everyday limits · Ages 2–4"
+  intro: "Children need limits and empathy together. These scripts help you hold a 'no' without harshness or giving in."
+  sections:
+    - heading: "What the research says"
+      items:
+        - "Parenting that combines warmth with clear limits ('authoritative' parenting) is linked to positive child outcomes (Baumrind, 1966)."
+    - heading: "The 3 steps"
+      items:
+        - "1. The limit: “No more biscuits today.”"
+        - "2. The feeling: “You're disappointed. You wanted another one.”"
+        - "3. The option (if there is one): “You can have a banana.”"
+    - heading: "Scripts"
+      items:
+        - "“I won't let you hit. You can stamp your feet.”"
+        - "“It's time to leave the park. It's hard to stop playing.”"
+        - "“The phone is for Papa's work. Let's find your book.”"
+    - heading: "Remember"
+      text: "Upset isn't harm. You can let your child be sad about a limit while staying warm and close."
+  sources:
+    - label: "Baumrind, D. (1966). Effects of authoritative parental control on child behavior. Child Development, 37(4), 887–907."

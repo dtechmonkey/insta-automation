@@ -1,0 +1,90 @@
+id: p093
+plan: "D47 1 PM · Practical"
+topic: "Early maths · age 3–4"
+keyword: PATTERN
+slides:
+  - kind: cover
+    title: "Pattern-making with leaves, buttons and *bindis*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl at a low table making a line pattern with alternating green leaves and big
+      colourful buttons, focused, a small bowl of buttons beside her. Keep the child in the lower 60% of the
+      frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*AB* patterns first"
+    body: "Leaf, button, leaf, button. What comes next?"
+    prompt: >-
+      Top-down view of a simple alternating pattern of leaves and buttons in a line on a wooden table. Keep the
+      subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: tip
+    title: "*Bindi* patterns"
+    body: "Stick bindis in a pattern on paper: red, gold, red, gold. Great finger work."
+    prompt: >-
+      A 4-year-old South Asian girl carefully sticking small red and gold bindis in a pattern along a paper strip.
+      Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Then *ABB* and *ABC*"
+    body: "Leaf, button, button… a harder rule to spot."
+    prompt: >-
+      A 4-year-old South Asian boy studying a pattern of pebble, leaf, leaf, pebble and adding the next piece.
+      Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Find patterns *everywhere*"
+    body: "Kurta prints, tiles, rangoli, music. Patterns are the root of maths."
+    prompt: >-
+      A mother and her 3-year-old daughter pointing at a repeating pattern on a printed cushion cover, smiling.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Spot it, *continue* it."
+    body: "What will your child use to make patterns?"
+    prompt: >-
+      A proud 3-year-old South Asian boy showing a long pattern of leaves and pebbles on a verandah floor to his
+      grandfather. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  Spotting and continuing patterns is one of the earliest maths skills, and it's easy to practise with things around the house. 🔁
+
+  Try:
+  🍃 AB patterns: leaf, button, leaf, button
+  🔴 Bindi patterns on paper (great finger work too!)
+  🧩 Then ABB and ABC patterns
+  👀 Find patterns everywhere: kurta prints, tiles, rangoli, songs
+
+  Use big buttons and supervise closely with small items. 🌿
+
+  What will your child use to make patterns? 👇
+hashtags: >-
+  #earlymaths #patterns #montessori #montessoriathome #preschoolmaths #montessoriindia #3yearold
+  #learningthroughplay #indianmoms #preschoolactivities #letmetry #mathsforkids
+printable:
+  title: "Pattern Cards"
+  subtitle: "Copy and continue · Ages 3–5"
+  intro: "Patterns help children notice rules and predict what comes next, a foundation for maths and reading. Start simple."
+  sections:
+    - heading: "Level 1: AB"
+      items:
+        - "Leaf, button, leaf, button…"
+        - "Red, blue, red, blue…"
+        - "Clap, stamp, clap, stamp…"
+    - heading: "Level 2: AAB and ABB"
+      items:
+        - "Leaf, leaf, button…"
+        - "Big, small, small…"
+    - heading: "Level 3: ABC"
+      items:
+        - "Leaf, pebble, button…"
+        - "Red, yellow, green…"
+    - heading: "Materials"
+      items:
+        - "Leaves, pebbles, flowers"
+        - "Big buttons, bottle caps"
+        - "Bindis and paper strips"
+        - "Coloured blocks"
+    - heading: "Safety"
+      text: "Use large items for children who still mouth objects; supervise with small buttons and bindis."
+  sources:
+    - label: "Montessori, M. The Montessori Method (mathematics and sensorial work)."

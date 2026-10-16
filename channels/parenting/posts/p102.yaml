@@ -1,0 +1,88 @@
+id: p102
+plan: "D51 7:30 PM · Debate"
+topic: "Language · age 2–3"
+keyword: SPEAK
+slides:
+  - kind: cover
+    title: "Stop correcting every word. *How kids really learn to talk.*"
+    body: ""
+    prompt: >-
+      A 2-year-old South Asian boy excitedly pointing at a dog on a street and talking, while his father listens
+      with a warm smile. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft cream
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Correcting can *shut them down*"
+    body: "“No, say it properly!” makes talking feel risky."
+    prompt: >-
+      A 2-year-old South Asian girl going quiet and looking down after being corrected, an adult wagging a finger.
+      Gentle tone. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Repeat it back* correctly"
+    body: "Child: “Doggy runned!” You: “Yes, the doggy ran so fast!”"
+    prompt: >-
+      A mother crouching beside her 2-year-old son at a park, both watching a dog run, the mother responding
+      enthusiastically. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Add a *little* more"
+    body: "“Big doggy!” → “Yes, a big brown doggy!”"
+    prompt: >-
+      A grandfather pointing at a cow on a village lane while his 2-year-old granddaughter shouts excitedly. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Respond to the *message*"
+    body: "Focus on what they're saying, not how they're saying it."
+    prompt: >-
+      A father listening closely and nodding as his 3-year-old son tells him a story with big gestures. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: outro
+    title: "Listen first. *Model* gently."
+    body: "What's your toddler's cutest mispronunciation? 😄"
+    prompt: >-
+      A 2-year-old South Asian girl and her mother laughing together on a sofa, mid-conversation. Keep the figures
+      in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+caption: |
+  “It's not 'nana', it's BANANA. Say it properly!” We mean well, but constant correcting can make little ones stop trying. 🗣️
+
+  Speech experts use 'recasting': repeating what the child said, correctly and warmly, without pointing out the mistake.
+
+  Try:
+  🔁 Repeat it back: “Doggy runned!” → “Yes, the doggy ran!”
+  ➕ Add a little: “Big doggy!” → “A big brown doggy!”
+  💬 Respond to the message, not the grammar
+  😄 Enjoy the cute mistakes; they fade naturally
+
+  What's your toddler's cutest mispronunciation? 👇
+
+  (If you're worried about your child's speech, talk to your paediatrician or a speech therapist.)
+hashtags: >-
+  #speechdevelopment #languagedevelopment #toddlertalk #montessori #gentleparenting #indianparents
+  #indianmoms #speechtherapy #2yearold #earlylearning #letmetry #parentingtips
+printable:
+  title: "Recasting: The Gentle Way to Help Speech"
+  subtitle: "Examples for everyday talk · Ages 1½–4"
+  medical: true
+  intro: "Recasting means repeating what your child said, in the correct form, as part of a warm response. No 'say it again', no pressure."
+  sections:
+    - heading: "What the research says"
+      items:
+        - "A systematic review found recasting to be an effective technique for supporting children's grammar development (Cleave et al., 2015)."
+    - heading: "Examples"
+      items:
+        - "“Me want milk.” → “You want milk? Here's your milk.”"
+        - "“He goed outside.” → “Yes, he went outside!”"
+        - "“Tat!” → “A cat! A fluffy cat.”"
+        - "“Two foots.” → “Two feet! Let's put socks on your feet.”"
+    - heading: "Avoid"
+      items:
+        - "“No, say it properly.”"
+        - "Making them repeat words"
+        - "Laughing at mistakes in front of others"
+    - heading: "When to check"
+      text: "Speak to a paediatrician or speech therapist if your child has very few words at 2, is hard for family to understand at 3, or is losing words."
+  sources:
+    - label: "Cleave, P. L., Becker, S. D., Curran, M. K., Owen Van Horne, A. J., & Fey, M. E. (2015). The efficacy of recasts in language intervention: A systematic review and meta-analysis. American Journal of Speech-Language Pathology, 24(2), 237–255."

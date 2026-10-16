@@ -1,0 +1,94 @@
+id: p090
+plan: "D45 7:30 PM · Debate"
+topic: "Health myths · ages 2–4"
+keyword: COLD
+slides:
+  - kind: cover
+    title: "Myth: Going out in the cold *gives* kids a cold"
+    body: ""
+    prompt: >-
+      A grandmother at a doorway wrapping a third scarf around a bundled-up 3-year-old South Asian boy who looks
+      like a little ball of wool, his mother laughing. Warm humour. Keep the figures in the lower 60% of the
+      frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Fact: *viruses* cause colds"
+    body: "Colds spread from person to person. Cold air itself doesn't create them."
+    prompt: >-
+      A simple soft watercolor illustration of a child sneezing into their elbow, with tiny abstract dots drifting
+      away, gentle and child-friendly. Keep the subject in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Why *more* colds in winter?"
+    body: "More time indoors, close together, so viruses spread more easily."
+    prompt: >-
+      A crowded, cosy indoor family gathering in winter with many people close together on sofas, windows closed.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Outdoor play is *good*"
+    body: "Fresh air and movement matter year-round. Dress warmly and go."
+    prompt: >-
+      A happy 3-year-old South Asian girl in a sweater and cap running in a park on a cool, misty morning, her
+      father walking behind. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "What actually *helps*"
+    body: "Handwashing, covering coughs, sleep, and staying home when sick."
+    prompt: >-
+      A 2-year-old South Asian boy washing his hands with soap at a low sink, his mother helping. Keep the figures
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Dress warm. Go *outside*."
+    body: "Did your family believe this too? 👇"
+    prompt: >-
+      A South Asian family on a winter morning walk, the toddler in a cap holding both parents' hands, mist in
+      the background. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  “Don't take him out, he'll catch a cold!” Every Indian winter, we hear it. 🧣
+
+  ❌ Myth: cold weather causes colds
+  ✅ Fact: colds are caused by viruses, which spread from person to person
+
+  We get more colds in winter mostly because we spend more time indoors, close together.
+
+  What helps:
+  🧼 Handwashing
+  💪 Covering coughs and sneezes
+  😴 Good sleep
+  🌳 Outdoor play, dressed warmly
+  🏠 Staying home when sick
+
+  Did your family believe this too? 👇
+
+  (General information, not medical advice. See a doctor if your child has a high fever, trouble breathing or seems very unwell.)
+hashtags: >-
+  #mythbusting #parentingmyths #wintercare #commoncold #montessori #indianparents #indianmoms
+  #desiparents #outdoorplay #healthykids #letmetry #parentingtips
+printable:
+  title: "Winter Health: Myths and Facts"
+  subtitle: "What really keeps little ones well · Ages 1–5"
+  medical: true
+  intro: "Many winter beliefs are passed down with love. Here's what the science says, and what actually helps."
+  sections:
+    - heading: "Myths and facts"
+      items:
+        - "Myth: Cold air causes colds. Fact: Colds are caused by viruses (CDC)."
+        - "Myth: Wet hair gives you a cold. Fact: You can only catch a cold from a virus."
+        - "Myth: Kids should stay indoors all winter. Fact: Outdoor play is healthy year-round when dressed warmly."
+    - heading: "What helps prevent colds"
+      items:
+        - "Handwashing with soap, especially before eating"
+        - "Covering coughs and sneezes with an elbow"
+        - "Enough sleep"
+        - "Keeping sick children home"
+    - heading: "Dress for the weather"
+      items:
+        - "Layers they can take off when warm"
+        - "A cap and socks on very cold days"
+        - "Avoid overheating: sweaty under too many layers is uncomfortable too"
+    - heading: "See a doctor if"
+      text: "Your child has a high fever, trouble breathing, unusual drowsiness, or isn't drinking."
+  sources:
+    - label: "CDC: About Common Cold."
+      url: "https://www.cdc.gov/common-cold/about/"

@@ -1,7 +1,7 @@
 # Let Me Try — 8-week content plan
 
 **Dates (tentative):** Mon 19 Oct – Sun 13 Dec 2026, in 4 fortnights
-**Posts:** 2 a day (28 per fortnight, 112 total)
+**Posts:** 2 a day (28 per fortnight, 112 total) · post files p001–p112 in `posts/` (D1 1 PM = p001, D1 7:30 PM = p002, …)
 - **1:00 PM:** practical posts (activities, how-tos)
 - **7:30 PM:** mostly debate posts, because evening is when people comment and share most
 
@@ -80,7 +80,7 @@
 | | 7:30 PM | 🔥 Debate | 2–4 | **Myth:** Sugar makes kids hyper | Fact: controlled studies (Wolraich meta-analysis) found no effect; excitement and parents' expectations explain it. Still, mithai in moderation | 5 |
 | **D21 Sun** (Diwali) | 1 PM | Warm | All | A slow, simple Diwali with little ones | Gentle, festive | 5 |
 | | 7:30 PM | Practical | 2–4 | After the festival: let them help put things away | Sorting, wiping, packing | 5 |
-| **D22 Mon** | 1 PM | Practical | 2–3 | The three-period lesson: how Montessori teaches new words | "This is… Show me… What is this?" | 6 |
+| **D22 Mon** | 1 PM | Practical | 2–3 | Object baskets: new words with real things | Themed baskets of real objects (replaces a repeat of the three-period lesson in p017) | 6 |
 | | 7:30 PM | 🔥 Debate | 2–4 | **Mother tongue first won't hurt their English** | Basis: bilingualism research and UNESCO's guidance on mother-tongue learning. A strong first language helps the second | 6 |
 | **D23 Tue** | 1 PM | Practical | 3–4 | First scissor skills: a safe step-by-step start | Snipping strips, then cutting along lines | 6 |
 | | 7:30 PM | 🔥 Debate | 2–4 | **Is your child "naughty," or just 2?** | Age-normal behaviour explained. Reframes 5 "naughty" acts | 6 |
@@ -111,7 +111,7 @@
 | | 7:30 PM | 🔥 Debate | 3–4 | **Myth:** Knowing the ABC song means they're ready to read | Sounds before letter names, the Montessori approach | 6 |
 | **D34 Sat** | 1 PM | Practical | 2–4 | A 20-minute nature walk treasure basket | Collect, sort, talk | 5 |
 | | 7:30 PM | 🔥 Debate | 3–4 | **Stop asking "What did you do at school today?"** | Gives 6 better questions that get real answers | 6 |
-| **D35 Sun** | 1 PM | Warm | All | The day I stopped rushing my toddler | A story-style post | 5 |
+| **D35 Sun** | 1 PM | Warm | 2–4 | Annoying toddler habits that are actually milestones | Replaces a repeat of "slow mornings" (p027) | 7 |
 | | 7:30 PM | Practical | 2–4 | Sunday reset: helper jobs for little hands | Watering, wiping, sorting | 5 |
 | **D36 Mon** | 1 PM | Practical | 2–3 | Threading big beads: focus in a bowl | Fine motor, concentration | 5 |
 | | 7:30 PM | 🔥 Debate | 3–4 | **Your 3-year-old shouldn't have to "perform" for admissions** | Nursery admission season. What actually matters at 3 | 6 |

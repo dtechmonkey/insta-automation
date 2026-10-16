@@ -1,0 +1,83 @@
+id: p109
+plan: "D55 1 PM · Practical"
+topic: "Reflection · ages 2–4"
+keyword: MEMORY
+slides:
+  - kind: cover
+    title: "A year-end *memory box*: let them choose"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl placing a small drawing into a decorated cardboard box, a few treasures (a
+      shell, a photo, a ribbon) around her on the rug, her father watching. Keep the figures in the lower 60% of
+      the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Decorate* the box"
+    body: "A shoebox, stickers, paint. Their name on the lid."
+    prompt: >-
+      A 3-year-old South Asian boy painting a shoebox with bright colours, stickers scattered around. Keep the
+      child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "*They* choose what goes in"
+    body: "A favourite drawing, a ticket, a leaf from a special walk."
+    prompt: >-
+      A small pile of childhood treasures on a rug: a crayon drawing, a train ticket, a dried leaf, a hair clip, a
+      small photo. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Talk* about each one"
+    body: "“Why did you choose this?” Listen to the stories."
+    prompt: >-
+      A mother and her 3-year-old daughter sitting close, the child holding up a shell and talking animatedly.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "Add a *handprint*"
+    body: "A painted handprint with the date. Watch it grow year by year."
+    prompt: >-
+      A 2-year-old South Asian boy pressing a paint-covered hand onto paper, his grandmother holding the paper
+      steady. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Little treasures, *big* memories."
+    body: "What would your child put in their box?"
+    prompt: >-
+      A closed decorated memory box on a shelf next to family photos, a toddler patting it proudly. Keep the
+      subject in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  As the year ends, here's a beautiful tradition: a memory box your child fills themselves. 📦
+
+  How to:
+  🎨 Decorate a shoebox together
+  🍂 Let them choose what goes in: a drawing, a ticket, a leaf
+  💬 Ask about each one: “Why did you choose this?”
+  🖐️ Add a dated handprint
+
+  Open it together next year and add more. 🌿
+
+  What would your child put in their box? 👇
+hashtags: >-
+  #memorybox #familytraditions #yearend #montessori #montessoriathome #kidscrafts #montessoriindia
+  #childhoodmemories #indianmoms #familytime #letmetry #newyear
+printable:
+  title: "My Year: A Memory Page"
+  subtitle: "For the memory box · Ages 2–5"
+  intro: "Fill in this page together and add it to your child's memory box each year. Write their answers in their own words."
+  sections:
+    - heading: "This year I…"
+      items:
+        - "Am ___ years old"
+        - "Learned to ___"
+        - "Love to eat ___"
+        - "My favourite toy is ___"
+        - "My best friend is ___"
+        - "My favourite place is ___"
+        - "I'm scared of ___"
+        - "When I grow up I want to ___"
+    - heading: "Parents' note"
+      text: "Something you want to remember about your child this year."
+    - heading: "Handprint"
+      text: "Paint a handprint here and write the date."
+  sources:
+    - label: "A Let Me Try family activity."

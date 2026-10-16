@@ -1,0 +1,86 @@
+id: p100
+plan: "D50 7:30 PM · Debate"
+topic: "Montessori · ages 2–6"
+keyword: FREEDOM
+slides:
+  - kind: cover
+    title: "Myth: Montessori kids *do whatever they want*"
+    body: ""
+    prompt: >-
+      A calm Montessori-style classroom with South Asian children working independently at small tables and on
+      rugs, a teacher observing quietly. Keep the scene in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Fact: *freedom within limits*"
+    body: "Children choose their work, but within clear rules."
+    prompt: >-
+      A 3-year-old South Asian girl choosing a tray from a low shelf in a classroom, other children working
+      calmly nearby. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Free to *choose*"
+    body: "Which activity, how long, where to work."
+    prompt: >-
+      A 3-year-old South Asian boy working on a rug with a puzzle for a long time, deeply focused. Keep the child
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Not free to *harm*"
+    body: "No hurting people, no damaging materials, no disturbing others' work."
+    prompt: >-
+      A teacher kneeling and gently guiding a child's hands to carry a tray carefully, another child working
+      undisturbed nearby. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "And they *tidy up*"
+    body: "Every activity goes back to the shelf, ready for the next child."
+    prompt: >-
+      A 3-year-old South Asian girl returning a tray of materials to a low shelf, neatly. Keep the child in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Freedom *with* responsibility."
+    body: "Did you think Montessori meant no rules? 👇"
+    prompt: >-
+      A calm, sunny home corner with a toddler happily choosing an activity from a low shelf while a parent sips
+      tea. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  “Montessori? Isn't that where kids do whatever they want?” One of the most common myths. 🙅
+
+  Montessori is based on 'freedom within limits'. Children are free to choose their activity, how long to work and where. But they're not free to hurt others, damage materials or disturb someone else's work, and they put everything back when they're done.
+
+  ✅ Free to choose
+  ✅ Free to repeat
+  ❌ Not free to harm
+  🧺 Always tidy up
+
+  Did you think Montessori meant no rules? 👇
+hashtags: >-
+  #montessori #montessoriathome #mythbusting #freedomwithinlimits #montessoriindia #childledlearning
+  #indianparents #indianmoms #earlychildhood #respectfulparenting #letmetry #parentingtips
+printable:
+  title: "Freedom Within Limits at Home"
+  subtitle: "The Montessori balance · Ages 2–6"
+  intro: "Montessori gives children real choices inside clear, consistent limits. Here's how to bring that balance home."
+  sections:
+    - heading: "Freedoms"
+      items:
+        - "Choose an activity from the shelf"
+        - "Repeat it as long as they like"
+        - "Choose where to work (table or rug)"
+        - "Move around freely in safe spaces"
+    - heading: "Limits"
+      items:
+        - "We don't hurt people"
+        - "We treat materials with care"
+        - "We don't disturb someone else's work"
+        - "We put things back when we're done"
+    - heading: "How to hold limits"
+      items:
+        - "Calm, short reminders: “Trays go back on the shelf.”"
+        - "Show again instead of scolding"
+        - "If materials are misused, put them away for now"
+    - heading: "What the research says"
+      text: "Montessori education has shown positive effects on children's executive function and academic skills in several studies (Lillard, 2017)."
+  sources:
+    - label: "Lillard, A. S. (2017). Montessori: The Science Behind the Genius. Oxford University Press."

@@ -1,0 +1,81 @@
+id: p106
+plan: "D53 7:30 PM · Warm"
+topic: "Parent wellbeing · all ages"
+keyword: GUILT
+slides:
+  - kind: cover
+    title: "Parent guilt: you're doing *better* than you think"
+    body: ""
+    prompt: >-
+      A tired South Asian mother sitting on the kitchen floor late at night with a cup of tea, looking thoughtful,
+      while a child's drawing that says nothing (just a heart shape) is stuck on the fridge behind her. Keep the
+      figure in the lower 60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved
+      for text.
+  - kind: tip
+    title: "You *lost* your temper today?"
+    body: "And then you said sorry. That's what they'll learn from."
+    prompt: >-
+      A father kneeling and hugging his 3-year-old son, both looking relieved after a hard moment. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: tip
+    title: "More *screen time* than you wanted?"
+    body: "One day doesn't define a childhood."
+    prompt: >-
+      A mother and toddler cuddled on a sofa watching a gentle show together under a blanket, relaxed. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Working, *missing* moments?"
+    body: "The love you give in the time you have is what counts."
+    prompt: >-
+      A working South Asian mother in office clothes arriving home and her 2-year-old daughter running into her
+      arms at the door. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Worrying you're *not enough*?"
+    body: "The fact that you worry shows how much you care."
+    prompt: >-
+      A father watching his toddler sleep in a cot at night, a soft, loving expression. Keep the figures in the
+      lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Good enough *is* good."
+    body: "Send this to a parent who needs to hear it 💛"
+    prompt: >-
+      A South Asian family asleep together in a big bed in the early morning light, the toddler sprawled across
+      both parents. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  Lost your temper. Too much screen time. Missed a school event. Ordered food again. 😔
+
+  Parent guilt is real. But here's the truth: children don't need perfect parents. They need parents who love them, show up, and repair when things go wrong.
+
+  Researchers even have a name for it: the 'good enough' parent.
+
+  You're doing better than you think. 💛
+
+  Send this to a parent who needs to hear it 👇
+hashtags: >-
+  #momguilt #dadguilt #parentguilt #goodenoughparent #gentleparenting #indianparents #indianmoms
+  #workingmom #momlife #mentalhealth #letmetry #selfcompassion
+printable:
+  title: "A Self-Compassion Card for Parents"
+  subtitle: "For the hard days · All ages"
+  intro: "Keep this card in your phone case or on the fridge. Read it on the days you feel you're failing."
+  sections:
+    - heading: "Remember"
+      items:
+        - "Children need 'good enough', not perfect."
+        - "Repair matters more than never making mistakes."
+        - "Your child's behaviour is not a report card on you."
+        - "Rest is not a reward. It's a need."
+        - "Asking for help is a strength."
+    - heading: "When guilt hits, ask"
+      items:
+        - "Is my child safe, fed and loved? Then today was enough."
+        - "What would I say to a friend in my place?"
+        - "What's one small thing I can do differently tomorrow?"
+    - heading: "Get support"
+      text: "If you feel low most days, can't sleep or feel hopeless, please talk to a doctor or counsellor. Parents deserve care too."
+  sources:
+    - label: "Winnicott, D. W. (1953). Transitional objects and transitional phenomena. International Journal of Psycho-Analysis, 34, 89–97 (the 'good enough mother')."

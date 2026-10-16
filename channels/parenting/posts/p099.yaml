@@ -1,0 +1,87 @@
+id: p099
+plan: "D50 1 PM · Practical"
+topic: "Self-care · age 2–3"
+keyword: WASH
+slides:
+  - kind: cover
+    title: "Handwashing: a *6-step routine* with a stool"
+    body: ""
+    prompt: >-
+      A 2-year-old South Asian girl standing on a sturdy wooden step stool at a bathroom sink, rubbing soapy hands
+      together, bubbles visible, a small towel at child height. Keep the child in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "1. Wet  2. *Soap*"
+    body: "A pump soap is easier for little hands than a slippery bar."
+    prompt: >-
+      Close view of a toddler's small hand pressing a pump soap dispenser at a sink. Keep the subject in the lower
+      60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "3. *Scrub* for a song"
+    body: "Palms, backs, between fingers, thumbs. Sing a short song while scrubbing."
+    prompt: >-
+      A 3-year-old South Asian boy scrubbing soapy hands and singing, his father singing along beside him. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "4. Rinse  5. *Dry*"
+    body: "A towel on a low hook. Pat, pat, pat."
+    prompt: >-
+      A 2-year-old South Asian girl drying her hands on a small towel hanging from a low hook. Keep the child in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "6. Tap *off*"
+    body: "Teach them to turn it off. Saving water is part of the routine."
+    prompt: >-
+      A 3-year-old South Asian boy turning off a tap carefully at a low sink. Keep the child in the lower 60% of
+      the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Clean hands, *independent* hands."
+    body: "What song does your child sing while washing?"
+    prompt: >-
+      A proud 2-year-old South Asian girl showing clean, dry hands to her mother, both smiling. Keep the figures
+      in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+caption: |
+  Handwashing is one of the most important habits for keeping little ones healthy, and toddlers can learn to do it themselves. 🧼
+
+  The 6 steps:
+  💧 Wet
+  🧴 Soap (pump soap is easiest)
+  🎵 Scrub for a short song: palms, backs, between fingers, thumbs
+  🚿 Rinse
+  🧻 Dry on a low towel
+  🔒 Tap off
+
+  A sturdy stool at the sink makes them independent. 🌿
+
+  What song does your child sing while washing? 👇
+hashtags: >-
+  #handwashing #selfcare #toddlerindependence #montessori #montessoriathome #healthyhabits
+  #montessoriindia #2yearold #indianmoms #practicallife #letmetry #hygiene
+printable:
+  title: "Handwashing Steps Poster"
+  subtitle: "Stick it at the sink · Ages 2–5"
+  medical: true
+  intro: "Print this and stick it at your child's eye level by the sink. Point to each step together until they know it by heart."
+  sections:
+    - heading: "The steps"
+      items:
+        - "1. Wet your hands"
+        - "2. Add soap"
+        - "3. Scrub palms, backs, between fingers and thumbs (sing a short song, about 20 seconds)"
+        - "4. Rinse"
+        - "5. Dry with your towel"
+        - "6. Turn off the tap"
+    - heading: "When to wash"
+      items:
+        - "Before eating"
+        - "After the toilet"
+        - "After playing outside"
+        - "After coughing, sneezing or blowing the nose"
+    - heading: "Set up"
+      text: "A sturdy step stool, pump soap, and a towel on a low hook."
+  sources:
+    - label: "CDC: Clean Hands (handwashing guidance)."
+      url: "https://www.cdc.gov/clean-hands/"

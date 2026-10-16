@@ -1,0 +1,98 @@
+id: p086
+plan: "D43 7:30 PM · Debate"
+topic: "Potty learning · age 2–3"
+keyword: POTTY
+slides:
+  - kind: cover
+    title: "Myth: Kids should be *potty trained by 2*"
+    body: ""
+    prompt: >-
+      A 2-year-old South Asian boy sitting on a small potty in a bathroom, looking bored and reading a picture
+      book, while a relative peers in impatiently. Gentle humour. Keep the figures in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Readiness *varies*"
+    body: "Many children show readiness somewhere between 18 months and 3 years."
+    prompt: >-
+      Three South Asian toddlers of slightly different ages playing on a rug, one in underwear, two in diapers,
+      all happy. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Starting early can take *longer*"
+    body: "One study found very early starts didn't finish sooner, they just took longer."
+    prompt: >-
+      A calendar on a wall with many pages turned, a small potty below it, simple and humorous. Keep the subject
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Look for *signs*"
+    body: "Dry for 2 hours, interest in the toilet, telling you when they've gone."
+    prompt: >-
+      A 2-year-old South Asian girl curiously watching her mother flush the toilet, pointing. Keep the figures in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "*No* pressure, no shame"
+    body: "Accidents are part of learning. Calm, matter-of-fact, every time."
+    prompt: >-
+      A father calmly helping his 2-year-old son change into fresh shorts after an accident, both relaxed. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Ready beats *early*."
+    body: "When did your child learn? No judgement 👇"
+    prompt: >-
+      A proud 2-year-old South Asian girl in underwear washing her hands at a low sink after using the potty,
+      her mother clapping. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+caption: |
+  “Your child still wears diapers at 2½?!” Few things bring on relative-pressure like potty training. 🚽
+
+  Readiness varies a lot. Many children are ready somewhere between 18 months and 3 years, and in one study, children who started very early didn't finish sooner; it just took longer.
+
+  Signs of readiness:
+  ⏱️ Dry for about 2 hours at a time
+  🚽 Interest in the toilet
+  🗣️ Telling you before or after they go
+  👖 Can pull pants up and down
+
+  No pressure, no shame. Ready beats early.
+
+  When did your child learn? No judgement 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #pottytraining #pottylearning #toddlerlife #montessori #gentleparenting #indianparents #indianmoms
+  #parentingmyths #toiletlearning #diaperfree #letmetry #parentingtips
+printable:
+  title: "Potty Readiness Checklist"
+  subtitle: "Is my child ready? · Ages 18 months–3 years"
+  medical: true
+  intro: "Starting when your child is ready usually makes potty learning faster and calmer. Look for several of these signs together."
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children who started toilet training earlier took longer to complete it, and age of completion was similar (Blum, Taubman & Nemeth, 2003)."
+        - "The American Academy of Pediatrics recommends a child-oriented approach based on readiness."
+    - heading: "Physical signs"
+      items:
+        - "Stays dry for about 2 hours"
+        - "Regular, predictable poos"
+        - "Can walk to the potty and sit down"
+        - "Can pull pants up and down (with a little help)"
+    - heading: "Communication signs"
+      items:
+        - "Tells you when they've done a wee or poo"
+        - "Uses words like 'wee', 'potty', 'susu'"
+        - "Follows simple instructions"
+    - heading: "Interest signs"
+      items:
+        - "Curious about the toilet"
+        - "Wants to wear underwear"
+        - "Dislikes wet or dirty diapers"
+    - heading: "When to check"
+      text: "Talk to your paediatrician if there's pain, constipation, or no progress after age 4."
+  sources:
+    - label: "Blum, N. J., Taubman, B., & Nemeth, N. (2003). Relationship between age at initiation of toilet training and duration of training: A prospective study. Pediatrics, 111(4), 810–814."
+    - label: "HealthyChildren.org (AAP): Toilet Training."
+      url: "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/"
