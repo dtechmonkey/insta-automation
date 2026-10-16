@@ -1,0 +1,103 @@
+# One post = one carousel. Slide images: images/<id>/<id>_s<N>.png (N = slide number).
+# Text: *word* = highlighted in terracotta.
+id: p001
+topic: "Practical life · age 2–3"
+style: >-
+  Soft watercolor illustration in a gentle children's picture-book style. Pastel palette of sage green,
+  soft peach, warm cream and dusty blue. Visible paper texture, loose soft brush edges, light washes,
+  warm natural light. Calm, airy, uncluttered composition. Portrait orientation, 4:5 aspect ratio.
+  Absolutely no text, letters, numbers, captions, logos or watermarks anywhere in the image.
+
+slides:
+  - kind: cover
+    title: "5 things your 2-year-old can do *alone*"
+    body: "…if you let them"
+    prompt: >-
+      A 2-year-old South Asian toddler girl with a small ponytail, wearing a simple cotton frock, stands at a
+      low wooden table holding a small steel jug. With one small hand she gently pushes away her mother's
+      hand, which is reaching in to help. The toddler's face is determined and proud; the mother, kneeling
+      beside her in a soft cotton kurta, is smiling and pulling back. A simple, warm home interior with a
+      window and a potted plant in the background. Place both figures in the lower 60% of the frame. Leave
+      the top 35% as a plain, soft cream watercolor wash with no objects, reserved for a headline.
+
+  - kind: tip
+    title: "Put on their own *chappals*"
+    body: "Velcro or slip-on. Let them sit on the floor to do it."
+    prompt: >-
+      A 2-year-old South Asian toddler boy in shorts and a cotton t-shirt sits on the floor by a home's front
+      doorstep, concentrating as he pulls on a small pair of simple velcro sandals. A low wooden shoe rack
+      with a few small pairs of chappals beside him, a doormat, soft daylight from the open door. Keep the
+      toddler in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+
+  - kind: tip
+    title: "Pour their own *water*"
+    body: "A small steel jug and tumbler. Spills are practice."
+    prompt: >-
+      Close, eye-level view of a 2-year-old South Asian toddler boy in a light cotton t-shirt, sitting at a
+      small low wooden table, carefully pouring water from a small steel jug into a steel tumbler with both
+      hands. His tongue peeks out in concentration. A few drops have splashed onto the table beside a small
+      folded cloth. Soft morning light from the side. Keep the toddler and table in the lower 65% of the
+      frame. Leave the top 30% as an empty, soft sage-green watercolor wash, reserved for text.
+
+  - kind: tip
+    title: "Wash the *vegetables*"
+    body: "A bowl of water and a few tomatoes. Instant focus."
+    prompt: >-
+      A 2-year-old South Asian toddler girl stands on a small wooden step stool at a low kitchen counter,
+      sleeves rolled up, happily washing bright red tomatoes in a wide steel bowl of water, a small steel
+      colander beside her with a few washed tomatoes and okra. Her grandmother in a soft cotton saree
+      watches warmly from the side, slightly out of focus. Bright, cheerful kitchen light. Keep the figures
+      in the lower 60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved
+      for text.
+
+  - kind: tip
+    title: "Put their toys *back*"
+    body: "A low shelf, a few toys, one basket for each."
+    prompt: >-
+      A 2-year-old South Asian toddler boy carefully places a small woven basket holding wooden blocks onto
+      a low, open wooden shelf. The shelf is tidy and minimal: a few wooden toys, a small basket of balls, a
+      stacking ring toy, each in its own spot. A soft cotton rug on the floor, calm play corner, gentle
+      afternoon light. Keep the toddler and shelf in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft dusty-blue watercolor wash, reserved for text.
+
+  - kind: tip
+    title: "Wipe their own *spills*"
+    body: "Keep a small cloth where they can reach it."
+    prompt: >-
+      A 2-year-old South Asian toddler girl kneels on a smooth floor, wiping up a small puddle of spilled
+      water with a small cloth, looking proud and focused. A tipped-over small steel tumbler lies beside the
+      puddle. A small hook on the wall nearby holds another little cloth at child height. Warm, soft light.
+      Keep the toddler in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor
+      wash, reserved for text.
+
+  - kind: outro
+    title: "Slower today. *Confident* forever."
+    body: "Pick one to try this week."
+    prompt: >-
+      A joyful 2-year-old South Asian toddler with both arms raised high in a proud 'I did it!' pose,
+      beaming, standing in a sunny home room. A parent sits on the floor a little behind, clapping softly
+      and smiling. A few small potted plants and soft fabric bunting add warmth. Keep the figures in the
+      lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved for
+      text.
+
+caption: |
+  Your toddler's favourite words are "Let me try!" 🙋‍♀️ Here's how to say yes more often.
+
+  At two, children badly want to do real things by themselves. When we step in to save time, they learn "I can't." When we step back, they learn "I can."
+
+  Start with one of these this week:
+  👟 Chappals: velcro or slip-on, sitting on the floor
+  💧 Pouring: a small steel jug and tumbler
+  🍅 Washing vegetables: a bowl of water does the rest
+  🧺 Tidying: a low shelf, few toys, one basket each
+  🧽 Spills: a small cloth always within reach
+
+  Yes, it's slower and messier at first. That's the learning. 🌿
+
+  Which one will you try first? Tell us in the comments 👇
+  Save this for later, and share it with someone raising a little one.
+
+hashtags: >-
+  #montessori #montessoriathome #montessoriindia #toddleractivities #practicallife #toddlerindependence
+  #gentleparenting #parentingtips #indianparents #indianmoms #2yearold #letmetry

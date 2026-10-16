@@ -1,0 +1,20 @@
+# Channel: Let Me Try — Montessori & gentle parenting (pre-written posts from posts/, images from images/)
+name: "Let Me Try"
+handle: "@letmetry.montessori"
+timezone: "Asia/Kolkata"
+
+publish_times: ["13:00", "19:30"]   # IST; add "21:30" for a third daily post
+
+hashtags_max: 12
+
+brand:
+  cream: "#FBF6EE"
+  ink: "#3D3A35"          # body text
+  ink_soft: "#6B655C"
+  sage: "#8FA98B"
+  peach: "#E9B79A"
+  terracotta: "#C07A5A"   # *highlighted* words
+  dusty_blue: "#9DB4C8"
+
+instagram:
+  api_version: "v23.0"
