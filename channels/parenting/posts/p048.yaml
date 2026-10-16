@@ -1,0 +1,93 @@
+id: p048
+plan: "D24 7:30 PM · Debate"
+topic: "Risky play · ages 2–4"
+keyword: CAREFUL
+slides:
+  - kind: cover
+    title: "Stop saying *“Be careful!”*"
+    body: "Say this instead"
+    prompt: >-
+      A 3-year-old South Asian boy climbing a low tree branch in a park, looking down confidently, while his
+      father stands nearby, relaxed but attentive. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "*“Be careful”* tells them nothing"
+    body: "Careful of what? It can also make kids freeze or doubt themselves."
+    prompt: >-
+      A 3-year-old South Asian girl frozen halfway up a small climbing frame, looking unsure, an adult hand
+      reaching anxiously. Gentle tone. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Point out the *danger*"
+    body: "“That rock is wobbly.” “The steps are wet.” Specific helps."
+    prompt: >-
+      A father crouching beside his 3-year-old son at a park stream, pointing to slippery stones. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Ask them to *notice*"
+    body: "“Where will you put your foot next?” “How does that branch feel?”"
+    prompt: >-
+      A 3-year-old South Asian girl carefully stepping onto a low log, looking down at her feet, her mother
+      walking beside her. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Risky play *builds* confidence"
+    body: "Climbing, balancing and jumping teach children to judge risk themselves."
+    prompt: >-
+      A 4-year-old South Asian boy jumping off a low step into a sandpit, arms wide, joyful. Keep the child in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Safe *enough*, not safe as possible."
+    body: "Agree or disagree? 👇"
+    prompt: >-
+      A happy 3-year-old South Asian girl standing on top of a small hill with arms raised, her father clapping
+      below. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  “Be careful!” We say it 50 times at every park visit. But it doesn't tell a child WHAT to be careful of, and it can make them doubt their own body. 🌳
+
+  Research on 'risky play' (climbing, balancing, jumping) finds it helps children build physical skills, confidence and the ability to judge risk for themselves.
+
+  Try instead:
+  ⚠️ Name the danger: “That rock is wobbly.”
+  👀 Help them notice: “Where will your foot go next?”
+  🤔 Ask: “Do you feel steady?”
+  🙌 Stay close, stay calm
+
+  Agree or disagree? 👇
+hashtags: >-
+  #riskyplay #outdoorplay #gentleparenting #confidentkids #montessori #indianparents #indianmoms
+  #letthemplay #childdevelopment #naturekids #letmetry #parentingtips
+printable:
+  title: "Instead of 'Be Careful': 20 Phrases"
+  subtitle: "Supporting safe, confident risky play · Ages 2–5"
+  intro: >-
+    Children need to climb, balance and test their limits. These phrases help them notice risks and make good
+    choices, instead of just being afraid.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "A review of studies found risky outdoor play was linked to more physical activity, better social skills and resilience (Brussoni et al., 2015)."
+        - "Thrilling play may help children master fears naturally (Sandseter & Kennair, 2011)."
+    - heading: "Point out what you see"
+      items:
+        - "“That branch is thin.”"
+        - "“The ground is slippery.”"
+        - "“There's a sharp edge here.”"
+    - heading: "Help them notice"
+      items:
+        - "“Where will you put your foot next?”"
+        - "“Is that rock steady?”"
+        - "“How will you get down?”"
+        - "“What's your plan?”"
+    - heading: "Encourage problem-solving"
+      items:
+        - "“Take your time.”"
+        - "“Try using your hands too.”"
+        - "“I'm here if you need me.”"
+    - heading: "When to step in"
+      text: "Step in for real dangers: heights above their own head, roads, deep water, sharp objects."
+  sources:
+    - label: "Brussoni, M., et al. (2015). What is the relationship between risky outdoor play and health in children? A systematic review. International Journal of Environmental Research and Public Health, 12(6), 6423–6454."
+    - label: "Sandseter, E. B. H., & Kennair, L. E. O. (2011). Children's risky play from an evolutionary perspective: The anti-phobic effects of thrilling experiences. Evolutionary Psychology, 9(2), 257–284."

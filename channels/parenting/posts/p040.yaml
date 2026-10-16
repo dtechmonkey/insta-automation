@@ -1,0 +1,90 @@
+id: p040
+plan: "D20 7:30 PM · Debate"
+topic: "Myth-busting · ages 2–4"
+keyword: SUGAR
+slides:
+  - kind: cover
+    title: "Myth: Sugar makes kids *hyper*"
+    body: ""
+    prompt: >-
+      A festive party scene with two South Asian toddlers running around laughing near a table of mithai, adults
+      watching with knowing looks. Playful tone. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Fact: studies found *no effect*"
+    body: "Controlled studies comparing sugar with a placebo found no change in behaviour."
+    prompt: >-
+      Two identical small glasses of juice on a table, side by side, with a curious toddler looking at both,
+      simple and calm. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "It's the *party*, not the laddoo"
+    body: "Excitement, crowds, late nights and other kids: that's what winds them up."
+    prompt: >-
+      A lively festive gathering with lights, music and several excited South Asian children running together.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+  - kind: tip
+    title: "And our *expectations*"
+    body: "In one study, parents who thought their child had sugar rated them as more hyperactive. They hadn't."
+    prompt: >-
+      A mother watching her calm 3-year-old play with blocks, while imagining (shown as a soft faded thought
+      bubble shape with no text) the child bouncing around. Gentle humour. Keep the figures in the lower 60% of
+      the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Still, *moderation* matters"
+    body: "Too much sugar isn't good for teeth or health. Sweets after meals, in small amounts."
+    prompt: >-
+      A 3-year-old South Asian girl happily eating one small piece of barfi after finishing her dal-rice. Keep
+      the child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Blame the *excitement*, not the mithai."
+    body: "Surprised? Tell us below 👇"
+    prompt: >-
+      A happy South Asian family sharing a small plate of sweets together on a festive evening, the toddler calm
+      and smiling. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  “No more laddoo, he'll be bouncing off the walls!” Turns out, the science disagrees. 🍬
+
+  ❌ Myth: sugar makes kids hyperactive
+  ✅ Fact: a review of controlled studies found sugar didn't affect children's behaviour
+
+  What does? The party itself: excitement, crowds, late nights, other kids. And our expectations: in one experiment, parents told their child had sugar rated them as more hyperactive, even though the child had none.
+
+  That said, sugar still isn't great for teeth or health. Keep sweets small and after meals. 🌿
+
+  Surprised? Tell us below 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #sugarmyth #mythbusting #parentingmyths #diwali #mithai #montessori #indianparents #indianmoms
+  #childpsychology #healthykids #letmetry #parentingtips
+printable:
+  title: "Sugar and Behaviour: What the Research Says"
+  subtitle: "Plus a sensible festive sweets plan · Ages 2–4"
+  medical: true
+  intro: >-
+    The belief that sugar causes hyperactivity is very common, but controlled studies don't support it. Sugar
+    still matters for teeth and overall health, so moderation is wise.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "A meta-analysis of controlled studies found that sugar does not affect the behaviour or thinking of children (Wolraich, Wilson & White, 1995)."
+        - "Mothers who believed their sons had been given sugar rated them as more hyperactive, even though the drink was sugar-free (Hoover & Milich, 1994)."
+    - heading: "What really winds kids up"
+      items:
+        - "Excitement and new places"
+        - "Crowds and noise"
+        - "Late nights and missed naps"
+        - "Hunger (sweets instead of meals)"
+    - heading: "A sensible sweets plan"
+      items:
+        - "Sweets after a meal, not instead of one"
+        - "Small pieces, served on a plate"
+        - "Water instead of sweet drinks"
+        - "Brush teeth before bed"
+  sources:
+    - label: "Wolraich, M. L., Wilson, D. B., & White, J. W. (1995). The effect of sugar on behavior or cognition in children: A meta-analysis. JAMA, 274(20), 1617–1621."
+    - label: "Hoover, D. W., & Milich, R. (1994). Effects of sugar ingestion expectancies on mother-child interactions. Journal of Abnormal Child Psychology, 22(4), 501–515."

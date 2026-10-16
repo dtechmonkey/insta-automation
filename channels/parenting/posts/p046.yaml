@@ -1,0 +1,93 @@
+id: p046
+plan: "D23 7:30 PM · Debate"
+topic: "Development · ages 2–4"
+keyword: NAUGHTY
+slides:
+  - kind: cover
+    title: "Is your child *“naughty”*, or just 2?"
+    body: ""
+    prompt: >-
+      A 2-year-old South Asian boy standing on a chair reaching for a high shelf, a mischievous grin, his mother
+      walking in with an amused, knowing expression. Keep the figures in the lower 60% of the frame. Leave the
+      top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Climbing everything?"
+    body: "They're testing their body and balance. Give them safe things to climb."
+    prompt: >-
+      A 2-year-old South Asian girl happily climbing a low wooden climbing triangle in a living room. Keep the
+      child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: tip
+    title: "Throwing food?"
+    body: "They're learning cause and effect. Calmly end the meal if it continues."
+    prompt: >-
+      A 2-year-old South Asian boy in a high chair dropping a piece of roti over the edge and watching it fall
+      with fascination. Gentle humour. Keep the child in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Saying *“No!”* to everything?"
+    body: "They're discovering they're a separate person. Offer choices."
+    prompt: >-
+      A 2-year-old South Asian girl with arms crossed and a determined face, her father holding out two cups,
+      red and blue, for her to choose. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Not listening?"
+    body: "They're deep in play. Get close, touch their shoulder, then speak."
+    prompt: >-
+      A mother kneeling and gently touching the shoulder of her 3-year-old son who is absorbed in building a
+      block tower. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Not naughty. *Learning*."
+    body: "What's your toddler's 'naughtiest' habit right now? 😄"
+    prompt: >-
+      A laughing 2-year-old South Asian boy hugging his mother's leg in a kitchen, flour on the floor around him.
+      Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+caption: |
+  “Bahut shaitan hai!” We call toddlers naughty for climbing, throwing, refusing and not listening. But most of it is completely normal development. 😄
+
+  🧗 Climbing everything → testing body and balance
+  🍽️ Throwing food → learning cause and effect
+  🙅 “No!” to everything → discovering they're a separate person
+  👂 Not listening → deeply absorbed in play
+
+  When we understand the why, we can respond calmly: redirect, give safe options, offer choices.
+
+  What's your toddler's “naughtiest” habit right now? 👇
+hashtags: >-
+  #toddlerbehaviour #terribletwos #gentleparenting #childdevelopment #montessori #indianparents
+  #indianmoms #toddlerlife #childpsychology #parentingtips #letmetry #positiveparenting
+printable:
+  title: "What's Behind the 'Naughty' Behaviour?"
+  subtitle: "Common toddler behaviours decoded · Ages 2–4"
+  intro: >-
+    Most behaviour we call 'naughty' at this age is a child learning about their body, the world and their
+    own will. Understanding why helps us respond calmly.
+  sections:
+    - heading: "Climbing"
+      items:
+        - "Why: building strength, balance and confidence"
+        - "Try: a safe climbing spot (cushions, a low climber); 'Feet on the floor; you can climb here.'"
+    - heading: "Throwing"
+      items:
+        - "Why: exploring cause and effect"
+        - "Try: soft balls to throw outside; at meals, calmly: 'Food stays on the table. Are you finished?'"
+    - heading: "Saying no"
+      items:
+        - "Why: discovering independence"
+        - "Try: two choices, fewer commands; 'Red cup or blue cup?'"
+    - heading: "Not listening"
+      items:
+        - "Why: deep concentration, or too many instructions"
+        - "Try: get close, make eye contact, one short instruction"
+    - heading: "Biting and hitting"
+      items:
+        - "Why: big feelings, few words"
+        - "Try: 'I won't let you bite.' Teach words: 'Say stop!'"
+    - heading: "Learn more"
+      text: "The CDC's 'Learn the Signs. Act Early.' milestones show what's typical at each age."
+  sources:
+    - label: "CDC: Learn the Signs. Act Early. (developmental milestones)."
+      url: "https://www.cdc.gov/ncbddd/actearly/milestones/"

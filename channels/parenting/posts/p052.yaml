@@ -1,0 +1,91 @@
+id: p052
+plan: "D26 7:30 PM · Debate"
+topic: "Communication · ages 2–4"
+keyword: LISTEN
+slides:
+  - kind: cover
+    title: "Then vs now: *“Children should be seen, not heard”*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian girl at a family dinner table trying to say something, raising her hand, while
+      the adults talk over her head. Gentle, empathetic tone. Keep the figures in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Talking *with* adults grows the brain"
+    body: "Back-and-forth conversation is linked to stronger language development."
+    prompt: >-
+      A father and his 3-year-old son chatting face to face on a park bench, the child gesturing excitedly. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Being heard builds *confidence*"
+    body: "Children who feel listened to are more likely to speak up later."
+    prompt: >-
+      A 3-year-old South Asian girl confidently telling a story to her grandparents, who are listening with full
+      attention. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Give them a *turn* at the table"
+    body: "“Let's hear from Anya. What was the best part of your day?”"
+    prompt: >-
+      A South Asian family at a dinner table all turned towards the 3-year-old, who is speaking happily. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Respect *and* manners"
+    body: "Teach waiting for a turn, but make sure the turn comes."
+    prompt: >-
+      A mother gently holding up a finger while finishing a sentence to an aunt, then turning to her waiting
+      toddler with a smile. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Seen *and* heard."
+    body: "Were children heard in your home growing up? 👇"
+    prompt: >-
+      A grandfather and a 3-year-old South Asian boy laughing together on a verandah swing, mid-conversation.
+      Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+caption: |
+  “Bado ke beech mein nahi bolte.” (Don't speak when elders are talking.) Many of us grew up with this. 🤫
+
+  Manners matter. But children also need to be heard. Research shows that back-and-forth conversations between adults and young children are linked to stronger language skills and brain development.
+
+  Try:
+  🗣️ Give them a turn at the dinner table
+  👂 Listen with full attention, even for 2 minutes
+  ✋ Teach waiting, and make sure the turn comes: “One minute, then I'm all yours.”
+  ❓ Ask their opinion: “What should we cook tomorrow?”
+
+  Were children heard in your home growing up? 👇
+hashtags: >-
+  #gentleparenting #respectfulparenting #communication #languagedevelopment #montessori #indianparents
+  #indianmoms #desiparents #childpsychology #raisingconfidentkids #letmetry #parentingtips
+printable:
+  title: "Conversation Starters for Little Ones"
+  subtitle: "Questions that get toddlers talking · Ages 2–5"
+  intro: >-
+    Children grow language and confidence through real conversation. Use these at meals, in the car, at
+    bedtime.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "The number of conversational turns between adults and children was linked to children's language skills and activity in language areas of the brain (Romeo et al., 2018)."
+    - heading: "About their day"
+      items:
+        - "What made you laugh today?"
+        - "Who did you play with?"
+        - "What was the yummiest thing you ate?"
+    - heading: "Imagination"
+      items:
+        - "If you were a bird, where would you fly?"
+        - "What would you do if you were tiny like an ant?"
+        - "What should we name the moon?"
+    - heading: "Their opinion"
+      items:
+        - "What should we cook tomorrow?"
+        - "Which book should we read?"
+        - "Where should we go this weekend?"
+    - heading: "Tips"
+      text: "Wait for answers. Repeat back what they said. Follow their topic, even if it's dinosaurs again."
+  sources:
+    - label: "Romeo, R. R., et al. (2018). Beyond the 30-million-word gap. Psychological Science, 29(5), 700–710."

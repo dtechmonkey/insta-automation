@@ -1,0 +1,88 @@
+id: p044
+plan: "D22 7:30 PM · Debate"
+topic: "Language · ages 2–4"
+keyword: TONGUE
+slides:
+  - kind: cover
+    title: "Mother tongue first won't hurt their *English*"
+    body: ""
+    prompt: >-
+      A grandmother telling a story with expressive gestures to an enchanted 3-year-old South Asian boy, a few
+      picture books in different scripts lying nearby. Warm verandah setting. Keep the figures in the lower 60%
+      of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Two languages don't *confuse*"
+    body: "Young children can learn more than one language at the same time."
+    prompt: >-
+      A 3-year-old South Asian girl chatting happily with her mother on one side and her father on the other at
+      a dining table, both parents engaged. Keep the figures in the lower 60% of the frame. Leave the top 35% as
+      an empty, soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "A strong first language *helps*"
+    body: "Skills like storytelling and understanding carry over to the second language."
+    prompt: >-
+      A father reading a picture book in his home language to his 2-year-old son, who is pointing excitedly at
+      the pictures. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Speak what you speak *best*"
+    body: "Rich, fluent talk in Hindi or Tamil beats broken English."
+    prompt: >-
+      A mother laughing and singing a rhyme with clapping actions to her 2-year-old daughter on a bed. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Mixing words is *normal*"
+    body: "“Mumma, I want paani.” That's a smart brain using everything it knows."
+    prompt: >-
+      A 2-year-old South Asian boy holding out an empty steel cup to his mother with a big grin, asking for water.
+      Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Roots *and* wings."
+    body: "Which languages does your child hear at home? 👇"
+    prompt: >-
+      A multigenerational South Asian family laughing together in a living room, grandparents, parents and a
+      toddler. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  “Only speak English to him, or he'll struggle in school.” Many Indian parents worry about this. The research is reassuring. 🗣️
+
+  Young children are capable of learning two or more languages at once. A strong first language actually supports the second: skills like understanding stories and building vocabulary carry over. UNESCO recommends mother-tongue-based learning in the early years.
+
+  What helps:
+  💬 Speak the language you're most fluent and expressive in
+  📚 Read and sing in your home language
+  🔀 Mixing languages is normal, not a problem
+  🌍 English will come through school, media and friends
+
+  Which languages does your child hear at home? 👇
+hashtags: >-
+  #bilingualkids #mothertongue #multilingualfamily #languagedevelopment #montessori #indianparents
+  #indianmoms #hindi #desiparents #earlylearning #letmetry #parentingtips
+printable:
+  title: "Raising a Bilingual Child"
+  subtitle: "What the research says · Ages 0–5"
+  intro: >-
+    Many Indian children grow up hearing two or three languages. That's a strength, not a problem.
+  sections:
+    - heading: "What the research says"
+      items:
+        - "Learning two languages from early childhood is natural; bilingual children reach language milestones within the normal range (Byers-Heinlein & Lew-Williams, 2013)."
+        - "UNESCO recommends that children learn in a language they understand, especially in the early years (UNESCO, 2016)."
+    - heading: "Myths and facts"
+      items:
+        - "Myth: Two languages confuse children. Fact: Children learn to separate languages naturally."
+        - "Myth: Mixing languages is a sign of confusion. Fact: It's a normal, clever strategy."
+        - "Myth: Speak only English to help school. Fact: Rich talk in any language builds the skills they need."
+    - heading: "Everyday tips"
+      items:
+        - "Each adult can speak their strongest language"
+        - "Read, sing and tell stories in your home language"
+        - "Keep talking even if they answer in English"
+        - "Visit grandparents and relatives who speak the language"
+    - heading: "When to check"
+      text: "If your child isn't using words by about 16 months, or isn't combining words by 2, speak to your paediatrician, whatever the number of languages."
+  sources:
+    - label: "Byers-Heinlein, K., & Lew-Williams, C. (2013). Bilingualism in the early years: What the science says. LEARNing Landscapes, 7(1), 95–112."
+    - label: "UNESCO (2016). If you don't understand, how can you learn? Global Education Monitoring Report, Policy Paper 24."

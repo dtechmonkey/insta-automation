@@ -1,0 +1,92 @@
+id: p038
+plan: "D19 7:30 PM · Debate"
+topic: "Play · ages 2–4"
+keyword: GIFTS
+slides:
+  - kind: cover
+    title: "Unpopular opinion: Kids don't need so many *gifts*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy sitting amid a big pile of opened gift boxes and wrapping paper, looking
+      distracted, while happily playing with just one empty cardboard box. Gentle humour. Keep the figures in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "More toys, *shorter* play"
+    body: "In one study, toddlers with fewer toys played longer and more creatively."
+    prompt: >-
+      A 2-year-old South Asian girl deeply absorbed in playing with just a few wooden blocks on a rug. Keep the
+      child in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: tip
+    title: "Give *experiences*"
+    body: "A zoo visit, a train ride, a day with Nani. Memories last longer than toys."
+    prompt: >-
+      A grandmother and a 3-year-old South Asian boy at a zoo pointing at a giraffe, both delighted. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "Ask family *gently*"
+    body: "“She'd love a book, or a day out with you.” Most relatives are happy to help."
+    prompt: >-
+      A young South Asian mother chatting warmly with an aunt over chai, the aunt holding a picture book as a
+      gift. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "*Rotate*, don't hoard"
+    body: "Put most new gifts away and bring them out slowly over months."
+    prompt: >-
+      A father placing wrapped and unwrapped toys into a storage box on a high shelf while his toddler plays with
+      one new toy. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: outro
+    title: "Fewer things. More *wonder*."
+    body: "Agree or disagree? 👇"
+    prompt: >-
+      A South Asian toddler and parent making a fort from a big cardboard box in a sunny living room, both
+      laughing. Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+caption: |
+  Every festival, the toy pile grows. And every time, the child plays with… the box. 📦😂
+
+  In one study, toddlers who had 4 toys played twice as long with each one, in more creative ways, than toddlers with 16 toys.
+
+  Gentle alternatives:
+  🎟️ Give experiences: a zoo trip, a train ride, a day with Nani
+  📚 Suggest books or one quality toy to relatives
+  🔄 Put most gifts away and rotate them over months
+  💝 Teach giving: choose an old toy to give to another child
+
+  Agree or disagree? 👇
+hashtags: >-
+  #minimalistparenting #toyrotation #lesstoys #montessori #montessoriathome #diwaligifts #indianparents
+  #indianmoms #intentionalparenting #experiencegifts #letmetry #parentingtips
+printable:
+  title: "The Thoughtful Gift Guide for Ages 2–4"
+  subtitle: "Fewer, better gifts · And how to ask family"
+  intro: >-
+    Fewer toys lead to deeper play. Use this guide to suggest gifts to relatives, or to choose your own.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Toddlers with 4 toys available played longer and in more varied ways than toddlers with 16 (Dauch et al., 2018)."
+    - heading: "Experience gifts"
+      items:
+        - "A zoo, aquarium or farm visit"
+        - "A train or boat ride"
+        - "A special day out with a grandparent"
+        - "Swimming or music classes"
+    - heading: "Toys that last"
+      items:
+        - "Wooden blocks"
+        - "A child-sized kitchen tool set"
+        - "Simple puzzles"
+        - "Picture books"
+        - "Art supplies: crayons, paper, play dough"
+    - heading: "How to ask family kindly"
+      items:
+        - "“She's loving books right now, would you like to give her one?”"
+        - "“Instead of a toy, could you take him to the park? He'd love that.”"
+    - heading: "After the festival"
+      text: "Keep 2–3 new gifts out and store the rest. Bring one out every few weeks."
+  sources:
+    - label: "Dauch, C., Imwalle, M., Ocasio, B., & Metz, A. E. (2018). The influence of the number of toys in the environment on toddlers' play. Infant Behavior and Development, 50, 78–87."

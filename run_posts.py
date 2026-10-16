@@ -278,6 +278,12 @@ def publish_next(channel_dir, cfg, args):
 
 # ---------- comment bot ----------
 
+def asks_for(text, kw):
+    """A short comment containing the keyword ('CALM', 'calm please 🙏'), not a long one that happens to use the word."""
+    words = re.findall(r"[a-z0-9]+", text.lower())
+    return kw.lower() in words and len(words) <= 4
+
+
 def reply_to_comments(channel_dir, cfg, args, days=14):
     """Reply publicly to comments that contain the post's keyword, pointing to the printables link in bio."""
     hist = load_state(channel_dir, "history.json", {"posts": []})
@@ -291,9 +297,8 @@ def reply_to_comments(channel_dir, cfg, args, days=14):
         kw = entry.get("keyword")
         if not kw or datetime.fromisoformat(entry["posted_at"]) < cutoff:
             continue
-        pattern = re.compile(rf"\b{re.escape(kw)}\b", re.IGNORECASE)
         for c in instagram.comments(entry["media_id"], version):
-            if c["id"] in done_ids or (c.get("username") or "").lower() == me or not pattern.search(c.get("text", "")):
+            if c["id"] in done_ids or (c.get("username") or "").lower() == me or not asks_for(c.get("text", ""), kw):
                 continue
             message = random.Random(c["id"]).choice(REPLIES).format(kw=kw)
             if args.dry_run:

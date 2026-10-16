@@ -1,0 +1,92 @@
+id: p030
+plan: "D15 7:30 PM · Debate"
+topic: "Body autonomy · ages 2–4"
+keyword: HUG
+slides:
+  - kind: cover
+    title: "Should your child have to *hug* every relative?"
+    body: ""
+    prompt: >-
+      A shy 3-year-old South Asian girl hiding behind her mother's legs at a family gathering while a smiling
+      aunty bends down with open arms. Warm, respectful tone. Keep the figures in the lower 60% of the frame.
+      Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Their body, their *choice*"
+    body: "Learning they can say no to touch is an early body-safety lesson."
+    prompt: >-
+      A 3-year-old South Asian boy holding up his hand in a gentle 'stop' while smiling, his mother kneeling
+      beside him encouragingly. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "Offer other *greetings*"
+    body: "Namaste, a high-five, a wave, a flying kiss. Respect without forcing touch."
+    prompt: >-
+      A 3-year-old South Asian girl doing a cheerful namaste to her grandfather, who is smiling and doing namaste
+      back. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft sage-green
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Speak up *kindly*"
+    body: "“She's warming up. A high-five today?” Relatives usually understand."
+    prompt: >-
+      A mother smiling and speaking warmly to an older relative while her toddler gives the relative a
+      high-five. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Hugs mean more when *given*"
+    body: "Watch: once they feel safe, the hugs come on their own."
+    prompt: >-
+      A 3-year-old South Asian boy running happily into his grandmother's arms in a sunny courtyard. Keep the
+      figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash, reserved
+      for text.
+  - kind: outro
+    title: "Respect elders. *Respect* children."
+    body: "Agree or disagree? Be kind in the comments 💛"
+    prompt: >-
+      A warm multigenerational South Asian family sitting together on a sofa, the toddler happily sitting close
+      to her grandmother by choice. Keep the figures in the lower 55% of the frame. Leave the top 40% as an
+      empty, soft sage-green watercolor wash, reserved for text.
+caption: |
+  “Go give Mamaji a hug!” …and your child hides behind your legs. What do you do? 🤗
+
+  Many child-safety organisations recommend letting children decide about hugs and kisses. When children learn early that their body belongs to them, it becomes easier for them to speak up if something ever feels wrong.
+
+  This isn't about disrespecting elders. It's about offering choices:
+  🙏 Namaste
+  ✋ A high-five
+  👋 A wave or a flying kiss
+
+  And a gentle line for relatives: “She's warming up. A high-five today?”
+
+  Agree or disagree? Please be kind in the comments 💛
+hashtags: >-
+  #bodysafety #consent #bodyautonomy #gentleparenting #indianparents #indianmoms #desiparents
+  #montessori #parentingtips #childsafety #letmetry #respectfulparenting
+printable:
+  title: "Body Safety Basics for Little Ones"
+  subtitle: "Respectful greetings and early body-safety talk · Ages 2–4"
+  intro: >-
+    Body-safety education starts with small, everyday moments: naming body parts, respecting 'no', and
+    teaching that it's okay to tell a trusted adult anything.
+  sections:
+    - heading: "Everyday practice"
+      items:
+        - "Use correct names for body parts."
+        - "Let your child choose how to greet: namaste, wave, high-five or hug."
+        - "Stop tickling when they say stop."
+        - "Ask before helping with bathing or dressing: “Can I help you wash?”"
+    - heading: "Simple rules to teach"
+      items:
+        - "Your body belongs to you."
+        - "Private parts are private."
+        - "No secrets that make you feel worried."
+        - "You can always tell me, and you won't be in trouble."
+    - heading: "With relatives"
+      items:
+        - "Prepare your child before gatherings."
+        - "Offer a greeting choice out loud, so relatives hear it too."
+        - "Thank relatives for understanding."
+    - heading: "Learn more"
+      text: "The NSPCC's 'PANTS' rule is a simple, child-friendly way to teach body safety."
+  sources:
+    - label: "NSPCC: Talk PANTS (body safety guidance for parents)."
+      url: "https://www.nspcc.org.uk/keeping-children-safe/support-for-parents/pants-underwear-rule/"

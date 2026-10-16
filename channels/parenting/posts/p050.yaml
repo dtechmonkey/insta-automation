@@ -1,0 +1,93 @@
+id: p050
+plan: "D25 7:30 PM · Debate"
+topic: "Montessori · ages 2–6"
+keyword: MONTESSORI
+slides:
+  - kind: cover
+    title: "Montessori isn't only for *expensive schools*"
+    body: ""
+    prompt: >-
+      A simple, modest Indian home with a 3-year-old South Asian girl pouring water from a steel jug at a low
+      wooden stool, a mother cooking in the background. Humble, warm setting. Keep the figures in the lower 60%
+      of the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "It started with *poor* children"
+    body: "Maria Montessori's first school (1907) was for children in a low-income area of Rome."
+    prompt: >-
+      A soft historical-style watercolor of a simple early-1900s classroom with small wooden tables and children
+      doing practical work, no text. Keep the scene in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft peach watercolor wash, reserved for text.
+  - kind: tip
+    title: "It's a way of *seeing* children"
+    body: "Respect, independence, real work. None of that costs money."
+    prompt: >-
+      A father kneeling at eye level listening respectfully to his 3-year-old son, who is explaining something
+      with his hands. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Your kitchen *is* the material"
+    body: "Steel katoris, dals, a small jug, a cloth. Real tools, real life."
+    prompt: >-
+      A tray on a low table holding steel katoris, a small jug, some dal and a folded cloth, arranged neatly as
+      a Montessori-style activity. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Skip the *expensive* toys"
+    body: "You don't need branded 'Montessori' products. You need time and trust."
+    prompt: >-
+      A 2-year-old South Asian boy happily playing with a cardboard box and wooden spoons instead of a pile of
+      shiny packaged toys in the background. Keep the child in the lower 60% of the frame. Leave the top 35% as
+      an empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Montessori is *free*. It lives at home."
+    body: "What surprised you most? 👇"
+    prompt: >-
+      A grandmother and a toddler sorting vegetables together on a kitchen floor, both content. Keep the figures
+      in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash, reserved
+      for text.
+caption: |
+  “Montessori? That's for rich people with fancy wooden toys.” This is one of the biggest myths we hear. 🪵
+
+  The first Montessori school, Casa dei Bambini, opened in 1907 for children in a poor neighbourhood of Rome. Montessori is a way of seeing children: as capable people who learn through real work and independence.
+
+  What it actually needs:
+  🙌 Respect for the child
+  🫗 Real tools: steel jugs, katoris, a cloth
+  ⏳ Time to let them try
+  🏠 A home arranged so they can reach things
+
+  Research has even found Montessori preschool helped narrow the gap between children from lower- and higher-income families.
+
+  What surprised you most? 👇
+hashtags: >-
+  #montessori #montessoriathome #montessoriindia #montessorionabudget #mythbusting #indianparents
+  #indianmoms #earlychildhood #childledlearning #practicallife #letmetry #parentingtips
+printable:
+  title: "Montessori at Home on Zero Budget"
+  subtitle: "Principles and free materials · Ages 2–6"
+  intro: >-
+    Montessori is an approach, not a product. These principles and everyday materials cost nothing.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children in public Montessori preschools showed stronger academic outcomes, and Montessori narrowed the gap between lower- and higher-income children (Lillard et al., 2017)."
+    - heading: "Core principles"
+      items:
+        - "Follow the child's interests"
+        - "Let them do it themselves"
+        - "Real work with real tools"
+        - "A calm, ordered environment"
+        - "Freedom within limits"
+    - heading: "Free materials from your home"
+      items:
+        - "Steel jugs, katoris and spoons: pouring and spooning"
+        - "Dals and beans: sorting and transferring"
+        - "Cloths and a small broom: cleaning"
+        - "Socks and laundry: matching"
+        - "Fruits and vegetables: washing, peeling, naming"
+        - "Cardboard boxes: building and imagination"
+    - heading: "What to skip"
+      text: "Expensive branded toys, screens marketed as 'educational', and over-scheduling."
+  sources:
+    - label: "Lillard, A. S., Heise, M. J., Richey, E. M., Tong, X., Hart, A., & Bray, P. M. (2017). Montessori preschool elevates and equalizes child outcomes: A longitudinal study. Frontiers in Psychology, 8, 1783."
+    - label: "Lillard, A. S. (2017). Montessori: The Science Behind the Genius. Oxford University Press."

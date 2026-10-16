@@ -1,0 +1,94 @@
+id: p034
+plan: "D17 7:30 PM · Debate"
+topic: "Feeding · age 3–4"
+keyword: FEED
+slides:
+  - kind: cover
+    title: "Still spoon-feeding at *4*?"
+    body: "Why self-feeding matters"
+    prompt: >-
+      A 4-year-old South Asian boy sitting at a table with his mouth open while his mother spoon-feeds him rice,
+      his own hands resting idle on the table. Gentle, non-judgemental tone. Keep the figures in the lower 60% of
+      the frame. Leave the top 35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "It builds their *hands*"
+    body: "Scooping, tearing roti, bringing food to the mouth: all fine-motor practice."
+    prompt: >-
+      Close view of a small child's hand tearing a piece of roti and scooping sabzi with it, on a steel plate.
+      Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: tip
+    title: "They learn their *hunger*"
+    body: "Feeding themselves helps children eat to their own fullness."
+    prompt: >-
+      A 3-year-old South Asian girl feeding herself slowly with a small spoon, then pausing and patting her
+      tummy contentedly. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Mess is *temporary*"
+    body: "A mat under the chair, a cloth nearby. Skills last forever."
+    prompt: >-
+      A 3-year-old South Asian boy happily eating by himself with a bit of rice on his cheek and a mat under his
+      chair, his father smiling. Keep the figures in the lower 60% of the frame. Leave the top 35% as an empty,
+      soft dusty-blue watercolor wash, reserved for text.
+  - kind: tip
+    title: "Hand over *gradually*"
+    body: "First half the meal, then most of it. Help only when asked."
+    prompt: >-
+      A mother and her 4-year-old daughter eating side by side, each from their own plate, the child copying how
+      the mother mixes dal and rice. Keep the figures in the lower 60% of the frame. Leave the top 35% as an
+      empty, soft peach watercolor wash, reserved for text.
+  - kind: outro
+    title: "Let them *feed* themselves."
+    body: "Honest question: until what age were you spoon-fed? 😄"
+    prompt: >-
+      A happy South Asian family eating together on the floor with hands, the toddler proudly eating alone.
+      Keep the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor
+      wash, reserved for text.
+caption: |
+  In many Indian homes, feeding a 4- or 5-year-old by hand is normal. It's faster, cleaner and comes from love. 💛 But it can hold them back.
+
+  Feeding themselves builds hand skills, helps children notice their own hunger and fullness, and builds independence.
+
+  Try a gradual handover:
+  🥄 Start with them feeding the first half of the meal
+  🫓 Teach tearing roti and scooping
+  🧽 Use a mat and a cloth; mess is temporary
+  🍽️ Eat together so they can copy you
+
+  Honest question: until what age were YOU spoon-fed? 👇
+hashtags: >-
+  #selffeeding #toddlermeals #montessori #montessoriathome #indianparents #indianmoms #desiparents
+  #pickyeater #responsivefeeding #parentingtips #letmetry #toddlerindependence
+printable:
+  title: "Handing Over the Spoon: A 3-Week Plan"
+  subtitle: "From being fed to eating independently · Ages 2–5"
+  intro: >-
+    Most toddlers can feed themselves with fingers by about 12 months and use a spoon well by around 2–3
+    years. Children fed for longer can learn quickly with a gradual handover.
+  sections:
+    - heading: "Week 1"
+      items:
+        - "They eat the first few bites themselves, then you help"
+        - "Offer easy finger foods: roti pieces, idli, cut fruit"
+        - "Eat together at the table"
+    - heading: "Week 2"
+      items:
+        - "They feed half the meal"
+        - "Teach tearing roti and scooping sabzi"
+        - "A small spoon and a bowl with sides"
+    - heading: "Week 3"
+      items:
+        - "They feed most of the meal; you help only when asked"
+        - "Praise effort: “You fed yourself the whole idli!”"
+    - heading: "Tips"
+      items:
+        - "Smaller portions, seconds allowed"
+        - "A mat under the chair, a cloth within reach"
+        - "Expect them to eat a little less at first"
+        - "No screens at meals"
+    - heading: "When to check"
+      text: "If your child has trouble chewing or swallowing, or is losing weight, speak to your paediatrician."
+  sources:
+    - label: "HealthyChildren.org (American Academy of Pediatrics): Feeding and nutrition for toddlers."
+      url: "https://www.healthychildren.org/English/ages-stages/toddler/nutrition/"

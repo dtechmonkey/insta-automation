@@ -1,0 +1,95 @@
+id: p054
+plan: "D27 7:30 PM · Debate"
+topic: "Feeding and motivation · ages 2–4"
+keyword: CHOCOLATE
+slides:
+  - kind: cover
+    title: "Unpopular opinion: Stop rewarding with *chocolate*"
+    body: ""
+    prompt: >-
+      A 3-year-old South Asian boy holding out his hand expectantly towards a chocolate bar held up by an adult,
+      after putting his shoes on. Gentle, warm tone. Keep the figures in the lower 60% of the frame. Leave the top
+      35% as an empty, soft cream watercolor wash, reserved for text.
+  - kind: tip
+    title: "Food becomes a *feeling* fix"
+    body: "Research links using food as a reward to emotional eating later in childhood."
+    prompt: >-
+      An older child sitting alone looking sad while reaching for a packet of biscuits, soft muted palette.
+      Gentle tone. Keep the subject in the lower 60% of the frame. Leave the top 35% as an empty, soft peach
+      watercolor wash, reserved for text.
+  - kind: tip
+    title: "Sweets become *more* precious"
+    body: "When sweets are the prize, vegetables become the punishment."
+    prompt: >-
+      A 3-year-old South Asian girl pushing away a plate of vegetables while staring longingly at a chocolate on
+      a shelf. Gentle humour. Keep the child in the lower 60% of the frame. Leave the top 35% as an empty, soft
+      sage-green watercolor wash, reserved for text.
+  - kind: tip
+    title: "Celebrate with *time*"
+    body: "A special song, an extra story, a trip to the park."
+    prompt: >-
+      A father dancing and singing with his 3-year-old son in a living room, both laughing. Keep the figures in
+      the lower 60% of the frame. Leave the top 35% as an empty, soft dusty-blue watercolor wash, reserved for
+      text.
+  - kind: tip
+    title: "Sweets can just be *sweets*"
+    body: "Serve them sometimes, without strings: not a prize, not a punishment."
+    prompt: >-
+      A South Asian family sharing a small plate of laddoos after dinner, the toddler enjoying one calmly. Keep
+      the figures in the lower 60% of the frame. Leave the top 35% as an empty, soft peach watercolor wash,
+      reserved for text.
+  - kind: outro
+    title: "Reward with *connection*."
+    body: "Do you use food rewards? No judgement, tell us 👇"
+    prompt: >-
+      A mother and her 2-year-old daughter giving each other a high-five after the child tidied her toys. Keep
+      the figures in the lower 55% of the frame. Leave the top 40% as an empty, soft sage-green watercolor wash,
+      reserved for text.
+caption: |
+  “If you eat your sabzi, you'll get a chocolate.” Easy, effective, and a habit many of us grew up with. 🍫
+
+  But research suggests that using food as a reward or comfort can teach children to turn to food for feelings. In one study, children whose parents used food to manage emotions were more likely to eat when upset later.
+
+  Try instead:
+  🎉 Celebrate with time: a song, a story, the park
+  🙌 High-fives and hugs
+  🍬 Serve sweets sometimes, with no strings attached
+  🥦 Never make vegetables the 'price' of dessert
+
+  Do you use food rewards? No judgement, tell us 👇
+
+  (General information, not medical advice.)
+hashtags: >-
+  #foodrewards #emotionaleating #healthyhabits #gentleparenting #montessori #indianparents #indianmoms
+  #toddlerfood #responsivefeeding #parentingtips #letmetry #childhealth
+printable:
+  title: "Non-Food Rewards and Celebrations"
+  subtitle: "Ways to celebrate without sweets · Ages 2–5"
+  medical: true
+  intro: >-
+    Sweets can be a normal part of family life, but using them as rewards or comfort can shape a child's
+    relationship with food. Here are other ways to celebrate.
+  sections:
+    - heading: "What the research found"
+      items:
+        - "Children whose parents used food to regulate emotions showed more emotional eating later (Farrow, Haycraft & Blissett, 2015)."
+        - "Adults who recalled food being used as a reward in childhood reported more binge eating and dieting (Puhl & Schwartz, 2003)."
+    - heading: "Celebrate with"
+      items:
+        - "A special dance or song"
+        - "An extra bedtime story"
+        - "Choosing the weekend outing"
+        - "A sticker on the 'I can' chart"
+        - "Calling Nani to tell her"
+        - "A high-five and a big hug"
+    - heading: "Comfort with"
+      items:
+        - "A cuddle"
+        - "Naming the feeling"
+        - "A favourite soft toy"
+        - "A walk outside"
+    - heading: "Sweets without strings"
+      text: "Offer sweets sometimes, after meals, without linking them to behaviour or vegetables."
+  sources:
+    - label: "Farrow, C. V., Haycraft, E., & Blissett, J. M. (2015). Teaching our children when to eat: How parental feeding practices inform the development of emotional eating. American Journal of Clinical Nutrition, 101(5), 908–913."
+    - label: "Puhl, R. M., & Schwartz, M. B. (2003). If you are good you can have a cookie: How memories of childhood food rules link to adult eating behaviors. Eating Behaviors, 4(3), 283–293."
