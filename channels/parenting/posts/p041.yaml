@@ -2,6 +2,7 @@ id: p041
 plan: "D21 1 PM · Warm (Diwali)"
 topic: "Family · all ages"
 keyword: SIMPLE
+not_before: "2026-11-08"   # Diwali greeting: hold until the day
 slides:
   - kind: cover
     title: "A slow, simple *Diwali* with little ones"

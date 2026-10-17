@@ -4,7 +4,7 @@ handle: "@letmetry.montessori"
 timezone: "Asia/Kolkata"
 
 publish_times: ["13:00", "19:30"]   # IST; add "21:30" for a third daily post
-start_date: "2026-10-19"            # no posts before this day (keeps festive posts on their planned dates)
+start_date: "2026-10-17"            # no posts before this day
 
 # Prefixed to every slide's Gemini prompt (a post may override with its own `style:`)
 image_style: >-

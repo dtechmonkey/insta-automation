@@ -72,13 +72,20 @@ def save_state(channel_dir, name, data):
     (channel_dir / name).write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def ready_queue(channel_dir, hist):
+def ready_queue(channel_dir, hist, local_date):
+    """Unposted posts with all their images, in id order. A post with `not_before: YYYY-MM-DD` (festival
+    greetings) waits until that day, then goes first."""
     posted = {p["id"] for p in hist["posts"]}
-    ready = []
+    ready, dated = [], []
     for pid in all_post_ids(channel_dir):
-        if pid not in posted and not missing_images(channel_dir, load_post(channel_dir, pid)):
-            ready.append(pid)
-    return ready
+        post = load_post(channel_dir, pid)
+        if pid in posted or missing_images(channel_dir, post):
+            continue
+        not_before = str(post.get("not_before", ""))
+        if not_before > local_date:
+            continue
+        (dated if not_before else ready).append(pid)
+    return dated + ready
 
 
 # ---------- rendering ----------
@@ -240,7 +247,7 @@ def publish_next(channel_dir, cfg, args):
     if slot != "manual" and any(p["date"] == local_date and p["slot"] == slot for p in hist["posts"]):
         print(f"Already posted for {local_date} {slot}; nothing to do.")
         return
-    ready = ready_queue(channel_dir, hist)
+    ready = ready_queue(channel_dir, hist, local_date)
     if not ready:
         print("Queue is empty: no post has all its images. Skipping.")
         warn_if_queue_low(channel_dir, cfg, hist, ready, local_date)

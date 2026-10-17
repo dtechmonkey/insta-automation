@@ -2,6 +2,7 @@ id: p053
 plan: "D27 1 PM · Warm (Children's Day, 14 Nov)"
 topic: "Children's Day · all ages"
 keyword: CHILDHOOD
+not_before: "2026-11-14"   # Children's Day: hold until the day
 slides:
   - kind: cover
     title: "Children's Day: what children really *need* from us"
