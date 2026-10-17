@@ -5,3 +5,4 @@ __pycache__/
 .venv/
 reference/
 channels/*/images/inbox/
+channels/*/images/stale/
