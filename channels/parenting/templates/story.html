@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; height: 1920px; overflow: hidden; position: relative; background: {{ brand.cream }}; color: {{ brand.ink }}; }
+/* the cover, softly blurred and washed out, fills the background */
+.bg { position: absolute; inset: -80px; background: url('{{ cover }}') center/cover; filter: blur(46px) saturate(.8); opacity: .55; }
+.wash { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(251,246,238,.75), rgba(251,246,238,.35) 40%, rgba(251,246,238,.8)); }
+.pill { position: absolute; top: 230px; left: 0; right: 0; text-align: center; }
+.pill span { display: inline-block; padding: 14px 44px; border-radius: 999px; background: {{ brand.terracotta }}; color: #fff;
+  font-family: "Nunito", sans-serif; font-weight: 800; font-size: 42px; letter-spacing: .08em; text-transform: uppercase;
+  box-shadow: 0 10px 30px rgba(60,55,45,.18); }
+.card { position: absolute; left: 100px; top: 380px; width: 880px; height: 1100px; border-radius: 36px; object-fit: cover;
+  box-shadow: 0 30px 80px rgba(60,55,45,.28); }
+.foot { position: absolute; top: 1540px; left: 60px; right: 60px; text-align: center; }
+.foot .t { font-family: "Fraunces", serif; font-weight: 600; font-size: 54px; line-height: 1.15; }
+.foot .t i { color: {{ brand.terracotta }}; font-weight: 500; }
+.foot .s { margin-top: 16px; font-family: "Nunito", sans-serif; font-weight: 700; font-size: 36px; color: {{ brand.ink_soft }}; }
+.foot .kw { display: inline-block; padding: 2px 20px 4px; border-radius: 999px; background: {{ brand.sage }}; color: #fff; font-weight: 800; }
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="wash"></div>
+<div class="pill"><span>New post</span></div>
+<img class="card" src="{{ cover }}">
+<div class="foot">
+  <div class="t">See it on <i>{{ handle }}</i></div>
+  {% if keyword and cta_mode == "comment" %}<div class="s">Comment <span class="kw">{{ keyword }}</span> on the post for the free printable</div>
+  {% elif keyword %}<div class="s">Free printable: link in bio</div>{% endif %}
+</div>
+</body>
+</html>

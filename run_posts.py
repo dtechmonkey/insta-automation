@@ -163,6 +163,24 @@ def render_printable(post, channel_dir, cfg, pdf_path):
     return pdf_path
 
 
+def render_story(post, channel_dir, cfg, out_dir):
+    """A 9:16 'New post' Story built from the rendered cover slide (out_dir/01.jpg)."""
+    env = Environment(loader=FileSystemLoader(str(channel_dir / "templates")), autoescape=select_autoescape(["html"]))
+    page_html = env.get_template("story.html").render(
+        **base_context(cfg), cover=data_uri(out_dir / "01.jpg"),
+        keyword=post.get("keyword") if post.get("printable") else None, cta_mode=cfg.get("cta_mode", "bio"))
+    from playwright.sync_api import sync_playwright
+    path = out_dir / "story.jpg"
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(viewport={"width": 1080, "height": 1920})
+        page.set_content(page_html, wait_until="networkidle")
+        page.evaluate("document.fonts.ready")
+        page.screenshot(path=str(path), type="jpeg", quality=90)
+        browser.close()
+    return path
+
+
 def write_printables_index(channel_dir, cfg, hist):
     """docs/printables/index.html: every published post's printable, newest first."""
     rows = []
@@ -261,6 +279,7 @@ def publish_next(channel_dir, cfg, args):
     pdf = None
     if post.get("printable") and post.get("keyword"):
         pdf = render_printable(post, channel_dir, cfg, out_dir / f"{post['keyword'].lower()}.pdf")
+    story = render_story(post, channel_dir, cfg, out_dir) if cfg.get("story", True) else None
     if args.dry_run:
         print(f"Dry run: rendered {out_dir}, not posting.")
         return
@@ -272,15 +291,24 @@ def publish_next(channel_dir, cfg, args):
     if pdf:  # printable goes live on the Pages site before the post asks people to comment for it
         DOCS.mkdir(parents=True, exist_ok=True)
         (DOCS / pdf.name).write_bytes(pdf.read_bytes())
-    urls = host.upload(paths, f"{channel_dir.name}/{local_date}-{slot.replace(':', '')}-{post['id']}")
+    urls = host.upload(list(paths) + ([story] if story else []),
+                       f"{channel_dir.name}/{local_date}-{slot.replace(':', '')}-{post['id']}")
+    version = cfg["instagram"]["api_version"]
     print("Publishing carousel to Instagram…")
-    media_id = instagram.publish_carousel(urls, caption, cfg["instagram"]["api_version"])
+    media_id = instagram.publish_carousel(urls[: len(paths)], caption, version)
     print(f"Published {post['id']}! media id {media_id}")
     hist["posts"].append({"id": post["id"], "date": local_date, "slot": slot, "keyword": post.get("keyword"),
                           "posted_at": datetime.now(timezone.utc).isoformat(), "media_id": media_id})
     write_printables_index(channel_dir, cfg, hist)
     warn_if_queue_low(channel_dir, cfg, hist, ready[1:], local_date)
     save_state(channel_dir, "history.json", hist)
+    if story:  # the post is live and recorded; a Story failure only raises a heads-up issue
+        try:
+            print(f"Story published: {instagram.publish_story(urls[-1], version)}")
+        except Exception as e:
+            print(f"  ! Story failed: {e}")
+            notify.open_issue(f"{cfg['name']}: Story for {post['id']} failed",
+                              f"The carousel was posted, but sharing its cover to the Story failed:\n\n```\n{e}\n```")
     try:
         host.cleanup(channel_dir.name)
     except Exception as e:  # best-effort
@@ -371,6 +399,8 @@ def main():
         render_post(post, channel_dir, cfg, out_dir)
         if post.get("printable") and post.get("keyword"):
             render_printable(post, channel_dir, cfg, out_dir / f"{post['keyword'].lower()}.pdf")
+        if cfg.get("story", True):
+            render_story(post, channel_dir, cfg, out_dir)
         print(f"Done: {out_dir}")
     elif args.publish:
         publish_next(channel_dir, cfg, args)

@@ -20,6 +20,7 @@ hashtags_max: 12
 #   bio:     "Free printable · link in bio" (no comment bot needed)
 cta_mode: comment
 printables_url: "https://dtechmonkey.github.io/insta-automation/printables/"   # put this in the Instagram bio
+story: true               # also share each post's cover as a "New post" Story
 low_queue_days: 3          # open a GitHub issue when fewer days of ready posts remain
 
 brand:
