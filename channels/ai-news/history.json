@@ -358,6 +358,126 @@
           "published": "2026-10-16T15:55:40Z"
         }
       ]
+    },
+    {
+      "mode": "weekly",
+      "date": "2026-10-18",
+      "posted_at": "2026-10-18T06:31:42.174708+00:00",
+      "media_id": "18137614690632271",
+      "stories": [
+        {
+          "headline": "GOOGLE *LAUNCHES* GEMINI 4",
+          "facts": "Google rolled out its Gemini 4 Argon model globally, offering developers a fifty percent API discount through November.",
+          "caption_line": "🚀 Google officially released Gemini 4 Argon worldwide alongside a fifty percent API discount for developers.",
+          "image_prompt": "A sleek holographic smartphone displaying complex glowing neural networks in the foreground, set against a high-tech server room with glowing blue server racks and glass partitions in the midground. Transparent glowing geometric UI panels, floating data streams, and rising analytical graphs hover in the air. Dramatic studio rim lighting and cool neon accents with a vivid electric-blue and warm-orange color palette.",
+          "broll_query": "data center servers",
+          "space": false,
+          "company": "Google",
+          "category": "Model Release",
+          "source": "The Decoder",
+          "source_title": "GOOGLE DROPS *GEMINI 4*!",
+          "url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/",
+          "published": "2026-10-13T18:00:49+00:00"
+        },
+        {
+          "headline": "SCIENTISTS DEMAND TO *UNPLUG* AI",
+          "facts": "Over four hundred scientists, including Geoffrey Hinton and Yoshua Bengio, urged tech firms to instantly sever AI models from the internet.",
+          "caption_line": "⚠️ Over 400 top researchers signed an urgent open letter calling for AI models to be disconnected from the internet.",
+          "image_prompt": "A massive glowing severed digital cable sparking with light in the foreground, set against an imposing dark server warehouse and high-tech command center in the midground. Holographic warning signs, floating technical schematics, and descending telemetry data lines surround the frame. Moody atmospheric lighting with sharp amber flares and deep electric-blue shadows across the environment.",
+          "broll_query": "massive server room",
+          "space": false,
+          "company": "",
+          "category": "Policy",
+          "source": "The Decoder",
+          "source_title": "406 SCIENTISTS: *UNPLUG* AI",
+          "url": "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately/",
+          "published": "2026-10-13T18:50:44+00:00"
+        },
+        {
+          "headline": "NVIDIA COMMITS *TWO BILLION*",
+          "facts": "Nvidia CEO Jensen Huang pledged two billion dollars for European investments alongside 250 million dollars in compute for UK safety research.",
+          "caption_line": "💰 Nvidia pledged two billion dollars toward European expansion and 250 million dollars for UK safety research.",
+          "image_prompt": "A confident portrait of an executive with crossed arms looking off-camera in the foreground, with futuristic European city skylines and stacks of microchips in the midground. Floating holographic investment charts, glowing financial line graphs, and network connection lines shimmer across the air. Dramatic sunset rim lighting casting warm-orange highlights against an electric-blue architectural backdrop.",
+          "broll_query": "silicon computer chip",
+          "space": false,
+          "company": "NVIDIA",
+          "category": "Funding",
+          "source": "The Decoder",
+          "source_title": "*NVIDIA* POURS *$2B* INTO EUROPE",
+          "url": "https://the-decoder.com/nvidias-jensen-huang-pledges-2-billion-for-europe-250-million-in-compute-for-uk-safety-labs/",
+          "published": "2026-10-14T14:24:34+00:00"
+        },
+        {
+          "headline": "CHARACTER AI FACES *BANKRUPTCY*",
+          "facts": "Character.ai filed for bankruptcy and announced it will shut down completely unless a buyer acquires the platform by late 2026.",
+          "caption_line": "📉 Character.ai filed for bankruptcy and risks shutting down completely if it cannot find a buyer by late 2026.",
+          "image_prompt": "A cracked, glowing digital avatar hologram fading out on a dark desk in the foreground, with an empty modern tech startup office and darkened computer screens in the midground. Holographic downward financial trend lines, shattered data streams, and blinking system error icons hover in the space. Melancholic studio lighting with deep shadows, illuminated by sharp electric-blue glow and warm-orange warning lights.",
+          "broll_query": "empty office space",
+          "space": false,
+          "company": "Character.ai",
+          "category": "Industry",
+          "source": "The Decoder",
+          "source_title": "*CHARACTER.AI* GOES BANKRUPT",
+          "url": "https://the-decoder.com/character-ai-will-shut-down-if-no-buyer-emerges-capping-a-fall-from-2-7-billion-google-deal-to-bankruptcy/",
+          "published": "2026-10-13T15:27:39+00:00"
+        },
+        {
+          "headline": "FIRST *VISION CHIP* IMPLANTED",
+          "facts": "Science Corporation surgically placed its PRIMA vision-restoring chip into a human patient battling Stargardt disease for the first time.",
+          "caption_line": "👁️ Science Corporation successfully implanted its vision-restoring PRIMA chip into its first human patient.",
+          "image_prompt": "A microscopic, glowing neural microchip held delicately in surgical forceps in the foreground, overlooking an ultra-modern hospital surgical suite with glowing biometric monitors in the midground. Transparent holographic retinal scans, cellular diagrams, and flowing biometric pulse lines float in mid-air. High-contrast clinical rim lighting blending warm-orange diagnostic beams with sterile electric-blue ambient glow.",
+          "broll_query": "medical robotic surgery",
+          "space": false,
+          "company": "Science Corporation",
+          "category": "Hardware",
+          "source": "TechCrunch",
+          "source_title": "FIRST *VISION CHIP* IMPLANT",
+          "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+          "published": "2026-10-13T23:13:31+00:00"
+        },
+        {
+          "headline": "EIGHT STATES *SUE* OPENAI",
+          "facts": "Attorneys general from eight states, including Arizona and Iowa, sued OpenAI for allegedly deceiving consumers and endangering child safety.",
+          "caption_line": "⚖️ Eight state attorneys general filed lawsuits against OpenAI over consumer deception and child safety concerns.",
+          "image_prompt": "A polished wooden gavel on a pedestal in the foreground, set against the towering columns of a stately courthouse facade and glowing data terminals in the midground. Floating holographic legal scrolls, glowing state map outlines, and digital warning shields illuminate the air. Dramatic side lighting with deep electric-blue shadows and warm-orange rim highlights.",
+          "broll_query": "courtroom gavel legal",
+          "space": false,
+          "company": "OpenAI",
+          "category": "Policy",
+          "source": "The Verge",
+          "source_title": "*EIGHT STATES* SUE OPENAI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+          "published": "2026-10-14T21:11:28+00:00"
+        },
+        {
+          "headline": "AI ACES *THEORETICAL PHYSICS* PROBLEMS",
+          "facts": "GPT-6-Astra solved 49 out of 50 unpublished theoretical physics calculations on the TheoPhysEval test, costing just $2.40 per problem.",
+          "caption_line": "⚛️ GPT-6-Astra solved 49 of 50 complex theoretical physics problems on a new benchmark for just $2.40 each.",
+          "image_prompt": "A glowing, intricate holographic representation of an atom and quantum wave functions in the foreground, with an advanced physics research laboratory and chalkboards in the midground. Floating mathematical equations, glowing benchmark scorecards, and complex vector fields hover in space. Cinematic studio lighting featuring radiant warm-orange particle emissions against an intense electric-blue quantum field.",
+          "broll_query": "quantum physics simulation",
+          "space": false,
+          "company": "OpenAI",
+          "category": "Research",
+          "source": "The Decoder",
+          "source_title": "AI SOLVES *COMPLEX* PHYSICS PROBLEMS",
+          "url": "https://the-decoder.com/gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-40-apiece/",
+          "published": "2026-10-15T15:24:15+00:00"
+        },
+        {
+          "headline": "OPENAI ENGINEER *ARRESTED*",
+          "facts": "Authorities arrested OpenAI engineer Abdulrahman Alfozan for allegedly planting an audio bug inside an executive conference room.",
+          "caption_line": "🚨 An OpenAI engineer was arrested for allegedly placing a covert audio bug in an executive meeting room.",
+          "image_prompt": "A tiny, high-tech microphone bug hidden beneath a polished dark executive boardroom table in the foreground, with an empty glass-walled boardroom and night city view in the midground. Holographic soundwave frequencies, glowing audio spectrograms, and flashing digital alert indicators float in the dim room. Moody atmospheric lighting with sharp electric-blue reflections and warm-orange alert glows.",
+          "broll_query": "dark conference room",
+          "space": false,
+          "company": "OpenAI",
+          "category": "Industry",
+          "source": "The Verge",
+          "source_title": "OPENAI ENGINEER *ARRESTED*",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+          "published": "2026-10-13T20:45:25+00:00"
+        }
+      ]
     }
   ]
 }
