@@ -294,9 +294,21 @@ def publish_next(channel_dir, cfg, args):
     urls = host.upload(list(paths) + ([story] if story else []),
                        f"{channel_dir.name}/{local_date}-{slot.replace(':', '')}-{post['id']}")
     version = cfg["instagram"]["api_version"]
-    print("Publishing carousel to Instagram…")
-    media_id = instagram.publish_carousel(urls[: len(paths)], caption, version)
-    print(f"Published {post['id']}! media id {media_id}")
+    media_id = instagram.find_posted(caption, version)  # an earlier run may have posted it despite an error
+    if media_id:
+        print(f"{post['id']} is already on Instagram (media id {media_id}); recording it instead of posting again.")
+        story = None  # its Story slot has passed; don't share a stale cover
+    else:
+        print("Publishing carousel to Instagram…")
+        try:
+            media_id = instagram.publish_carousel(urls[: len(paths)], caption, version)
+        except instagram.InstagramError:
+            time.sleep(30)  # media_publish can fail yet still post; record it rather than post it twice
+            media_id = instagram.find_posted(caption, version)
+            if not media_id:
+                raise
+            print("  (Instagram reported an error but the post went live)")
+        print(f"Published {post['id']}! media id {media_id}")
     hist["posts"].append({"id": post["id"], "date": local_date, "slot": slot, "keyword": post.get("keyword"),
                           "posted_at": datetime.now(timezone.utc).isoformat(), "media_id": media_id})
     write_printables_index(channel_dir, cfg, hist)

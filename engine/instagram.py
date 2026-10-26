@@ -81,6 +81,22 @@ def publish_story(media_url, version):
     return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
 
 
+def recent_media(version, limit=10):
+    """Our latest posts (id, caption, timestamp), newest first."""
+    ig_user = os.environ["IG_USER_ID"].strip()
+    return _call("GET", f"{ig_user}/media", version, fields="id,caption,timestamp", limit=limit).get("data", [])
+
+
+def find_posted(caption, version, limit=10):
+    """Media id of a recent post with this caption, or None. Instagram sometimes publishes even when
+    media_publish answers with an error (e.g. 'Application request limit reached'), so check before retrying."""
+    key = " ".join(caption.split())[:120]
+    for m in recent_media(version, limit):
+        if " ".join((m.get("caption") or "").split())[:120] == key:
+            return m["id"]
+    return None
+
+
 def comments(media_id, version):
     """Top-level comments on one of our posts (needs instagram_business_manage_comments)."""
     data = _call("GET", f"{media_id}/comments", version, fields="id,text,username,timestamp", limit=50)

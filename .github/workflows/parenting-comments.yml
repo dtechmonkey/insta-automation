@@ -1,10 +1,12 @@
-# Let Me Try (parenting): every ~10 minutes, reply to comments that contain a post's keyword
+# Let Me Try (parenting): every 2 hours, reply to comments that contain a post's keyword
 # (e.g. "ALONE") with a pointer to the free printable in the bio link.
+# Not more often: each run reads every recent post, and Instagram's per-app rate limit is small
+# for a young account. Running every 10 minutes exhausted it and blocked publishing.
 name: Let Me Try - comment replies
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "15 */2 * * *"
   workflow_dispatch:
     inputs:
       dry_run: { description: "Show replies, don't send", default: true, type: boolean }
