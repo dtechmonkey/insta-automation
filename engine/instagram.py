@@ -17,44 +17,58 @@ class InstagramError(RuntimeError):
     pass
 
 
+# Meta rate-limit error codes (app-level, user-level, business-use-case, too-many-calls).
+RATE_LIMIT_CODES = {4, 17, 32, 613}
+RATE_LIMIT_WAITS = (300, 600, 900)  # seconds; the limits are rolling-hour windows
+
+
 def _call(method, path, version, **params):
     # Token goes in the body/params but never into error messages.
     params["access_token"] = os.environ["IG_ACCESS_TOKEN"].strip()
     url = f"{BASE}/{version}/{path}"
-    if method == "GET":
-        resp = requests.get(url, params=params, timeout=60)
-    else:
-        resp = requests.post(url, data=params, timeout=60)
-    data = resp.json() if resp.content else {}
-    if not resp.ok or "error" in data:
+    for attempt in range(len(RATE_LIMIT_WAITS) + 1):
+        if method == "GET":
+            resp = requests.get(url, params=params, timeout=60)
+        else:
+            resp = requests.post(url, data=params, timeout=60)
+        data = resp.json() if resp.content else {}
+        if resp.ok and "error" not in data:
+            return data
         err = data.get("error", {})
+        if err.get("code") in RATE_LIMIT_CODES and attempt < len(RATE_LIMIT_WAITS):
+            wait = RATE_LIMIT_WAITS[attempt]
+            print(f"  Instagram rate limit (code {err.get('code')}); waiting {wait // 60} min before retrying {path}")
+            time.sleep(wait)
+            continue
         raise InstagramError(f"{method} {path}: {err.get('message', resp.status_code)} (code {err.get('code')})")
-    return data
 
 
 def _wait_ready(container_id, version, timeout=300):
-    deadline = time.time() + timeout
+    """Poll a container until FINISHED, backing off (5 s -> 30 s) to stay well inside API rate limits."""
+    deadline, interval = time.time() + timeout, 5.0
     while time.time() < deadline:
+        time.sleep(interval)
         status = _call("GET", container_id, version, fields="status_code").get("status_code")
         if status == "FINISHED":
             return
         if status in ("ERROR", "EXPIRED"):
             raise InstagramError(f"Container {container_id} status {status}")
-        time.sleep(4)
+        interval = min(30.0, interval * 1.5)
     raise InstagramError(f"Container {container_id} not ready after {timeout}s")
 
 
 def publish_carousel(image_urls, caption, version):
     ig_user = os.environ["IG_USER_ID"].strip()
-    children = []
+    children, videos = [], []
     for url in image_urls:
         if url.lower().endswith(".mp4"):
             child = _call("POST", f"{ig_user}/media", version, media_type="VIDEO", video_url=url,
                           is_carousel_item="true")["id"]
+            videos.append(child)
         else:
             child = _call("POST", f"{ig_user}/media", version, image_url=url, is_carousel_item="true")["id"]
         children.append(child)
-    for child in children:
+    for child in videos:  # images are ready immediately; only videos need processing time
         _wait_ready(child, version)
     carousel = _call("POST", f"{ig_user}/media", version,
                      media_type="CAROUSEL", children=",".join(children), caption=caption)["id"]
