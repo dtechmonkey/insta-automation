@@ -100,3 +100,6 @@ reel:                           # daily Reel built from the carousel's clips, po
 
 story:                          # 'NEW POST' Story (disappears after 24 h), posted right after the carousel
   enabled: true
+
+faces:                          # real, freely licensed portraits (Wikimedia Commons) cut out onto slides
+  enabled: true

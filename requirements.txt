@@ -7,3 +7,5 @@ python-dotenv>=1.0
 tzdata
 gradio_client
 imageio-ffmpeg
+rembg[cpu]
+trafilatura

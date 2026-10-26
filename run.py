@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import yaml
 from dotenv import load_dotenv
 
-from engine import broll, collect, curate, history, host, images, instagram, notify, reel, render, video
+from engine import broll, collect, curate, faces, history, host, images, instagram, notify, reel, render, video
 
 ROOT = Path(__file__).parent
 CAPTION_LIMIT = 2200
@@ -54,6 +54,7 @@ def build_caption(result, cfg, mode="daily", local_date=None):
         result["caption"],
         "Sources: " + ", ".join(sources),
         ("Video: " + "; ".join(credits)) if credits else "",
+        ("Photos: " + "; ".join(result["photo_credits"])) if result.get("photo_credits") else "",
         disclosure,
         hashtags(cfg),
     ]
@@ -133,6 +134,31 @@ def make_images(result, out_dir, cfg):
             break
 
 
+def gather_faces(result, out_dir, cfg):
+    """Real portraits (freely licensed, from Wikimedia Commons) cut out for the cover and story slides."""
+    if not cfg.get("faces", {}).get("enabled"):
+        return
+    face_dir = out_dir / "faces"
+    face_dir.mkdir(parents=True, exist_ok=True)
+    wanted = [(0, result.get("cover_person", ""))] + [(i, s.get("person", "")) for i, s in enumerate(result["stories"], 1)]
+    credits, cache = [], {}
+    for i, name in wanted:
+        out = face_dir / f"{i:02d}.png"
+        if not name or out.exists():
+            continue
+        if name not in cache:
+            cache[name] = faces.portrait(name, face_dir / f"{name.replace(' ', '_')}.png")
+        found = cache[name]
+        if found:
+            out.write_bytes(Path(face_dir / f"{name.replace(' ', '_')}.png").read_bytes())
+            print(f"  slide {i + 1}: real photo of {name}")
+            if found["credit"] not in credits:
+                credits.append(found["credit"])
+        else:
+            print(f"  slide {i + 1}: no freely licensed photo of {name}")
+    result["photo_credits"] = credits
+
+
 def gather_video(result, out_dir, cfg, draft_dir=None):
     """Moving backgrounds for story slides: your press clips first (draft_dir/press-N.mp4), then free
     stock footage (NASA for space stories, Pexels, Pixabay). NASA and press credits go into result["video_credits"]."""
@@ -175,13 +201,14 @@ def build_slides(result, mode, out_dir, cfg):
     stories = result["stories"]
     total = len(stories) + 2
     bg = [_data_uri(find_bg(out_dir, i)) for i in range(len(stories) + 1)]
+    person = [_data_uri(out_dir / "faces" / f"{i:02d}.png") for i in range(len(stories) + 1)]
     weekly = mode == "weekly"
-    slides = [{"template": "hero.html", "cover": True, "image": bg[0],
+    slides = [{"template": "hero.html", "cover": True, "image": bg[0], "person": person[0],
                "kicker": "Weekly recap" if weekly else None,
                "headline_html": highlight("This week in *tech*" if weekly else result["cover_headline"]),
                "facts": result.get("cover_subline"), "cta": "Swipe for more"}]
     for i, story in enumerate(stories, 1):
-        slides.append({"template": "hero.html", "image": bg[i], "pager": f"{i + 1}/{total}",
+        slides.append({"template": "hero.html", "image": bg[i], "person": person[i], "pager": f"{i + 1}/{total}",
                        "headline_html": highlight(story["headline"]), "facts": story["facts"],
                        "source": story["source"],
                        "badge": "Story of the week" if weekly and story["url"] == result.get("biggest_url") else None})
@@ -346,6 +373,7 @@ def main():
         result = json.loads((out_dir / "post.json").read_text(encoding="utf-8"))
         if not args.no_images:
             make_images(result, out_dir, cfg)
+        gather_faces(result, out_dir, cfg)
         numbers = [int(n) for n in args.video_slides.split(",") if n.strip()] if args.video_slides else []
         render_all(result, args.mode, out_dir, cfg, channel_dir, base_context, numbers)
         print(f"Re-rendered {out_dir}")
@@ -402,6 +430,9 @@ def main():
     if cfg.get("video", {}).get("enabled"):
         print("Finding video clips…")
         gather_video(result, out_dir, cfg, draft_dir)
+    if cfg.get("faces", {}).get("enabled"):
+        print("Finding real photos of people…")
+        gather_faces(result, out_dir, cfg)
     if args.no_images:
         print("Skipping image generation (--no-images)")
     else:

@@ -37,6 +37,12 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Cache the cut-out model (rembg, ~170 MB)
+        uses: actions/cache@v4
+        with:
+          path: ~/.u2net
+          key: rembg-u2net-human-seg
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt

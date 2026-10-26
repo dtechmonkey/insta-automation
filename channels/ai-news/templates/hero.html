@@ -11,6 +11,10 @@ html, body { width: 1080px; height: 1350px; background: #000; }
 .badge { display: inline-block; margin-bottom: 18px; padding: 8px 22px; border-radius: 6px; background: #FFC53D;
   color: #000; font-family: "Oswald", sans-serif; font-weight: 600; font-size: 30px; text-transform: uppercase; }
 .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.person { position: absolute; left: 50%; transform: translateX(-50%); bottom: 470px; height: 760px;
+  max-width: 1000px; object-fit: contain; object-position: bottom;
+  -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%); mask-image: linear-gradient(180deg, #000 70%, transparent 100%);
+  filter: drop-shadow(0 0 40px rgba(30,123,255,.55)) drop-shadow(0 20px 40px rgba(0,0,0,.6)); }
 .fade { position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 14%, rgba(0,0,0,0) 46%, rgba(0,0,0,.85) 62%, #000 72%); }
 .wordmark { position: absolute; top: 34px; right: 40px; font-family: "Michroma", sans-serif; font-size: 26px;
@@ -38,6 +42,7 @@ html, body, .slide { background: transparent !important; }{% endif %}
 <body>
 <div class="slide">
   {% if image and not layer %}<img class="bg" src="{{ image }}">{% endif %}
+  {% if person and layer != "text" %}<img class="person" src="{{ person }}">{% endif %}
   {% if layer != "text" %}<div class="fade"></div>{% endif %}
   {% if layer != "fade" %}
   {% if not cover %}<div class="wordmark">{{ name | upper }}</div>{% endif %}
