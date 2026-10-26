@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Michroma&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; background: #05070d; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; color: #fff;
+  background: radial-gradient(circle at 80% 10%, #16306e 0%, #070b18 45%, #05070d 80%); }
+.grid { position: absolute; inset: 0; opacity: .12;
+  background-image: linear-gradient(#5FC8FF 1px, transparent 1px), linear-gradient(90deg, #5FC8FF 1px, transparent 1px);
+  background-size: 54px 54px; -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 70%); }
+.wordmark { position: absolute; top: 34px; right: 40px; font-family: Michroma, sans-serif; font-size: 26px; }
+.pager { position: absolute; top: 84px; right: 40px; padding: 10px 24px; border-radius: 999px;
+  background: rgba(20,22,28,.72); font-family: Oswald, sans-serif; font-weight: 500; font-size: 32px; }
+.num { position: absolute; top: 40px; left: 44px; font-family: Anton, sans-serif; font-size: 120px; line-height: 1;
+  background: linear-gradient(180deg, #5FC8FF, #1E7BFF); -webkit-background-clip: text; color: transparent; }
+.card { position: absolute; top: 210px; left: 60px; width: 960px; border-radius: 22px; overflow: hidden;
+  border: 2px solid rgba(95,200,255,.35); box-shadow: 0 0 60px rgba(30,123,255,.35), 0 30px 60px rgba(0,0,0,.6); }
+.card img { display: block; width: 100%; }
+.body { position: absolute; left: 60px; right: 60px; top: 760px; }
+.repo { font-family: "JetBrains Mono", monospace; font-size: 30px; color: #8fb8ff; }
+.title { margin-top: 10px; font-family: Anton, sans-serif; font-size: 96px; line-height: 1; text-transform: uppercase; }
+.title .hl { background: linear-gradient(180deg, #5FC8FF, #1E7BFF); -webkit-background-clip: text; color: transparent; }
+.what { margin-top: 22px; font-family: Oswald, sans-serif; font-weight: 600; font-size: 42px; line-height: 1.15; text-transform: uppercase; }
+.chips { position: absolute; left: 60px; bottom: 70px; display: flex; gap: 16px; }
+.chip { padding: 10px 22px; border-radius: 999px; background: rgba(30,123,255,.18); border: 2px solid rgba(95,200,255,.5);
+  font-family: Oswald, sans-serif; font-weight: 600; font-size: 28px; }
+.foot { position: absolute; right: 60px; bottom: 80px; font-family: Oswald, sans-serif; font-size: 26px; color: rgba(255,255,255,.6); }
+/* cover */
+.collage { position: absolute; left: -200px; right: -200px; top: -120px; display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 22px; transform: rotate(-8deg); opacity: .6; filter: saturate(1.2); }
+.collage img { width: 100%; border-radius: 16px; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,7,13,.25) 0%, rgba(5,7,13,.6) 40%, #05070d 66%); }
+.cover-text { position: absolute; left: 44px; right: 44px; bottom: 70px; text-align: center; }
+.kicker { font-family: Michroma, sans-serif; font-size: 24px; letter-spacing: .04em; margin-bottom: 18px; }
+.headline { font-family: Anton, sans-serif; font-size: 140px; line-height: .98; text-transform: uppercase; }
+.headline .hl { background: linear-gradient(180deg, #5FC8FF, #1E7BFF); -webkit-background-clip: text; color: transparent; }
+.sub { margin-top: 24px; font-family: Oswald, sans-serif; font-weight: 600; font-size: 44px; text-transform: uppercase; }
+.cta { display: inline-block; margin-top: 30px; padding: 14px 34px; border-radius: 14px; background: #1E7BFF;
+  font-family: Oswald, sans-serif; font-weight: 600; font-size: 40px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="slide">
+{% if cover %}
+  <div class="collage">{% for c in cards %}<img src="{{ c }}">{% endfor %}</div>
+  <div class="shade"></div>
+  <div class="cover-text">
+    <div class="kicker">{{ name | upper }} · OPEN-SOURCE FINDS</div>
+    <h1 class="headline fit-h">{{ headline_html | safe }}</h1>
+    <p class="sub">{{ sub }}</p>
+    <div class="cta">Comment “{{ keyword }}” for all links</div>
+  </div>
+{% elif outro %}
+  <div class="grid"></div>
+  <div class="cover-text" style="bottom: 380px">
+    <h1 class="headline">Want the <span class="hl">links?</span></h1>
+    <p class="sub">Comment “{{ keyword }}” and we’ll send you all {{ count }} repos</p>
+    <div class="cta">Follow {{ handle }} for more</div>
+  </div>
+{% else %}
+  <div class="grid"></div>
+  <div class="num">{{ '%02d' % index }}</div>
+  <div class="wordmark">{{ name | upper }}</div>
+  <div class="pager">{{ pager }}</div>
+  <div class="card"><img src="{{ card }}"></div>
+  <div class="body">
+    <div class="repo">github.com/{{ repo.full_name }}</div>
+    <div class="title fit-h">{{ title_html | safe }}</div>
+    <p class="what fit">{{ what }}</p>
+  </div>
+  <div class="chips">
+    <span class="chip">★ {{ stars }}</span>
+    {% if repo.language %}<span class="chip">{{ repo.language }}</span>{% endif %}
+    <span class="chip">{{ repo.license }}</span>
+  </div>
+  <div class="foot">Free &amp; open source</div>
+{% endif %}
+</div>
+<script>
+window.fitText = function () {
+  const box = document.querySelector('.body') || document.querySelector('.cover-text');
+  if (!box) return;
+  const limit = document.querySelector('.body') ? 1350 - 760 - 170 : 1350 * 0.5;
+  const els = [...document.querySelectorAll('.fit-h, .fit')];
+  for (let i = 0; i < 40 && box.offsetHeight > limit; i++)
+    els.forEach(el => el.style.fontSize = parseFloat(getComputedStyle(el).fontSize) * 0.95 + 'px');
+};
+</script>
+</body>
+</html>
