@@ -372,6 +372,10 @@ def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
     if args.dry_run:
         print("Dry run: not posting.")
         return
+    version = cfg["instagram"]["api_version"]
+    if instagram.find_posted(caption, version):  # another run (e.g. a late scheduled one) already posted it
+        print(f"SKIPPED bank post: {post.name} is already on Instagram.")
+        return
     try:
         reel.build_story(post, cfg["handle"], 0, line="A new post is live")
     except Exception as e:
@@ -379,7 +383,6 @@ def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
     extras = [post / "story.jpg"] if (post / "story.jpg").exists() else []
     stamp = now.strftime("%Y-%m-%d_%H%M") + "_bank"
     urls = host.upload(slides + extras, f"{args.channel}/{stamp}")
-    version = cfg["instagram"]["api_version"]
     media_id = instagram.publish_carousel(urls[: len(slides)], caption, version)
     print(f"Published! media id {media_id}")
     history.record(hist, "bank", local_date, [], media_id)
