@@ -344,12 +344,57 @@ def run_draft(result, cfg, args, channel_dir, local_date):
         (draft_dir / "issue.json").write_text(json.dumps({"number": number}), encoding="utf-8")
 
 
+# ---------- bank posts (GitHub lists / evergreen, made ahead with Gemini-app images) ----------
+
+def next_bank_post(hist):
+    """Oldest ready, unposted post in bank/, alternating post types (repo list <-> evergreen)."""
+    bank = ROOT / "bank"
+    posted = {p.get("bank_id") for p in hist["posts"]}
+    ready = sorted(d for d in bank.glob("*") if (d / "READY").exists() and d.name not in posted) if bank.exists() else []
+    if not ready:
+        return None
+    last = next((p.get("bank_id", "") for p in reversed(hist["posts"]) if p.get("bank_id")), "")
+    other = [d for d in ready if d.name.split("-")[0] != last.split("-")[0]]
+    return (other or ready)[0]
+
+
+def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
+    post = next_bank_post(hist)
+    if not post:
+        sys.exit("SKIPPED bank post: the bank is empty (generate more posts on the PC).")
+    slides = sorted(post.glob("[0-9][0-9].jpg"))
+    caption = (post / "caption.txt").read_text(encoding="utf-8")
+    print(f"Bank post {post.name}: {len(slides)} slides")
+    if args.dry_run:
+        print("Dry run: not posting.")
+        return
+    try:
+        reel.build_story(post, cfg["handle"], 0, line="A new post is live")
+    except Exception as e:
+        print(f"  ! story build failed: {e}")
+    extras = [post / "story.jpg"] if (post / "story.jpg").exists() else []
+    stamp = now.strftime("%Y-%m-%d_%H%M") + "_bank"
+    urls = host.upload(slides + extras, f"{args.channel}/{stamp}")
+    version = cfg["instagram"]["api_version"]
+    media_id = instagram.publish_carousel(urls[: len(slides)], caption, version)
+    print(f"Published! media id {media_id}")
+    history.record(hist, "bank", local_date, [], media_id)
+    hist["posts"][-1]["bank_id"] = post.name
+    history.save(channel_dir, hist)
+    shutil.rmtree(post)  # posted: drop it from the bank (the commit step records the removal)
+    if extras and cfg.get("story", {}).get("enabled"):
+        try:
+            print(f"Story published: {instagram.publish_story(urls[-1], version)}")
+        except Exception as e:
+            print(f"  ! story failed: {e}")
+
+
 # ---------- main ----------
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--channel", required=True)
-    ap.add_argument("--mode", choices=["daily", "weekly"], default="daily")
+    ap.add_argument("--mode", choices=["daily", "weekly", "bank"], default="daily")
     ap.add_argument("--stage", choices=["post", "draft"], default="post",
                     help="draft: pick stories + open the heads-up issue; post: build and publish")
     ap.add_argument("--dry-run", action="store_true", help="make images + caption, don't post")
@@ -384,6 +429,10 @@ def main():
         result = json.loads((out_dir / "post.json").read_text(encoding="utf-8"))
         caption = (out_dir / "caption.txt").read_text(encoding="utf-8")
         publish(slide_media(out_dir), caption, result, args, cfg, channel_dir, hist, local_date, out_dir.name)
+        return
+
+    if args.mode == "bank":
+        post_from_bank(args, cfg, channel_dir, hist, local_date, now)
         return
 
     if not args.dry_run and not args.force and history.already_posted(hist, args.mode, local_date):

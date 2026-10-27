@@ -73,7 +73,7 @@ def build_reel(out_dir, music=None, cover_seconds=3.0, story_seconds=4.0, outro_
     return out
 
 
-def build_story(out_dir, handle, n_stories):
+def build_story(out_dir, handle, n_stories, line=None):
     """A 9:16 Story image: today's cover on a blurred background with a 'NEW POST' banner."""
     out_dir = Path(out_dir)
     cover = base64.b64encode((out_dir / "01.jpg").read_bytes()).decode()
@@ -96,7 +96,7 @@ body {{ width: {W}px; height: {H}px; background: #000; overflow: hidden; positio
 <div class="bg"></div>
 <div class="banner"><span>NEW POST</span></div>
 <img class="card" src="data:image/jpeg;base64,{cover}">
-<div class="foot">Today's {n_stories} stories are live<br>Visit <b>{handle}</b> to read them all</div>
+<div class="foot">{line or f"Today's {n_stories} stories are live"}<br>Visit <b>{handle}</b> to read them all</div>
 </body></html>"""
     out = out_dir / "story.jpg"
     with sync_playwright() as p:

@@ -10,10 +10,12 @@ on:
     - cron: "35 8 * * *"   # daily draft: 14:05 IST
     - cron: "20 12 * * *"  # daily post:  starts 17:50 IST, publishes 18:30 IST
     - cron: "50 5 * * 0"   # weekly: Sundays, starts 11:20 IST, publishes 12:00 IST
+    - cron: "25 5 * * *"   # bank post 1: ~11:00 IST (GitHub list / evergreen, made ahead)
+    - cron: "25 9 * * *"   # bank post 2: ~15:00 IST
   workflow_dispatch:
     inputs:
       channel: { description: "Channel folder", default: "ai-news" }
-      mode: { description: "daily or weekly", default: "daily", type: choice, options: [daily, weekly] }
+      mode: { description: "daily or weekly", default: "daily", type: choice, options: [daily, weekly, bank] }
       stage: { description: "draft (pick stories + heads-up) or post", default: "post", type: choice, options: [post, draft] }
       dry_run: { description: "Don't post (and no heads-up issue)", default: true, type: boolean }
 
@@ -58,6 +60,8 @@ jobs:
             [ "${{ inputs.dry_run }}" = "true" ] && echo "flags=--dry-run" >> "$GITHUB_OUTPUT" || true
           elif [ "${{ github.event.schedule }}" = "50 5 * * 0" ]; then
             echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=weekly" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "25 5 * * *" ] || [ "${{ github.event.schedule }}" = "25 9 * * *" ]; then
+            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=bank" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"
           elif [ "${{ github.event.schedule }}" = "35 8 * * *" ]; then
             echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=daily" >> "$GITHUB_OUTPUT"; echo "stage=draft" >> "$GITHUB_OUTPUT"
           else
@@ -92,7 +96,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A channels/*/history.json channels/*/drafts 2>/dev/null || true
+          git add -A channels/*/history.json channels/*/drafts bank 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "${{ steps.what.outputs.stage }}: ${{ steps.what.outputs.channel }} ${{ steps.what.outputs.mode }}"
             git pull --rebase --autostash && git push   # press clips may have been uploaded meanwhile
