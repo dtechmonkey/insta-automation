@@ -359,6 +359,10 @@ def next_bank_post(hist):
 
 
 def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
+    last = max((datetime.fromisoformat(p["posted_at"]) for p in hist["posts"] if p.get("bank_id")), default=None)
+    if last and not args.force and datetime.now(timezone.utc) - last < timedelta(hours=3):
+        print(f"SKIPPED bank post: one already went out at {last:%H:%M} UTC (a late duplicate run).")
+        return
     post = next_bank_post(hist)
     if not post:
         sys.exit("SKIPPED bank post: the bank is empty (generate more posts on the PC).")
