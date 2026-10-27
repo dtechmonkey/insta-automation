@@ -1,0 +1,14 @@
+Hollywood-style motion capture used to need a special suit. Now it needs a webcam 🎥
+
+1. Google's body tracking
+2. Motion capture, free
+3. A pose toolbox
+4. Sharper poses
+5. Understand movement
+6. Full 3D bodies
+7. Motion in the world
+
+💬 Comment "MOCAP" and we'll DM you all 7 links.
+🔖 Save this · Follow @d_tech_monkey for more free tools
+
+#github #opensource #aitools #ai #techmonkey

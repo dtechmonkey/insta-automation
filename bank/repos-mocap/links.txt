@@ -1,0 +1,7 @@
+mediapipe: https://github.com/google-ai-edge/mediapipe
+freemocap: https://github.com/freemocap/freemocap
+mmpose: https://github.com/open-mmlab/mmpose
+ViTPose: https://github.com/ViTAE-Transformer/ViTPose
+MotionBERT: https://github.com/Walter0807/MotionBERT
+4D-Humans: https://github.com/shubham-goel/4D-Humans
+WHAM: https://github.com/yohanshin/WHAM

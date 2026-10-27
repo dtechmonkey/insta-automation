@@ -1,0 +1,17 @@
+Want to build a trading bot? Start with these open-source tools 📈 (Not financial advice: test with paper money first.)
+
+1. The popular crypto bot
+2. Market-making bots
+3. Strategies in Python
+4. Microsoft's quant lab
+5. Trading with reinforcement learning
+6. A pro trading engine
+7. Built for speed
+8. A full quant platform
+9. Test before you trade
+10. Free market data
+
+💬 Comment "TRADING" and we'll DM you all 10 links.
+🔖 Save this · Follow @d_tech_monkey for more free tools
+
+#github #opensource #aitools #ai #techmonkey

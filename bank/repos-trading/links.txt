@@ -1,0 +1,10 @@
+freqtrade: https://github.com/freqtrade/freqtrade
+hummingbot: https://github.com/hummingbot/hummingbot
+jesse: https://github.com/jesse-ai/jesse
+qlib: https://github.com/microsoft/qlib
+FinRL: https://github.com/AI4Finance-Foundation/FinRL
+Lean: https://github.com/QuantConnect/Lean
+nautilus_trader: https://github.com/nautechsystems/nautilus_trader
+vnpy: https://github.com/vnpy/vnpy
+backtrader: https://github.com/mementum/backtrader
+yfinance: https://github.com/ranaroussi/yfinance

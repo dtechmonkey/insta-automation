@@ -1,0 +1,10 @@
+crawl4ai: https://github.com/unclecode/crawl4ai
+firecrawl: https://github.com/firecrawl/firecrawl
+Scrapling: https://github.com/D4Vinci/Scrapling
+scrapy: https://github.com/scrapy/scrapy
+crawlee: https://github.com/apify/crawlee
+playwright: https://github.com/microsoft/playwright
+Scrapegraph-ai: https://github.com/ScrapeGraphAI/Scrapegraph-ai
+maxun: https://github.com/getmaxun/maxun
+reader: https://github.com/jina-ai/reader
+browser-use: https://github.com/browser-use/browser-use

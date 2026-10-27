@@ -1,0 +1,10 @@
+alphafold3: https://github.com/google-deepmind/alphafold3
+boltz: https://github.com/jwohlwend/boltz
+openfold: https://github.com/aqlaboratory/openfold
+esm: https://github.com/facebookresearch/esm
+ProteinMPNN: https://github.com/dauparas/ProteinMPNN
+DiffDock: https://github.com/gcorso/DiffDock
+gnina: https://github.com/gnina/gnina
+REINVENT4: https://github.com/MolecularAI/REINVENT4
+deepchem: https://github.com/deepchem/deepchem
+rdkit: https://github.com/rdkit/rdkit
