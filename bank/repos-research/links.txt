@@ -1,0 +1,5 @@
+gpt-researcher: https://github.com/assafelovic/gpt-researcher
+storm: https://github.com/stanford-oval/storm
+deep-research: https://github.com/dzhng/deep-research
+local-deep-research: https://github.com/LearningCircuit/local-deep-research
+khoj: https://github.com/khoj-ai/khoj
