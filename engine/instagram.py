@@ -73,7 +73,15 @@ def publish_carousel(image_urls, caption, version):
     carousel = _call("POST", f"{ig_user}/media", version,
                      media_type="CAROUSEL", children=",".join(children), caption=caption)["id"]
     _wait_ready(carousel, version)
-    return _call("POST", f"{ig_user}/media_publish", version, creation_id=carousel)["id"]
+    try:
+        return _call("POST", f"{ig_user}/media_publish", version, creation_id=carousel)["id"]
+    except InstagramError as e:  # e.g. "Fatal (code -1)" although the post went live
+        time.sleep(20)
+        posted = find_posted(caption, version)
+        if posted:
+            print(f"  media_publish reported '{e}', but the post is live")
+            return posted
+        raise
 
 
 def publish_reel(video_url, caption, version, share_to_feed=False):

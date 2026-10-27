@@ -92,7 +92,7 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit history and drafts
-        if: success()
+        if: always()   # a post can be live even when a later step (Reel/Story) failed: keep its record
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
