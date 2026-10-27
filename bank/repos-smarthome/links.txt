@@ -1,0 +1,7 @@
+core: https://github.com/home-assistant/core
+android: https://github.com/home-assistant/android
+esphome: https://github.com/esphome/esphome
+zigbee2mqtt: https://github.com/Koenkk/zigbee2mqtt
+node-red: https://github.com/node-red/node-red
+server: https://github.com/music-assistant/server
+openhab-core: https://github.com/openhab/openhab-core

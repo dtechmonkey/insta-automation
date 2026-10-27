@@ -1,0 +1,7 @@
+godot: https://github.com/godotengine/godot
+bevy: https://github.com/bevyengine/bevy
+raylib: https://github.com/raysan5/raylib
+phaser: https://github.com/phaserjs/phaser
+pixijs: https://github.com/pixijs/pixijs
+libgdx: https://github.com/libgdx/libgdx
+ml-agents: https://github.com/Unity-Technologies/ml-agents
