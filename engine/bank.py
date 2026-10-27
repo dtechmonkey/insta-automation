@@ -50,6 +50,41 @@ REPO_THEMES = [
 ]
 CORE_THEMES = 10  # the first 10 are planned up front
 
+# (topic, Wikipedia title, person shown on the cover or "")
+EVERGREEN_TOPICS = [
+    ("James Webb Space Telescope", "James Webb Space Telescope", ""),
+    ("Boston Dynamics Atlas robot", "Atlas (robot)", ""),
+    ("Hyperloop", "Hyperloop", ""),
+    ("Neuralink brain chip", "Neuralink", "Elon Musk"),
+    ("Quantum computers", "Quantum computing", ""),
+    ("Burj Khalifa engineering", "Burj Khalifa", ""),
+    ("The Large Hadron Collider", "Large Hadron Collider", ""),
+    ("Self-driving cars (Waymo)", "Waymo", ""),
+    ("The International Space Station", "International Space Station", ""),
+    ("Lab-grown meat", "Cultured meat", ""),
+    ("Nuclear fusion (ITER)", "ITER", ""),
+    ("The first iPhone", "IPhone (1st generation)", "Steve Jobs"),
+    ("Deep Blue vs Kasparov", "Deep Blue versus Garry Kasparov", "Garry Kasparov"),
+    ("AlphaGo", "AlphaGo", ""),
+    ("Starlink satellites", "Starlink", ""),
+    ("The Mars rover Perseverance", "Perseverance (rover)", ""),
+    ("Ingenuity, the Mars helicopter", "Ingenuity (helicopter)", ""),
+    ("Bullet trains (Shinkansen)", "Shinkansen", ""),
+    ("Maglev trains", "Shanghai maglev train", ""),
+    ("The Hubble Space Telescope", "Hubble Space Telescope", ""),
+    ("3D-printed houses", "Construction 3D printing", ""),
+    ("Exoskeletons", "Powered exoskeleton", ""),
+    ("The Chandrayaan-3 Moon landing", "Chandrayaan-3", ""),
+    ("Blue Origin New Shepard", "New Shepard", "Jeff Bezos"),
+    ("Tesla Optimus robot", "Optimus (robot)", ""),
+    ("The Three Gorges Dam", "Three Gorges Dam", ""),
+    ("The Panama Canal", "Panama Canal", ""),
+    ("Supersonic Concorde", "Concorde", ""),
+    ("GPS", "Global Positioning System", ""),
+    ("The Voyager probes", "Voyager 1", ""),
+]
+TARGET = 10  # keep this many finished posts waiting
+
 REPO_PROMPT = """You write Instagram carousels for "{channel}" about free open-source tools. Theme: {theme}.
 Real GitHub repos with README excerpts are below.
 
@@ -104,8 +139,12 @@ def _wiki(title, limit=6000):
     return page.get("title", title), (page.get("extract") or "")[:limit]
 
 
+def _slug(topic):
+    return re.sub(r"[^a-z0-9]+", "-", topic.lower()).strip("-")[:30]
+
+
 def plan_evergreen_post(topic, wiki_title, cfg, person=""):
-    post_id = "ever-" + re.sub(r"[^a-z0-9]+", "-", topic.lower()).strip("-")[:30]
+    post_id = "ever-" + _slug(topic)
     if (BANK / post_id / "post.json").exists():
         return
     title, text = _wiki(wiki_title)
@@ -301,6 +340,27 @@ if __name__ == "__main__":
         cfg = _cfg()
         plan_repo_post(*REPO_THEMES[0], cfg)
         plan_evergreen_post("SpaceX Starship", "SpaceX Starship", cfg)
+        status()
+    elif cmd == "topup":  # bank running low and no images pending: plan 1 repo list + 1 evergreen post
+        waiting = {d.name for d in (ROOT / "bank").glob("*") if (d / "READY").exists()} |                   {d.name for d in BANK.glob("*") if (d / "READY").exists()}
+        posted = {p.get("bank_id") for p in json.loads((ROOT / "channels/ai-news/history.json").read_text(encoding="utf-8"))["posts"]}
+        waiting -= posted
+        pending = [j for j in _queue() if j["status"] == "pending"]
+        if pending or len(waiting) >= TARGET:
+            print(f"no top-up: {len(waiting)} waiting, {len(pending)} images pending")
+        else:
+            cfg = _cfg()
+            for t in [t for t in REPO_THEMES if not (BANK / ("repos-" + t[2].lower()) / "post.json").exists()][:1]:
+                try:
+                    plan_repo_post(*t, cfg)
+                except Exception as e:
+                    print(f"  skip {t[0]}: {e}")
+            for topic, title, person in [t for t in EVERGREEN_TOPICS
+                                         if not (BANK / ("ever-" + _slug(t[0])) / "post.json").exists()][:1]:
+                try:
+                    plan_evergreen_post(topic, title, cfg, person)
+                except Exception as e:
+                    print(f"  skip {topic}: {e}")
         status()
     elif cmd == "render":
         render_post(sys.argv[2])
