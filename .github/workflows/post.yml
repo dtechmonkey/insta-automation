@@ -1,17 +1,18 @@
 # Daily + weekly posting. Cron times are in UTC (IST = UTC + 5:30).
-#   14:05 IST  draft: pick today's stories, open a heads-up issue (emails you) for optional press clips
-#   17:50 IST  post:  build from today's draft (+ your press-N.mp4 clips), publish at 18:30 IST
+#   09:00 IST  draft: pick today's stories, open a heads-up issue (emails you) for optional press clips
+#   11:50 IST  post:  build from today's draft (+ your press-N.mp4 clips), publish at 12:30 IST
+#   17:20 / 19:50 IST  bank posts (GitHub lists, evergreen, prompt packs), publish at 18:00 / 20:30 IST
 # Jobs start ~40 min early (GitHub can start late); run.py then waits for the exact
 # publish_time set in the channel config.
 name: Post to Instagram
 
 on:
   schedule:
-    - cron: "35 8 * * *"   # daily draft: 14:05 IST
-    - cron: "20 12 * * *"  # daily post:  starts 17:50 IST, publishes 18:30 IST
-    - cron: "50 5 * * 0"   # weekly: Sundays, starts 11:20 IST, publishes 12:00 IST
-    - cron: "25 5 * * *"   # bank post 1: ~11:00 IST (GitHub list / evergreen, made ahead)
-    - cron: "25 9 * * *"   # bank post 2: ~15:00 IST
+    - cron: "30 3 * * *"   # daily draft: 09:00 IST
+    - cron: "20 6 * * *"   # daily post:  starts 11:50 IST, publishes 12:30 IST
+    - cron: "50 4 * * 0"   # weekly: Sundays, starts 10:20 IST, publishes 10:30 IST
+    - cron: "40 11 * * *"  # bank slot 1: starts 17:10 IST, publishes 18:00 IST
+    - cron: "10 14 * * *"  # bank slot 2: starts 19:40 IST, publishes 20:30 IST
   workflow_dispatch:
     inputs:
       channel: { description: "Channel folder", default: "ai-news" }
@@ -60,11 +61,13 @@ jobs:
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
             echo "stage=${{ inputs.stage }}" >> "$GITHUB_OUTPUT"
             [ "${{ inputs.dry_run }}" = "true" ] && echo "flags=--dry-run" >> "$GITHUB_OUTPUT" || true
-          elif [ "${{ github.event.schedule }}" = "50 5 * * 0" ]; then
+          elif [ "${{ github.event.schedule }}" = "50 4 * * 0" ]; then
             echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=weekly" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "25 5 * * *" ] || [ "${{ github.event.schedule }}" = "25 9 * * *" ]; then
-            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=bank" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "35 8 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "40 11 * * *" ]; then
+            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=bank" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"; echo "flags=--slot 1" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "10 14 * * *" ]; then
+            echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=bank" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"; echo "flags=--slot 2" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "30 3 * * *" ]; then
             echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=daily" >> "$GITHUB_OUTPUT"; echo "stage=draft" >> "$GITHUB_OUTPUT"
           else
             echo "channel=ai-news" >> "$GITHUB_OUTPUT"; echo "mode=daily" >> "$GITHUB_OUTPUT"; echo "stage=post" >> "$GITHUB_OUTPUT"

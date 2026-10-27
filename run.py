@@ -205,7 +205,7 @@ def build_slides(result, mode, out_dir, cfg):
     weekly = mode == "weekly"
     slides = [{"template": "hero.html", "cover": True, "image": bg[0], "person": person[0],
                "kicker": "Weekly recap" if weekly else None,
-               "headline_html": highlight("This week in *tech*" if weekly else result["cover_headline"]),
+               "headline_html": highlight("This week in *tech*" if weekly else cfg["daily"].get("cover_hook") or result["cover_headline"]),
                "facts": result.get("cover_subline"), "cta": "Swipe for more"}]
     for i, story in enumerate(stories, 1):
         slides.append({"template": "hero.html", "image": bg[i], "person": person[i], "pager": f"{i + 1}/{total}",
@@ -359,9 +359,10 @@ def next_bank_post(hist):
 
 
 def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
-    last = max((datetime.fromisoformat(p["posted_at"]) for p in hist["posts"] if p.get("bank_id")), default=None)
-    if last and not args.force and datetime.now(timezone.utc) - last < timedelta(hours=3):
-        print(f"SKIPPED bank post: one already went out at {last:%H:%M} UTC (a late duplicate run).")
+    slot = args.slot or "1"
+    if not args.force and any(p.get("bank_id") and p.get("date") == local_date and p.get("slot", "1") == slot
+                              for p in hist["posts"]):
+        print(f"SKIPPED bank post: slot {slot} already posted today (a late duplicate run).")
         return
     post = next_bank_post(hist)
     if not post:
@@ -373,6 +374,7 @@ def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
         print("Dry run: not posting.")
         return
     version = cfg["instagram"]["api_version"]
+    wait_for_publish_time(cfg.get("bank", {}).get("slots", {}).get(slot), now.tzinfo)
     if instagram.find_posted(caption, version):  # another run (e.g. a late scheduled one) already posted it
         print(f"SKIPPED bank post: {post.name} is already on Instagram.")
         return
@@ -386,7 +388,7 @@ def post_from_bank(args, cfg, channel_dir, hist, local_date, now):
     media_id = instagram.publish_carousel(urls[: len(slides)], caption, version)
     print(f"Published! media id {media_id}")
     history.record(hist, "bank", local_date, [], media_id)
-    hist["posts"][-1]["bank_id"] = post.name
+    hist["posts"][-1].update(bank_id=post.name, slot=slot)
     history.save(channel_dir, hist)
     shutil.rmtree(post)  # posted: drop it from the bank (the commit step records the removal)
     if extras and cfg.get("story", {}).get("enabled"):
@@ -406,6 +408,7 @@ def main():
                     help="draft: pick stories + open the heads-up issue; post: build and publish")
     ap.add_argument("--dry-run", action="store_true", help="make images + caption, don't post")
     ap.add_argument("--force", action="store_true", help="post even if already posted today")
+    ap.add_argument("--slot", help="bank mode: which daily bank slot (see bank.slots in the config)")
     ap.add_argument("--rerender", metavar="OUTPUT_DIR", help="redraw a saved batch with the current templates (no fetching, no AI, no posting)")
     ap.add_argument("--video-slides", metavar="N,N", help="with --rerender: make MP4 clips for these slide numbers (e.g. 1,2,3,4)")
     ap.add_argument("--no-images", action="store_true", help="skip image generation (e.g. to add images by hand into OUTPUT_DIR/bg/)")

@@ -4,13 +4,17 @@ handle: "@d_tech_monkey"        # your Instagram handle, shown on slides
 timezone: "Asia/Kolkata"        # IST; used for dates and the once-per-day check
 
 daily:
-  publish_time: "18:30"         # local time; the GitHub job starts earlier and waits for this
+  publish_time: "12:30"         # local time; the GitHub job starts earlier and waits for this
+  cover_hook: "Do you even realize what just happened in *AI* in the last *24 hours*?"
   stories: 7                    # story slides per daily post (plus cover + outro)
   min_stories: 3                # skip the day if fewer good stories are found
   lookback_hours: 24
 
 weekly:
-  publish_time: "12:00"         # Sundays, local time
+  publish_time: "10:30"         # Sundays, local time (before the 12:30 daily post)
+
+bank:                           # ready-made posts (GitHub lists, evergreen, prompt packs) from bank/
+  slots: {"1": "18:00", "2": "20:30"}   # local publish time per slot
   stories: 8                    # story slides in the weekly recap
 
 hashtags: >-
