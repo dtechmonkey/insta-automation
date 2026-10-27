@@ -32,16 +32,27 @@ def search(query, n=6, min_stars=1000, active_days=120):
         if repo["owner"]["login"] in owners:  # variety: one repo per owner
             continue
         owners.add(repo["owner"]["login"])
-        picked.append({
-            "full_name": repo["full_name"], "name": repo["name"], "owner": repo["owner"]["login"],
-            "url": repo["html_url"], "homepage": repo.get("homepage") or "", "description": repo["description"],
-            "stars": repo["stargazers_count"], "language": repo.get("language") or "", "license": lic,
-            "pushed": repo["pushed_at"][:10],
-            "card": f"https://opengraph.githubassets.com/1/{repo['full_name']}",  # GitHub's social preview card
-        })
+        picked.append(_entry(repo))
         if len(picked) == n:
             break
     return picked
+
+
+def _entry(repo):
+    return {
+        "full_name": repo["full_name"], "name": repo["name"], "owner": repo["owner"]["login"],
+        "url": repo["html_url"], "homepage": repo.get("homepage") or "", "description": repo["description"] or "",
+        "stars": repo["stargazers_count"], "language": repo.get("language") or "",
+        "license": (repo.get("license") or {}).get("spdx_id") or "", "pushed": repo["pushed_at"][:10],
+        "card": f"https://opengraph.githubassets.com/1/{repo['full_name']}",  # GitHub's social preview card
+    }
+
+
+def get(full_name):
+    """One hand-picked repo, same fields as search()."""
+    r = requests.get(f"{API}/repos/{full_name}", headers=_headers(), timeout=30)
+    r.raise_for_status()
+    return _entry(r.json())
 
 
 def readme(full_name, limit=2500):

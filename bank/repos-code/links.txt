@@ -1,0 +1,5 @@
+opencode: https://github.com/anomalyco/opencode
+OpenHands: https://github.com/OpenHands/OpenHands
+cline: https://github.com/cline/cline
+continue: https://github.com/continuedev/continue
+aider: https://github.com/Aider-AI/aider
