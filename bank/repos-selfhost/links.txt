@@ -1,0 +1,5 @@
+immich: https://github.com/immich-app/immich
+server: https://github.com/nextcloud/server
+jellyfin: https://github.com/jellyfin/jellyfin
+rustdesk: https://github.com/rustdesk/rustdesk
+docuseal: https://github.com/docusealco/docuseal
