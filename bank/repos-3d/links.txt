@@ -1,4 +1,0 @@
-TRELLIS: https://github.com/microsoft/TRELLIS
-TripoSR: https://github.com/VAST-AI-Research/TripoSR
-nerfstudio: https://github.com/nerfstudio-project/nerfstudio
-blender: https://github.com/blender/blender
