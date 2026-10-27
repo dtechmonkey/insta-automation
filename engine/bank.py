@@ -346,17 +346,18 @@ if __name__ == "__main__":
         posted = {p.get("bank_id") for p in json.loads((ROOT / "channels/ai-news/history.json").read_text(encoding="utf-8"))["posts"]}
         waiting -= posted
         pending = [j for j in _queue() if j["status"] == "pending"]
-        if pending or len(waiting) >= TARGET:
+        if pending or (len(waiting) >= TARGET and "--any" not in sys.argv):
             print(f"no top-up: {len(waiting)} waiting, {len(pending)} images pending")
         else:
             cfg = _cfg()
-            for t in [t for t in REPO_THEMES if not (BANK / ("repos-" + t[2].lower()) / "post.json").exists()][:1]:
+            n = int(sys.argv[sys.argv.index("--n") + 1]) if "--n" in sys.argv else 1
+            for t in [t for t in REPO_THEMES if not (BANK / ("repos-" + t[2].lower()) / "post.json").exists()][:n]:
                 try:
                     plan_repo_post(*t, cfg)
                 except Exception as e:
                     print(f"  skip {t[0]}: {e}")
             for topic, title, person in [t for t in EVERGREEN_TOPICS
-                                         if not (BANK / ("ever-" + _slug(t[0])) / "post.json").exists()][:1]:
+                                         if not (BANK / ("ever-" + _slug(t[0])) / "post.json").exists()][:n]:
                 try:
                     plan_evergreen_post(topic, title, cfg, person)
                 except Exception as e:
