@@ -1,0 +1,4 @@
+presenton: https://github.com/presenton/presenton
+slidev: https://github.com/slidevjs/slidev
+marp: https://github.com/marp-team/marp
+reveal.js: https://github.com/hakimel/reveal.js
