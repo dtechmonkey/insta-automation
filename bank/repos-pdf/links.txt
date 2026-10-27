@@ -1,0 +1,5 @@
+markitdown: https://github.com/microsoft/markitdown
+PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
+docling: https://github.com/docling-project/docling
+ragflow: https://github.com/infiniflow/ragflow
+Stirling-PDF: https://github.com/Stirling-Tools/Stirling-PDF
