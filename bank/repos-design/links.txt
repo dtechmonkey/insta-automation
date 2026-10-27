@@ -1,0 +1,5 @@
+penpot: https://github.com/penpot/penpot
+onlook: https://github.com/onlook-dev/onlook
+openpencil: https://github.com/ZSeven-W/openpencil
+cursor-talk-to-figma-mcp: https://github.com/grab/cursor-talk-to-figma-mcp
+excalidraw: https://github.com/excalidraw/excalidraw
