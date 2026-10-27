@@ -3,3 +3,5 @@ YuE: https://github.com/multimodal-art-projection/YuE
 audiocraft: https://github.com/facebookresearch/audiocraft
 heartlib: https://github.com/HeartMuLa/heartlib
 openDAW: https://github.com/andremichelle/openDAW
+demucs: https://github.com/facebookresearch/demucs
+basic-pitch: https://github.com/spotify/basic-pitch

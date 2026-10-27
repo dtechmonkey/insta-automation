@@ -3,3 +3,5 @@ server: https://github.com/nextcloud/server
 jellyfin: https://github.com/jellyfin/jellyfin
 rustdesk: https://github.com/rustdesk/rustdesk
 docuseal: https://github.com/docusealco/docuseal
+plane: https://github.com/makeplane/plane
+coolify: https://github.com/coollabsio/coolify

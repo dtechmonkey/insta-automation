@@ -3,3 +3,5 @@ PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 docling: https://github.com/docling-project/docling
 ragflow: https://github.com/infiniflow/ragflow
 Stirling-PDF: https://github.com/Stirling-Tools/Stirling-PDF
+PDFMathTranslate: https://github.com/PDFMathTranslate/PDFMathTranslate
+opendataloader-pdf: https://github.com/opendataloader-project/opendataloader-pdf

@@ -3,3 +3,5 @@ activepieces: https://github.com/activepieces/activepieces
 Flowise: https://github.com/FlowiseAI/Flowise
 sim: https://github.com/simstudioai/sim
 kestra: https://github.com/kestra-io/kestra
+nanobot: https://github.com/HKUDS/nanobot
+trigger.dev: https://github.com/triggerdotdev/trigger.dev

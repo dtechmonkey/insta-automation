@@ -1,0 +1,10 @@
+public-apis: https://github.com/public-apis/public-apis
+build-your-own-x: https://github.com/codecrafters-io/build-your-own-x
+system-design-primer: https://github.com/donnemartin/system-design-primer
+free-programming-books: https://github.com/EbookFoundation/free-programming-books
+developer-roadmap: https://github.com/nilbuild/developer-roadmap
+coding-interview-university: https://github.com/jwasham/coding-interview-university
+project-based-learning: https://github.com/practical-tutorials/project-based-learning
+computer-science: https://github.com/ossu/computer-science
+the-book-of-secret-knowledge: https://github.com/trimstray/the-book-of-secret-knowledge
+awesome: https://github.com/sindresorhus/awesome

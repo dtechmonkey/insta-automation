@@ -4,8 +4,11 @@ Never fight with slide layouts again 📊
 2. Slides for developers
 3. Markdown to slides
 4. Slides in your browser
+5. PowerPoint from code
+6. Prezi-style zooms
+7. Another Gamma alternative
 
-💬 Comment "SLIDES" and we'll DM you all 4 links.
+💬 Comment "SLIDES" and we'll DM you all 7 links.
 🔖 Save this · Follow @d_tech_monkey for more free tools
 
 #github #opensource #aitools #ai #techmonkey

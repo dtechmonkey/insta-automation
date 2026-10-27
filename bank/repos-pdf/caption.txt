@@ -5,8 +5,10 @@ Still copy-pasting from PDFs into ChatGPT? 📄
 3. Docs ready for AI
 4. Ask your files questions
 5. Edit any PDF, free
+6. Translate papers, keep layout
+7. PDFs to AI-ready data
 
-💬 Comment "PDF" and we'll DM you all 5 links.
+💬 Comment "PDF" and we'll DM you all 7 links.
 🔖 Save this · Follow @d_tech_monkey for more free tools
 
 #github #opensource #aitools #ai #techmonkey

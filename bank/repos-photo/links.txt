@@ -3,3 +3,5 @@ IOPaint: https://github.com/Sanster/IOPaint
 rembg: https://github.com/danielgatis/rembg
 Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 ImageToolbox: https://github.com/T8RIN/ImageToolbox
+chaiNNer: https://github.com/chaiNNer-org/chaiNNer
+lama: https://github.com/advimman/lama

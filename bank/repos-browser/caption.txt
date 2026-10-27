@@ -5,8 +5,10 @@ Stop clicking through the same websites every day 🤖
 3. Automate your browser
 4. An agentic browser
 5. AI that won't interrupt you
+6. Chrome's own agent tools
+7. A fully local agent
 
-💬 Comment "BROWSER" and we'll DM you all 5 links.
+💬 Comment "BROWSER" and we'll DM you all 7 links.
 🔖 Save this · Follow @d_tech_monkey for more free tools
 
 #github #opensource #aitools #ai #techmonkey

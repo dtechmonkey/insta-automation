@@ -1,0 +1,10 @@
+generative-ai-for-beginners: https://github.com/microsoft/generative-ai-for-beginners
+AI-For-Beginners: https://github.com/microsoft/AI-For-Beginners
+ML-For-Beginners: https://github.com/microsoft/ML-For-Beginners
+LLMs-from-scratch: https://github.com/rasbt/LLMs-from-scratch
+nn-zero-to-hero: https://github.com/karpathy/nn-zero-to-hero
+nanoGPT: https://github.com/karpathy/nanoGPT
+llm-course: https://github.com/mlabonne/llm-course
+course: https://github.com/huggingface/course
+fastbook: https://github.com/fastai/fastbook
+d2l-en: https://github.com/d2l-ai/d2l-en

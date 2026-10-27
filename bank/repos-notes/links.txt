@@ -3,3 +3,5 @@ siyuan: https://github.com/siyuan-note/siyuan
 memos: https://github.com/usememos/memos
 blinko: https://github.com/blinkospace/blinko
 reor: https://github.com/reorproject/reor
+Trilium: https://github.com/TriliumNext/Trilium
+silverbullet: https://github.com/silverbulletmd/silverbullet

@@ -2,3 +2,6 @@ presenton: https://github.com/presenton/presenton
 slidev: https://github.com/slidevjs/slidev
 marp: https://github.com/marp-team/marp
 reveal.js: https://github.com/hakimel/reveal.js
+PptxGenJS: https://github.com/gitbrent/PptxGenJS
+impress.js: https://github.com/impress/impress.js
+presentation-ai: https://github.com/allweonedev/presentation-ai

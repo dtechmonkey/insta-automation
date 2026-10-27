@@ -3,3 +3,5 @@ whisper.cpp: https://github.com/ggml-org/whisper.cpp
 faster-whisper: https://github.com/SYSTRAN/faster-whisper
 whisperX: https://github.com/m-bain/whisperX
 whishper: https://github.com/pluja/whishper
+subtitleedit: https://github.com/SubtitleEdit/subtitleedit
+insanely-fast-whisper: https://github.com/Vaibhavs10/insanely-fast-whisper

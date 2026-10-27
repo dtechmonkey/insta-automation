@@ -3,3 +3,5 @@ agent-browser: https://github.com/vercel-labs/agent-browser
 nanobrowser: https://github.com/nanobrowser/nanobrowser
 BrowserOS: https://github.com/browseros-ai/BrowserOS
 BrowserSkill: https://github.com/Tencent/BrowserSkill
+chrome-devtools-mcp: https://github.com/ChromeDevTools/chrome-devtools-mcp
+agenticSeek: https://github.com/Fosowl/agenticSeek

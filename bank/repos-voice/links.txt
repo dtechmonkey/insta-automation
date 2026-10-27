@@ -3,3 +3,5 @@ VoxCPM: https://github.com/OpenBMB/VoxCPM
 chatterbox: https://github.com/resemble-ai/chatterbox
 ebook2audiobook: https://github.com/DrewThomasson/ebook2audiobook
 pyvideotrans: https://github.com/jianchang512/pyvideotrans
+OpenVoice: https://github.com/myshell-ai/OpenVoice
+kokoro: https://github.com/hexgrad/kokoro

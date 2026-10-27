@@ -3,3 +3,5 @@ OpenHands: https://github.com/OpenHands/OpenHands
 cline: https://github.com/cline/cline
 continue: https://github.com/continuedev/continue
 aider: https://github.com/Aider-AI/aider
+OpenSpec: https://github.com/Fission-AI/OpenSpec
+AionUi: https://github.com/iOfficeAI/AionUi

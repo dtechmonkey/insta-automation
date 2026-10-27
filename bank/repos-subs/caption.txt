@@ -5,8 +5,10 @@ Stop typing subtitles by hand ✍️
 3. Up to 4x faster
 4. Word-level timestamps
 5. Subtitles in your browser
+6. Edit subtitles perfectly
+7. Insanely fast Whisper
 
-💬 Comment "SUBS" and we'll DM you all 5 links.
+💬 Comment "SUBS" and we'll DM you all 7 links.
 🔖 Save this · Follow @d_tech_monkey for more free tools
 
 #github #opensource #aitools #ai #techmonkey

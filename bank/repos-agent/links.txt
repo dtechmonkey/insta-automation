@@ -4,3 +4,4 @@ firecrawl: https://github.com/firecrawl/firecrawl
 ponytail: https://github.com/DietrichGebert/ponytail
 agency-agents: https://github.com/msitarzewski/agency-agents
 JavaGuide: https://github.com/Snailclimb/JavaGuide
+langflow: https://github.com/langflow-ai/langflow
