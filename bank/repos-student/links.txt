@@ -1,0 +1,9 @@
+freeCodeCamp: https://github.com/freeCodeCamp/freeCodeCamp
+Python: https://github.com/TheAlgorithms/Python
+tech-interview-handbook: https://github.com/yangshun/tech-interview-handbook
+every-programmer-should-know: https://github.com/mtdvio/every-programmer-should-know
+cs-video-courses: https://github.com/Developer-Y/cs-video-courses
+AI-Expert-Roadmap: https://github.com/AMAI-GmbH/AI-Expert-Roadmap
+30-seconds-of-code: https://github.com/Chalarangelo/30-seconds-of-code
+zotero: https://github.com/zotero/zotero
+notebook: https://github.com/jupyter/notebook

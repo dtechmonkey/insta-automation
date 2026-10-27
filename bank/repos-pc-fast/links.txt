@@ -1,0 +1,7 @@
+winutil: https://github.com/ChrisTitusTech/winutil
+Win11Debloat: https://github.com/Raphire/Win11Debloat
+optimizer: https://github.com/hellzerg/optimizer
+bleachbit: https://github.com/bleachbit/bleachbit
+czkawka: https://github.com/qarmin/czkawka
+memreduct: https://github.com/henrypp/memreduct
+Files: https://github.com/files-community/Files

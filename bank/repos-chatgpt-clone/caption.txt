@@ -1,0 +1,15 @@
+Why rent ChatGPT when you can run your own? 💬
+
+1. The Ollama front end
+2. Every model, one chat
+3. Deploy in one click
+4. A chat app with agents
+5. Powers HuggingChat
+6. A Next.js chatbot
+7. Clean and simple
+8. Build it from scratch
+
+💬 Comment "CLONE" and we'll DM you all 8 links.
+🔖 Save this · Follow @d_tech_monkey for more free tools
+
+#github #opensource #aitools #ai #techmonkey

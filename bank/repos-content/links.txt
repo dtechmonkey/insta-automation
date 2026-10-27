@@ -1,0 +1,7 @@
+MoneyPrinterTurbo: https://github.com/harry0703/MoneyPrinterTurbo
+MoneyPrinter: https://github.com/FujiwaraChoki/MoneyPrinter
+AI-Youtube-Shorts-Generator: https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator
+ShortGPT: https://github.com/RayVentura/ShortGPT
+postiz-app: https://github.com/gitroomhq/postiz-app
+lossless-cut: https://github.com/mifi/lossless-cut
+HandBrake: https://github.com/HandBrake/HandBrake

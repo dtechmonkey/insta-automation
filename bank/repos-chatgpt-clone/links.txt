@@ -1,0 +1,8 @@
+open-webui: https://github.com/open-webui/open-webui
+LibreChat: https://github.com/LibreChat-AI/LibreChat
+NextChat: https://github.com/ChatGPTNextWeb/NextChat
+lobehub: https://github.com/lobehub/lobehub
+chat-ui: https://github.com/huggingface/chat-ui
+chatbot: https://github.com/vercel/chatbot
+chatbot-ui: https://github.com/mckaywrigley/chatbot-ui
+nanochat: https://github.com/karpathy/nanochat
