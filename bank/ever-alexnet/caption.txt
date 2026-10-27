@@ -1,0 +1,11 @@
+The reason your phone can recognise faces goes back to one contest in 2012 🧠
+
+In 2012 three researchers in Toronto trained a deep neural network on two gaming graphics cards and crushed the ImageNet image-recognition contest. AlexNet showed that deep learning on GPUs works, and it shaped much of the AI that followed. Did you know gaming GPUs kicked off the AI boom?
+
+Source: Wikipedia
+
+Summary written with AI assistance. AI-generated illustrations are not real photos.
+
+Follow @d_tech_monkey for daily tech news
+
+#technews #ainews #artificialintelligence #technewsindia #techmonkey

@@ -1,0 +1,11 @@
+The 'T' in ChatGPT comes from this one paper 📄
+
+In 2017 eight Google researchers published 'Attention Is All You Need' and introduced the transformer. It was meant to improve machine translation, but it became the backbone of today's large language models, including the T in GPT. Every one of the authors later left Google. Have you read it?
+
+Source: Wikipedia
+
+Summary written with AI assistance. AI-generated illustrations are not real photos.
+
+Follow @d_tech_monkey for daily tech news
+
+#technews #ainews #artificialintelligence #technewsindia #techmonkey
