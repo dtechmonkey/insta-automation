@@ -1,0 +1,9 @@
+ComfyUI: https://github.com/Comfy-Org/ComfyUI
+stable-diffusion-webui: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+Fooocus: https://github.com/lllyasviel/Fooocus
+InvokeAI: https://github.com/invoke-ai/InvokeAI
+flux: https://github.com/black-forest-labs/flux
+stable-diffusion-webui-forge: https://github.com/lllyasviel/stable-diffusion-webui-forge
+krita-ai-diffusion: https://github.com/Acly/krita-ai-diffusion
+SwarmUI: https://github.com/mcmonkeyprojects/SwarmUI
+StabilityMatrix: https://github.com/LykosAI/StabilityMatrix
