@@ -1,0 +1,11 @@
+AI art used to live only in the cloud. Then this happened 🎨
+
+Stable Diffusion, released in 2022, turns text into images, and unlike DALL-E or Midjourney its code and weights were made public. An optimised version runs on a graphics card with as little as 2.4 GB of memory, which put AI art on ordinary PCs. Have you tried it?
+
+Source: Wikipedia
+
+Summary written with AI assistance. AI-generated illustrations are not real photos.
+
+Follow @d_tech_monkey for daily tech news
+
+#technews #ainews #artificialintelligence #technewsindia #techmonkey
