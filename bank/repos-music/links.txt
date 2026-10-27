@@ -1,0 +1,5 @@
+ACE-Step-1.5: https://github.com/ace-step/ACE-Step-1.5
+YuE: https://github.com/multimodal-art-projection/YuE
+audiocraft: https://github.com/facebookresearch/audiocraft
+heartlib: https://github.com/HeartMuLa/heartlib
+openDAW: https://github.com/andremichelle/openDAW
