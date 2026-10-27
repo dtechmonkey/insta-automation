@@ -1,0 +1,5 @@
+whisper: https://github.com/openai/whisper
+whisper.cpp: https://github.com/ggml-org/whisper.cpp
+faster-whisper: https://github.com/SYSTRAN/faster-whisper
+whisperX: https://github.com/m-bain/whisperX
+whishper: https://github.com/pluja/whishper
