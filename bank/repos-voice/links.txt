@@ -1,0 +1,5 @@
+GPT-SoVITS: https://github.com/RVC-Boss/GPT-SoVITS
+VoxCPM: https://github.com/OpenBMB/VoxCPM
+chatterbox: https://github.com/resemble-ai/chatterbox
+ebook2audiobook: https://github.com/DrewThomasson/ebook2audiobook
+pyvideotrans: https://github.com/jianchang512/pyvideotrans
