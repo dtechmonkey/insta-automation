@@ -1,0 +1,7 @@
+PowerToys: https://github.com/microsoft/PowerToys
+scrcpy: https://github.com/Genymobile/scrcpy
+syncthing: https://github.com/syncthing/syncthing
+Ventoy: https://github.com/ventoy/Ventoy
+obs-studio: https://github.com/obsproject/obs-studio
+flameshot: https://github.com/flameshot-org/flameshot
+pi-hole: https://github.com/pi-hole/pi-hole
