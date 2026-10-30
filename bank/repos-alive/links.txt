@@ -1,7 +1,0 @@
-mem0: https://github.com/mem0ai/mem0
-letta: https://github.com/letta-ai/letta
-moshi: https://github.com/kyutai-labs/moshi
-csm: https://github.com/SesameAILabs/csm
-pipecat: https://github.com/pipecat-ai/pipecat
-agents: https://github.com/livekit/agents
-RealtimeSTT: https://github.com/KoljaB/RealtimeSTT
