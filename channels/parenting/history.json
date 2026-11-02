@@ -199,6 +199,14 @@
       "keyword": "DIWALI",
       "posted_at": "2026-11-01T14:08:57.819054+00:00",
       "media_id": "18603200530065945"
+    },
+    {
+      "id": "p026",
+      "date": "2026-11-02",
+      "slot": "manual",
+      "keyword": "FLASHCARDS",
+      "posted_at": "2026-11-02T08:24:54.822464+00:00",
+      "media_id": "17934594747410619"
     }
   ],
   "low_queue_warned": "2026-10-17"
