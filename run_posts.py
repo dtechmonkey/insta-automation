@@ -5,6 +5,8 @@
   python run_posts.py --channel parenting --publish          # post the next ready post (GitHub Actions, twice a day)
   python run_posts.py --channel parenting --publish --dry-run
   python run_posts.py --channel parenting --comments         # reply to comments containing a post's keyword
+  python run_posts.py --channel parenting --reel             # post the next Reel from reels/bank.yaml, plus its Story
+  python run_posts.py --channel parenting --reel --dry-run   # have Instagram check every ready Reel, posting nothing
 
 Each post is posts/<id>.yaml; slide N's image is images/<id>/<id>_s<N>.jpg (or .png/.webp).
 Posts go out in id order, skipping any whose images aren't all there yet.
@@ -229,9 +231,9 @@ function f() {{ const q = document.getElementById('q').value.toLowerCase();
 
 # ---------- publishing ----------
 
-def current_slot(cfg, now):
+def current_slot(cfg, now, times=None):
     """The publish time this run is for: the next one within 75 min (a job starting early), else None."""
-    for hhmm in cfg.get("publish_times", []):
+    for hhmm in cfg.get("publish_times", []) if times is None else times:
         h, m = map(int, hhmm.split(":"))
         target = now.replace(hour=h, minute=m, second=0, microsecond=0)
         if timedelta(minutes=-30) <= target - now <= timedelta(minutes=75):
@@ -327,6 +329,97 @@ def publish_next(channel_dir, cfg, args):
         print(f"  (media cleanup skipped: {e})")
 
 
+# ---------- reels ----------
+
+def ready_reels(channel_dir, hist):
+    """Unposted, finished Reels in bank order. Reels live on main, so Instagram can fetch them from there."""
+    posted = {r["id"] for r in hist.get("reels", [])}
+    bank = yaml.safe_load((channel_dir / "reels" / "bank.yaml").read_text(encoding="utf-8"))
+    return [r for r in bank if r["id"] not in posted and not r.get("hold")
+            and (channel_dir / "reels" / r["folder"] / "reel.mp4").exists()]
+
+
+def reel_url(channel_dir, entry):
+    return (f"https://raw.githubusercontent.com/{os.environ['GITHUB_REPOSITORY']}/main/"
+            f"channels/{channel_dir.name}/reels/{entry['folder']}/reel.mp4")
+
+
+def warn_if_reels_low(channel_dir, cfg, hist, ready, local_date):
+    if len(ready) >= cfg["reels"].get("low_bank_days", 3) or hist.get("low_reels_warned") == local_date:
+        return
+    print(f"  ! only {len(ready)} ready Reels left")
+    notify.open_issue(f"{cfg['name']}: only {len(ready)} ready Reels left",
+                      f"{len(ready)} Reels remain in `channels/{channel_dir.name}/reels/bank.yaml`, one a day. "
+                      "When the bank empties, Reels pause and carousels carry on.")
+    hist["low_reels_warned"] = local_date
+
+
+def publish_next_reel(channel_dir, cfg, args):
+    tz = ZoneInfo(cfg.get("timezone", "UTC"))
+    now = datetime.now(tz)
+    local_date = now.strftime("%Y-%m-%d")
+    rc = cfg["reels"]
+    version = cfg["instagram"]["api_version"]
+    hist = load_state(channel_dir, "history.json", {"posts": []})
+    ready = ready_reels(channel_dir, hist)
+    if args.dry_run:
+        print(f"{len(ready)} Reels ready. Checking them with Instagram, posting nothing.")
+        for entry in ready:
+            url = reel_url(channel_dir, entry)
+            host._wait_public(url)
+            instagram.check_video(url, "REELS", version)
+            if rc.get("story", True):
+                instagram.check_video(url, "STORIES", version)
+            print(f"  {entry['id']} OK\n{build_caption({**entry, 'printable': True}, cfg)}\n")
+        return
+    if any(r["date"] == local_date for r in hist.get("reels", [])):
+        print(f"Already posted a Reel on {local_date}; nothing to do.")
+        return
+    if not ready:
+        print("Reel bank is empty. Skipping.")
+        warn_if_reels_low(channel_dir, cfg, hist, ready, local_date)
+        save_state(channel_dir, "history.json", hist)
+        return
+    entry = ready[0]
+    url = reel_url(channel_dir, entry)
+    host._wait_public(url)
+    caption = build_caption({**entry, "printable": True}, cfg)
+    print(f"Next Reel: {entry['id']} ({len(ready) - 1} more ready after it)")
+    slot, target = current_slot(cfg, now, [rc["publish_time"]])
+    if target and target > datetime.now(tz):
+        wait = (target - datetime.now(tz)).total_seconds()
+        print(f"Waiting {wait / 60:.0f} min to publish at {slot}…")
+        time.sleep(wait)
+    media_id = instagram.find_posted(caption, version)  # an earlier run may have posted it despite an error
+    story = rc.get("story", True)
+    if media_id:
+        print(f"{entry['id']} is already on Instagram (media id {media_id}); recording it instead of posting again.")
+        story = False  # its Story slot has passed
+    else:
+        try:
+            media_id = instagram.publish_reel(url, caption, version, share_to_feed=rc.get("share_to_feed", True),
+                                              thumb_ms=rc.get("cover_ms", 1000))
+        except instagram.InstagramError:
+            time.sleep(30)  # media_publish can fail yet still post; record it rather than post it twice
+            media_id = instagram.find_posted(caption, version)
+            if not media_id:
+                raise
+            print("  (Instagram reported an error but the Reel went live)")
+        print(f"Published {entry['id']}! media id {media_id}")
+    hist.setdefault("reels", []).append({"id": entry["id"], "date": local_date, "slot": slot or "manual",
+                                         "keyword": entry.get("keyword"), "media_id": media_id,
+                                         "posted_at": datetime.now(timezone.utc).isoformat()})
+    warn_if_reels_low(channel_dir, cfg, hist, ready[1:], local_date)
+    save_state(channel_dir, "history.json", hist)
+    if story:  # the Reel is live and recorded; a Story failure only raises a heads-up issue
+        try:
+            print(f"Story published: {instagram.publish_story(url, version)}")
+        except Exception as e:
+            print(f"  ! Story failed: {e}")
+            notify.open_issue(f"{cfg['name']}: Story for {entry['id']} failed",
+                              f"The Reel was posted, but sharing it to the Story failed:\n\n```\n{e}\n```")
+
+
 # ---------- comment bot ----------
 
 def asks_for(text, kw):
@@ -344,7 +437,7 @@ def reply_to_comments(channel_dir, cfg, args, days=14):
     version = cfg["instagram"]["api_version"]
     cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     sent = 0
-    for entry in hist["posts"]:
+    for entry in hist["posts"] + hist.get("reels", []):
         kw = entry.get("keyword")
         if not kw or datetime.fromisoformat(entry["posted_at"]) < cutoff:
             continue
@@ -392,6 +485,7 @@ def main():
     ap.add_argument("--render", metavar="POST_ID", help="render one post for review (slides, caption, printable)")
     ap.add_argument("--publish", action="store_true", help="post the next ready post")
     ap.add_argument("--comments", action="store_true", help="reply to keyword comments")
+    ap.add_argument("--reel", action="store_true", help="post the next Reel and its Story")
     ap.add_argument("--status", action="store_true")
     ap.add_argument("--whoami", action="store_true", help="check this channel's Instagram token")
     ap.add_argument("--dry-run", action="store_true")
@@ -416,6 +510,8 @@ def main():
         print(f"Done: {out_dir}")
     elif args.publish:
         publish_next(channel_dir, cfg, args)
+    elif args.reel:
+        publish_next_reel(channel_dir, cfg, args)
     elif args.comments:
         reply_to_comments(channel_dir, cfg, args)
     elif args.whoami:

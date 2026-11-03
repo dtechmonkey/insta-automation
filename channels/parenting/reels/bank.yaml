@@ -1,0 +1,86 @@
+# Reel bank: run_posts.py --reel posts the first entry that isn't in history.json, once a day at
+# config.yaml's reels.publish_time, then shares the same video to the Story.
+# `folder` holds reel.mp4. An entry with `hold` is skipped until the line is removed.
+# Captions leave out the comment line: build_caption adds "Comment KEYWORD and...", which the comment bots look for.
+- id: r003
+  folder: r003-ill-do-it
+  keyword: ALONE
+  caption: >-
+    Ten minutes earlier is often the whole difference. Not every morning, and that's okay. Letting her try
+    doesn't mean hot pans or roads. It means the safe jobs she's ready for.
+  hashtags: "#toddlerindependence #montessoriathome #parentingtips #indianparents #letmetry"
+- id: r021
+  folder: r021-ziddi
+  keyword: CALM
+  caption: >-
+    Send this to the next person who calls her ziddi. If tantrums get worse after 4, or she hurts herself or
+    others, speak to your paediatrician.
+  hashtags: "#toddlertantrums #gentleparenting #indianparenting #parentingtips #letmetry"
+- id: r013
+  folder: r013-dadi
+  keyword: BORED
+  caption: >-
+    New ideas and Dadi agree more often than we think. Tag your family's Dadi, and tell us the best thing she
+    taught you.
+  hashtags: "#grandparents #simpleplay #montessoriathome #indianfamily #letmetry"
+- id: r012
+  folder: r012-whose-bed
+  keyword: BEDTIME
+  caption: >-
+    Who has this tiny fighter at home? Tired nights pass, and the hugs are what you'll remember. Send this to
+    the one on the floor.
+  hashtags: "#toddlersleep #bedtimeroutine #parenting #indianparents #letmetry"
+- id: r025
+  folder: r025-sorry
+  keyword: SORRY
+  caption: माफ़ी कमज़ोरी नहीं है।
+  hashtags: "#hindiparenting #indianparents #gentleparenting #mindfulparenting #letmetry"
+- id: r007
+  folder: r007-he-hit-her
+  keyword: GENTLE
+  caption: >-
+    Comfort the hurt child first, then speak to the other one with a short, firm line. Forced sorrys rarely
+    teach much at 2 or 3. If hitting is severe or doesn't ease with time, speak to your paediatrician.
+  hashtags: "#toddlerbehavior #gentleparenting #positiveparenting #indianparents #letmetry"
+- id: r030
+  folder: r030-pencil
+  keyword: ROTI
+  caption: >-
+    Save this for today. Under 4: stay close, because small dough pieces, peg springs and paper can go in the
+    mouth.
+  hashtags: "#prewritingskills #finemotorskills #montessoriathome #toddleractivities #letmetry"
+- id: r010
+  folder: r010-ladke-rote-nahi
+  keyword: CRY
+  caption: >-
+    Most of us heard this growing up, and it was meant kindly. Naming a feeling is one small thing you can do
+    instead.
+  hashtags: "#raisingboys #emotionalintelligence #gentleparenting #indianparents #letmetry"
+- id: r008
+  folder: r008-give-it
+  keyword: SHARE
+  caption: >-
+    Being ready to share comes slowly, and estimates vary, often around 3 to 4 years. Taking turns is the
+    easier first step.
+  hashtags: "#toddlerbehavior #gentleparenting #socialskills #indianparents #letmetry"
+- id: r006
+  folder: r006-leaving-park
+  keyword: CALM
+  caption: >-
+    He may still cry. Warning him first and letting him choose something small usually makes it easier, not
+    perfect.
+  hashtags: "#gentleparenting #toddlertantrums #parentingtips #indianparents #letmetry"
+- id: r004
+  folder: r004-one-more-bite
+  keyword: KHANA
+  hold: "Phone screen faces the viewer. Replace clip g1 after the 5 Nov Flow reset, rebuild, then remove this line."
+  caption: >-
+    The phone works, which is why almost all of us have used it. If you want to step away from it, go slowly,
+    one meal at a time.
+  hashtags: "#toddlermeals #screentime #parentingtips #indianmoms #letmetry"
+- id: r027
+  folder: r027-shouted
+  keyword: SORRY
+  hold: "Phone screen faces the viewer. Replace clip a1 after the 5 Nov Flow reset, rebuild, then remove this line."
+  caption: Send this to a parent having that kind of day.
+  hashtags: "#momguilt #gentleparenting #parentingtips #indianmoms #letmetry"

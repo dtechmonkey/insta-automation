@@ -84,12 +84,13 @@ def publish_carousel(image_urls, caption, version):
         raise
 
 
-def publish_reel(video_url, caption, version, share_to_feed=False):
-    """A Reel (9:16 video). share_to_feed=False keeps it in the Reels tab only (no duplicate grid tile)."""
+def publish_reel(video_url, caption, version, share_to_feed=False, thumb_ms=0):
+    """A Reel (9:16 video). share_to_feed=False keeps it in the Reels tab only (no duplicate grid tile).
+    thumb_ms picks the cover frame: 0 suits slides, where the first frame already has the full text."""
     ig_user = os.environ["IG_USER_ID"].strip()
     container = _call("POST", f"{ig_user}/media", version, media_type="REELS", video_url=video_url,
                       caption=caption, share_to_feed="true" if share_to_feed else "false",
-                      thumb_offset="0")["id"]  # first frame = cover with full text
+                      thumb_offset=str(thumb_ms))["id"]
     _wait_ready(container, version, timeout=600)
     return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
 
@@ -101,6 +102,13 @@ def publish_story(media_url, version):
     container = _call("POST", f"{ig_user}/media", version, media_type="STORIES", **kind)["id"]
     _wait_ready(container, version)
     return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
+
+
+def check_video(video_url, media_type, version):
+    """Have Instagram fetch and process a video without publishing it; raises if it would be refused."""
+    ig_user = os.environ["IG_USER_ID"].strip()
+    container = _call("POST", f"{ig_user}/media", version, media_type=media_type, video_url=video_url)["id"]
+    _wait_ready(container, version, timeout=600)
 
 
 def recent_media(version, limit=10):

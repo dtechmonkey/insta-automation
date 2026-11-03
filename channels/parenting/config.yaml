@@ -23,6 +23,13 @@ printables_url: "https://dtechmonkey.github.io/insta-automation/printables/"   #
 story: true               # also share each post's cover as a "New post" Story
 low_queue_days: 3          # open a GitHub issue when fewer days of ready posts remain
 
+reels:                     # one a day from reels/bank.yaml; .github/workflows/parenting-reel.yml starts 30 min early
+  publish_time: "08:30"    # IST; the busiest window for top India-focused reels. Retest once boosts give real reach
+  story: true              # also share the same video to the Story
+  share_to_feed: true      # also show it in the grid and feed
+  cover_ms: 1000           # cover frame, once the hook text has faded in
+  low_bank_days: 3         # open a GitHub issue when fewer ready Reels remain
+
 brand:
   cream: "#FBF6EE"
   ink: "#3D3A35"          # body text
