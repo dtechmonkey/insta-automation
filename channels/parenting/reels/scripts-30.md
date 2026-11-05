@@ -49,7 +49,7 @@ Adult lines can use Omni's native speech. Omni speech on a toddler hasn't been t
 - **Source:** autonomy support and later executive function, summarised in [Frontiers in Psychology 2017](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.02293/pdf).
 
 ## r004 · One more bite
-**Status: on hold, do not post yet.** The phone screen faces away from the boy. After the credit reset, replace the first clip (g1) with one where the screen faces him, then rebuild.
+**Status: fixed on 6 Nov 2026.** Clip g1 was regenerated with the phone's back to the viewer.
 **Proof:** #screentimeforkids Hinglish reel, 655K likes. **Evidence:** B. **Keyword:** KHANA
 - **Positive message:** Children can learn to enjoy food with their own hands, one calm meal at a time.
 - **Hook text:** ONE BITE = ONE CARTOON?
@@ -313,7 +313,7 @@ Text carries the joke, then the final shot turns warm and delivers the message. 
 **Proof:** "you are doing a wonderful job" 395K likes; "Selfish moms raise happier kids" 4M views; mom-guilt reels 100-180K likes.
 
 ## r027 · You shouted this morning
-**Status: on hold, do not post yet.** The phone screen faces away from the mother. After the credit reset, replace the first clip (a1) with one where the screen faces her, then rebuild.
+**Status: fixed on 6 Nov 2026.** Clip a1 was regenerated with the phone's back to the viewer.
 **Evidence:** C. **Keyword:** SORRY
 - **Positive message:** You don't have to be perfect. You can always come back and repair.
 - **Hook text:** YOU SHOUTED THIS MORNING.
