@@ -2496,6 +2496,104 @@
       "stories": [],
       "bank_id": "repos-code",
       "slot": "2"
+    },
+    {
+      "mode": "daily",
+      "date": "2026-11-05",
+      "posted_at": "2026-11-05T07:44:11.661113+00:00",
+      "media_id": "17913575559474482",
+      "stories": [
+        {
+          "headline": "AI *Patches* Kernel Vulnerabilities",
+          "facts": "OpenAI built an autonomous pipeline that successfully found, validated, and generated security patches for 948 local privilege-escalation flaws in the Linux kernel.",
+          "caption_line": "🛡️ OpenAI built an autonomous pipeline that discovered, validated, and patched nearly a thousand vulnerabilities in the Linux kernel.",
+          "image_prompt": "A dramatic photorealistic tech slide featuring a glowing server rack in the foreground illuminated by blue rim light. In the midground, abstract holographic security shields and cascading green binary data streams hover in the air. A warm orange sunset glow highlights the top edge of the hardware array. No readable text.",
+          "broll_query": "server rack cybersecurity code",
+          "space": false,
+          "company": "OpenAI",
+          "person": "",
+          "category": "Research",
+          "source": "OpenAI",
+          "source_title": "A thousand fewer paths to root",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+          "published": "2026-11-04T08:00:00+00:00"
+        },
+        {
+          "headline": "Voters *Reject* New Data Centers",
+          "facts": "Data center developers face a tougher building environment after voters across the country backed candidates favoring moratoriums and expansion obstacles.",
+          "caption_line": "🗳️ Data center developers face a harsher building climate as voters across the US back new moratoriums and expansion hurdles.",
+          "image_prompt": "A wide photorealistic collage of a sprawling modern data center building under a dramatic stormy sunset sky. In the foreground, glowing holographic warning signs and ballot box icons float above a dark metallic surface. The color palette combines deep electric-blue shadows with a stark warm-orange horizon. No readable text.",
+          "broll_query": "data center servers cooling",
+          "space": false,
+          "company": "",
+          "person": "",
+          "category": "Policy",
+          "source": "The Verge",
+          "source_title": "Data centers lost the midterms",
+          "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+          "published": "2026-11-04T16:05:39+00:00"
+        },
+        {
+          "headline": "Google *Ties* Search to Classrooms",
+          "facts": "Google plans to turn off AI features in school products by default starting in 2027, and schools that block AI entirely will also lose access to Google Search.",
+          "caption_line": "🏫 Google confirmed that schools opting out of its integrated AI tools will lose access to Google Search entirely starting in 2027.",
+          "image_prompt": "A clean photorealistic tech slide showing a modern student laptop resting on a wooden desk in a softly lit classroom. In the midground, a glowing holographic search bar and warning indicator float above the screen. Studio lighting casts warm orange highlights and cool blue reflections across the scene. No readable text.",
+          "broll_query": "school classroom laptop screen",
+          "space": false,
+          "company": "Google",
+          "person": "",
+          "category": "Policy",
+          "source": "The Decoder",
+          "source_title": "Schools that turn off Google's AI will lose search too starting in 2027",
+          "url": "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027/",
+          "published": "2026-11-04T10:06:23+00:00"
+        },
+        {
+          "headline": "OpenAI *Acquires* Pierre Computer",
+          "facts": "OpenAI is purchasing startup Pierre Computer Company, whose libraries power the coding agent Codex, to build out infrastructure for developers and AI agents.",
+          "caption_line": "🤝 OpenAI is acquiring startup Pierre Computer Company to enhance the Git integration capabilities of its Codex coding agent.",
+          "image_prompt": "A photorealistic tech carousel slide featuring a sleek metallic developer terminal interface in the foreground. In the midground, stacks of glowing data nodes and a rising network graph connect multiple workstations. The scene is lit with electric-blue studio rims and warm orange accent lights. No readable text.",
+          "broll_query": "software developer typing code",
+          "space": false,
+          "company": "OpenAI",
+          "person": "",
+          "category": "Industry",
+          "source": "The Decoder",
+          "source_title": "OpenAI acquires Pierre Computer Company to make Git keep up with AI coding agents",
+          "url": "https://the-decoder.com/openai-acquires-pierre-computer-company-to-make-git-keep-up-with-ai-coding-agents/",
+          "published": "2026-11-04T18:41:03+00:00"
+        },
+        {
+          "headline": "ChatGPT *Adds* Animated GIFs",
+          "facts": "ChatGPT can now create GIFs using text prompts or uploaded photos via the Images 2.6 model, allowing users to adjust animation speed, edit frames, and share them.",
+          "caption_line": "✨ ChatGPT can now natively generate animated GIFs from text prompts and photos using the new Images 2.6 model.",
+          "image_prompt": "A vibrant photorealistic slide featuring a high-end smartphone displaying swirling multi-colored motion graphics on screen. In the midground, floating frame-by-frame animation strips and glowing particle streams drift upward. The composition uses dramatic studio rim lighting with an electric-blue and warm-orange palette. No readable text.",
+          "broll_query": "smartphone animation screen",
+          "space": false,
+          "company": "OpenAI",
+          "person": "",
+          "category": "Product",
+          "source": "The Verge",
+          "source_title": "ChatGPT will now make you animated GIFs",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+          "published": "2026-11-04T18:00:00+00:00"
+        },
+        {
+          "headline": "Few Users *Book* Rides via Agents",
+          "facts": "During its busiest week last quarter, Uber reported that only four people booked a ride using an AI agent.",
+          "caption_line": "🚗 Uber revealed that during its busiest week last quarter, only four total rides were booked using third-party AI agents.",
+          "image_prompt": "A photorealistic city street scene at night viewed from a high angle, featuring glowing vehicle taillights streaking past. In the foreground, a translucent holographic counter displaying low numerical statistics hovers over the asphalt. The color scheme blends electric-blue neon glows with warm orange streetlamps. No readable text.",
+          "broll_query": "city traffic night taxi",
+          "space": false,
+          "company": "",
+          "person": "",
+          "category": "Industry",
+          "source": "TechCrunch",
+          "source_title": "Almost no one uses AI agents to book their Uber, company says",
+          "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+          "published": "2026-11-04T21:56:01+00:00"
+        }
+      ]
     }
   ]
 }
