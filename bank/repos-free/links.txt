@@ -1,7 +1,0 @@
-AppFlowy: https://github.com/AppFlowy-IO/AppFlowy
-VoiceStudio: https://github.com/debpalash/VoiceStudio
-meetily: https://github.com/Zackriya-Solutions/meetily
-SurfSense: https://github.com/MODSetter/SurfSense
-docmost: https://github.com/docmost/docmost
-OpenCut: https://github.com/OpenCut-app/OpenCut
-localsend: https://github.com/localsend/localsend
