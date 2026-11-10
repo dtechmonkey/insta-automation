@@ -1,0 +1,173 @@
+# Tech Monkey reel bank: run_posts.py --channel ai-news --reel posts the first entry that isn't in
+# history.json, once a day at config.yaml's reels.publish_time, then shares the same video to the Story.
+# `folder` holds reel.mp4 (rendered by explainer/v3). An entry with `hold` is skipped until the line is removed.
+# Captions already contain their comment line, so entries have no `keyword`.
+- id: tm01
+  folder: 01-claude-memory
+  caption: 'Claude Code forgetting your rules? 🧠
+
+
+    It has 2 kinds of memory:
+
+    📄 CLAUDE.md: rules you write
+
+    🤖 Auto memory: notes Claude writes from your corrections
+
+
+    Both load at the start of every session. /init creates a starter CLAUDE.md, /memory edits it.
+
+    ⚠️ Memory is context, not a hard rule: use a hook to block actions.
+
+
+    Comment "MEMORY" for the docs 📩'
+  hashtags: '#claudecode #claude #ai #coding #techmonkey'
+- id: tm02
+  folder: 02-effort-levels
+  caption: 'Are you on the right Claude Code effort level? 🎚️
+
+
+    5 levels: low · medium · high · xhigh · max
+
+    More effort = more thinking: better on hard problems, but slower and pricier.
+
+    Fable 5.2 and Opus 5.5 default to medium. Change it with /effort.
+
+
+    My rule: low for quick edits, high+ for tricky bugs, max only for the hardest.
+
+
+    Comment "EFFORT" for the cheat sheet 📩'
+  hashtags: '#claudecode #claude #ai #coding #techmonkey'
+- id: tm03
+  folder: 03-system-prompts
+  caption: 'Anthropic publishes the system prompt Claude gets before you type a word 👀
+
+
+    📑 One page per Claude model
+
+    📱 Covers claude.ai, iOS and Android
+
+    🗓️ Every version is dated, so you can see what changed
+
+    Newest: Claude Fable 5.2 (9 Nov 2026)
+
+
+    Comment "PROMPT" for the link 📩'
+  hashtags: '#claude #anthropic #promptengineering #ai #techmonkey'
+- id: tm04
+  folder: 04-mcp-three
+  caption: '3 MCP connections that level up Claude Code 🔌
+
+
+    🐙 GitHub: issues and pull requests
+
+    🎭 Playwright: a real browser to test your app
+
+    🗄️ Supabase: your database
+
+
+    Each is one `claude mcp add` command. Then run /mcp to check they''re connected.
+
+
+    Comment "MCP" for all 3 commands 📩'
+  hashtags: '#claudecode #mcp #ai #coding #techmonkey'
+- id: tm05
+  folder: 05-legal-traps
+  caption: 'Your vibe-coded app can get you sued before its first sale 😬
+
+
+    1. Kids'' data without parent consent (US COPPA, up to ~$53K per violation)
+
+    2. Google Fonts loaded from Google (Munich court, €100)
+
+    3. Session replay recording keystrokes (California CIPA claims, $5K each)
+
+    4. Marketing emails without unsubscribe (CAN-SPAM, up to ~$53K per email)
+
+    5. Hidden auto-renewal terms
+
+    6. No registered DMCA agent ($6)
+
+
+    Not legal advice. Laws differ by country. Save this 🔖'
+  hashtags: '#vibecoding #startup #saas #webdev #techmonkey'
+- id: tm06
+  folder: 06-launch-checklist
+  caption: '4 things to do before you launch your vibe-coded app 🚀
+
+
+    🔑 Keep API keys out of front-end code
+
+    💸 Set spending limits on cloud and AI accounts
+
+    💾 Turn on database backups
+
+    🔒 Add a real privacy policy
+
+
+    Skip these and one bad day can cost you everything.
+
+
+    Comment "LAUNCH" for the checklist 📩'
+  hashtags: '#vibecoding #startup #webdev #coding #techmonkey'
+- id: tm07
+  folder: 07-faceless-mascot
+  caption: 'You don''t need to show your face to grow a channel 🐒
+
+
+    This channel''s face is a monkey. Every reel is made with AI (script, voice, animation), and every fact is checked
+    against real sources first.
+
+
+    Want your own mascot channel? Comment "MASCOT" 📩'
+  hashtags: '#facelesscreator #aicontent #contentcreator #ai #techmonkey'
+- id: tm08
+  folder: 08-how-this-reel
+  caption: 'How this reel was made, in 6 steps 🎬
+
+
+    1. Pick a topic and check the facts
+
+    2. Claude writes a short script
+
+    3. Every line becomes a scene, written as code
+
+    4. An AI voice reads it with emotion
+
+    5. A browser draws it frame by frame
+
+    6. Watch it and ask for fixes
+
+
+    Comment "STEPS" for the setup 📩'
+  hashtags: '#claudecode #aivideo #contentcreator #ai #techmonkey'
+- id: tm09
+  folder: 09-vibe-code-learn
+  caption: 'Vibe coding can make you a worse coder. 4 habits to stop that 🧠
+
+
+    🗺️ Ask Claude to explain its plan first
+
+    ⌨️ Write the first version yourself, let Claude review it
+
+    ❓ Ask it to quiz you on the code it wrote
+
+    🔍 Read every diff before accepting
+
+
+    Comment "LEARN" for my prompt 📩'
+  hashtags: '#vibecoding #claudecode #learntocode #coding #techmonkey'
+- id: tm10
+  folder: 10-expert-debate
+  caption: 'Claude agrees with everything you say? Try this 🥊
+
+
+    Ask it to play 3 experts who disagree: a strict investor, a busy customer and a rival founder. Each one attacks
+    your idea. Then ask for the one change they''d all accept.
+
+
+    Real feedback, not flattery.
+
+
+    Comment "DEBATE" for the full prompt 📩'
+  hashtags: '#claude #promptengineering #startup #ai #techmonkey'

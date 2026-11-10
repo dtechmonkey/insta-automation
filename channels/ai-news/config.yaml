@@ -13,6 +13,13 @@ daily:
 weekly:
   publish_time: "10:30"         # Sundays, local time (before the 12:30 daily post)
 
+reels:                          # one explainer Reel a day from reels/bank.yaml; .github/workflows/ai-news-reel.yml starts 30 min early
+  publish_time: "09:30"         # IST
+  story: true                   # also share the same video to the Story
+  share_to_feed: true           # also show it in the grid and feed
+  cover_ms: 1000                # cover frame, once the hook card has landed
+  low_bank_days: 3              # open a GitHub issue when fewer ready Reels remain
+
 bank:                           # ready-made posts (GitHub lists, evergreen, prompt packs) from bank/
   slots: {"1": "18:00", "2": "20:30"}   # local publish time per slot
   stories: 8                    # story slides in the weekly recap
