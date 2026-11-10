@@ -3258,6 +3258,15 @@
       "stories": [],
       "bank_id": "ever-dall-e",
       "slot": "1"
+    },
+    {
+      "mode": "bank",
+      "date": "2026-11-10",
+      "posted_at": "2026-11-10T15:01:23.987978+00:00",
+      "media_id": "18123933338063715",
+      "stories": [],
+      "bank_id": "repos-image",
+      "slot": "2"
     }
   ]
 }
