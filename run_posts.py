@@ -124,7 +124,9 @@ def build_slides(post, channel_dir, cfg):
 
 def build_caption(post, cfg):
     kw = post.get("keyword")
-    if kw and post.get("printable") and cfg.get("cta_mode") == "comment":
+    if cfg.get("cta_mode") == "none":  # channels with no printable (stories): the caption is the whole message
+        cta = ""
+    elif kw and post.get("printable") and cfg.get("cta_mode") == "comment":
         cta = f"💬 Comment {kw} and we'll reply with your free printable.\n📎 All our printables: link in bio"
     elif post.get("printable"):
         cta = "📎 Free printable for this post: link in bio"

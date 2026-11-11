@@ -1,0 +1,69 @@
+# Stories channel (Platform 13): posts the next part from channels/stories/reels/bank.yaml, one a day.
+# Uses its own Meta app: secrets IG_USER_ID_STORIES and IG_ACCESS_TOKEN_STORIES.
+# Cron times are UTC (IST = UTC + 5:30). The job starts 30 min early (GitHub can start late);
+# run_posts.py waits for the exact publish time in channels/stories/config.yaml.
+#   20:30 IST start -> 21:00 IST post
+name: Stories - reel
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "Have Instagram check every ready Reel, posting nothing", default: true, type: boolean }
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: stories-reel
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      IG_USER_ID: ${{ secrets.IG_USER_ID_STORIES }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN_STORIES }}
+    steps:
+      - name: Check the channel is connected
+        id: connected
+        run: |
+          if [ -z "$IG_USER_ID" ] || [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "No stories token yet (IG_USER_ID_STORIES / IG_ACCESS_TOKEN_STORIES); skipping."
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.connected.outputs.ok
+
+      - uses: actions/setup-python@v5
+        if: steps.connected.outputs.ok
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install requests PyYAML Jinja2 python-dotenv playwright tzdata
+        if: steps.connected.outputs.ok
+
+      - name: Publish
+        if: steps.connected.outputs.ok
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python run_posts.py --channel stories --reel
+          ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+
+      - name: Commit history
+        if: success() && steps.connected.outputs.ok
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add channels/stories/history.json
+          if ! git diff --cached --quiet; then
+            git commit -m "post: stories reel"
+            for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done
+          fi

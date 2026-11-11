@@ -1,0 +1,20 @@
+# Channel: Your Move — vote-loop story reels (series 1: Platform 13).
+# A manual run of stories-reel.yml with dry_run off posts the next part immediately; the 21:00 run then
+# skips that day, so the following part goes out the next night at 21:00. Reels only, made in C:\Claude\insta-stories.
+# Posts with its own Meta app: secrets IG_USER_ID_STORIES / IG_ACCESS_TOKEN_STORIES.
+name: "Your Move"
+handle: "@TODO"              # TODO: the Instagram handle (only used by the comment tools)
+timezone: "Asia/Kolkata"
+
+hashtags_max: 8
+cta_mode: none               # no printable line; the caption carries the vote question itself
+
+reels:                       # one part a day from reels/bank.yaml; .github/workflows/stories-reel.yml starts 30 min early
+  publish_time: "21:00"      # IST; the end cards promise "kal raat 9 baje"
+  story: false               # parts run longer than a Story's 60 s limit
+  share_to_feed: true
+  cover_ms: 1000
+  low_bank_days: 1           # open a GitHub issue when no finished part is waiting
+
+instagram:
+  api_version: "v23.0"

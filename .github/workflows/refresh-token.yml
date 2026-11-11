@@ -35,3 +35,13 @@ jobs:
           echo "::add-mask::$TOKEN"
           test -n "$TOKEN"
           printf '%s' "$TOKEN" | gh secret set IG_ACCESS_TOKEN_PARENTING --repo "${{ github.repository }}"
+      - name: Refresh and store token (Stories)
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN_STORIES }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then echo "No stories token yet; skipping."; exit 0; fi
+          TOKEN="$(python -m engine.instagram refresh)"
+          echo "::add-mask::$TOKEN"
+          test -n "$TOKEN"
+          printf '%s' "$TOKEN" | gh secret set IG_ACCESS_TOKEN_STORIES --repo "${{ github.repository }}"

@@ -1,0 +1,14 @@
+# Story parts: run_posts.py --channel stories --reel posts the first entry that isn't in history.json,
+# once a day at config.yaml's reels.publish_time. `folder` holds reel.mp4.
+# An entry with `hold: true` is skipped until the line is removed.
+# `vote` lists the one-word choices viewers comment; the comment counter tallies these.
+- id: p13-01
+  folder: p13-01
+  vote: [BAITHO, BHAAGO]
+  caption: |-
+    Sonapur Junction par sirf 12 platform hain… aaj raat 13va khula. 🚉
+    Train mein Kabir khud baitha tha. Aur message aaya: "Bahar wala tum nahi ho." 😨
+
+    Agar aap Kabir hote… BAITHO ya BHAAGO? 👇
+    Comment mein sirf ek word. Jo zyada, wahi Part 2 banega.
+  hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
