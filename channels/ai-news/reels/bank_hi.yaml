@@ -1,0 +1,54 @@
+# Tech Monkey Hindi reel bank: run_posts.py --channel ai-news --reel --lang hi posts the first entry
+# not in history.json (key reels_hi), daily at config.yaml's reels_hi.publish_time, plus its Story.
+- id: tm01-hi
+  folder: 01-claude-memory-hi
+  caption: 'Claude Code आपके rules भूल जाता है? 🧠
+
+
+    इसकी 2 तरह की memory है:
+
+    📄 CLAUDE.md: rules जो आप लिखते हो
+
+    🤖 Auto memory: notes जो Claude आपकी corrections से लिखता है
+
+
+    दोनों हर session की शुरुआत में load होती हैं। /init से starter CLAUDE.md बनाओ, /memory से edit करो।
+
+    ⚠️ Memory context है, पक्का rule नहीं। कुछ रोकना हो तो hook लगाओ।
+
+
+    Docs के लिए "MEMORY" comment करो 📩'
+  hashtags: '#claudecode #claude #ai #hindi #techmonkey'
+- id: tm02-hi
+  folder: 02-effort-levels-hi
+  caption: 'क्या आप Claude Code के सही effort level पर हो? 🎚️
+
+
+    5 levels: low · medium · high · xhigh · max
+
+    ज़्यादा effort = ज़्यादा सोच: मुश्किल problems पर बेहतर, पर धीमा और महँगा।
+
+    Fable 5.2 और Opus 5.5 का default medium है। /effort से बदलो।
+
+
+    मेरा rule: छोटे edits के लिए low, tricky bugs के लिए high+, max सिर्फ़ सबसे मुश्किल काम के लिए।
+
+
+    Cheat sheet के लिए "EFFORT" comment करो 📩'
+  hashtags: '#claudecode #claude #ai #hindi #techmonkey'
+- id: tm03-hi
+  folder: 03-system-prompts-hi
+  caption: 'आपके type करने से पहले Claude को जो system prompt मिलता है, Anthropic उसे publish करता है 👀
+
+
+    📑 हर Claude model का अपना page
+
+    📱 claude.ai, iOS और Android के लिए
+
+    🗓️ हर version पर date, तो दिखता है क्या बदला
+
+    सबसे नया: Claude Fable 5.2 (9 Nov 2026)
+
+
+    Link के लिए "PROMPT" comment करो 📩'
+  hashtags: '#claude #anthropic #promptengineering #hindi #techmonkey'

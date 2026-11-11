@@ -20,6 +20,13 @@ reels:                          # one explainer Reel a day from reels/bank.yaml;
   cover_ms: 1000                # cover frame, once the hook card has landed
   low_bank_days: 3              # open a GitHub issue when fewer ready Reels remain
 
+reels_hi:                       # the Hindi versions, from reels/bank_hi.yaml; .github/workflows/ai-news-reel-hi.yml
+  publish_time: "19:15"         # IST, evening; the English reel goes out at 09:30
+  story: true
+  share_to_feed: true
+  cover_ms: 1000
+  low_bank_days: 3
+
 bank:                           # ready-made posts (GitHub lists, evergreen, prompt packs) from bank/
   slots: {"1": "18:00", "2": "20:30"}   # local publish time per slot
   stories: 8                    # story slides in the weekly recap

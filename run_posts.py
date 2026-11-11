@@ -333,10 +333,15 @@ def publish_next(channel_dir, cfg, args):
 
 # ---------- reels ----------
 
-def ready_reels(channel_dir, hist):
+def bank_file(key):
+    """reels -> bank.yaml; reels_hi (the Hindi slot) -> bank_hi.yaml"""
+    return "bank.yaml" if key == "reels" else f"bank_{key.split('_', 1)[1]}.yaml"
+
+
+def ready_reels(channel_dir, hist, key="reels"):
     """Unposted, finished Reels in bank order. Reels live on main, so Instagram can fetch them from there."""
-    posted = {r["id"] for r in hist.get("reels", [])}
-    bank = yaml.safe_load((channel_dir / "reels" / "bank.yaml").read_text(encoding="utf-8"))
+    posted = {r["id"] for r in hist.get(key, [])}
+    bank = yaml.safe_load((channel_dir / "reels" / bank_file(key)).read_text(encoding="utf-8"))
     return [r for r in bank if r["id"] not in posted and not r.get("hold")
             and (channel_dir / "reels" / r["folder"] / "reel.mp4").exists()]
 
@@ -346,24 +351,26 @@ def reel_url(channel_dir, entry):
             f"channels/{channel_dir.name}/reels/{entry['folder']}/reel.mp4")
 
 
-def warn_if_reels_low(channel_dir, cfg, hist, ready, local_date):
-    if len(ready) >= cfg["reels"].get("low_bank_days", 3) or hist.get("low_reels_warned") == local_date:
+def warn_if_reels_low(channel_dir, cfg, hist, ready, local_date, key="reels"):
+    flag = "low_reels_warned" if key == "reels" else f"low_{key}_warned"
+    if len(ready) >= cfg[key].get("low_bank_days", 3) or hist.get(flag) == local_date:
         return
     print(f"  ! only {len(ready)} ready Reels left")
-    notify.open_issue(f"{cfg['name']}: only {len(ready)} ready Reels left",
-                      f"{len(ready)} Reels remain in `channels/{channel_dir.name}/reels/bank.yaml`, one a day. "
+    notify.open_issue(f"{cfg['name']}: only {len(ready)} ready Reels left in {bank_file(key)}",
+                      f"{len(ready)} Reels remain in `channels/{channel_dir.name}/reels/{bank_file(key)}`, one a day. "
                       "When the bank empties, Reels pause and carousels carry on.")
-    hist["low_reels_warned"] = local_date
+    hist[flag] = local_date
 
 
 def publish_next_reel(channel_dir, cfg, args):
     tz = ZoneInfo(cfg.get("timezone", "UTC"))
     now = datetime.now(tz)
     local_date = now.strftime("%Y-%m-%d")
-    rc = cfg["reels"]
+    key = f"reels_{args.lang}" if args.lang else "reels"  # each language slot has its own bank, time and history
+    rc = cfg[key]
     version = cfg["instagram"]["api_version"]
     hist = load_state(channel_dir, "history.json", {"posts": []})
-    ready = ready_reels(channel_dir, hist)
+    ready = ready_reels(channel_dir, hist, key)
     if args.dry_run:
         print(f"{len(ready)} Reels ready. Checking them with Instagram, posting nothing.")
         for entry in ready:
@@ -374,12 +381,12 @@ def publish_next_reel(channel_dir, cfg, args):
                 instagram.check_video(url, "STORIES", version)
             print(f"  {entry['id']} OK\n{build_caption({**entry, 'printable': True}, cfg)}\n")
         return
-    if any(r["date"] == local_date for r in hist.get("reels", [])):
+    if any(r["date"] == local_date for r in hist.get(key, [])):
         print(f"Already posted a Reel on {local_date}; nothing to do.")
         return
     if not ready:
         print("Reel bank is empty. Skipping.")
-        warn_if_reels_low(channel_dir, cfg, hist, ready, local_date)
+        warn_if_reels_low(channel_dir, cfg, hist, ready, local_date, key)
         save_state(channel_dir, "history.json", hist)
         return
     entry = ready[0]
@@ -408,10 +415,10 @@ def publish_next_reel(channel_dir, cfg, args):
                 raise
             print("  (Instagram reported an error but the Reel went live)")
         print(f"Published {entry['id']}! media id {media_id}")
-    hist.setdefault("reels", []).append({"id": entry["id"], "date": local_date, "slot": slot or "manual",
+    hist.setdefault(key, []).append({"id": entry["id"], "date": local_date, "slot": slot or "manual",
                                          "keyword": entry.get("keyword"), "media_id": media_id,
                                          "posted_at": datetime.now(timezone.utc).isoformat()})
-    warn_if_reels_low(channel_dir, cfg, hist, ready[1:], local_date)
+    warn_if_reels_low(channel_dir, cfg, hist, ready[1:], local_date, key)
     save_state(channel_dir, "history.json", hist)
     if story:  # the Reel is live and recorded; a Story failure only raises a heads-up issue
         try:
@@ -439,7 +446,7 @@ def reply_to_comments(channel_dir, cfg, args, days=14):
     version = cfg["instagram"]["api_version"]
     cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     sent = 0
-    for entry in hist["posts"] + hist.get("reels", []):
+    for entry in hist["posts"] + [r for k, v in hist.items() if k.startswith("reels") and isinstance(v, list) for r in v]:
         kw = entry.get("keyword")
         if not kw or datetime.fromisoformat(entry["posted_at"]) < cutoff:
             continue
@@ -488,6 +495,7 @@ def main():
     ap.add_argument("--publish", action="store_true", help="post the next ready post")
     ap.add_argument("--comments", action="store_true", help="reply to keyword comments")
     ap.add_argument("--reel", action="store_true", help="post the next Reel and its Story")
+    ap.add_argument("--lang", help="with --reel: post from that language's slot (config reels_<lang>, reels/bank_<lang>.yaml)")
     ap.add_argument("--status", action="store_true")
     ap.add_argument("--whoami", action="store_true", help="check this channel's Instagram token")
     ap.add_argument("--dry-run", action="store_true")
