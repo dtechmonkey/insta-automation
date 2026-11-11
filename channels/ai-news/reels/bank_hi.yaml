@@ -52,3 +52,22 @@
 
     Link के लिए "PROMPT" comment करो 📩'
   hashtags: '#claude #anthropic #promptengineering #hindi #techmonkey'
+- id: tm06-hi
+  folder: 06-launch-checklist-hi
+  caption: 'Vibe-coded app launch करने से पहले 4 काम 🚀
+
+
+    🔑 API keys front-end code से बाहर रखो
+
+    💸 Cloud और AI accounts पर spending limit
+
+    💾 Database backups चालू करो
+
+    🔒 एक असली privacy policy डालो
+
+
+    ये छोड़े, तो एक बुरा दिन सब ले जा सकता है।
+
+
+    Checklist के लिए "LAUNCH" comment करो 📩'
+  hashtags: '#vibecoding #startup #webdev #hindi #techmonkey'
