@@ -6,6 +6,7 @@ Output: <folder>/reel.mp4, 1080x1920, 30 fps, H.264 + AAC.
 
 reel.json keys:
   shots: [[clip name, seconds skipped, length on the timeline], ...]   the end card follows the last shot
+         add "fit" as a 4th value to slow a short clip to fill its length instead of freezing its last frame
   voice: optional path to the voiceover, relative to the folder
   voice_at: seconds into the reel where the voiceover starts (default 0)
   dialogue: optional [[path, start seconds], ...] for separate lines
@@ -15,6 +16,7 @@ reel.json keys:
   end_seconds: length of the end card (default 3)
 """
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -84,6 +86,12 @@ def render_overlays(folder, cfg, total, end_start):
     return layers
 
 
+def clip_seconds(ff, path):
+    out = subprocess.run([ff, "-hide_banner", "-i", str(path)], capture_output=True, text=True).stderr
+    h, m, s = re.search(r"Duration: (\d+):(\d+):([\d.]+)", out).groups()
+    return int(h) * 3600 + int(m) * 60 + float(s)
+
+
 def build(name):
     folder = ROOT / name
     cfg = json.loads((folder / "reel.json").read_text(encoding="utf8"))
@@ -95,11 +103,18 @@ def build(name):
     ff = imageio_ffmpeg.get_ffmpeg_exe()
     inputs, graph = [], []
     last = len(shots) - 1
-    for i, (clip, skip, length) in enumerate(shots):
+    for i, (clip, skip, length, *opts) in enumerate(shots):
         seg = length + (XF if i < last else 0)
-        inputs += ["-ss", str(skip), "-t", f"{min(seg, CLIP_LEN - skip):.3f}", "-i", str(folder / "clips" / f"{clip}.mp4")]
-        hold = max(seg - (CLIP_LEN - skip), 0)
-        graph.append(f"[{i}:v]scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},"
+        path = folder / "clips" / f"{clip}.mp4"
+        avail = CLIP_LEN - skip
+        slow = ""
+        if "fit" in opts:  # a short clip slowed down to fill its slot, instead of freezing on the last frame
+            avail = clip_seconds(ff, path) - skip
+            if seg > avail:
+                slow = f"setpts=PTS*{seg / avail:.4f},"
+        inputs += ["-ss", str(skip), "-t", f"{min(seg, avail):.3f}", "-i", str(path)]
+        hold = 0 if slow else max(seg - avail, 0)
+        graph.append(f"[{i}:v]{slow}scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},"
                      f"setsar=1,format=yuv420p,fps={FPS},tpad=stop_mode=clone:stop_duration={hold + 0.1:.3f},"
                      f"trim=duration={seg:.3f},setpts=PTS-STARTPTS,fps={FPS},settb=AVTB[s{i}]")
     # dissolve each shot into the next exactly at its cut point
