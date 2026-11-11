@@ -495,7 +495,7 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252
 
     load_dotenv(ROOT / ".env")
-    for name in ("IG_ACCESS_TOKEN", "IG_USER_ID"):  # local .env: IG_ACCESS_TOKEN_PARENTING etc. win for this channel
+    for name in ("IG_ACCESS_TOKEN", "IG_USER_ID", "IG_GRAPH_BASE"):  # local .env: IG_ACCESS_TOKEN_PARENTING etc. win for this channel
         if os.environ.get(f"{name}_{args.channel.upper()}"):
             os.environ[name] = os.environ[f"{name}_{args.channel.upper()}"]
     channel_dir = ROOT / "channels" / args.channel
@@ -517,8 +517,8 @@ def main():
     elif args.comments:
         reply_to_comments(channel_dir, cfg, args)
     elif args.whoami:
-        me = instagram._call("GET", "me", cfg["instagram"]["api_version"], fields="user_id,username,account_type")
-        print(f"username: {me.get('username')}\nIG_USER_ID: {me.get('user_id')}\naccount type: {me.get('account_type')}")
+        name, uid, kind = instagram.whoami(cfg["instagram"]["api_version"])
+        print(f"username: {name}\nIG_USER_ID: {uid}\naccount type: {kind}")
     else:
         print_status(channel_dir)
 

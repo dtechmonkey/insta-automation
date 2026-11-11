@@ -13,6 +13,13 @@ import requests
 BASE = "https://graph.instagram.com"
 
 
+def _base():
+    """Instagram-login tokens use graph.instagram.com; apps made after Meta moved new apps to Unified login
+    (system-user tokens, e.g. the stories channel) set IG_GRAPH_BASE=https://graph.facebook.com.
+    The publish, comment and reply calls are the same on both."""
+    return os.environ.get("IG_GRAPH_BASE", "").strip().rstrip("/") or BASE
+
+
 class InstagramError(RuntimeError):
     pass
 
@@ -25,7 +32,7 @@ RATE_LIMIT_WAITS = (300, 600, 900)  # seconds; the limits are rolling-hour windo
 def _call(method, path, version, **params):
     # Token goes in the body/params but never into error messages.
     params["access_token"] = os.environ["IG_ACCESS_TOKEN"].strip()
-    url = f"{BASE}/{version}/{path}"
+    url = f"{_base()}/{version}/{path}"
     for attempt in range(len(RATE_LIMIT_WAITS) + 1):
         if method == "GET":
             resp = requests.get(url, params=params, timeout=60)
@@ -137,6 +144,15 @@ def reply_to_comment(comment_id, message, version):
     return _call("POST", f"{comment_id}/replies", version, message=message)["id"]
 
 
+def whoami(version):
+    """Username and IG user id behind the current token, on either API."""
+    if _base() == BASE:
+        me = _call("GET", "me", version, fields="user_id,username,account_type")
+        return me.get("username"), me.get("user_id"), me.get("account_type")
+    me = _call("GET", os.environ["IG_USER_ID"].strip(), version, fields="id,username")
+    return me.get("username"), me.get("id"), "business (Unified login)"
+
+
 def refresh_token():
     resp = requests.get(f"{BASE}/refresh_access_token", timeout=60, params={
         "grant_type": "ig_refresh_token", "access_token": os.environ["IG_ACCESS_TOKEN"].strip()})
@@ -153,5 +169,5 @@ if __name__ == "__main__":
     if cmd == "refresh":
         sys.stdout.write(refresh_token())
     else:
-        me = _call("GET", "me", "v23.0", fields="user_id,username,account_type")
-        print(f"username: {me.get('username')}\nIG_USER_ID: {me.get('user_id')}\naccount type: {me.get('account_type')}")
+        name, uid, kind = whoami("v23.0")
+        print(f"username: {name}\nIG_USER_ID: {uid}\naccount type: {kind}")

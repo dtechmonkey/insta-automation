@@ -1,5 +1,5 @@
 # Stories channel (Platform 13): posts the next part from channels/stories/reels/bank.yaml, one a day.
-# Uses its own Meta app: secrets IG_USER_ID_STORIES and IG_ACCESS_TOKEN_STORIES.
+# Uses its own Meta app (Unified login, never-expiring system-user token): secrets IG_USER_ID_STORIES and IG_ACCESS_TOKEN_STORIES.
 # Cron times are UTC (IST = UTC + 5:30). The job starts 30 min early (GitHub can start late);
 # run_posts.py waits for the exact publish time in channels/stories/config.yaml.
 #   20:30 IST start -> 21:00 IST post
@@ -27,6 +27,7 @@ jobs:
     env:
       IG_USER_ID: ${{ secrets.IG_USER_ID_STORIES }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN_STORIES }}
+      IG_GRAPH_BASE: https://graph.facebook.com   # new apps get Unified login (system-user token), not Instagram login
     steps:
       - name: Check the channel is connected
         id: connected
