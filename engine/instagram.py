@@ -17,7 +17,11 @@ def _base():
     """Instagram-login tokens use graph.instagram.com; apps made after Meta moved new apps to Unified login
     (system-user tokens, e.g. the stories channel) set IG_GRAPH_BASE=https://graph.facebook.com.
     The publish, comment and reply calls are the same on both."""
-    return os.environ.get("IG_GRAPH_BASE", "").strip().rstrip("/") or BASE
+    explicit = os.environ.get("IG_GRAPH_BASE", "").strip().rstrip("/")
+    if explicit:
+        return explicit
+    # Facebook-side tokens (system-user, page, user) start "EAA"; Instagram-login tokens start "IG".
+    return "https://graph.facebook.com" if os.environ.get("IG_ACCESS_TOKEN", "").strip().startswith("EAA") else BASE
 
 
 class InstagramError(RuntimeError):
