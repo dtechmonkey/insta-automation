@@ -144,6 +144,21 @@ def comments(media_id, version):
     return data.get("data", [])
 
 
+def all_comments(media_id, version, max_pages=40):
+    """Every top-level comment on a post, following Instagram's pages (50 per page)."""
+    out, after = [], None
+    for _ in range(max_pages):
+        params = {"fields": "id,text,username,timestamp,like_count", "limit": 50}
+        if after:
+            params["after"] = after
+        data = _call("GET", f"{media_id}/comments", version, **params)
+        out += data.get("data", [])
+        after = data.get("paging", {}).get("cursors", {}).get("after") if data.get("paging", {}).get("next") else None
+        if not after:
+            break
+    return out
+
+
 def reply_to_comment(comment_id, message, version):
     return _call("POST", f"{comment_id}/replies", version, message=message)["id"]
 

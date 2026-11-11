@@ -16,5 +16,13 @@ reels:                       # one part a day from reels/bank.yaml; .github/work
   cover_ms: 1000
   low_bank_days: 1           # open a GitHub issue when no finished part is waiting
 
+ai:                          # comment summaries in the hourly vote report (engine/votes.py)
+  models:
+    - "gemini-3.8-flash"
+    - "gemini-3.7-flash"
+    - "gemini-flash-latest"
+  fallback_models:
+    - "gemini-3.5-flash-lite"
+
 instagram:
   api_version: "v23.0"
