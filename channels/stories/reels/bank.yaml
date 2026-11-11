@@ -5,7 +5,7 @@
 # `vote_aliases` adds other spellings (Hindi script, English) per choice; stretched spellings match on their own.
 - id: p13-01
   folder: p13-01
-  vote: [BAITHO, BHAAGO]
+  vote: [BAITHO, BHAAGO]          # in the end card's order: comments "1" and "2" count as these
   vote_aliases:
     BAITHO: [baith, betho, baitho, बैठो, बैठ, बैठूंगा, sit, board]
     BHAAGO: [bhag, bhago, bhaago, भागो, भाग, run]

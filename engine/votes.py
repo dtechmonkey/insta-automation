@@ -4,7 +4,8 @@
   python -m engine.votes --channel stories --dry-run   # print the report instead
 
 Each bank entry lists its choices as `vote: [BAITHO, BHAAGO]` and may add `vote_aliases` (Hindi spellings,
-English words). A comment counts as a vote when it names exactly one choice. Each person gets one vote:
+English words). Choices are also numbered in that order, matching the end card's "Comment: 1 ya 2", so list
+them in the card's order. A comment counts as a vote when it names exactly one choice. Each person gets one vote:
 their latest comment that names a choice. The other comments go to Gemini for a short summary of themes.
 Reports carry counts and paraphrased themes only, never usernames or quoted comments: the repo is public.
 """
@@ -38,7 +39,15 @@ def _squash(word):
 
 def _words(text):
     text = unicodedata.normalize("NFKC", text or "").lower()
-    return re.findall(r"[a-z]+|[ऀ-ॿ]+", text)
+    return re.findall(r"[a-z0-9]+|[ऀ-ॿ]+", text)
+
+
+# The end cards say "Comment: 1 ya 2": choice N in `vote` is also number N. Digits count in a short comment
+# ("2", "2 bhai", "option 1"); number words only as the whole comment, since "jaldi do" means "give it".
+DIGITS = {1: {"1", "१"}, 2: {"2", "२"}, 3: {"3", "३"}, 4: {"4", "४"}}
+NUMBER_WORDS = {1: {"one", "ek", "pehla", "एक"}, 2: {"two", "do", "dusra", "doosra", "दो"},
+                3: {"three", "teen", "तीन"}, 4: {"four", "char", "chaar", "चार"}}
+NOT_A_VOTE = {"part", "episode", "ep", "season", "baje", "bje", "pm", "am"}
 
 
 def matcher(choices, aliases=None):
@@ -50,8 +59,13 @@ def matcher(choices, aliases=None):
 
     def which(text):
         hits = set()
-        for w in _words(text):
+        words = _words(text)
+        numbers_ok = (len(words) <= 3 or ("vote" in words and len(words) <= 6)) and not NOT_A_VOTE & set(words)
+        for w in words:
             sw = _squash(w)
+            for n, choice in enumerate(choices, 1):
+                if numbers_ok and (w in DIGITS.get(n, ()) or (len(words) == 1 and w in NUMBER_WORDS.get(n, ()))):
+                    hits.add(choice)
             for choice, keys in forms.items():
                 # whole word, or a clear stem of a Latin-script choice ("bhag", "baith")
                 if sw in keys or (len(sw) >= 4 and sw.isascii() and any(k.startswith(sw) for k in keys if k.isascii())):
@@ -116,7 +130,8 @@ def analyse(entry, other, ai_cfg, series):
     texts = [t for t in texts if t]
     if not texts:
         return None
-    prompt = PROMPT.format(part=entry["id"], series=series, choices=" / ".join(entry["vote"]),
+    numbered = " / ".join(f"{n} = {c}" for n, c in enumerate(entry["vote"], 1))
+    prompt = PROMPT.format(part=entry["id"], series=series, choices=f"{numbered} (by word or number)",
                            caption=entry.get("caption", "").strip(), comments="\n".join(texts))
     return _ask_gemini(prompt, ai_cfg, retry_minutes=3)
 
