@@ -197,8 +197,8 @@ def run(channel, dry_run=False):
     for posted_entry in hist.get("reels", []):
         entry = bank.get(posted_entry["id"])
         posted = datetime.fromisoformat(posted_entry["posted_at"]).astimezone(tz)
-        if not entry or not entry.get("vote") or now - posted > timedelta(days=REPORT_DAYS):
-            continue
+        if not entry or not entry.get("vote") or entry.get("vote_closed") or now - posted > timedelta(days=REPORT_DAYS):
+            continue  # `vote_closed: true` in bank.yaml stops a part's count once the next part takes over
         comments = instagram.all_comments(posted_entry["media_id"], version)
         t = tally(comments, entry["vote"], entry.get("vote_aliases"), cfg.get("handle", ""))
         title = f"{cfg['name']}: votes for {entry['id']}"
