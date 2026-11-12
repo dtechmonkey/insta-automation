@@ -63,8 +63,9 @@ def matcher(choices, aliases=None):
         numbers_ok = (len(words) <= 3 or ("vote" in words and len(words) <= 6)) and not NOT_A_VOTE & set(words)
         for w in words:
             sw = _squash(w)
+            digit = sw if w.isdigit() else w  # "22", "222" are a stretched "2"; "12" stays 12
             for n, choice in enumerate(choices, 1):
-                if numbers_ok and (w in DIGITS.get(n, ()) or (len(words) == 1 and w in NUMBER_WORDS.get(n, ()))):
+                if numbers_ok and (digit in DIGITS.get(n, ()) or (len(words) == 1 and w in NUMBER_WORDS.get(n, ()))):
                     hits.add(choice)
             for choice, keys in forms.items():
                 # whole word, or a clear stem of a Latin-script choice ("bhag", "baith")
