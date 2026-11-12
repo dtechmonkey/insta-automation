@@ -69,6 +69,26 @@
 
     तीनों commands के लिए "MCP" comment करो 📩'
   hashtags: '#claudecode #mcp #ai #hindi #techmonkey'
+- id: tm05-hi
+  folder: 05-legal-traps-hi
+  caption: 'आपकी vibe-coded app पर पहली sale से पहले ही case हो सकता है 😬
+
+
+    1. Parents की permission के बिना बच्चों का data (US COPPA, ~$53K तक)
+
+    2. Google से load होते Google Fonts (Munich court, €100)
+
+    3. Keystrokes record करता session replay (California CIPA, $5K)
+
+    4. बिना unsubscribe के marketing emails (CAN-SPAM, ~$53K तक)
+
+    5. छुपी हुई auto-renewal terms
+
+    6. Registered DMCA agent नहीं ($6)
+
+
+    ये legal advice नहीं है। हर देश के law अलग हैं। Save करो 🔖'
+  hashtags: '#vibecoding #startup #saas #hindi #techmonkey'
 - id: tm06-hi
   folder: 06-launch-checklist-hi
   caption: 'Vibe-coded app launch करने से पहले 4 काम 🚀
@@ -88,3 +108,62 @@
 
     Checklist के लिए "LAUNCH" comment करो 📩'
   hashtags: '#vibecoding #startup #webdev #hindi #techmonkey'
+- id: tm07-hi
+  folder: 07-faceless-mascot-hi
+  caption: 'Channel बढ़ाने के लिए face दिखाना ज़रूरी नहीं 🐒
+
+
+    इस channel का face एक बंदर है। हर reel AI से बनती है (script, voice, animation), और हर fact पहले असली sources से check होता है।
+
+
+    अपना mascot channel चाहिए? "MASCOT" comment करो 📩'
+  hashtags: '#facelesscreator #aicontent #contentcreator #hindi #techmonkey'
+- id: tm08-hi
+  folder: 08-how-this-reel-hi
+  caption: 'ये reel कैसे बनी, 6 steps में 🎬
+
+
+    1. Topic चुनो, facts check करो
+
+    2. Claude छोटी script लिखता है
+
+    3. हर line code में एक scene बनती है
+
+    4. AI voice जोश के साथ पढ़ती है
+
+    5. Browser frame by frame बनाता है
+
+    6. देखो और fixes माँगो
+
+
+    Setup के लिए "STEPS" comment करो 📩'
+  hashtags: '#claudecode #aivideo #contentcreator #hindi #techmonkey'
+- id: tm09-hi
+  folder: 09-vibe-code-learn-hi
+  caption: 'Vibe coding आपको कमज़ोर coder बना सकती है। 4 आदतें जो इसे रोकें 🧠
+
+
+    🗺️ पहले Claude से plan समझाने को कहो
+
+    ⌨️ पहला version खुद लिखो, Claude से review करवाओ
+
+    ❓ उसके लिखे code पर quiz लो
+
+    🔍 Accept करने से पहले हर diff पढ़ो
+
+
+    मेरे prompt के लिए "LEARN" comment करो 📩'
+  hashtags: '#vibecoding #claudecode #learntocode #hindi #techmonkey'
+- id: tm10-hi
+  folder: 10-expert-debate-hi
+  caption: 'Claude आपकी हर बात से सहमत होता है? ये try करो 🥊
+
+
+    उसे 3 experts बनने को कहो जो असहमत हों: एक सख्त investor, एक busy customer और एक rival founder. हर एक आपके idea पर attack करे। फिर पूछो, वो एक बदलाव जिस पर तीनों राज़ी हों।
+
+
+    असली feedback, तारीफ़ नहीं।
+
+
+    पूरे prompt के लिए "DEBATE" comment करो 📩'
+  hashtags: '#claude #promptengineering #startup #hindi #techmonkey'
