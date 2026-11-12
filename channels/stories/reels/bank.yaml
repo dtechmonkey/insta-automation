@@ -19,7 +19,6 @@
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
 - id: p13-02
   folder: p13-02
-  hold: true                       # remove once reel.mp4 is final and checked
   vote: [UTHAO, PALTO]             # in the end card's order: comments "1" and "2" count as these
   vote_aliases:
     UTHAO: [utha, uthao, uthaao, uthalo, utha lo, उठाओ, उठा, उठा लो, pick, answer]
