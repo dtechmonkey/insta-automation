@@ -52,6 +52,23 @@
 
     Link के लिए "PROMPT" comment करो 📩'
   hashtags: '#claude #anthropic #promptengineering #hindi #techmonkey'
+- id: tm04-hi
+  folder: 04-mcp-three-hi
+  caption: '3 MCP connections जो Claude Code को power-up करते हैं 🔌
+
+
+    🐙 GitHub: issues और pull requests
+
+    🎭 Playwright: app test करने के लिए असली browser
+
+    🗄️ Supabase: आपका database
+
+
+    हर एक बस एक `claude mcp add` command है। फिर /mcp से check करो।
+
+
+    तीनों commands के लिए "MCP" comment करो 📩'
+  hashtags: '#claudecode #mcp #ai #hindi #techmonkey'
 - id: tm06-hi
   folder: 06-launch-checklist-hi
   caption: 'Vibe-coded app launch करने से पहले 4 काम 🚀
