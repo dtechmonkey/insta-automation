@@ -1,7 +1,0 @@
-ollama: https://github.com/ollama/ollama
-llama.cpp: https://github.com/ggml-org/llama.cpp
-anything-llm: https://github.com/Mintplex-Labs/anything-llm
-LocalAI: https://github.com/mudler/LocalAI
-textgen: https://github.com/oobabooga/textgen
-khoj: https://github.com/khoj-ai/khoj
-gpt4all: https://github.com/nomic-ai/gpt4all
