@@ -7,6 +7,7 @@ CLI helpers:
 import os
 import sys
 import time
+from datetime import datetime
 
 import requests
 
@@ -95,14 +96,20 @@ def publish_carousel(image_urls, caption, version):
         raise
 
 
-def publish_reel(video_url, caption, version, share_to_feed=False, thumb_ms=0):
+def publish_reel(video_url, caption, version, share_to_feed=False, thumb_ms=0, cover_url=None, at=None):
     """A Reel (9:16 video). share_to_feed=False keeps it in the Reels tab only (no duplicate grid tile).
-    thumb_ms picks the cover frame: 0 suits slides, where the first frame already has the full text."""
+    thumb_ms picks the cover frame: 0 suits slides, where the first frame already has the full text.
+    cover_url (a JPEG) replaces that frame. at (an aware datetime): upload and process first, publish at that moment."""
     ig_user = os.environ["IG_USER_ID"].strip()
+    cover = {"cover_url": cover_url} if cover_url else {"thumb_offset": str(thumb_ms)}
     container = _call("POST", f"{ig_user}/media", version, media_type="REELS", video_url=video_url,
-                      caption=caption, share_to_feed="true" if share_to_feed else "false",
-                      thumb_offset=str(thumb_ms))["id"]
+                      caption=caption, share_to_feed="true" if share_to_feed else "false", **cover)["id"]
     _wait_ready(container, version, timeout=600)
+    if at:
+        wait = (at - datetime.now(at.tzinfo)).total_seconds()
+        if wait > 0:
+            print(f"  processed; publishing in {wait / 60:.1f} min")
+            time.sleep(wait)
     return _call("POST", f"{ig_user}/media_publish", version, creation_id=container)["id"]
 
 

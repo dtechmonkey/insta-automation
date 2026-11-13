@@ -9,8 +9,11 @@ timezone: "Asia/Kolkata"
 hashtags_max: 8
 cta_mode: none               # no printable line; the caption carries the vote question itself
 
-reels:                       # one part a day from reels/bank.yaml; .github/workflows/stories-reel.yml starts 30 min early
-  publish_time: "21:00"      # IST; the end cards promise "kal raat 9 baje"
+reels:                       # one part every other day from reels/bank.yaml (user's choice, 13 Nov 2026)
+  publish_time: "20:30"      # IST, exact; end cards promise "raat 8:30"
+  every_days: 2              # alternate days: 13, 15, 17 Nov...; the days between are free for other posts
+  days_from: "2026-11-13"    # a posting day the count starts from
+  prepare_minutes: 12        # upload and process first, publish on the minute; a cover.jpg beside reel.mp4 is used
   story: false               # parts run longer than a Story's 60 s limit
   share_to_feed: true
   cover_ms: 1000

@@ -1,13 +1,13 @@
 # Stories channel (Platform 13): posts the next part from channels/stories/reels/bank.yaml, one a day.
 # Uses its own Meta app (Unified login; engine/instagram.py picks the API from the token type): secrets IG_USER_ID_STORIES and IG_ACCESS_TOKEN_STORIES.
-# Cron times are UTC (IST = UTC + 5:30). The job starts 30 min early (GitHub can start late);
-# run_posts.py waits for the exact publish time in channels/stories/config.yaml.
-#   20:30 IST start -> 21:00 IST post
+# Cron times are UTC (IST = UTC + 5:30). Scheduled jobs have started 35-45 min late, so it starts 75 min early;
+# run_posts.py prepares the Reel and publishes at the exact time in channels/stories/config.yaml.
+#   19:15 IST start -> 20:30 IST post (alternate days; off days exit at once)
 name: Stories - reel
 
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: "45 13 * * *"
   workflow_dispatch:
     inputs:
       dry_run: { description: "Have Instagram check every ready Reel, posting nothing", default: true, type: boolean }
@@ -23,7 +23,7 @@ concurrency:
 jobs:
   reel:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 120
     env:
       IG_USER_ID: ${{ secrets.IG_USER_ID_STORIES }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN_STORIES }}

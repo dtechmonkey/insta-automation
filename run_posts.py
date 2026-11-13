@@ -384,6 +384,11 @@ def publish_next_reel(channel_dir, cfg, args):
     if any(r["date"] == local_date for r in hist.get(key, [])):
         print(f"Already posted a Reel on {local_date}; nothing to do.")
         return
+    every = rc.get("every_days", 1)  # 2 = alternate days, counted from `days_from` (a posting day)
+    start = datetime.strptime(str(rc.get("days_from", local_date)), "%Y-%m-%d").date()
+    if (now.date() - start).days % every:
+        print(f"This channel posts every {every} days from {start}; {local_date} is an off day. Nothing to do.")
+        return
     if not ready:
         print("Reel bank is empty. Skipping.")
         warn_if_reels_low(channel_dir, cfg, hist, ready, local_date, key)
@@ -395,11 +400,14 @@ def publish_next_reel(channel_dir, cfg, args):
     caption = build_caption({**entry, "printable": True}, cfg)
     print(f"Next Reel: {entry['id']} ({len(ready) - 1} more ready after it)")
     slot, target = current_slot(cfg, now, [rc["publish_time"]])
-    if target and target > datetime.now(tz):
-        wait = (target - datetime.now(tz)).total_seconds()
-        print(f"Waiting {wait / 60:.0f} min to publish at {slot}…")
-        time.sleep(wait)
     media_id = instagram.find_posted(caption, version)  # an earlier run may have posted it despite an error
+    lead = timedelta(minutes=rc.get("prepare_minutes", 0))  # upload and process this long ahead, publish on the minute
+    if not media_id and target and target - lead > datetime.now(tz):
+        wait = (target - lead - datetime.now(tz)).total_seconds()
+        print(f"Waiting {wait / 60:.0f} min to {'prepare' if lead else 'publish'} for {slot}…")
+        time.sleep(wait)
+    cover = channel_dir / "reels" / entry["folder"] / "cover.jpg"
+    cover_url = url.replace("reel.mp4", "cover.jpg") if cover.exists() else None
     story = rc.get("story", True)
     if media_id:
         print(f"{entry['id']} is already on Instagram (media id {media_id}); recording it instead of posting again.")
@@ -407,7 +415,8 @@ def publish_next_reel(channel_dir, cfg, args):
     else:
         try:
             media_id = instagram.publish_reel(url, caption, version, share_to_feed=rc.get("share_to_feed", True),
-                                              thumb_ms=rc.get("cover_ms", 1000))
+                                              thumb_ms=rc.get("cover_ms", 1000), cover_url=cover_url,
+                                              at=target if lead else None)
         except instagram.InstagramError:
             time.sleep(30)  # media_publish can fail yet still post; record it rather than post it twice
             media_id = instagram.find_posted(caption, version)
