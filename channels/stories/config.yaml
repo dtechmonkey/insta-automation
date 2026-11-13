@@ -3,7 +3,7 @@
 # skips that day, so the following part goes out the next night at 21:00. Reels only, made in C:\Claude\insta-stories.
 # Posts with its own Meta app: secrets IG_USER_ID_STORIES / IG_ACCESS_TOKEN_STORIES.
 name: "Your Move"
-handle: "@your_move24"
+handle: "@your_move_stories"
 timezone: "Asia/Kolkata"
 
 hashtags_max: 8
