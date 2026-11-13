@@ -19,6 +19,7 @@
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
 - id: p13-02
   folder: p13-02
+  vote_closed: true                # voting closed 13 Nov 2 PM; final UTHAO 4, PALTO 0
   vote: [UTHAO, PALTO]             # in the end card's order: comments "1" and "2" count as these
   vote_aliases:
     UTHAO: [utha, uthao, uthaw, uthau, uthaao, uthalo, utha lo, उठाओ, उठा, उठा लो, pick, answer]
@@ -30,4 +31,18 @@
 
     Call utha le, ya peeche palat kar dekh le? Votes decide karenge Part 3.
     Part 1 profile par hai.
+  hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
+- id: p13-03
+  folder: p13-03
+  vote: [BAITHO, UTRO]             # end-card order: 1 = BAITHO (2:57 ki gaadi mein baitho), 2 = UTRO (seedhi se neeche utro)
+  vote_aliases:                    # verbs only: "gaadi", "train", "seedhi" turn up in ordinary comments
+    BAITHO: [baitho, baith, beitho, baito, बैठो, बैठ, sit, board]
+    UTRO: [utro, utar, utaro, neeche, niche, उतरो, उतर, नीचे, down]
+  caption: |-
+    Part 3 · Aapne chuna: UTHAO. 📞
+    Kabir ne phone utha liya… aur phone par uski apni awaaz thi, 2001 se. Teesra niyam toot gaya, aur uski awaaz chali gayi. 😶
+    Phir 2:57 ki gaadi aa kar ruki. Phone kehta hai "baith jao"… seedhi se awaaz aati hai "mat baithna".
+
+    Gaadi mein baithe, ya seedhi se neeche utre? Votes decide karenge Part 4, parso raat 8:30.
+    Part 1 aur 2 profile par hain.
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
