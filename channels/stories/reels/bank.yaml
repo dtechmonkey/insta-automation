@@ -51,8 +51,8 @@
   folder: p13-04
   vote: [DEKHO, BHAAGO]            # end-card order: 1 = DEKHO (khidki se bahar dekho), 2 = BHAAGO (darwaaze se bhaago)
   vote_aliases:                    # verbs only: "khidki", "darwaza", "gaadi" turn up in ordinary comments
-    DEKHO: [dekho, dekh, dekhlo, dekh lo, dekhe, dekhna, देखो, देख, देख लो, look, see]
-    BHAAGO: [bhaago, bhago, bhaag, bhag, bhaago kabir, bhaag jao, bhag jao, भागो, भाग, भाग जाओ, run, escape]
+    DEKHO: [dekho, dekh, dekhlo, dekh lo, dekhe, dekhna, dekho na, देखो, देख, देख लो, look, see]
+    BHAAGO: [bhaago, bhago, bhaag, bhag, bhaago na, bhaago kabir, bhaag jao, bhag jao, भागो, भाग, भाग जाओ, run, escape]
   caption: |-
     Part 4 · Aapne chuna: BAITHO. 🚂
     Kabir 2:57 ki gaadi mein baith gaya… seat 13, jo chaubees saal se uska intezaar kar rahi thi. Phir gaadi jhatke se ruki, khidki par teen baar dastak hui… aur dibbe ka har chehra Kabir ka tha. 😨
