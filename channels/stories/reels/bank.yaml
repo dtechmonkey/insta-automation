@@ -34,6 +34,7 @@
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
 - id: p13-03
   folder: p13-03
+  vote_closed: true                # voting closed 15 Nov 2 PM; final BAITHO 12, UTRO 2
   vote: [BAITHO, UTRO]             # end-card order: 1 = BAITHO (2:57 ki gaadi mein baitho), 2 = UTRO (seedhi se neeche utro)
   vote_aliases:                    # verbs only: "gaadi", "train", "seedhi" turn up in ordinary comments
     BAITHO: [baitho, baith, beitho, baito, बैठो, बैठ, sit, board]
@@ -45,4 +46,17 @@
 
     Gaadi mein baithe, ya seedhi se neeche utre? Votes decide karenge Part 4, parso raat 8:30.
     Part 1 aur 2 profile par hain.
+  hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
+- id: p13-04
+  folder: p13-04
+  vote: [DEKHO, BHAAGO]            # end-card order: 1 = DEKHO (khidki se bahar dekho), 2 = BHAAGO (darwaaze se bhaago)
+  vote_aliases:                    # verbs only: "khidki", "darwaza", "gaadi" turn up in ordinary comments
+    DEKHO: [dekho, dekh, dekhlo, dekh lo, dekhe, dekhna, देखो, देख, देख लो, look, see]
+    BHAAGO: [bhaago, bhago, bhaag, bhag, bhaago kabir, bhaag jao, bhag jao, भागो, भाग, भाग जाओ, run, escape]
+  caption: |-
+    Part 4 · Aapne chuna: BAITHO. 🚂
+    Kabir 2:57 ki gaadi mein baith gaya… seat 13, jo chaubees saal se uska intezaar kar rahi thi. Phir gaadi jhatke se ruki, khidki par teen baar dastak hui… aur dibbe ka har chehra Kabir ka tha. 😨
+
+    Khidki se bahar dekhe, ya darwaaze se bhaage? Votes decide karenge Part 5, parso raat 8:30.
+    Part 1, 2 aur 3 profile par hain.
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
