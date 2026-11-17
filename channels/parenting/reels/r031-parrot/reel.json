@@ -1,0 +1,79 @@
+{
+ "music": "../_music/warm.mp3",
+ "music_db": -24,
+ "dialogue": [
+  [
+   "clips/base_sfx.wav",
+   0.0
+  ]
+ ],
+ "shots": [
+  [
+   "base",
+   0.0,
+   68.3,
+   "fit"
+  ]
+ ],
+ "headlines": [
+  [
+   0.2,
+   3.4,
+   "28 years old.<br><em>Can’t make one roti.</em>"
+  ],
+  [
+   64.3,
+   68.3,
+   "Raise a kid who says<br><em>“Let me try.”</em>"
+  ]
+ ],
+ "subtitles": [
+  [
+   3.82,
+   4.96,
+   "“Phir se…”<br><small>Again…</small>",
+   1480
+  ],
+  [
+   4.96,
+   7.4,
+   "“har baar mere saath hi kyun?”<br><small>why does this always happen to me?</small>",
+   1480
+  ],
+  [
+   9.9,
+   12.06,
+   "“Laa, main khila deti hoon.”<br><small>Here, let me feed you.</small>",
+   1560
+  ],
+  [
+   14.98,
+   17.28,
+   "“Laa, main baandh deta hoon.”<br><small>Here, let me tie them.</small>",
+   1560
+  ],
+  [
+   18.3,
+   21.72,
+   "“Tu rehne de, padhai kar.<br>Main bana deti hoon.”<br><small>Leave it, go study. I’ll make it.</small>",
+   1510
+  ],
+  [
+   24.92,
+   29.05,
+   "“Kitna sanskari bachcha hai…<br>aapki har baat maanta hai.”<br><small>Such a well-behaved child. Always listens to you.</small>",
+   1490
+  ],
+  [
+   50.45,
+   51.7,
+   "“Let me try!”",
+   1600
+  ]
+ ],
+ "cta": {
+  "keyword": "ALONE",
+  "line": "for 5 things a 2-year-old can do alone"
+ },
+ "end_seconds": 3
+}
