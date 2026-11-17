@@ -64,6 +64,7 @@
 
 - id: p13-05
   folder: p13-05
+  hold: true                       # posted from the PC at 20:30 on 17 Nov (user's choice); the script removes this
   vote: [UTHAO, ROKO]              # end-card order: 1 = UTHAO (Maa ka call uthao, phone 4%), 2 = ROKO (2:57 ko roko)
   vote_aliases:                    # verbs only: "phone", "call", "maa", "khidki" turn up in ordinary comments
     UTHAO: [uthao, utha, uthalo, utha lo, uthaao, uthaw, phone uthao, call uthao, उठाओ, उठा, उठा लो, pick up, answer]
