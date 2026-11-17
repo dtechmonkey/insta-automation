@@ -64,10 +64,12 @@ def build(parts, out, subs=()):
         chain.append(f"[{k + j}:v]format=rgba,fade=t=in:d=0.15:alpha=1,setpts=PTS+{s}/TB[s{j}];[{cur}][s{j}]overlay=0:0:eof_action=pass[o{j}]")
         cur = f"o{j}"
     total = sum(durs) - XF * n
-    graph = ";".join(v + a + chain) + f";[{acur}]loudnorm=I=-15:TP=-1.5,atrim=duration={total:.2f}[aout]"
-    subprocess.run([FF, "-y", "-loglevel", "error", *args, "-filter_complex", graph, "-map", f"[{cur}]", "-map", "[aout]",
+    # Instagram Stories refuse 96 kHz audio (loudnorm upsamples) and full-range (yuvj) video from the jpg end card
+    graph = (";".join(v + a + chain) + f";[{cur}]scale=out_range=tv,format=yuv420p[vfin]"
+             f";[{acur}]loudnorm=I=-15:TP=-1.5,aresample=48000,atrim=duration={total:.2f}[aout]")
+    subprocess.run([FF, "-y", "-loglevel", "error", *args, "-filter_complex", graph, "-map", "[vfin]", "-map", "[aout]",
                     "-t", f"{total:.2f}", "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-pix_fmt", "yuv420p",
-                    "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out)], check=True)
+                    "-color_range", "tv", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(out)], check=True)
     print(out.name, round(total, 2), "s")
 
 
