@@ -49,6 +49,7 @@
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
 - id: p13-04
   folder: p13-04
+  vote_closed: true                # voting closed 17 Nov 2 PM; final BHAAGO 10, DEKHO 8 (incl. 2 hand-counted BHAAGO)
   vote: [DEKHO, BHAAGO]            # end-card order: 1 = DEKHO (khidki se bahar dekho), 2 = BHAAGO (darwaaze se bhaago)
   vote_aliases:                    # verbs only: "khidki", "darwaza", "gaadi" turn up in ordinary comments
     DEKHO: [dekho, dekh, dekhlo, dekh lo, dekhe, dekhna, dekho na, देखो, देख, देख लो, look, see]
@@ -60,3 +61,17 @@
     Khidki se bahar dekhe, ya darwaaze se bhaage? Votes decide karenge Part 5, parso raat 8:30.
     Part 1, 2 aur 3 profile par hain.
   hashtags: "#platform13 #horrorstory #darawnikahani #hindistory #storytime #hinglish #reels #animation"
+
+- id: p13-05
+  folder: p13-05
+  vote: [UTHAO, ROKO]              # end-card order: 1 = UTHAO (Maa ka call uthao, phone 4%), 2 = ROKO (2:57 ko roko)
+  vote_aliases:                    # verbs only: "phone", "call", "maa", "khidki" turn up in ordinary comments
+    UTHAO: [uthao, utha, uthalo, utha lo, uthaao, uthaw, phone uthao, call uthao, उठाओ, उठा, उठा लो, pick up, answer]
+    ROKO: [roko, rok, rok lo, rokho, rokko, gaadi roko, train roko, roko na, रोको, रोक, रोक लो, stop]
+  caption: |-
+    Part 5 · Aapne chuna: BHAAGO (baal-baal, 10-8!) 🏃‍♂️
+    Kabir bhaaga... aur pahuncha wahin, Platform 13 par. Saal 2001. Kal ka akhbaar, list mein uska naam... aur 2:57 ki gaadi mein, seat 13 par... KABIR KHUD. 📱 Maa calling, battery 4%.
+
+    Comment karo: UTHAO ya ROKO? Votes decide karenge Part 6, parso raat 8:30.
+    Part 1 se 4 profile par hain.
+  hashtags: "#platform13 #yourmovestories #horrorstory #darawnikahani #hindistory #storytime #reels #animation"
