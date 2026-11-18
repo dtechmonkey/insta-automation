@@ -115,8 +115,7 @@
   caption: 'You don''t need to show your face to grow a channel 🐒
 
 
-    This channel''s face is a monkey. Every reel is made with AI (script, voice, animation), and every fact is checked
-    against real sources first.
+    This channel''s face is a monkey. Every reel is made with AI (script, voice, animation), and every fact is checked against real sources first.
 
 
     Want your own mascot channel? Comment "MASCOT" 📩'
@@ -162,8 +161,7 @@
   caption: 'Claude agrees with everything you say? Try this 🥊
 
 
-    Ask it to play 3 experts who disagree: a strict investor, a busy customer and a rival founder. Each one attacks
-    your idea. Then ask for the one change they''d all accept.
+    Ask it to play 3 experts who disagree: a strict investor, a busy customer and a rival founder. Each one attacks your idea. Then ask for the one change they''d all accept.
 
 
     Real feedback, not flattery.
@@ -171,3 +169,27 @@
 
     Comment "DEBATE" for the full prompt 📩'
   hashtags: '#claude #promptengineering #startup #ai #techmonkey'
+- id: tm11
+  folder: 11-tokens
+  caption: 'AI doesn''t read your words. It reads tokens 🔤
+
+
+    1 token ≈ ¾ of a word (≈ 4 characters). A 200K-token window ≈ 150,000 words ≈ a 500-page book. But every message, file and reply shares that budget, so long chats start to forget. New task? Start a fresh chat.
+
+
+    Comment TOKENS and I''ll DM you my token cheat sheet 📩
+
+    Follow @d_tech_monkey for one AI trick a day 🐒'
+  hashtags: '#ai #claude #chatgpt #promptengineering #techmonkey'
+- id: tm12
+  folder: 12-hallucination
+  caption: 'AI said something wrong… with 100% confidence? 🤖❌
+
+
+    That''s a hallucination: the model predicts the next likely word, it doesn''t look facts up, so a made-up answer can sound just as sure as a real one. Fix 1: ask it to quote its source and open the link. Fix 2: tell it to say "I don''t know" if it isn''t sure. Health, money, legal? Always verify.
+
+
+    Comment FACTS and I''ll DM you my anti-hallucination prompt 📩
+
+    Follow @d_tech_monkey for one AI trick a day 🐒'
+  hashtags: '#ai #chatgpt #claude #aihallucination #techmonkey'
