@@ -4297,7 +4297,15 @@
       "keyword": null,
       "media_id": "17896589127438646",
       "posted_at": "2026-11-18T21:24:32.654575+00:00"
+    },
+    {
+      "id": "tm09-hi",
+      "date": "2026-11-20",
+      "slot": "manual",
+      "keyword": null,
+      "media_id": "18123438299515859",
+      "posted_at": "2026-11-19T21:28:49.392495+00:00"
     }
   ],
-  "low_reels_hi_warned": "2026-11-19"
+  "low_reels_hi_warned": "2026-11-20"
 }
