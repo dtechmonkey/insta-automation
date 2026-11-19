@@ -64,6 +64,7 @@
 
 - id: p13-05
   folder: p13-05
+  vote_closed: true                # voting closed 19 Nov 9:20 AM; final UTHAO 9, ROKO 7 (incl. 2 hand-counted "Call")
   vote: [UTHAO, ROKO]              # end-card order: 1 = UTHAO (Maa ka call uthao, phone 4%), 2 = ROKO (2:57 ko roko)
   vote_aliases:                    # verbs only: "phone", "call", "maa", "khidki" turn up in ordinary comments
     UTHAO: [uthao, utha, uthalo, utha lo, uthaao, uthaw, phone uthao, call uthao, उठाओ, उठा, उठा लो, pick up, answer]
@@ -74,4 +75,21 @@
 
     Comment karo: UTHAO ya ROKO? Votes decide karenge Part 6, parso raat 8:30.
     Part 1 se 4 profile par hain.
+  hashtags: "#platform13 #yourmovestories #horrorstory #darawnikahani #hindistory #storytime #reels #animation"
+
+- id: p13-06
+  folder: p13-06
+  hold: true                       # posted from the PC at 20:30 on 19 Nov (user's choice); the script removes this
+  vote: [CHADHO, PHENKO]           # end-card order: 1 = CHADHO (seat 13 par, 2:57 mein chadho), 2 = PHENKO (phone patri par phenko)
+  vote_aliases:                    # verbs only: "phone", "gaadi", "seat" turn up in ordinary comments
+    CHADHO: [chadho, chadh, chadh jao, chadh ja, chado, charho, chadhna, chadho na, चढ़ो, चढ़, चढ़ जाओ, board]
+    PHENKO: [phenko, fenko, phenk do, fenk do, phek do, fek do, phenk, fenk, phek, fek, फेंको, फेंक, फेंक दो, throw]
+  caption: |-
+    Part 6 · Aapne chuna: UTHAO (9-7, do "Call" comments ne faisla kiya) 📞
+    Kabir ne Maa ka phone uthaya... par line par saans uski apni thi. Aur call aaya tha, uske APNE number se.
+    Ab gaadi chhootne wali hai. Seat 13 khaali hai.
+
+    Comment karo: CHADHO ya PHENKO? Jo zyada, wahi Part 7 banega... parso raat 8:30.
+    Shoutout ＠elarven.gx ("Pick the call") aur ＠sarika_kesharwani8 (har part par vote) 🙏
+    Part 1 se 5 profile par hain.
   hashtags: "#platform13 #yourmovestories #horrorstory #darawnikahani #hindistory #storytime #reels #animation"
