@@ -79,7 +79,6 @@
 
 - id: p13-06
   folder: p13-06
-  hold: true                       # posted from the PC at 20:30 on 19 Nov (user's choice); the script removes this
   vote: [CHADHO, PHENKO]           # end-card order: 1 = CHADHO (seat 13 par, 2:57 mein chadho), 2 = PHENKO (phone patri par phenko)
   vote_aliases:                    # verbs only: "phone", "gaadi", "seat" turn up in ordinary comments
     CHADHO: [chadho, chadh, chadh jao, chadh ja, chado, charho, chadhna, chadho na, चढ़ो, चढ़, चढ़ जाओ, board]
