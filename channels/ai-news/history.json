@@ -4444,8 +4444,16 @@
       "keyword": null,
       "media_id": "18123438299515859",
       "posted_at": "2026-11-19T21:28:49.392495+00:00"
+    },
+    {
+      "id": "tm10-hi",
+      "date": "2026-11-21",
+      "slot": "manual",
+      "keyword": null,
+      "media_id": "18147722533589200",
+      "posted_at": "2026-11-20T21:04:00.252963+00:00"
     }
   ],
-  "low_reels_hi_warned": "2026-11-20",
+  "low_reels_hi_warned": "2026-11-21",
   "low_reels_warned": "2026-11-20"
 }
