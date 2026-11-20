@@ -82,7 +82,7 @@
   vote: [CHADHO, PHENKO]           # end-card order: 1 = CHADHO (seat 13 par, 2:57 mein chadho), 2 = PHENKO (phone patri par phenko)
   vote_aliases:                    # verbs only: "phone", "gaadi", "seat" turn up in ordinary comments
     CHADHO: [chadho, chadh, chadh jao, chadh ja, chado, charho, chadhna, chadho na, चढ़ो, चढ़, चढ़ जाओ, board]
-    PHENKO: [phenko, fenko, phenk do, fenk do, phek do, fek do, phenk, fenk, phek, fek, फेंको, फेंक, फेंक दो, throw]
+    PHENKO: [phenko, fenko, fekho, phenkho, fenkho, feko, pheko, phenk do, fenk do, phek do, fek do, phenk, fenk, phek, fek, फेंको, फेंक, फेंक दो, throw]
   caption: |-
     Part 6 · Aapne chuna: UTHAO (9-7, do "Call" comments ne faisla kiya) 📞
     Kabir ne Maa ka phone uthaya... par line par saans uski apni thi. Aur call aaya tha, uske APNE number se.
@@ -92,3 +92,17 @@
     Shoutout ＠elarven.gx ("Pick the call") aur ＠sarika_kesharwani8 (har part par vote) 🙏
     Part 1 se 5 profile par hain.
   hashtags: "#platform13 #yourmovestories #horrorstory #darawnikahani #hindistory #storytime #reels #animation"
+
+- id: p13-07
+  folder: p13-07
+  hold: true                       # series finale, posted from the PC at 20:30 on Sat 21 Nov (user's choice); the script removes this
+  # no vote: the finale's end card asks "UTHAOGE ya PHENKOGE?" for comments only
+  caption: |-
+    Platform 13 · Part 7 · FINALE 🚉
+    Aapne chuna: PHENKO (100%). Kabir ne phone patri par phenk diya... aur 2:57 ki gaadi ne sab kuch tod diya.
+    Ghadi pehli baar 2:58 par chali. Subah Sonapur mein sirf 12 platform the.
+    Par jo station se bahar nikla... kya woh sach mein Kabir tha? 👀
+
+    Agar aaj raat aapka phone 2:57 par baje: UTHAOGE ya PHENKOGE? Comment karo.
+    Poori kahani, Part 1 se 7, profile par. Agli kahani jald... follow kar lo 🙏
+  hashtags: "#platform13 #yourmovestories #horrorstory #darawnikahani #hindistory #storytime #reels #animation #finale"
