@@ -384,6 +384,9 @@ def publish_next_reel(channel_dir, cfg, args):
     if any(r["date"] == local_date for r in hist.get(key, [])):
         print(f"Already posted a Reel on {local_date}; nothing to do.")
         return
+    if local_date in [str(d) for d in rc.get("skip_dates", [])]:  # days the owner posts by hand
+        print(f"{local_date} is in reels.skip_dates (posting by hand); nothing to do.")
+        return
     every = rc.get("every_days", 1)  # 2 = alternate days, counted from `days_from` (a posting day)
     start = datetime.strptime(str(rc.get("days_from", local_date)), "%Y-%m-%d").date()
     if (now.date() - start).days % every:
