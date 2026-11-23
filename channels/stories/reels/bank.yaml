@@ -106,3 +106,19 @@
     Agar aaj raat aapka phone 2:57 par baje: UTHAOGE ya PHENKOGE? Comment karo.
     Poori kahani, Part 1 se 7, profile par. Agli kahani jald... follow kar lo 🙏
   hashtags: "#platform13 #yourmovestories #horrorstory #darawnikahani #hindistory #storytime #reels #animation #finale"
+
+- id: girvi-01
+  folder: girvi-01
+  hold: true                       # posted from the PC on 23 Nov; the line is removed once history.json has it
+  vote: [BANK, NBFC]               # end-card order: 1 = BANK (9.5%, manager is Papa's old junior), 2 = NBFC (13%, nobody knows him)
+  vote_aliases:                    # the lender words only: "loan", "sasta", "papa" turn up in ordinary comments
+    BANK: [bank, baink, benk, bnk, बैंक, बैंक से]
+    NBFC: [nbfc, n b f c, nbfs, nbfc se, एनबीएफसी, private, finance company]
+  caption: |-
+    Nayi kahani · GIRVI · Part 1 🏠
+    Tumhari Nani ne apna ghar daav par laga diya... tumhare liye. ₹40 lakh ka loan, ek desi protein bar ka sapna, aur Papa ko kuch pata nahi. 🤫
+    Ab do offer hain. BANK: sasta, par manager Papa ka purana junior hai. NBFC: har mahine ₹7,965 mehenga, par wahan tumhe koi nahi jaanta.
+
+    Comment karo: BANK ya NBFC? Jo zyada, wahi Part 2 banega... parso raat 8:30.
+    Yeh ek kahani hai, paise ki salaah nahi.
+  hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
