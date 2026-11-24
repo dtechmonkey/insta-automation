@@ -121,3 +121,18 @@
     Comment karo: BANK ya NBFC? Jo zyada, wahi Part 2 banega... parso raat 8:30.
     Yeh ek kahani hai, paise ki salaah nahi.
   hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
+
+- id: girvi-02
+  folder: girvi-02
+  vote: [STICKER, REPRINT]         # end-card order: 1 = STICKER (expo saved, bar looks cheap), 2 = REPRINT (bar looks right, expo missed)
+  vote_aliases:
+    STICKER: [sticker, stiker, stikar, stickar, sticker lagao, स्टिकर, स्टीकर]
+    REPRINT: [reprint, re print, riprint, re-print, reprint karao, dobara chhapo, रीप्रिंट, रिप्रिंट]
+  caption: |-
+    GIRVI · Part 2 🏠 Tumne chuna: BANK.
+    ₹40 lakh khaate mein aa gaye... aur manager ne tumhe pehchaan liya. 😬 Rishwat nahi, ek rule kaam aaya.
+    Par ab 5,000 wrapper par likha hai "no added sugar", aur bar mein gud hai. Galat label ka jurmana ₹3 lakh tak. Gym expo 4 din mein. Aur bank ki chitthi Papa ke haath lag gayi.
+
+    Comment karo: STICKER ya REPRINT? Jo zyada, wahi Part 3 banega... parso raat 8:30.
+    Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
+  hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
