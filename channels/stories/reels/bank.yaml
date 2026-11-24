@@ -109,6 +109,7 @@
 
 - id: girvi-01
   folder: girvi-01
+  vote_closed: true
   vote: [BANK, NBFC]               # end-card order: 1 = BANK (9.5%, manager is Papa's old junior), 2 = NBFC (13%, nobody knows him)
   vote_aliases:                    # the lender words only: "loan", "sasta", "papa" turn up in ordinary comments
     BANK: [bank, baink, benk, bnk, बैंक, बैंक से]
