@@ -137,3 +137,18 @@
     Comment karo: STICKER ya REPRINT? Jo zyada, wahi Part 3 banega... parso raat 8:30.
     Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
   hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
+
+- id: girvi-03
+  folder: girvi-03
+  vote: [DUKAAN, ONLINE]           # end-card order: 1 = DUKAAN (Bansal: every shelf, money stuck 90 days), 2 = ONLINE (heavy commission, Bansal as an enemy)
+  vote_aliases:
+    DUKAAN: [dukaan, dukan, dukkan, dookan, dukaan se, dukan se, दुकान, दूकान]
+    ONLINE: [online, onlne, onlain, on line, online se, app, ऑनलाइन, आनलाइन]
+  caption: |-
+    GIRVI · Part 3 🏠 Tumne chuna: STICKER.
+    Galti chhupayi nahi, sticker par likh diya: "Haan, isme gud hai." 😅 Expo mein 1,800 bar bik gaye aur ek gym chain ka order aa gaya.
+    Par ab shehar ka sabse bada wholesaler Bansal Seth 90 din ka udhaar aur 500 bar muft maang raha hai. Online jao to commission 15-25%. Aur pehli kisht mein sirf 16 din.
+
+    Comment karo: DUKAAN ya ONLINE? Jo zyada, wahi Part 4 banega... parso raat 8:30.
+    Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
+  hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
