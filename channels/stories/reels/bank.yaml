@@ -125,6 +125,7 @@
 
 - id: girvi-02
   folder: girvi-02
+  vote_closed: true
   vote: [STICKER, REPRINT]         # end-card order: 1 = STICKER (expo saved, bar looks cheap), 2 = REPRINT (bar looks right, expo missed)
   vote_aliases:
     STICKER: [sticker, stiker, stikar, stickar, sticker lagao, स्टिकर, स्टीकर]
