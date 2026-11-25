@@ -240,3 +240,91 @@
 
     रोज़ एक tech safety trick के लिए @d_tech_monkey follow करो 🐒'
   hashtags: '#sancharsaathi #simcard #cybersafety #hindi #techmonkey'
+- id: tm11-hi
+  folder: 11-tokens-hi
+  caption: 'AI आपके words नहीं पढ़ता, वो tokens पढ़ता है 🔤
+
+
+    1 token ≈ ¾ word (≈ 4 characters)। 200K-token window ≈ 1,50,000 words ≈ 500 pages की किताब। पर हर message, file और AI का हर reply इसी budget में गिना जाता है, इसलिए लंबी chats पुरानी बातें भूलने लगती हैं।
+
+
+    नया काम? नई chat शुरू करो। Context साफ़, budget पूरा, जवाब ज़्यादा sharp।
+
+
+    🔖 Save करो, और उस दोस्त को भेजो जो एक ही chat में सब करता है।
+
+    रोज़ एक AI trick के लिए @d_tech_monkey follow करो 🐒'
+  hashtags: '#ai #chatgpt #claude #hindi #techmonkey'
+- id: tm16-hi
+  folder: 16-screen-share-scam-hi
+  caption: '"Bank customer care" एक app install करवाना चाहता है? Call काटो 📵🏦
+
+
+    Screen-sharing / remote-access apps से अजनबी आपका phone live देख सकता है: हर OTP, type करते समय आपका UPI PIN, आपके bank SMS। एक transfer और account खाली। RBI ने 2019 में ही इस trick पर alert जारी किया था (Alert 1/2019)।
+
+
+    सही तरीका:
+
+    1️⃣ असली bank call पर कभी app install नहीं करवाता
+
+    2️⃣ Call काटो और card पर लिखे number पर call करो
+
+    3️⃣ Bank या UPI app खुला हो तो कभी screen share मत करो
+
+    4️⃣ Share कर चुके हो? तुरंत 1930 (cyber crime helpline) या cybercrime.gov.in, और अपने bank को call करो
+
+
+    🔖 Save करो, और उसे भेजो जो हर call उठा लेता है।
+
+    रोज़ एक tech safety trick के लिए @d_tech_monkey follow करो 🐒'
+  hashtags: '#cybersafety #bankfraud #upi #hindi #techmonkey'
+- id: tm17-hi
+  folder: 17-prompt-formula-hi
+  caption: 'AI के जवाब generic लगते हैं? गलती prompt की है, AI की नहीं 🤖✍️
+
+
+    हर बार 4 हिस्से:
+
+    🎭 ROLE: कौन बने → "You''re a hiring manager in tech"
+
+    🎯 TASK: एक साफ़ काम → "Write my cover letter, under 200 words"
+
+    📎 CONTEXT: आपकी details → job post, आपकी skills, ये company क्यों
+
+    📐 FORMAT: कैसा दिखे → "3 short paragraphs, no clichés"
+
+
+    Copy-paste template:
+
+    "You are [role]. [Task]. Here''s the context: [details]. Format: [length, style, structure]."
+
+
+    ChatGPT, Gemini, Claude, हर chatbot में चलता है।
+
+
+    🔖 Save करो, और उस दोस्त को भेजो जो job ढूँढ रहा है।
+
+    रोज़ एक AI trick के लिए @d_tech_monkey follow करो 🐒'
+  hashtags: '#chatgpt #prompts #ai #hindi #techmonkey'
+- id: tm12-hi
+  folder: 12-hallucination-hi
+  caption: 'AI ने कुछ गलत बताया… और वो भी 100% भरोसे से? 🤖❌
+
+
+    इसे hallucination कहते हैं: model अगला likely word guess करता है, facts check नहीं करता। इसलिए बना हुआ जवाब भी असली जितना पक्का लगता है।
+
+
+    2 fixes:
+
+    1️⃣ उससे source quote करवाओ, और link खुद खोलो
+
+    2️⃣ उसे बोलो: पक्का न हो तो "I don''t know" कहो
+
+
+    Health, पैसा, legal? हमेशा verify करो।
+
+
+    🔖 Save करो, और उसे भेजो जो AI की हर बात मान लेता है।
+
+    रोज़ एक AI trick के लिए @d_tech_monkey follow करो 🐒'
+  hashtags: '#ai #chatgpt #aihallucination #hindi #techmonkey'

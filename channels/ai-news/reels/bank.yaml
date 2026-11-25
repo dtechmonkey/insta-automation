@@ -266,3 +266,54 @@
 
     Follow @d_tech_monkey for one tech safety trick a day 🐒'
   hashtags: '#privacy #cybersafety #photography #smartphonetips #techmonkey'
+- id: tm16
+  folder: 16-screen-share-scam
+  caption: '"Bank customer care" asks you to install one app? Hang up 📵🏦
+
+
+    Screen-sharing / remote-access apps let a stranger see your phone live: every OTP, your UPI PIN as you type it, your bank SMS. One transfer later the account is empty. RBI warned about this exact trick back in 2019 (Alert 1/2019).
+
+
+    The safe move:
+
+    1️⃣ Real banks never ask you to install an app on a call
+
+    2️⃣ Hang up and call the number printed on your card
+
+    3️⃣ Never share your screen with a bank or UPI app open
+
+    4️⃣ Already shared? Call 1930 (cyber crime helpline) or go to cybercrime.gov.in, and call your bank
+
+
+    🔖 Save this, and send it to someone who picks up every call.
+
+    Follow @d_tech_monkey for one tech safety trick a day 🐒'
+  hashtags: '#cybersafety #bankfraud #upi #scamalert #techmonkey'
+- id: tm17
+  folder: 17-prompt-formula
+  caption: 'Your AI answers feel generic? It''s the prompt, not the AI 🤖✍️
+
+
+    Use 4 parts, every time:
+
+    🎭 ROLE: who it should be → "You''re a hiring manager in tech"
+
+    🎯 TASK: one clear job → "Write my cover letter, under 200 words"
+
+    📎 CONTEXT: your details → paste the job post, your skills, why this company
+
+    📐 FORMAT: how it should look → "3 short paragraphs, no clichés"
+
+
+    Copy-paste template:
+
+    "You are [role]. [Task]. Here''s the context: [details]. Format: [length, style, structure]."
+
+
+    Works in ChatGPT, Gemini, Claude, any chatbot.
+
+
+    🔖 Save this, and send it to a friend who''s job hunting.
+
+    Follow @d_tech_monkey for one AI trick a day 🐒'
+  hashtags: '#chatgpt #prompts #ai #jobsearch #techmonkey'
