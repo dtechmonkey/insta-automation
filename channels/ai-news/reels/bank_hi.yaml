@@ -167,6 +167,27 @@
 
     पूरे prompt के लिए "DEBATE" comment करो 📩'
   hashtags: '#claude #promptengineering #startup #hindi #techmonkey'
+- id: tm15-hi
+  folder: 15-photo-location-hi
+  caption: 'आपने जो photo अभी भेजी, वो आपके घर का पता बता सकती है 📍🏠
+
+
+    Phone का camera हर photo के अंदर GPS location save कर सकता है। Normal WhatsApp photo में ये अक्सर हट जाती है, पर "send as document", original-quality files और drive links में location साथ जा सकती है। Online कुछ बेच रहे हो? घर पर खींची listing photo सीधे आपके दरवाज़े तक ला सकती है।
+
+
+    ऐसे off करो:
+
+    📱 iPhone: share screen पर Options → Location off करो (हर बार share करते समय)
+
+    🤖 Android: Camera → Settings → Location tags / Save location off
+
+    ⚠️ ये सिर्फ़ नई photos के लिए है। पुरानी photos share करने से पहले check करो।
+
+
+    🔖 Save करो, और उसे भेजो जो online कुछ बेचता है।
+
+    रोज़ एक tech safety trick के लिए @d_tech_monkey follow करो 🐒'
+  hashtags: '#privacy #cybersafety #smartphonetips #hindi #techmonkey'
 - id: tm13-hi
   folder: 13-voice-clone-hi
   caption: 'बेटे का रोता हुआ call, पैसे चाहिए… पर वो आपका बेटा नहीं है 📞⚠️
@@ -219,24 +240,3 @@
 
     रोज़ एक tech safety trick के लिए @d_tech_monkey follow करो 🐒'
   hashtags: '#sancharsaathi #simcard #cybersafety #hindi #techmonkey'
-- id: tm15-hi
-  folder: 15-photo-location-hi
-  caption: 'आपने जो photo अभी भेजी, वो आपके घर का पता बता सकती है 📍🏠
-
-
-    Phone का camera हर photo के अंदर GPS location save कर सकता है। Normal WhatsApp photo में ये अक्सर हट जाती है, पर "send as document", original-quality files और drive links में location साथ जा सकती है। Online कुछ बेच रहे हो? घर पर खींची listing photo सीधे आपके दरवाज़े तक ला सकती है।
-
-
-    ऐसे off करो:
-
-    📱 iPhone: share screen पर Options → Location off करो (हर बार share करते समय)
-
-    🤖 Android: Camera → Settings → Location tags / Save location off
-
-    ⚠️ ये सिर्फ़ नई photos के लिए है। पुरानी photos share करने से पहले check करो।
-
-
-    🔖 Save करो, और उसे भेजो जो online कुछ बेचता है।
-
-    रोज़ एक tech safety trick के लिए @d_tech_monkey follow करो 🐒'
-  hashtags: '#privacy #cybersafety #smartphonetips #hindi #techmonkey'
