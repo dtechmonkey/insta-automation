@@ -4726,6 +4726,15 @@
       "stories": [],
       "bank_id": "repos-selfhost",
       "slot": "1"
+    },
+    {
+      "mode": "bank",
+      "date": "2026-11-27",
+      "posted_at": "2026-11-26T22:59:30.508508+00:00",
+      "media_id": "18102482432293292",
+      "stories": [],
+      "bank_id": "ever-ibm-watson",
+      "slot": "2"
     }
   ],
   "reels": [
