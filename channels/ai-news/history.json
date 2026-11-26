@@ -4586,6 +4586,24 @@
       "stories": [],
       "bank_id": "ever-hubble-space-telescope",
       "slot": "2"
+    },
+    {
+      "mode": "bank",
+      "date": "2026-11-26",
+      "posted_at": "2026-11-25T20:42:20.783545+00:00",
+      "media_id": "17954363937344319",
+      "stories": [],
+      "bank_id": "repos-scrape",
+      "slot": "1"
+    },
+    {
+      "mode": "bank",
+      "date": "2026-11-26",
+      "posted_at": "2026-11-25T23:06:44.654661+00:00",
+      "media_id": "18149512093598646",
+      "stories": [],
+      "bank_id": "ever-hyperloop",
+      "slot": "2"
     }
   ],
   "reels": [
@@ -4774,6 +4792,14 @@
       "keyword": null,
       "media_id": "18147722533589200",
       "posted_at": "2026-11-20T21:04:00.252963+00:00"
+    },
+    {
+      "id": "tm15-hi",
+      "date": "2026-11-26",
+      "slot": "manual",
+      "keyword": null,
+      "media_id": "18658336093024296",
+      "posted_at": "2026-11-25T22:30:30.351106+00:00"
     }
   ],
   "low_reels_hi_warned": "2026-11-25",
