@@ -778,7 +778,15 @@
       "keyword": "COMPARE",
       "media_id": "18025206830726383",
       "posted_at": "2026-11-26T11:19:46.269679+00:00"
+    },
+    {
+      "id": "r033",
+      "date": "2026-11-27",
+      "slot": "manual",
+      "keyword": "POUR",
+      "media_id": "18079901780589097",
+      "posted_at": "2026-11-27T06:52:48.346442+00:00"
     }
   ],
-  "low_reels_warned": "2026-11-26"
+  "low_reels_warned": "2026-11-27"
 }
