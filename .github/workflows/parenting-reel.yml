@@ -1,12 +1,12 @@
 # Let Me Try (parenting): posts one Reel a day from channels/parenting/reels/bank.yaml, plus its Story.
 # Cron times are UTC (IST = UTC + 5:30). The job starts 30 min early (GitHub can start late);
 # run_posts.py waits for the exact publish time in channels/parenting/config.yaml.
-#   08:00 IST start -> 08:30 IST post
+#   09:30 IST start -> 10:00 IST post
 name: Let Me Try - reel
 
 on:
   schedule:
-    - cron: "30 2 * * *"
+    - cron: "0 4 * * *"
   workflow_dispatch:
     inputs:
       dry_run: { description: "Have Instagram check every ready Reel, posting nothing", default: true, type: boolean }

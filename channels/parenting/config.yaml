@@ -24,7 +24,7 @@ story: true               # also share each post's cover as a "New post" Story
 low_queue_days: 3          # open a GitHub issue when fewer days of ready posts remain
 
 reels:                     # one a day from reels/bank.yaml; .github/workflows/parenting-reel.yml starts 30 min early
-  publish_time: "08:30"    # IST; the busiest window for top India-focused reels. Retest once boosts give real reach
+  publish_time: "10:00"    # IST; set by the user 27 Nov 2026. A PC task also starts the job at 09:35 (GitHub cron runs hours late)
   story: true              # also share the same video to the Story
   share_to_feed: true      # also show it in the grid and feed
   cover_ms: 1000           # cover frame, once the hook text has faded in
