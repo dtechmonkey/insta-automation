@@ -1,13 +1,11 @@
-# Let Me Try (parenting): posts the next ready post from channels/parenting/posts twice a day.
+# Let Me Try (parenting): posts the next ready post from channels/parenting/posts once a day (user, 27 Nov 2026).
 # Cron times are UTC (IST = UTC + 5:30). Jobs start ~30 min early (GitHub can start late);
 # run_posts.py waits for the exact publish time in channels/parenting/config.yaml.
-#   12:30 IST start -> 13:00 IST post
 #   19:00 IST start -> 19:30 IST post
 name: Let Me Try - post
 
 on:
   schedule:
-    - cron: "0 7 * * *"
     - cron: "30 13 * * *"
   workflow_dispatch:
     inputs:

@@ -3,7 +3,7 @@ name: "Let Me Try"
 handle: "@letmetry.montessori"
 timezone: "Asia/Kolkata"
 
-publish_times: ["13:00", "19:30"]   # IST; add "21:30" for a third daily post
+publish_times: ["19:30"]   # IST; one carousel a day (user, 27 Nov 2026)
 start_date: "2026-10-17"            # no posts before this day
 
 # Prefixed to every slide's Gemini prompt (a post may override with its own `style:`)
