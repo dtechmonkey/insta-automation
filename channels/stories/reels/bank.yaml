@@ -153,3 +153,19 @@
     Comment karo: DUKAAN ya ONLINE? Jo zyada, wahi Part 4 banega... parso raat 8:30.
     Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
   hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
+
+- id: girvi-04
+  folder: girvi-04
+  hold: true                       # posted from the PC by channels/girvi/post_part.py; removed once it is live
+  vote: [JAAO, CHITTHI]           # end-card order: 1 = JAAO (go to the police station 1,200 km away; 2 days, Papa's questions), 2 = CHITTHI (write to the bank and the police; the law helps, no date for an answer)
+  vote_aliases:
+    JAAO: [jaao, jao, jaoo, jaaoo, thane jao, thane jaao, जाओ, जाओ थाने]
+    CHITTHI: [chitthi, chithi, chitti, chiththi, chitthi likho, letter, चिट्ठी, चिठ्ठी, चिट्टी]
+  caption: |-
+    GIRVI · Part 4 🏠 Bansal ko jawab: NAHI.
+    Tumne app ka commission hi hata diya: gym ke counter par QR, paisa seedha khaate mein. 10 din mein 300 dabbe, ₹1,44,000. 🔥
+    Phir ek subah payment fail. Kisi aur ke saath hui thagi ka ₹480 tumhare khaate mein aaya tha... aur poore ₹42 lakh freeze. 🧊 Kisht 6 din mein. Aur Papa ne card decline hote dekh liya.
+
+    Comment karo: JAAO ya CHITTHI? Jo zyada, wahi Part 5 banega... kal raat 8 baje.
+    Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
+  hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
