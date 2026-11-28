@@ -157,6 +157,7 @@
 
 - id: girvi-04
   folder: girvi-04
+  vote_closed: true
   vote: [JAAO, CHITTHI]           # end-card order: 1 = JAAO (go to the police station 1,200 km away; 2 days, Papa's questions), 2 = CHITTHI (write to the bank and the police; the law helps, no date for an answer)
   vote_aliases:
     JAAO: [jaao, jao, jaoo, jaaoo, thane jao, thane jaao, जाओ, जाओ थाने]
@@ -172,7 +173,6 @@
 
 - id: girvi-05
   folder: girvi-05
-  hold: true                       # posted from the PC by channels/girvi/post_part.py; removed once it is live
   vote: [KHOLO, RUKO]           # teaser vote for the next series LIFT (Part 1 on 30 Nov): 1 = KHOLO (open the lift door), 2 = RUKO (stay inside); Girvi itself ends here
   vote_aliases:
     KHOLO: [kholo, khol, khol do, kholdo, open, darwaza kholo, खोलो, खोल दो]
