@@ -445,11 +445,46 @@ def publish_next_reel(channel_dir, cfg, args):
         share_reel_story(channel_dir, cfg, hist, hist[key][-1], url, version)
 
 
+STORY_MAX = 59.0  # Instagram refuses Story videos over 60 s (media_publish answers 'Fatal')
+
+
+def story_video_url(channel_dir, rec, url):
+    """The Reel itself when it fits a Story; else the first 58 s with 'Full reel on our profile' over the
+    last 6 s, made with ffmpeg and uploaded to the media branch. A reel folder may hold its own story.mp4."""
+    import subprocess
+    import tempfile
+    folder = Path(url.split(f"/channels/{channel_dir.name}/reels/")[1]).parent
+    own = channel_dir / "reels" / folder / "story.mp4"
+    if own.exists():
+        return url.replace("reel.mp4", "story.mp4")
+    src = channel_dir / "reels" / folder / "reel.mp4"
+    probe = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(src)],
+                           capture_output=True, text=True)
+    dur = float(probe.stdout.strip() or 0)
+    if dur <= STORY_MAX:
+        return url
+    cut = 58.0
+    out = Path(tempfile.mkdtemp()) / f"{rec['id']}-story.mp4"
+    text = (f"drawbox=x=0:y=ih*0.70:w=iw:h=ih*0.11:color=0xFBF6EE@1.0:t=fill:enable='gte(t,{cut - 6})',"
+            f"drawtext=text='Full reel on our profile':fontcolor=0x5E4D40:fontsize=h*0.032:x=(w-text_w)/2:"
+            f"y=h*0.755-text_h/2:enable='gte(t,{cut - 6})':font='DejaVu Serif:style=Bold',"
+            f"fade=t=out:st={cut - 0.6}:d=0.6")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-t", str(cut), "-vf", text,
+                    "-af", f"afade=t=out:st={cut - 1.5}:d=1.5", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+                    "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(out)], check=True)
+    print(f"Reel is {dur:.0f} s (Story limit 60 s); sharing the first {cut:.0f} s as a teaser.")
+    return host.upload([out], f"{channel_dir.name}/{rec['date']}-story-{rec['id']}")[0]
+
+
 def share_reel_story(channel_dir, cfg, hist, rec, url, version, tries=3):
     """Share the Reel's video to the Story and record its id in history (rec['story_id']).
     media_publish sometimes answers 'Fatal' yet posts, so check the live Stories before each retry.
     If every try fails, open an issue; the 11:00 IST re-run of this job tries again."""
     since = rec.get("posted_at") or datetime.now(timezone.utc).isoformat()
+    try:
+        url = story_video_url(channel_dir, rec, url)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! could not make the Story cut: {e}")
     for k in range(tries):
         try:
             rec["story_id"] = instagram.publish_story(url, version)
