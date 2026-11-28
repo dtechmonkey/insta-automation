@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install requests PyYAML Jinja2 python-dotenv playwright tzdata
+      - run: pip install requests PyYAML Jinja2 python-dotenv playwright tzdata imageio-ffmpeg
 
       - name: Publish
         env:

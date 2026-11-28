@@ -458,18 +458,20 @@ def story_video_url(channel_dir, rec, url):
     if own.exists():
         return url.replace("reel.mp4", "story.mp4")
     src = channel_dir / "reels" / folder / "reel.mp4"
-    probe = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(src)],
-                           capture_output=True, text=True)
-    dur = float(probe.stdout.strip() or 0)
+    import imageio_ffmpeg
+    ff = imageio_ffmpeg.get_ffmpeg_exe()
+    info = subprocess.run([ff, "-i", str(src)], capture_output=True, text=True).stderr
+    h, m, s = re.search(r"Duration: (\d+):(\d+):([\d.]+)", info).groups()
+    dur = int(h) * 3600 + int(m) * 60 + float(s)
     if dur <= STORY_MAX:
         return url
     cut = 58.0
     out = Path(tempfile.mkdtemp()) / f"{rec['id']}-story.mp4"
     text = (f"drawbox=x=0:y=ih*0.70:w=iw:h=ih*0.11:color=0xFBF6EE@1.0:t=fill:enable='gte(t,{cut - 6})',"
             f"drawtext=text='Full reel on our profile':fontcolor=0x5E4D40:fontsize=h*0.032:x=(w-text_w)/2:"
-            f"y=h*0.755-text_h/2:enable='gte(t,{cut - 6})':font='DejaVu Serif:style=Bold',"
+            f"y=h*0.755-text_h/2:enable='gte(t,{cut - 6})':fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf,"
             f"fade=t=out:st={cut - 0.6}:d=0.6")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-t", str(cut), "-vf", text,
+    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(src), "-t", str(cut), "-vf", text,
                     "-af", f"afade=t=out:st={cut - 1.5}:d=1.5", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
                     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(out)], check=True)
     print(f"Reel is {dur:.0f} s (Story limit 60 s); sharing the first {cut:.0f} s as a teaser.")
