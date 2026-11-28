@@ -381,8 +381,17 @@ def publish_next_reel(channel_dir, cfg, args):
                 instagram.check_video(url, "STORIES", version)
             print(f"  {entry['id']} OK\n{build_caption({**entry, 'printable': True}, cfg)}\n")
         return
-    if any(r["date"] == local_date for r in hist.get(key, [])):
-        print(f"Already posted a Reel on {local_date}; nothing to do.")
+    today = [r for r in hist.get(key, []) if r["date"] == local_date]
+    if today:  # the 11:00 IST check re-runs this job: finish a missing Story, else nothing to do
+        done = today[-1]
+        if rc.get("story", True) and not done.get("story_id"):
+            bank = yaml.safe_load((channel_dir / "reels" / bank_file(key)).read_text(encoding="utf-8"))
+            entry = next((r for r in bank if r["id"] == done["id"]), None)
+            if entry:
+                print(f"Reel {done['id']} is posted but its Story is missing; sharing it now.")
+                share_reel_story(channel_dir, cfg, hist, done, reel_url(channel_dir, entry), version)
+                return
+        print(f"Already posted a Reel{' and its Story' if done.get('story_id') else ''} on {local_date}; nothing to do.")
         return
     if local_date in [str(d) for d in rc.get("skip_dates", [])]:  # days the owner posts by hand
         print(f"{local_date} is in reels.skip_dates (posting by hand); nothing to do.")
@@ -433,12 +442,38 @@ def publish_next_reel(channel_dir, cfg, args):
     warn_if_reels_low(channel_dir, cfg, hist, ready[1:], local_date, key)
     save_state(channel_dir, "history.json", hist)
     if story:  # the Reel is live and recorded; a Story failure only raises a heads-up issue
+        share_reel_story(channel_dir, cfg, hist, hist[key][-1], url, version)
+
+
+def share_reel_story(channel_dir, cfg, hist, rec, url, version, tries=3):
+    """Share the Reel's video to the Story and record its id in history (rec['story_id']).
+    media_publish sometimes answers 'Fatal' yet posts, so check the live Stories before each retry.
+    If every try fails, open an issue; the 11:00 IST re-run of this job tries again."""
+    since = rec.get("posted_at") or datetime.now(timezone.utc).isoformat()
+    for k in range(tries):
         try:
-            print(f"Story published: {instagram.publish_story(url, version)}")
-        except Exception as e:
-            print(f"  ! Story failed: {e}")
-            notify.open_issue(f"{cfg['name']}: Story for {entry['id']} failed",
-                              f"The Reel was posted, but sharing it to the Story failed:\n\n```\n{e}\n```")
+            rec["story_id"] = instagram.publish_story(url, version)
+            break
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! Story try {k + 1} failed: {e}")
+            time.sleep(45)
+            try:
+                live = instagram.find_story(version, since, "VIDEO")
+            except Exception as e2:  # noqa: BLE001
+                print(f"  ! could not list Stories: {e2}")
+                live = None
+            if live:
+                rec["story_id"] = live
+                print("  (Instagram reported an error but the Story went live)")
+                break
+            err = e
+    if rec.get("story_id"):
+        print(f"Story published: {rec['story_id']}")
+        save_state(channel_dir, "history.json", hist)
+    else:
+        notify.open_issue(f"{cfg['name']}: Story for {rec['id']} failed",
+                          f"The Reel was posted, but sharing it to the Story failed {tries} times "
+                          f"(the 11:00 IST check will try again):\n\n```\n{err}\n```")
 
 
 # ---------- comment bot ----------

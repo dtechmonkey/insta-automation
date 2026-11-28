@@ -129,6 +129,17 @@ def check_video(video_url, media_type, version):
     _wait_ready(container, version, timeout=600)
 
 
+def find_story(version, since_iso, media_type=None):
+    """Id of a live Story (last 24 h) posted at or after since_iso, or None."""
+    ig_user = os.environ["IG_USER_ID"].strip()
+    since = datetime.fromisoformat(since_iso)
+    for s in _call("GET", f"{ig_user}/stories", version, fields="id,timestamp,media_type").get("data", []):
+        if (media_type is None or s.get("media_type") == media_type) and \
+                datetime.strptime(s["timestamp"], "%Y-%m-%dT%H:%M:%S%z") >= since:
+            return s["id"]
+    return None
+
+
 def recent_media(version, limit=10):
     """Our latest posts (id, caption, timestamp), newest first."""
     ig_user = os.environ["IG_USER_ID"].strip()
