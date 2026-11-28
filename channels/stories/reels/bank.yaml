@@ -169,3 +169,21 @@
     Comment karo: JAAO ya CHITTHI? Jo zyada, wahi Part 5 banega... kal raat 8 baje.
     Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
   hashtags: "#girvi #yourmovestories #hindistory #storytime #hinglish #startupindia #reels #animation"
+
+- id: girvi-05
+  folder: girvi-05
+  hold: true                       # posted from the PC by channels/girvi/post_part.py; removed once it is live
+  vote: [KHOLO, RUKO]           # teaser vote for the next series LIFT (Part 1 on 30 Nov): 1 = KHOLO (open the lift door), 2 = RUKO (stay inside); Girvi itself ends here
+  vote_aliases:
+    KHOLO: [kholo, khol, khol do, kholdo, open, darwaza kholo, खोलो, खोल दो]
+    RUKO: [ruko, ruk, ruk jao, rukho, wait, mat kholo, रुको, रुक जाओ, मत खोलो]
+  caption: |-
+    GIRVI · Part 5 · FINALE 🏠 Papa ko sab pata chal gaya.
+    Khaata freeze tha, kisht 6 din mein. Tum thane nahi gaye. Tumne bank ke nodal officer ko chitthi likhi: vivaad ₹480 ka hai, wahi roko, baaki kholo. Saath mein har bikri ka saboot. 📄
+    Phir ek raat Papa ko almirah mein bank ka letter mil gaya... aur is baar tumne kuch nahi chhupaya.
+    Kisht waqt par gayi. Aur ghar ke kaagaz? Aakhir mein dekho. ❤️
+
+    Girvi yahin khatam. NAYI KAHANI: LIFT. Raat ke 2 baje, lift ruk gayi, aur bahar se koi darwaza khol raha hai.
+    Comment karo: KHOLO ya RUKO? Jo zyada, wahi Part 1 banega... 30 November, raat 8 baje.
+    Yeh ek kahani hai, paise ya kanoon ki salaah nahi.
+  hashtags: "#girvi #lift #yourmovestories #hindistory #storytime #hinglish #horrorstory #reels #animation"
